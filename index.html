@@ -540,36 +540,40 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form action="https://formspree.io/manishgupta0746@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://formspree.io/f/mwkglvdp" method="POST" name="sentMessage"
+                            id="contactForm">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                    <input name="name" type="text" class="form-control p-4" id="name" placeholder="Your Name"
                                         required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                    <input name="email" type="email" class="form-control p-4" id="email" placeholder="Your Email"
                                         required="required"
                                         data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                <input name="subject" type="text" class="form-control p-4" id="subject" placeholder="Subject"
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                <textarea name="message" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                     required="required"
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton" onclick="submitForm()">Send
                                     Message</button>
                             </div>
                         </form>
+                        <div id="thankYouMessage" style="display: none;">
+                            Thank you for your submission!
+                          </div>
                     </div>
                 </div>
             </div>
@@ -584,7 +588,8 @@
             <div class="d-flex justify-content-center mb-4">
                 <a class="btn btn-light btn-social mr-2" href="https://github.com/MANISH0746" target="_blank"><i
                         class="fab fa-github"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="tel.9768809635"><i class="fa fa-phone  flip-horizontal"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="tel.9768809635"><i
+                        class="fa fa-phone  flip-horizontal"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/manish-gupta-01751b23a/"
                     target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-light btn-social" href="https://wa.me/9768809635" target="_blank"><i
@@ -629,6 +634,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        function submitForm() {
+          var form = document.getElementById('contactForm');
+          var thankYouMessage = document.getElementById('thankYouMessage');
+    
+          // Collect form data
+          var formData = new FormData(form);
+    
+          // Perform asynchronous form submission using Fetch API
+          fetch('https://formspree.io/f/your_form_id', {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => response.json())
+          .then(data => {
+            // Hide the form and show the thank you message
+            form.style.display = 'none';
+            thankYouMessage.style.display = 'block';
+          })
+          .catch(error => console.error('Error:', error));
+        }
+      </script>
+
 </body>
 
 </html>
