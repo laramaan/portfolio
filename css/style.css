@@ -11189,3 +11189,7 @@ a.btn.btn-outline-light:hover{
   background-color: #00668c;
   border-color: #00668c;
 }
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
