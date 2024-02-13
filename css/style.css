@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --blue: #007bff;
+  --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -11179,12 +11179,13 @@ h6,
   list-style-type: none;
 }
 
-a.btn.btn-outline-light{
+a.btn.btn-outline-light {
   border-radius: 10px;
   background-color: #d4eaf7;
   color: #3b3c3d;
 }
-a.btn.btn-outline-light:hover{
+
+a.btn.btn-outline-light:hover {
   color: #71c4ef;
   background-color: #00668c;
   border-color: #00668c;
@@ -11192,4 +11193,32 @@ a.btn.btn-outline-light:hover{
 
 .flip-horizontal {
   transform: scaleX(-1);
+}
+
+/* ==================== */
+img.api-icon {
+  position: absolute;
+  top: 8%;
+  right: 20%;
+  width: 10%;
+}
+
+img.world-wide-web-icon {
+  position: absolute;
+  width: 9%;
+  bottom: 30%;
+  left: 1%;
+}
+
+.idea-gif {
+  position: absolute;
+  width: 12%;
+  left: 10%;
+}
+
+.cloud-data-gif {
+  position: absolute;
+  width: 12%;
+  right: 10%;
+  bottom: 10%;
 }
