@@ -122,17 +122,17 @@
     <!-- Center Navigation -->
     <div class="hidden md:flex items-center gap-8">
       <a class="text-yellow font-bold border-b-2 border-[#feb300] pb-1 hover:scale-105 transition-transform duration-200"
-        href="#">Home</a>
+        href="#home">Home</a>
       <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#">Services</a>
+        href="#services">Services</a>
       <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#">About</a>
+        href="#portfolio">Projects</a>
       <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#">Projects</a>
+        href="#about">About</a>
       <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#">Blogs</a>
+        href="#blogs">Blogs</a>
       <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#">Testimonials</a>
+        href="#contact">Contact</a>
     </div>
     <!-- Primary Action -->
     <button
@@ -170,7 +170,7 @@
         <div class="flex flex-wrap gap-4 items-center z-30 relative">
           <!-- View My Portfolio button -->
           <!-- View My Portfolio button -->
-          <button
+          <a href="projects.html"
             class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
             <span
               class="bg-green text-white px-8 py-3.5 rounded-full font-bold flex items-center font-headline text-sm tracking-wide mr-2 transition-colors">
@@ -182,12 +182,12 @@
                 <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
               </svg>
             </div>
-          </button>
+          </a>
 
-          <button
+          <a href="mailto:test@example.com" target="_blank"
             class="border-[2px] border-green text-green rounded-full px-10 py-3.5 font-bold font-headline text-sm hover:bg-green hover:text-white transition-colors bg-white">
             Hire Me
-          </button>
+          </a>
         </div>
       </div>
 
@@ -266,39 +266,31 @@
     <div
       class="w-[105%] -ml-[2.5%] bg-yellow py-3 flex items-center whitespace-nowrap font-['Plus_Jakarta_Sans'] font-extrabold text-[28px] tracking-wide text-green pointer-events-auto transform shadow-sm relative z-10">
       <div class="marquee-content flex items-center shrink-0 min-w-full justify-around gap-12 px-6">
-        <span>App Design</span>
+        <span>50+ Projects</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Website Design</span>
+        <span>10+ Clients</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Dashboard</span>
+        <span>4+ Years Experience</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Wireframe</span>
+        <span>50+ Projects</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>App Design</span>
+        <span>10+ Clients</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Website Design</span>
-        <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Dashboard</span>
-        <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Wireframe</span>
+        <span>4+ Years Experience</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
       </div>
       <div class="marquee-content flex items-center shrink-0 min-w-full justify-around gap-12 px-6" aria-hidden="true">
-        <span>App Design</span>
+        <span>50+ Projects</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Website Design</span>
+        <span>10+ Clients</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Dashboard</span>
+        <span>4+ Years Experience</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Wireframe</span>
+        <span>50+ Projects</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>App Design</span>
+        <span>10+ Clients</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Website Design</span>
-        <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Dashboard</span>
-        <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
-        <span>Wireframe</span>
+        <span>4+ Years Experience</span>
         <span class="font-normal text-6xl leading-[0px] font-sans opacity-70 translate-y-3">*</span>
       </div>
     </div>
@@ -306,7 +298,7 @@
 
   <main class="">
     <!-- Services Section Canvas -->
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-white" id="services">
       <div class="max-w-7xl mx-auto px-8">
         <!-- Section Header -->
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
@@ -321,7 +313,7 @@
             </h2>
           </div>
           <div>
-            <button
+            <a href="services.html"
               class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
               <span
                 class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
@@ -333,82 +325,85 @@
                   <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
                 </svg>
               </div>
-            </button>
+            </a>
           </div>
         </div>
         <!-- Bento Grid of Services -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Card 1: UI/UX Design -->
-          <div class="bg-grey p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
-            <div class="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-              <span class="material-symbols-outlined text-3xl text-green relative z-10">laptop_chromebook</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-grid"></div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="py-24 bg-grey flex flex-col items-center" id="portfolio">
+      <div class="max-w-7xl mx-auto px-8 w-full">
+        <!-- Header Layout -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-4 h-[2px] bg-yellow"></div>
+              <span class="font-headline font-bold text-green tracking-wide">My Portfolio</span>
             </div>
-            <h3 class="font-headline font-bold text-[22px] text-green mb-3">
-              UI/UX Design
-            </h3>
-            <p class="font-body text-green/60 leading-relaxed mb-6 text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              ...
-            </p>
-            <a class="inline-flex items-center font-headline font-bold text-[15px] text-green transition-transform duration-300 group-hover:px-1"
-              href="#">
-              Learn more
-              <span class="text-yellow ml-2">
-                <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-                </svg>
-              </span>
-            </a>
+            <h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
+              <span class="text-green">My Latest</span>
+              <span class="text-yellow italic font-normal"> Projects</span>
+            </h2>
           </div>
-          <!-- Card 2: Application Design -->
-          <div class="bg-grey p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
-            <div class="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-              <span class="material-symbols-outlined text-3xl text-green relative z-10">edit_square</span>
+
+          <!-- CTA Button -->
+          <a href="projects.html"
+            class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
+            <span
+              class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
+              View All Projects
+            </span>
+            <div
+              class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform relative z-10">
+              <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
+              </svg>
             </div>
-            <h3 class="font-headline font-bold text-[22px] text-green mb-3">
-              Application Design
-            </h3>
-            <p class="font-body text-green/60 leading-relaxed mb-6 text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              ...
-            </p>
-            <a class="inline-flex items-center font-headline font-bold text-[15px] text-green transition-transform duration-300 group-hover:px-1"
-              href="#">
-              Learn more
-              <span class="text-yellow ml-2">
-                <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-                </svg>
-              </span>
-            </a>
+          </a>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid md:grid-cols-2 gap-8" id="projects-grid"></div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-24 px-6 md:px-12 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="w-4 h-[2px] bg-yellow"></span>
+            <p class="font-headline font-bold text-[15px] tracking-wide text-green">Clients Testimonials</p>
           </div>
-          <!-- Card 3: Website Design -->
-          <div class="bg-grey p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
-            <div class="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-              <span class="material-symbols-outlined text-3xl text-green relative z-10">language</span>
-            </div>
-            <h3 class="font-headline font-bold text-[22px] text-green mb-3">
-              Website Design
-            </h3>
-            <p class="font-body text-green/60 leading-relaxed mb-6 text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              ...
-            </p>
-            <a class="inline-flex items-center font-headline font-bold text-[15px] text-green transition-transform duration-300 group-hover:px-1"
-              href="#">
-              Learn more
-              <span class="text-yellow ml-2">
-                <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-                </svg>
-              </span>
-            </a>
+          <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-green leading-tight">
+            The Impact of My Work:<br />
+            <span class="text-yellow italic font-normal">Client Testimonials</span>
+          </h2>
+        </div>
+        <!-- Testimonials Grid/Slider Container -->
+        <div class="relative">
+          <!-- Decorative Background Shapes -->
+          <div class="absolute -top-10 -left-10 w-64 h-64 bg-grey organic-blob opacity-50 -z-10 blur-3xl"></div>
+          <div class="absolute -bottom-10 -right-10 w-80 h-80 bg-yellow organic-blob opacity-10 -z-10 blur-3xl"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="testimonials-grid"></div>
+          <!-- Navigation Arrows -->
+          <div class="flex justify-center items-center gap-4 mt-16">
+            <button
+              class="w-12 h-12 rounded-full bg-green text-yellow flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 duration-300">
+              <span class="material-symbols-outlined text-2xl font-bold">west</span>
+            </button>
+            <button
+              class="w-12 h-12 rounded-full bg-yellow text-green flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 duration-300">
+              <span class="material-symbols-outlined text-2xl font-bold">east</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
     <!-- About Section -->
-    <section class="py-24 bg-green">
+    <section class="py-24 bg-green" id="about">
       <div class="max-w-7xl mx-auto px-8 relative">
         <!-- Content Wrapper -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -525,7 +520,7 @@
             <!-- CTA Row -->
             <div class="flex flex-wrap items-center gap-8 mt-2">
               <!-- Download Button -->
-              <button
+              <a href="assets/Resume.pdf" download
                 class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
                 <span
                   class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
@@ -537,7 +532,7 @@
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
                   </svg>
                 </div>
-              </button>
+              </a>
 
               <!-- Signature -->
               <div class="text-yellow italic signature-font text-5xl origin-left">
@@ -748,107 +743,6 @@
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="py-24 bg-grey flex flex-col items-center" id="portfolio">
-      <div class="max-w-7xl mx-auto px-8 w-full">
-        <!-- Header Layout -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div class="flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="w-4 h-[2px] bg-yellow"></div>
-              <span class="font-headline font-bold text-green tracking-wide">My Portfolio</span>
-            </div>
-            <h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
-              <span class="text-green">My Latest</span>
-              <span class="text-yellow italic font-normal"> Projects</span>
-            </h2>
-          </div>
-
-          <!-- CTA Button -->
-          <button
-            class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
-            <span
-              class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
-              View All Projects
-            </span>
-            <div
-              class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform relative z-10">
-              <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
-                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-              </svg>
-            </div>
-          </button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- Project Card 1 -->
-          <div
-            class="bg-white p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col h-full border border-black/5 group cursor-pointer">
-            <!-- Project Image Container -->
-            <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-8 bg-grey">
-              <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=800&auto=format&fit=crop"
-                alt="Ecommerce Mobile App"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-
-            <!-- Project Tags -->
-            <div class="flex flex-wrap gap-3 mb-6">
-              <span class="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full">UI/UX
-                Design</span>
-              <span class="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full">App
-                Design</span>
-              <span
-                class="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full">Wireframe</span>
-            </div>
-
-            <!-- Project Title & Link Button -->
-            <div class="flex items-center justify-between mt-auto gap-4">
-              <h3 class="text-2xl font-headline font-bold text-green leading-snug">
-                Beauty Product - Ecommerce Mobile App Solution
-              </h3>
-              <div
-                class="w-12 h-12 shrink-0 bg-green text-white rounded-full flex items-center justify-center shadow-md group-hover:bg-yellow transition-colors duration-300">
-                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 2 -->
-          <div
-            class="bg-white p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col h-full border border-black/5 group cursor-pointer">
-            <!-- Project Image Container -->
-            <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-8 bg-grey">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
-                alt="Mobile App Landing Page"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-
-            <!-- Project Tags -->
-            <div class="flex flex-wrap gap-3 mb-6">
-              <span class="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full">UI/UX
-                Design</span>
-              <span class="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full">Web
-                Design</span>
-              <span
-                class="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full">Wireframe</span>
-            </div>
-
-            <!-- Project Title & Link Button -->
-            <div class="flex items-center justify-between mt-auto gap-4">
-              <h3 class="text-2xl font-headline font-bold text-green leading-snug">
-                Beauty Product Mobile App Landing Page Design
-              </h3>
-              <div
-                class="w-12 h-12 shrink-0 bg-green text-white rounded-full flex items-center justify-center shadow-md group-hover:bg-yellow transition-colors duration-300">
-                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
     <!-- NEW Education & Work Experience Section -->
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-8">
@@ -938,6 +832,119 @@
       </div>
     </section>
 
+    <!-- NEW FAQs Section -->
+    <section class="py-24 text-white bg-green">
+      <div class="max-w-4xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="w-4 h-[2px] bg-yellow"></span>
+            <p class="font-headline font-bold text-[15px] tracking-wide text-white">FAQs</p>
+          </div>
+          <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-white leading-tight">
+            Questions? <span class="text-yellow italic font-normal">Look here.</span>
+          </h2>
+        </div>
+        <div class="space-y-4" id="faqs-container">
+          <!-- FAQ 1 -->
+          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-headline text-lg font-bold">What industries have you worked in as a product designer?</span>
+              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              I have worked across a variety of industries including FinTech, Healthcare, E-commerce, and Education. This diverse experience allows me to bring unique perspectives and proven methodologies to each new project.
+            </div>
+          </details>
+          <!-- FAQ 2 (Active) -->
+          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white" open>
+            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+               <span class="font-headline text-lg font-bold">Can I download your resume/CV for information?</span>
+              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              Certainly! You can download my resume/CV directly from my website. It provides a comprehensive overview of my education, work experience, and design achievements.
+            </div>
+          </details>
+          <!-- FAQ 3 -->
+          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-headline text-lg font-bold">Are you available for freelance design work?</span>
+              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              Yes, I am currently available for selected freelance projects. If you have an exciting concept or need a product overhaul, feel free to reach out via the contact form above!
+            </div>
+          </details>
+          <!-- FAQ 4 -->
+          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-headline text-lg font-bold">What tools do you use for your design work?</span>
+              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              My primary design tool is Figma, which I use for everything from wireframing to high-fidelity prototyping. I also heavily use tools from the Adobe CC suite, Framer, and Webflow depending on project requirements.
+            </div>
+          </details>
+          <!-- FAQ 5 -->
+          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-headline text-lg font-bold">How do I navigate through your portfolio projects?</span>
+              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              You can explore my projects using the "My Portfolio" section on the homepage, or via the navigation menu. Each project is tagged dynamically giving you the ability to view specifically UI/UX, or Web Design focused works.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- NEW News & Blogs Section -->
+    <section class="py-24 bg-grey" id="blogs">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-4 h-[2px] bg-yellow"></div>
+              <span class="font-headline font-bold text-green tracking-wide">News &amp; Blogs</span>
+            </div>
+            <h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
+              <span class="text-green">Our Latest</span>
+              <span class="text-yellow italic font-normal"> News &amp; Blogs</span>
+            </h2>
+          </div>
+          <a href="blogs.html"
+            class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
+            <span
+              class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
+              View All Blogs
+            </span>
+            <div
+              class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform">
+              <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8" id="blogs-grid"></div>
+      </div>
+    </section>
     <!-- Contact Us Section -->
     <section class="py-24 bg-green text-white" id="contact">
       <div class="max-w-7xl mx-auto px-8">
@@ -1087,356 +1094,7 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-24 px-6 md:px-12 bg-white">
-      <div class="max-w-7xl mx-auto">
-        <!-- Header -->
-        <div class="text-center mb-16">
-          <div class="flex items-center justify-center gap-2 mb-4">
-            <span class="w-4 h-[2px] bg-yellow"></span>
-            <p class="font-headline font-bold text-[15px] tracking-wide text-green">Clients Testimonials</p>
-          </div>
-          <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-green leading-tight">
-            The Impact of My Work:<br />
-            <span class="text-yellow italic font-normal">Client Testimonials</span>
-          </h2>
-        </div>
-        <!-- Testimonials Grid/Slider Container -->
-        <div class="relative">
-          <!-- Decorative Background Shapes -->
-          <div class="absolute -top-10 -left-10 w-64 h-64 bg-grey organic-blob opacity-50 -z-10 blur-3xl"></div>
-          <div class="absolute -bottom-10 -right-10 w-80 h-80 bg-yellow organic-blob opacity-10 -z-10 blur-3xl"></div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Testimonial Card 1 -->
-            <div
-              class="bg-white p-10 rounded-lg shadow-lg flex flex-col justify-between group transition-all duration-300 hover:-translate-y-2">
-              <div>
-                <div class="flex items-center gap-2 mb-6">
-                  <span class="text-green/80 font-bold text-lg">5.0</span>
-                  <div class="flex text-yellow">
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                  </div>
-                </div>
-                <p class="text-green/80 text-lg leading-relaxed mb-10 italic">
-                  "Sed ut perspiciatis unde omnis iste natus error sit
-                  voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab illo inventore veritatis et
-                  quasi architecto beatae vitae."
-                </p>
-              </div>
-              <div class="flex items-center gap-4">
-                <div class="relative">
-                  <div class="absolute inset-0 bg-yellow organic-blob -z-10 -rotate-12 translate-x-1 translate-y-1">
-                  </div>
-                  <img alt="Leslie Alexander" class="w-14 h-14 rounded-full object-cover border-2 border-white"
-                    data-alt="Professional headshot of a smiling woman with glasses, soft studio lighting, high-end editorial style portrait"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdMpKx8HVdixgztj2C0ugS7ZXvtOha-_0r7u-fQbG3FHo2m2QE7oHvCZuwg-QOVANMs1gXj-etk8UNXrRt3CMrFAJ_wu3-UwO3NBOjKqJf_V5HymjUIO3Jf-1RD5Gxptb-jOMbgtmcCwXezikjRCTHwigmESilg7HgRar-AHbiRFmJqM924tFRM57qBiAmDsKKM2HPxg6Ua500oYOsM7rbQk2vclZIuCGd6QFDdlGvjHx5Db970H_e4XIMGMdHQ8MeOz_Ms9nG0jwG" />
-                </div>
-                <div>
-                  <h4 class="font-bold text-green">Leslie Alexander</h4>
-                  <p class="text-sm text-green/80">
-                    Founder, EV Charger Station
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Testimonial Card 2 -->
-            <div
-              class="bg-white p-10 rounded-lg shadow-lg flex flex-col justify-between group transition-all duration-300 hover:-translate-y-2">
-              <div>
-                <div class="flex items-center gap-2 mb-6">
-                  <span class="text-green/80 font-bold text-lg">5.0</span>
-                  <div class="flex text-yellow">
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                  </div>
-                </div>
-                <p class="text-green/80 text-lg leading-relaxed mb-10 italic">
-                  "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia consequuntur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque porro quisquam
-                  est."
-                </p>
-              </div>
-              <div class="flex items-center gap-4">
-                <div class="relative">
-                  <div class="absolute inset-0 bg-yellow organic-blob -z-10 rotate-45 -translate-x-1 translate-y-1">
-                  </div>
-                  <img alt="Albert Flores" class="w-14 h-14 rounded-full object-cover border-2 border-white"
-                    data-alt="Professional headshot of a middle-aged man in a dark suit, warm natural lighting, confident expression, editorial business portrait"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQUCHThmjJwzG83wQxBF5GCzuFjcaeJLXXSXA3WgVqOBEcuFfPP__Z_XbtTXYCVve2GKEh9OtCRermpnXuLPT240xYZ4ek2Aj5TW_Rs3LJCPTqrFyzL5dnhk7rpKWaqt0_RjQjHup5G2L82n13Y5SwTApsfpY3TVq2f3vTJiMSCZs6xuaBnggcfCC8Z8xqImYb4GH6vmPVTuNfItE3Gz6YwDCROzcxUE2kn-mPfDg26Z4leTsqDSpJQzMMzKOHceepZHa_Bw3wSF2Q" />
-                </div>
-                <div>
-                  <h4 class="font-bold text-green">Albert Flores</h4>
-                  <p class="text-sm text-green/80">
-                    Marketing Director, FinTech
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Testimonial Card 3 (Hidden on mobile for slider-feel) -->
-            <div
-              class="hidden lg:flex bg-white p-10 rounded-lg shadow-lg flex-col justify-between group transition-all duration-300 hover:-translate-y-2">
-              <div>
-                <div class="flex items-center gap-2 mb-6">
-                  <span class="text-green/80 font-bold text-lg">5.0</span>
-                  <div class="flex text-yellow">
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                    <span class="material-symbols-outlined filled-icon"
-                      style="font-variation-settings: &quot;FILL&quot; 1">star</span>
-                  </div>
-                </div>
-                <p class="text-green/80 text-lg leading-relaxed mb-10 italic">
-                  "Quis autem vel eum iure reprehenderit qui in ea voluptate
-                  velit esse quam nihil molestiae consequatur, vel illum qui
-                  dolorem eum fugiat quo voluptas nulla pariatur."
-                </p>
-              </div>
-              <div class="flex items-center gap-4">
-                <div class="relative">
-                  <div class="absolute inset-0 bg-yellow organic-blob -z-10 rotate-180 -translate-x-1 -translate-y-1">
-                  </div>
-                  <img alt="Jenny Wilson" class="w-14 h-14 rounded-full object-cover border-2 border-white"
-                    data-alt="Professional close-up portrait of a woman with a kind smile, minimal background, soft morning light, editorial feel"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXCJLTShBgNL-YWpmLOre9IhRfzmL9HQe3xhwgi8m8xnZIiazLSll0oeTkbe9AbIAtsWgHMnI0qLwdeye2upbdlSrKPfC4NiAtlAK2Trl4gSruQ9lewn0dXLAv8eqCohXA9ZEArN9LLnAMA8du_fbgcsMGsLA_3lf9q7D6y9ZtV2MV8sggPoOFzrBPNPJmkGj6av6B0WXL_Waby458bovZyYxhNOXz7IAM_twgr_SZajGKAWTMa9ga6ZJvFMm6ypXNyKrQuKq6gQe-" />
-                </div>
-                <div>
-                  <h4 class="font-bold text-green">Jenny Wilson</h4>
-                  <p class="text-sm text-green/80">CEO, Creative Flow</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Navigation Arrows -->
-          <div class="flex justify-center items-center gap-4 mt-16">
-            <button
-              class="w-12 h-12 rounded-full bg-green text-yellow flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 duration-300">
-              <span class="material-symbols-outlined text-2xl font-bold">west</span>
-            </button>
-            <button
-              class="w-12 h-12 rounded-full bg-yellow text-green flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 duration-300">
-              <span class="material-symbols-outlined text-2xl font-bold">east</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- NEW News & Blogs Section -->
-    <section class="py-24 bg-grey" id="blogs">
-      <div class="max-w-7xl mx-auto px-8">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-          <div class="flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="w-4 h-[2px] bg-yellow"></div>
-              <span class="font-headline font-bold text-green tracking-wide">News &amp; Blogs</span>
-            </div>
-            <h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
-              <span class="text-green">Our Latest</span>
-              <span class="text-yellow italic font-normal"> News &amp; Blogs</span>
-            </h2>
-          </div>
-          <button
-            class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
-            <span
-              class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
-              View All Blogs
-            </span>
-            <div
-              class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform">
-              <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
-                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-              </svg>
-            </div>
-          </button>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Blog 1 -->
-          <div class="bg-white rounded-3xl overflow-hidden editorial-shadow group flex flex-col h-full">
-            <div class="relative aspect-[4/3] overflow-hidden shrink-0">
-              <img alt="Blog" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpps3w2IDlD0RzfV6lIZ7qlVBjq6xK4smeM0lnU24uQ6KqiUGNY8tLAeqzqywpYa7Qu6vORIYus53ULyucIyoNUURL48s1zP5f-O9qPPWNXf8u5jfV5DJWJp15BM6aPbApUIr5gHdC4J5QPKHyEpynZJDwmGv9MSgL7FTQcGtYES0vUW1_VZjkKbOWu4KraFberKR-lJyWRQYhAOsZb_aO9upBn9RTQ8Qh0FdJx_YlL_fx1qE5reyQONCoFDuLUf9UWk9Vs4pzSNnR" />
-              <div class="absolute inset-0 bg-green/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            </div>
-            <div class="p-8 flex flex-col grow">
-              <div class="flex items-center gap-3 mb-4">
-                <span
-                  class="bg-yellow text-green text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">App
-                  UI/UX Design</span>
-                <span class="text-green/80 text-xs font-bold">21 May 2024</span>
-              </div>
-              <h3
-                class="font-headline text-xl font-bold text-green mb-4 leading-snug group-hover:text-yellow transition-colors">
-                Minimalist UI Design: Benefits and Best Practices
-              </h3>
-              <p class="text-green/80 text-sm line-clamp-2 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor...
-              </p>
-              <a class="inline-flex items-center font-bold text-green border-b-2 border-green/20 hover:border-yellow transition-colors mt-auto w-fit"
-                href="#">Read More</a>
-            </div>
-          </div>
-          <!-- Blog 2 -->
-          <div class="bg-white rounded-3xl overflow-hidden editorial-shadow group flex flex-col h-full">
-            <div class="relative aspect-[4/3] overflow-hidden shrink-0">
-              <img alt="Blog" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsn8db4kti2EgfRqE5KVsNpWGNDV6AcZEmccdMOtMksOMGBrKb7xVXACii_NIRTuh0HUdZQ8VmJYbPnN9luwPaf6k6kdwV94U1f1GeCS6cWTw5LwitGFSrLNV58AJsGObkuJ6M11sut00-0rUCd13UXL8IcSeH6zaFygcOJZeuqWvROcXrFBj4pyMZSfVVH9-Tbpf37_1MSFmzu0oL06uhsWEgq5q3fXjUHsSZmzujYauGQF6d6otMqpCh0jve_8mThjzioZ7oJukP" />
-            </div>
-            <div class="p-8 flex flex-col grow">
-              <div class="flex items-center gap-3 mb-4">
-                <span
-                  class="bg-yellow text-green text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Website
-                  UI/UX Design</span>
-                <span class="text-green/80 text-xs font-bold">20 May 2024</span>
-              </div>
-              <h3
-                class="font-headline text-xl font-bold text-green mb-4 leading-snug group-hover:text-yellow transition-colors">
-                Improving User Experience: Best Practices for Web Design
-              </h3>
-              <p class="text-green/80 text-sm line-clamp-2 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor...
-              </p>
-              <a class="inline-flex items-center font-bold text-green border-b-2 border-green/20 hover:border-yellow transition-colors mt-auto w-fit"
-                href="#">Read More</a>
-            </div>
-          </div>
-          <!-- Blog 3 -->
-          <div class="bg-white rounded-3xl overflow-hidden editorial-shadow group flex flex-col h-full">
-            <div class="relative aspect-[4/3] overflow-hidden shrink-0">
-              <img alt="Blog" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_SnnDKGpoTgUEDDwnZAHDKnX2MISMSHN7m6QdlRyrjS2hN40hWtpOZFRiL8ezL9Yg0clS0BRc_mVsEY-wcFSAHygeHf44t9Hlo5nd1P_qaktE5qooSV2_TDYi7gH_hFajeMC_W-MWxF-Nd7qh8PslZsuZW-oC_2FvTykRopkyNNQ4dccbB29DTcFS_y-1d5KRoEaflU9vFMDhE3yp9lM8FpPD6o2nqjzC0JnA1Yv0zaKooN3vXbdESf3kKQAXqt95t88YMRmBi6Kt" />
-            </div>
-            <div class="p-8 flex flex-col grow">
-              <div class="flex items-center gap-3 mb-4">
-                <span
-                  class="bg-yellow text-green text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Color
-                  Theory</span>
-                <span class="text-green/80 text-xs font-bold">19 May 2024</span>
-              </div>
-              <h3
-                class="font-headline text-xl font-bold text-green mb-4 leading-snug group-hover:text-yellow transition-colors">
-                Understanding the Color Wheel: Basics Every Designer Should
-                Know
-              </h3>
-              <p class="text-green/80 text-sm line-clamp-2 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor...
-              </p>
-              <a class="inline-flex items-center font-bold text-green border-b-2 border-green/20 hover:border-yellow transition-colors mt-auto w-fit"
-                href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- NEW FAQs Section -->
-    <section class="py-24 text-white bg-green">
-      <div class="max-w-4xl mx-auto px-8">
-        <div class="text-center mb-16">
-          <div class="flex items-center justify-center gap-2 mb-4">
-            <span class="w-4 h-[2px] bg-yellow"></span>
-            <p class="font-headline font-bold text-[15px] tracking-wide text-white">FAQs</p>
-          </div>
-          <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-white leading-tight">
-            Questions? <span class="text-yellow italic font-normal">Look here.</span>
-          </h2>
-        </div>
-        <div class="space-y-4">
-          <!-- FAQ 1 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <span class="font-headline text-lg font-bold">What industries have you worked in as a product designer?</span>
-              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
-              </div>
-            </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              I have worked across a variety of industries including FinTech, Healthcare, E-commerce, and Education. This diverse experience allows me to bring unique perspectives and proven methodologies to each new project.
-            </div>
-          </details>
-          <!-- FAQ 2 (Active) -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white" open>
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-               <span class="font-headline text-lg font-bold">Can I download your resume/CV for information?</span>
-              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
-              </div>
-            </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              Certainly! You can download my resume/CV directly from my website. It provides a comprehensive overview of my education, work experience, and design achievements.
-            </div>
-          </details>
-          <!-- FAQ 3 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <span class="font-headline text-lg font-bold">Are you available for freelance design work?</span>
-              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
-              </div>
-            </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              Yes, I am currently available for selected freelance projects. If you have an exciting concept or need a product overhaul, feel free to reach out via the contact form above!
-            </div>
-          </details>
-          <!-- FAQ 4 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <span class="font-headline text-lg font-bold">What tools do you use for your design work?</span>
-              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
-              </div>
-            </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              My primary design tool is Figma, which I use for everything from wireframing to high-fidelity prototyping. I also heavily use tools from the Adobe CC suite, Framer, and Webflow depending on project requirements.
-            </div>
-          </details>
-          <!-- FAQ 5 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <span class="font-headline text-lg font-bold">How do I navigate through your portfolio projects?</span>
-              <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
-              </div>
-            </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              You can explore my projects using the "My Portfolio" section on the homepage, or via the navigation menu. Each project is tagged dynamically giving you the ability to view specifically UI/UX, or Web Design focused works.
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- Footer Section -->
+    <!-- Footer Section -->
   <footer class="bg-white pt-24">
     <div class="max-w-7xl mx-auto px-8 pb-16">
       <!-- Let's Connect Row -->
@@ -1444,7 +1102,7 @@
         <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-green">
           Let's <span class="text-yellow italic font-normal">Connect</span> there
         </h2>
-        <button
+        <a href="blogs.html"
           class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
           <span
             class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
@@ -1456,7 +1114,7 @@
               <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
             </svg>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-black/5 pt-16">
@@ -1587,6 +1245,8 @@
       <span class="material-symbols-outlined">person</span>
     </a>
   </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
