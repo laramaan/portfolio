@@ -105,40 +105,44 @@
         transform: translateX(-100%);
       }
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
 <body class="bg-white text-green min-h-screen">
   <!-- TopNavBar: Execution of Shared Component JSON -->
-  <nav
+    <nav
     class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-green dark:bg-green rounded-full mt-6 mx-auto w-[95%] max-w-7xl px-6 py-3 shadow-xl font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-wide">
     <!-- Logo Section -->
-    <div class="text-xl font-black text-white flex items-center gap-2">
+    <a href="index.html" class="text-xl font-black text-white flex items-center gap-2 cursor-pointer no-underline group hover:opacity-90">
       <div class="w-8 h-8 rounded-full bg-yellow flex items-center justify-center text-green text-base font-black">
         O
       </div>
       <span>Olivia.</span>
-    </div>
+    </a>
     <!-- Center Navigation -->
-    <div class="hidden md:flex items-center gap-8">
-      <a class="text-yellow font-bold border-b-2 border-[#feb300] pb-1 hover:scale-105 transition-transform duration-200"
-        href="#home">Home</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#services">Services</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#portfolio">Projects</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#about">About</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#blogs">Blogs</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#contact">Contact</a>
+    <div class="hidden md:flex items-center gap-8 nav-links-container">
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#home">Home</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#services">Services</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#portfolio">Projects</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#about">About</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#experience">Experience</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#blogs">Blogs</a>
     </div>
     <!-- Primary Action -->
-    <button
-      class="bg-white text-green px-6 py-2.5 rounded-full font-bold hover:scale-105 active:scale-95 transition-all duration-200">
+    <a href="index.html#contact"
+      class="bg-white text-green px-6 py-2.5 rounded-full font-bold hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer">
       Contact Me
-    </button>
+    </a>
   </nav>
   <!-- Hero Section (Based on IMAGE_4) -->
   <!-- Hero Section -->
@@ -203,8 +207,8 @@
         </div>
 
         <!-- Spinner Badge (Top Right) -->
-        <div
-          class="absolute -top-4 -right-2 w-32 h-32 bg-green rounded-full flex justify-center items-center shadow-2xl p-2 z-30">
+        <a href="index.html#contact"
+          class="absolute -top-4 -right-2 w-32 h-32 bg-green rounded-full flex justify-center items-center shadow-2xl p-2 z-30 hover:scale-105 transition-transform duration-300 block cursor-pointer">
           <svg viewBox="0 0 100 100" class="w-full h-full text-white fill-current animate-[spin_10s_linear_infinite]">
             <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent">
             </path>
@@ -222,7 +226,7 @@
               </svg>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Product Designer Pill (Bottom Left) -->
         <div class="absolute bottom-6 -left-16 z-30 hover:-translate-y-2 transition-transform">
@@ -369,8 +373,8 @@
       </div>
     </section>
     <!-- Testimonials Section -->
-    <section class="py-24 px-6 md:px-12 bg-white">
-      <div class="max-w-7xl mx-auto">
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
         <!-- Header -->
         <div class="text-center mb-16">
           <div class="flex items-center justify-center gap-2 mb-4">
@@ -744,7 +748,7 @@
     </section>
 
     <!-- NEW Education & Work Experience Section -->
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-white" id="experience">
       <div class="max-w-7xl mx-auto px-8">
         <!-- Header -->
         <div class="text-center mb-16">
@@ -833,7 +837,7 @@
     </section>
 
     <!-- NEW FAQs Section -->
-    <section class="py-24 text-white bg-green">
+    <section class="py-24 text-white bg-green" id="faq">
       <div class="max-w-4xl mx-auto px-8">
         <div class="text-center mb-16">
           <div class="flex items-center justify-center gap-2 mb-4">
@@ -846,68 +850,102 @@
         </div>
         <div class="space-y-4" id="faqs-container">
           <!-- FAQ 1 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <span class="font-headline text-lg font-bold">What industries have you worked in as a product designer?</span>
+          <details
+            class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary
+              class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-headline text-lg font-bold">What industries have you worked in as a product
+                designer?</span>
               <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+                <span
+                  class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span
+                  class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
               </div>
             </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              I have worked across a variety of industries including FinTech, Healthcare, E-commerce, and Education. This diverse experience allows me to bring unique perspectives and proven methodologies to each new project.
+            <div
+              class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              I have worked across a variety of industries including FinTech, Healthcare, E-commerce, and Education.
+              This diverse experience allows me to bring unique perspectives and proven methodologies to each new
+              project.
             </div>
           </details>
           <!-- FAQ 2 (Active) -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white" open>
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-               <span class="font-headline text-lg font-bold">Can I download your resume/CV for information?</span>
+          <details
+            class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white"
+            open>
+            <summary
+              class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-headline text-lg font-bold">Can I download your resume/CV for information?</span>
               <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+                <span
+                  class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span
+                  class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
               </div>
             </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              Certainly! You can download my resume/CV directly from my website. It provides a comprehensive overview of my education, work experience, and design achievements.
+            <div
+              class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              Certainly! You can download my resume/CV directly from my website. It provides a comprehensive overview of
+              my education, work experience, and design achievements.
             </div>
           </details>
           <!-- FAQ 3 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+          <details
+            class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary
+              class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
               <span class="font-headline text-lg font-bold">Are you available for freelance design work?</span>
               <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+                <span
+                  class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span
+                  class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
               </div>
             </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              Yes, I am currently available for selected freelance projects. If you have an exciting concept or need a product overhaul, feel free to reach out via the contact form above!
+            <div
+              class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              Yes, I am currently available for selected freelance projects. If you have an exciting concept or need a
+              product overhaul, feel free to reach out via the contact form above!
             </div>
           </details>
           <!-- FAQ 4 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+          <details
+            class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary
+              class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
               <span class="font-headline text-lg font-bold">What tools do you use for your design work?</span>
               <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+                <span
+                  class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span
+                  class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
               </div>
             </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              My primary design tool is Figma, which I use for everything from wireframing to high-fidelity prototyping. I also heavily use tools from the Adobe CC suite, Framer, and Webflow depending on project requirements.
+            <div
+              class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              My primary design tool is Figma, which I use for everything from wireframing to high-fidelity prototyping.
+              I also heavily use tools from the Adobe CC suite, Framer, and Webflow depending on project requirements.
             </div>
           </details>
           <!-- FAQ 5 -->
-          <details class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
-            <summary class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+          <details
+            class="group bg-white/10 rounded-2xl overflow-hidden transition-all duration-300 open:bg-yellow open:text-green text-white">
+            <summary
+              class="w-full p-6 flex justify-between items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden">
               <span class="font-headline text-lg font-bold">How do I navigate through your portfolio projects?</span>
               <div class="relative w-6 h-6 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
-                <span class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
+                <span
+                  class="material-symbols-outlined absolute transition-opacity duration-200 group-open:opacity-0">add</span>
+                <span
+                  class="material-symbols-outlined absolute opacity-0 transition-opacity duration-200 group-open:opacity-100">remove</span>
               </div>
             </summary>
-            <div class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
-              You can explore my projects using the "My Portfolio" section on the homepage, or via the navigation menu. Each project is tagged dynamically giving you the ability to view specifically UI/UX, or Web Design focused works.
+            <div
+              class="px-6 pb-6 text-sm leading-relaxed opacity-90 border-t border-transparent group-open:border-green/10 mt-2">
+              You can explore my projects using the "My Portfolio" section on the homepage, or via the navigation menu.
+              Each project is tagged dynamically giving you the ability to view specifically UI/UX, or Web Design
+              focused works.
             </div>
           </details>
         </div>
@@ -915,193 +953,19 @@
     </section>
   </main>
   <!-- NEW News & Blogs Section -->
-    <section class="py-24 bg-grey" id="blogs">
-      <div class="max-w-7xl mx-auto px-8">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-          <div class="flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="w-4 h-[2px] bg-yellow"></div>
-              <span class="font-headline font-bold text-green tracking-wide">News &amp; Blogs</span>
-            </div>
-            <h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
-              <span class="text-green">Our Latest</span>
-              <span class="text-yellow italic font-normal"> News &amp; Blogs</span>
-            </h2>
+  <section class="py-24 bg-grey" id="blogs">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-4 h-[2px] bg-yellow"></div>
+            <span class="font-headline font-bold text-green tracking-wide">News &amp; Blogs</span>
           </div>
-          <a href="blogs.html"
-            class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
-            <span
-              class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
-              View All Blogs
-            </span>
-            <div
-              class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform">
-              <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
-                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-              </svg>
-            </div>
-          </a>
+          <h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
+            <span class="text-green">Our Latest</span>
+            <span class="text-yellow italic font-normal"> News &amp; Blogs</span>
+          </h2>
         </div>
-        <div class="grid md:grid-cols-3 gap-8" id="blogs-grid"></div>
-      </div>
-    </section>
-    <!-- Contact Us Section -->
-    <section class="py-24 bg-green text-white" id="contact">
-      <div class="max-w-7xl mx-auto px-8">
-        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          <!-- Left Content -->
-          <div class="flex flex-col">
-            <div class="flex items-center gap-2 mb-4">
-              <span class="w-4 h-[2px] bg-yellow"></span>
-              <p class="font-headline font-bold text-[15px] tracking-wide text-white">Contact Us</p>
-            </div>
-            <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-white leading-[1.1] tracking-tight mb-8">
-              Let's Talk for <span class="text-yellow italic font-normal">Your<br />Next Projects</span>
-            </h2>
-            <p class="text-white/70 text-lg leading-relaxed font-body mb-12 max-w-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-
-            <div class="space-y-6">
-              <!-- Detail Item -->
-              <div class="flex items-center gap-5">
-                <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-green text-[22px]"
-                    data-icon="phone_in_talk">phone_in_talk</span>
-                </div>
-                <span class="text-white text-lg font-body">+1 (406) 555-0120</span>
-              </div>
-              <!-- Detail Item -->
-              <div class="flex items-center gap-5">
-                <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-green text-[22px]" data-icon="mail">mail</span>
-                </div>
-                <span class="text-white text-lg font-body">example@gmail.com</span>
-              </div>
-              <!-- Detail Item -->
-              <div class="flex items-center gap-5">
-                <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
-                  <span class="text-green text-[22px] font-bold mt-0.5">S</span>
-                </div>
-                <span class="text-white text-lg font-body">example</span>
-              </div>
-              <!-- Detail Item -->
-              <div class="flex items-start gap-5 pt-1">
-                <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0 mt-1">
-                  <span class="material-symbols-outlined text-green text-[22px]"
-                    data-icon="location_on">location_on</span>
-                </div>
-                <span class="text-white text-lg font-body leading-relaxed max-w-[250px] mt-2">2464 Royal Ln. Mesa, New
-                  Jersey 45463</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Form -->
-          <div class="flex flex-col mt-2 lg:mt-0">
-            <form class="flex flex-col gap-6">
-              <!-- Row 1 -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex flex-col gap-2">
-                  <label class="font-headline font-bold text-white text-[15px]">Your Name *</label>
-                  <input type="text" placeholder="Ex. John Doe"
-                    class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:border-yellow transition-colors placeholder:text-white/30">
-                </div>
-                <div class="flex flex-col gap-2">
-                  <label class="font-headline font-bold text-white text-[15px]">Email *</label>
-                  <input type="email" placeholder="example@gmail.com"
-                    class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:border-yellow transition-colors placeholder:text-white/30">
-                </div>
-              </div>
-
-              <!-- Row 2 -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex flex-col gap-2">
-                  <label class="font-headline font-bold text-white text-[15px]">Phone *</label>
-                  <input type="tel" placeholder="Enter Phone Number"
-                    class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:border-yellow transition-colors placeholder:text-white/30">
-                </div>
-                <div class="flex flex-col gap-2 relative z-0">
-                  <label class="font-headline font-bold text-white text-[15px]">I'm Interested in *</label>
-                  <select
-                    class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/40 font-body outline-none focus:border-yellow transition-colors appearance-none cursor-pointer">
-                    <option value="" disabled selected>Select</option>
-                    <option value="uiux" class="text-green/80">UI/UX Design</option>
-                    <option value="web" class="text-green/80">Web Development</option>
-                  </select>
-                  <div class="absolute right-5 top-[46px] pointer-events-none text-white/60">
-                    <span class="material-symbols-outlined text-[20px]">expand_more</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Row 3 -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex flex-col gap-2 relative z-0">
-                  <label class="font-headline font-bold text-white text-[15px]">Budget Range (USD) *</label>
-                  <select
-                    class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/40 font-body outline-none focus:border-yellow transition-colors appearance-none cursor-pointer">
-                    <option value="" disabled selected>Select Range</option>
-                    <option value="1k-5k" class="text-green/80">$1,000 - $5,000</option>
-                    <option value="5k-10k" class="text-green/80">$5,000 - $10,000</option>
-                  </select>
-                  <div class="absolute right-5 top-[46px] pointer-events-none text-white/60">
-                    <span class="material-symbols-outlined text-[20px]">expand_more</span>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-2 relative z-0">
-                  <label class="font-headline font-bold text-white text-[15px]">Country*</label>
-                  <select
-                    class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/40 font-body outline-none focus:border-yellow transition-colors appearance-none cursor-pointer">
-                    <option value="" disabled selected>Select Country</option>
-                    <option value="us" class="text-green/80">United States</option>
-                    <option value="uk" class="text-green/80">United Kingdom</option>
-                  </select>
-                  <div class="absolute right-5 top-[46px] pointer-events-none text-white/60">
-                    <span class="material-symbols-outlined text-[20px]">expand_more</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Message -->
-              <div class="flex flex-col gap-2">
-                <label class="font-headline font-bold text-white text-[15px]">Your Message *</label>
-                <textarea rows="5" placeholder="Enter here.."
-                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:border-yellow transition-colors placeholder:text-white/30 resize-none"></textarea>
-              </div>
-
-              <!-- Submit Button -->
-              <div class="mt-4">
-                <button type="submit"
-                  class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
-                  <span
-                    class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
-                    Submit
-                  </span>
-                  <div
-                    class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform relative z-10">
-                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
-                      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-  <footer class="bg-white pt-24">
-    <div class="max-w-7xl mx-auto px-8 pb-16">
-      <!-- Let's Connect Row -->
-      <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
-        <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-green">
-          Let's <span class="text-yellow italic font-normal">Connect</span> there
-        </h2>
         <a href="blogs.html"
           class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
           <span
@@ -1116,6 +980,162 @@
           </div>
         </a>
       </div>
+      <div class="grid md:grid-cols-3 gap-8" id="blogs-grid"></div>
+    </div>
+  </section>
+  <!-- Contact Us Section -->
+  <section class="py-24 bg-green text-white" id="contact">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <!-- Left Content -->
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="w-4 h-[2px] bg-yellow"></span>
+            <p class="font-headline font-bold text-[15px] tracking-wide text-white">Contact Us</p>
+          </div>
+          <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-white leading-[1.1] tracking-tight mb-8">
+            Let's Talk for <span class="text-yellow italic font-normal">Your<br />Next Projects</span>
+          </h2>
+          <p class="text-white/70 text-lg leading-relaxed font-body mb-12 max-w-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+
+          <div class="space-y-6">
+            <!-- Detail Item -->
+            <div class="flex items-center gap-5">
+              <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-green text-[22px]"
+                  data-icon="phone_in_talk">phone_in_talk</span>
+              </div>
+              <span class="text-white text-lg font-body">+1 (406) 555-0120</span>
+            </div>
+            <!-- Detail Item -->
+            <div class="flex items-center gap-5">
+              <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-green text-[22px]" data-icon="mail">mail</span>
+              </div>
+              <span class="text-white text-lg font-body">example@gmail.com</span>
+            </div>
+            <!-- Detail Item -->
+            <div class="flex items-center gap-5">
+              <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
+                <span class="text-green text-[22px] font-bold mt-0.5">S</span>
+              </div>
+              <span class="text-white text-lg font-body">example</span>
+            </div>
+            <!-- Detail Item -->
+            <div class="flex items-start gap-5 pt-1">
+              <div class="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0 mt-1">
+                <span class="material-symbols-outlined text-green text-[22px]"
+                  data-icon="location_on">location_on</span>
+              </div>
+              <span class="text-white text-lg font-body leading-relaxed max-w-[250px] mt-2">2464 Royal Ln. Mesa, New
+                Jersey 45463</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="flex flex-col mt-2 lg:mt-0">
+          <form class="flex flex-col gap-6">
+            <!-- Row 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col gap-2">
+                <label class="font-headline font-bold text-white text-[15px]">Your Name *</label>
+                <input type="text" placeholder="Ex. John Doe"
+                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/30">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="font-headline font-bold text-white text-[15px]">Email *</label>
+                <input type="email" placeholder="example@gmail.com"
+                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/30">
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col gap-2">
+                <label class="font-headline font-bold text-white text-[15px]">Phone *</label>
+                <input type="tel" placeholder="Enter Phone Number"
+                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/30">
+              </div>
+              <div class="flex flex-col gap-2 relative z-0">
+                <label class="font-headline font-bold text-white text-[15px]">I'm Interested in *</label>
+                <select
+                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/40 font-body outline-none focus:ring-0 focus:border-yellow transition-colors appearance-none cursor-pointer">
+                  <option value="" disabled selected>Select</option>
+                  <option value="uiux" class="text-green/80">UI/UX Design</option>
+                  <option value="web" class="text-green/80">Web Development</option>
+                </select>
+                <div class="absolute right-5 top-[46px] pointer-events-none text-white/60">
+                  <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col gap-2 relative z-0">
+                <label class="font-headline font-bold text-white text-[15px]">Budget Range (USD) *</label>
+                <select
+                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/40 font-body outline-none focus:ring-0 focus:border-yellow transition-colors appearance-none cursor-pointer">
+                  <option value="" disabled selected>Select Range</option>
+                  <option value="1k-5k" class="text-green/80">$1,000 - $5,000</option>
+                  <option value="5k-10k" class="text-green/80">$5,000 - $10,000</option>
+                </select>
+                <div class="absolute right-5 top-[46px] pointer-events-none text-white/60">
+                  <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2 relative z-0">
+                <label class="font-headline font-bold text-white text-[15px]">Country*</label>
+                <select
+                  class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/40 font-body outline-none focus:ring-0 focus:border-yellow transition-colors appearance-none cursor-pointer">
+                  <option value="" disabled selected>Select Country</option>
+                  <option value="us" class="text-green/80">United States</option>
+                  <option value="uk" class="text-green/80">United Kingdom</option>
+                </select>
+                <div class="absolute right-5 top-[46px] pointer-events-none text-white/60">
+                  <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="flex flex-col gap-2">
+              <label class="font-headline font-bold text-white text-[15px]">Your Message *</label>
+              <textarea rows="5" placeholder="Enter here.."
+                class="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/30 resize-none"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-4">
+              <button type="submit"
+                class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
+                <span
+                  class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
+                  Submit
+                </span>
+                <div
+                  class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform relative z-10">
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 ml-0.5">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-white pt-24">
+    <div class="max-w-7xl mx-auto px-8 pb-16">
+      
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-black/5 pt-16">
         <!-- Brand Info -->
@@ -1171,12 +1191,12 @@
         <div class="md:col-span-2">
           <h4 class="text-yellow font-bold text-lg mb-8 font-headline">Navigation</h4>
           <ul class="space-y-4 font-body text-sm">
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">Home</a></li>
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">Services</a></li>
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">About</a></li>
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">Projects</a></li>
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">Blogs</a></li>
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">FAQs</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#home">Home</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#services">Services</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#about">About</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#portfolio">Projects</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#blogs">Blogs</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#faq">FAQs</a></li>
           </ul>
         </div>
 
@@ -1202,7 +1222,8 @@
             <input
               class="bg-transparent border-none focus:ring-0 text-green px-4 py-3 w-full placeholder:text-green/40 text-sm font-body"
               placeholder="Email address" type="email" />
-            <button class="bg-green text-yellow px-5 py-3 hover:bg-green/90 transition-colors flex items-center justify-center">
+            <button
+              class="bg-green text-yellow px-5 py-3 hover:bg-green/90 transition-colors flex items-center justify-center">
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" />
               </svg>
@@ -1224,7 +1245,6 @@
           <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
         </div>
       </div>
-    </div>
   </footer>
   <!-- SideNavBar (Mobile Only Logic) -->
   <div

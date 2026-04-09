@@ -105,61 +105,69 @@
         transform: translateX(-100%);
       }
     }
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
 <body class="bg-white text-green min-h-screen">
   <!-- TopNavBar: Execution of Shared Component JSON -->
-  <nav
+      <nav
     class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-green dark:bg-green rounded-full mt-6 mx-auto w-[95%] max-w-7xl px-6 py-3 shadow-xl font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-wide">
     <!-- Logo Section -->
-    <div class="text-xl font-black text-white flex items-center gap-2">
+    <a href="index.html" class="text-xl font-black text-white flex items-center gap-2 cursor-pointer no-underline group hover:opacity-90">
       <div class="w-8 h-8 rounded-full bg-yellow flex items-center justify-center text-green text-base font-black">
         O
       </div>
       <span>Olivia.</span>
-    </div>
+    </a>
     <!-- Center Navigation -->
-    <div class="hidden md:flex items-center gap-8">
-      <a class="text-yellow font-bold border-b-2 border-[#feb300] pb-1 hover:scale-105 transition-transform duration-200"
-        href="#home">Home</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#services">Services</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#portfolio">Projects</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#about">About</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#blogs">Blogs</a>
-      <a class="text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200"
-        href="#contact">Contact</a>
+    <div class="hidden md:flex items-center gap-8 nav-links-container">
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#home">Home</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#services">Services</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#portfolio">Projects</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#about">About</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#experience">Experience</a>
+      <a class="nav-link font-bold border-b-2 pb-1 hover:scale-105 transition-all duration-300 text-white/80 border-transparent hover:text-white"
+        href="index.html#blogs">Blogs</a>
     </div>
     <!-- Primary Action -->
-    <button
-      class="bg-white text-green px-6 py-2.5 rounded-full font-bold hover:scale-105 active:scale-95 transition-all duration-200">
+    <a href="index.html#contact"
+      class="bg-white text-green px-6 py-2.5 rounded-full font-bold hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer">
       Contact Me
-    </button>
+    </a>
   </nav>
-<main class="pt-32 pb-24">
-    <section class="py-12 bg-white">
+<main>
+    <section class="pt-32 md:pt-40 pb-24 bg-white">
       <div class="max-w-7xl mx-auto px-8">
-        <h1 class="font-headline font-bold text-4xl md:text-5xl text-green mb-12">All Services</h1>
+        
+        
+        <div class="flex justify-between items-center mb-12">
+            <h1 class="font-headline font-bold text-4xl md:text-5xl text-green mb-12">All Services</h1>
+            <a href="index.html" class="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors"><span class="material-symbols-outlined">home</span> Home</a>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-grid"></div>
       </div>
     </section>
 </main>
 <footer class="bg-white pt-24">
     <div class="max-w-7xl mx-auto px-8 pb-16">
-      <!-- Let's Connect Row -->
+            <!-- Let's Connect Row -->
       <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
         <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-green">
           Let's <span class="text-yellow italic font-normal">Connect</span> there
         </h2>
-        <a href="blogs.html"
+        <a href="index.html#contact"
           class="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-all duration-300 w-fit group border-none">
           <span
             class="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2 transition-colors">
-            View All Blogs
+            Let's Connect
           </span>
           <div
             class="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform">
@@ -169,6 +177,7 @@
           </div>
         </a>
       </div>
+
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-black/5 pt-16">
         <!-- Brand Info -->
@@ -229,7 +238,7 @@
             <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">About</a></li>
             <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">Projects</a></li>
             <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">Blogs</a></li>
-            <li><a class="text-green/80 hover:text-yellow transition-colors" href="#">FAQs</a></li>
+            <li><a class="text-green/80 hover:text-yellow transition-colors" href="index.html#faq">FAQs</a></li>
           </ul>
         </div>
 

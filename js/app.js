@@ -1,4 +1,97 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Reload intercept (forces to home hero component on refresh)
+    const navEntry = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+    if (navEntry && navEntry.type === 'reload') {
+        window.location.href = 'index.html#home';
+    }
+
+    // Scroll restoration & Scroll to top
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    if (!window.location.hash) {
+        window.scrollTo(0, 0);
+    }
+
+    // Custom smooth scroll utility with header offset handling
+    const smoothScrollTo = (targetElement) => {
+        const headerOffset = 100; // nav height offset
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+    };
+
+    // Scroll spy for active link
+    const sections = document.querySelectorAll('section[id], header[id], div[id="blogs"]');
+    const navLinks = document.querySelectorAll('.nav-links-container .nav-link');
+
+    const updateActiveLink = () => {
+        let scrollY = window.scrollY;
+        let currentSectionId = '';
+        
+        sections.forEach(sec => {
+            const sectionHeight = sec.offsetHeight;
+            const sectionTop = sec.offsetTop - 200; // offset for nav height
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                currentSectionId = sec.getAttribute('id');
+            }
+        });
+        
+        // Handle bottom of page
+        if ((window.innerHeight + scrollY) >= document.body.offsetHeight - 100) {
+            currentSectionId = 'contact';
+        } else if (scrollY < 200 && document.querySelector('#home')) {
+            currentSectionId = 'home';
+        }
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href) {
+                let targetId = href.split('#')[1];
+                if (targetId && targetId === currentSectionId) {
+                    link.className = 'nav-link text-yellow font-bold border-b-2 border-[#feb300] pb-1 hover:scale-105 transition-transform duration-200';
+                } else if (targetId) {
+                    link.className = 'nav-link text-white/80 hover:text-white transition-colors hover:scale-105 transition-transform duration-200';
+                }
+            }
+        });
+    };
+
+    if (document.querySelector('#home')) {
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink(); // Initial check
+    }
+
+    // Smooth scroll intercept for identical page hash links
+    document.querySelectorAll('a[href^="index.html#"], a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            let targetId = this.getAttribute('href');
+            if (targetId.startsWith('index.html')) {
+                // If we are already on index.html
+                if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/portfolio/')) {
+                    e.preventDefault();
+                    targetId = targetId.substring(10); // get '#id'
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        smoothScrollTo(targetElement);
+                        history.pushState(null, null, targetId);
+                        setTimeout(updateActiveLink, 50);
+                    }
+                }
+            } else if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    smoothScrollTo(targetElement);
+                    history.pushState(null, null, targetId);
+                    setTimeout(updateActiveLink, 50);
+                }
+            }
+        });
+    });
+
     // Services
     const servicesGrid = document.querySelector('#services-grid');
     if (servicesGrid && typeof portfolioData !== 'undefined') {
@@ -127,8 +220,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const item = dataList.find(x => x.id === id);
       if (item) {
+        let parentPageName = 'Home';
+        let parentPageUrl = 'index.html';
+        if (type === 'service') { parentPageName = 'Services'; parentPageUrl = 'services.html'; }
+        if (type === 'project') { parentPageName = 'Projects'; parentPageUrl = 'projects.html'; }
+        if (type === 'blog') { parentPageName = 'Blogs'; parentPageUrl = 'blogs.html'; }
+        
         singleContainer.innerHTML = `
-          <h1 class="font-headline font-bold text-4xl md:text-6xl text-green mb-6">${item.title}</h1>
+          <div class="flex flex-col md:flex-row justify-between md:items-start mb-6 gap-6">
+            <h1 class="font-headline font-bold text-4xl md:text-6xl text-green w-full md:max-w-2xl">${item.title}</h1>
+            <a href="${parentPageUrl}" class="text-green/80 hover:text-green font-body flex items-center gap-2 mt-2 shrink-0"><span class="material-symbols-outlined">arrow_back</span> ${parentPageName}</a>
+          </div>
           ${item.image ? `<img src="\${item.image}" alt="\${item.title}" class="w-full rounded-2xl mb-8 shadow-sm">` : ''}
           ${item.date ? `<p class="font-body text-green/60 mb-8"><span class="font-bold">\${item.date}</span> • \${item.time}</p>` : ''}
           <div class="font-body text-green/80 text-lg leading-relaxed"><p>${item.content}</p></div>
