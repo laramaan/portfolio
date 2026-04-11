@@ -18,10 +18,17 @@ function TimelineCard({
         </div>
         <h3 className="font-headline text-2xl md:text-3xl font-bold text-green">{title}</h3>
       </div>
-      <div className="ml-2 md:ml-4 space-y-8 md:space-y-10 relative before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-2 before:w-0.5 before:bg-black/[0.06]">
+      <div className="ml-2 md:ml-4 space-y-8 md:space-y-10 relative">
+        <div
+          className="absolute left-[13px] md:left-[15px] top-3 bottom-3 w-0.5 bg-green/20 rounded-full"
+          aria-hidden
+        />
         {items.map((it) => (
-          <div key={it.title + it.period} className="pl-6 md:pl-8 relative">
-            <div className="absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full bg-black/20" aria-hidden />
+          <div key={it.title + it.period} className="pl-10 md:pl-12 relative">
+            <div
+              className="absolute left-[13px] md:left-[15px] top-2.5 w-3 h-3 -translate-x-1/2 rounded-full bg-green ring-[5px] ring-[#F8F9F8]"
+              aria-hidden
+            />
             <p className="text-[14px] text-green/50 tracking-wide mb-2 font-body">{it.period}</p>
             <h4 className="font-headline text-xl md:text-[22px] font-bold text-green mb-1">{it.title}</h4>
             <p className="text-[15px] text-green/65 font-body">{it.subtitle}</p>

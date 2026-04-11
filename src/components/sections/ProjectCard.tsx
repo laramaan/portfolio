@@ -8,6 +8,8 @@ type Props = {
 };
 
 export function ProjectCard({ project, index = 0 }: Props) {
+  const stackPreview = project.stack?.slice(0, 4) ?? [];
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -17,9 +19,9 @@ export function ProjectCard({ project, index = 0 }: Props) {
     >
       <Link
         to={`/project/${project.id}`}
-        className="bg-white p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col h-full border border-black/5 group cursor-pointer hover:shadow-md transition-shadow duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green block"
+        className="bg-white p-6 md:p-7 rounded-[2rem] shadow-sm flex flex-col h-full border border-black/5 group cursor-pointer hover:shadow-md transition-shadow duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green block"
       >
-        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-8 bg-grey">
+        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-grey">
           <img
             src={project.image}
             alt={project.title}
@@ -30,22 +32,38 @@ export function ProjectCard({ project, index = 0 }: Props) {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
         </div>
-        <div className="flex flex-wrap gap-3 mb-6">
-          {project.tags.map((tag) => (
+        <div className="flex flex-wrap gap-2 mb-3">
+          {project.tags.slice(0, 4).map((tag) => (
             <span
               key={tag}
-              className="bg-yellow text-green font-headline font-bold text-[13px] px-5 py-2 rounded-full"
+              className="bg-yellow text-green font-headline font-bold text-[11px] md:text-[12px] px-3 py-1 rounded-full"
             >
               {tag}
             </span>
           ))}
         </div>
-        <div className="flex items-center justify-between mt-auto gap-4">
-          <h3 className="text-xl md:text-2xl font-headline font-bold text-green leading-snug">
-            {project.title}
-          </h3>
-          <div className="w-12 h-12 shrink-0 bg-green text-white rounded-full flex items-center justify-center shadow-md group-hover:bg-yellow group-hover:text-green transition-colors duration-300">
-            <span className="material-symbols-outlined" aria-hidden>
+        {project.duration && (
+          <p className="font-body text-green/55 text-[13px] mb-2">{project.duration}</p>
+        )}
+        {project.summary && (
+          <p className="font-body text-green/70 text-[14px] leading-relaxed mb-4 line-clamp-3">{project.summary}</p>
+        )}
+        {stackPreview.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {stackPreview.map((s) => (
+              <span
+                key={s}
+                className="text-[11px] font-body font-medium text-green/80 bg-grey px-2 py-0.5 rounded-md border border-black/5"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+        )}
+        <div className="flex items-center justify-between mt-auto gap-4 pt-1">
+          <h3 className="text-lg md:text-xl font-headline font-bold text-green leading-snug">{project.title}</h3>
+          <div className="w-11 h-11 shrink-0 bg-green text-white rounded-full flex items-center justify-center shadow-md group-hover:bg-yellow group-hover:text-green transition-colors duration-300">
+            <span className="material-symbols-outlined text-[22px]" aria-hidden>
               arrow_forward
             </span>
           </div>

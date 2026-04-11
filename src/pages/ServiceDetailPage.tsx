@@ -40,7 +40,7 @@ export default function ServiceDetailPage() {
 
           <ScrollReveal delay={0.06}>
             <div className="flex items-center gap-4 mb-10">
-              <div className="w-14 h-14 bg-grey rounded-full flex items-center justify-center shadow-sm border border-black/5">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm border border-black/5 shrink-0">
                 <span className="material-symbols-outlined text-3xl text-green">{item.icon}</span>
               </div>
               <p className="font-body text-green/70 text-lg">{item.short_desc}</p>

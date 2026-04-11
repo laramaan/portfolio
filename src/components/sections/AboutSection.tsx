@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { site, aboutSkillPills } from '@/data/portfolio';
-import { PillButtonAnchor } from '@/components/ui/PillButton';
+import { DownloadResumeButton } from '@/components/ui/DownloadResumeButton';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 const rowTransforms = [
@@ -90,7 +90,7 @@ export function AboutSection() {
 
             <ScrollReveal delay={0.12}>
               <div className="flex flex-wrap items-center gap-8 mt-2">
-                <PillButtonAnchor href="/assets/Resume.pdf" label="Download CV" />
+                <DownloadResumeButton variant="pill" label="Download CV" />
                 <motion.div
                   className="text-yellow italic signature-font text-4xl md:text-5xl origin-left"
                   initial={{ opacity: 0, x: -8 }}

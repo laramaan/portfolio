@@ -23,7 +23,7 @@ export function ServicesSection() {
           <PillButtonLink to="/services" label="View All Services" />
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, i) => (
             <motion.div
               key={service.id}
@@ -42,10 +42,10 @@ export function ServicesSection() {
               </p>
               <Link
                 to={`/service/${service.id}`}
-                className="inline-flex items-center font-headline font-bold text-[15px] text-green transition-transform duration-300 group-hover:translate-x-0.5 focus-visible:outline focus-visible:underline rounded"
+                className="inline-flex items-center font-headline font-bold text-[15px] text-green group-hover:translate-x-0.5 transition-transform duration-300 focus-visible:outline focus-visible:underline rounded"
               >
-                Learn more
-                <span className="text-yellow ml-2" aria-hidden>
+                <span className="text-green">Learn more</span>
+                <span className="text-yellow ml-2 shrink-0" aria-hidden>
                   <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
                   </svg>

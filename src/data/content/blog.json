@@ -1,0 +1,54 @@
+{
+  "blogs": [
+    {
+      "id": "lessons-laravel-react-cms",
+      "date": "February 2, 2026",
+      "time": "7 min read",
+      "category": "Web development",
+      "title": "What I Learned Shipping a Laravel CMS with a React Frontend",
+      "excerpt": "Patterns that keep APIs predictable when your admin is React and your source of truth is Laravel.",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1200&auto=format&fit=crop",
+      "content": "Pairing Laravel with React is less about buzzwords and more about contracts. I start by defining resources the SPA actually needs—pagination shape, error format, and auth headers—before writing UI.\n\nOn the Laravel side, form requests and API resources reduce surprises for the React team. On the client, colocating fetchers with route-level error boundaries prevents silent failures when an endpoint changes.\n\nThis mirrors work on club management and e-detailing dashboards where filters and exports had to stay fast as datasets grew. If you are planning a similar split, invest early in OpenAPI or a thin typed client so refactors do not break the whole app."
+    },
+    {
+      "id": "wordpress-json-government-charts",
+      "date": "January 18, 2026",
+      "time": "6 min read",
+      "category": "Projects",
+      "title": "Nested JSON and Dynamic Charts on a Government WordPress Build",
+      "excerpt": "How we turned complex energy and weather datasets into readable visuals for a public audience.",
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886174f5c?q=80&w=1200&auto=format&fit=crop",
+      "content": "Public-sector sites need clarity and accuracy. We modeled nested JSON from upstream sources, normalized keys for the charting layer, and cached aggressively where editors did not need minute-level freshness.\n\nWordPress remained the authoring hub while the visualization script consumed sanitized JSON endpoints. That separation let policy teams iterate on copy without risking the numbers pipeline.\n\nIf you are building something similar, document the schema for editors and add validation before publish—small mistakes in JSON propagate quickly into misleading charts."
+    },
+    {
+      "id": "woocommerce-niche-ecommerce",
+      "date": "December 8, 2025",
+      "time": "5 min read",
+      "category": "Projects",
+      "title": "Shipping a Niche WooCommerce Store: Booking + Physical Products",
+      "excerpt": "Combining pandit bookings with pooja samagri taught me a lot about checkout edge cases.",
+      "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=1200&auto=format&fit=crop",
+      "content": "Mixed carts—services with calendars and physical SKUs—stress WooCommerce in good ways. We separated product types, clarified shipping rules, and tested payment flows on slow 3G to mirror real users.\n\nAnalytics after launch showed most drop-off at address confirmation, so we simplified copy and added trust badges tied to local fulfillment partners.\n\nThe takeaway: prototype the hardest checkout path first, not the happy path."
+    },
+    {
+      "id": "ai-assistants-web-workflows",
+      "date": "November 22, 2025",
+      "time": "6 min read",
+      "category": "AI",
+      "title": "Practical AI in Everyday Web Development Workflows",
+      "excerpt": "Using assistants responsibly for boilerplate, test ideas, and docs—without shipping black boxes.",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+      "content": "AI tools are best as accelerators, not authors of production logic. I use them to draft PHPUnit or Jest scaffolds, brainstorm edge cases for forms, and tighten README sections—then I read every line before merge.\n\nFor client work, anything that touches PII or licensing stays human-reviewed. The sweet spot is repetitive glue code and documentation where speed wins and risk is low.\n\nIf you are adopting AI in an agency, publish a short policy: what is allowed in repos, what never leaves the VPN, and how prompts should be anonymized."
+    },
+    {
+      "id": "modern-javascript-php-teams",
+      "date": "October 5, 2025",
+      "time": "5 min read",
+      "category": "Web development",
+      "title": "Bridging Modern JavaScript with PHP Codebases",
+      "excerpt": "Incremental improvements that do not require rewriting your entire WordPress or Laravel app overnight.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "content": "Most teams I join already have PHP-heavy stacks. Rather than forcing a SPA everywhere, I introduce ES modules for isolated widgets, adopt a small build step where it pays off, and share lint/format rules across PHP and JS.\n\nBundling critical UI for performance while leaving the CMS untouched keeps editors productive. When a feature truly needs React, mount a root on a dedicated template and pass bootstrap data as JSON from PHP—no mystery globals.\n\nThis approach shipped faster than big-bang rewrites and reduced risk for stakeholders who depend on stable releases."
+    }
+  ]
+}

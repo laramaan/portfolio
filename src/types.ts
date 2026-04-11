@@ -9,8 +9,17 @@ export type Service = {
 export type Project = {
   id: string;
   image: string;
+  /** Optional extra images for detail page gallery (2–3 recommended) */
+  gallery?: string[];
   tags: string[];
   title: string;
+  /** Short line on cards and detail hero */
+  summary?: string;
+  role?: string;
+  duration?: string;
+  client?: string;
+  stack?: string[];
+  highlights?: string[];
   content: string;
 };
 
@@ -21,9 +30,12 @@ export type Blog = {
   title: string;
   image: string;
   content: string;
+  category?: string;
+  excerpt?: string;
 };
 
 export type Testimonial = {
+  id?: string;
   text: string;
   name: string;
   role: string;

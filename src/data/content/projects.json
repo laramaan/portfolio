@@ -1,0 +1,114 @@
+{
+  "projects": [
+    {
+      "id": "enablrsales-platform",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900&auto=format&fit=crop"
+      ],
+      "tags": ["PHP", "HTML/CSS", "Cloud", "Sales Enablement"],
+      "title": "Enablrsales.com — eDetailing Platform",
+      "summary": "A web platform that elevates sales teams through cloud-based eDetailing services and streamlined content delivery.",
+      "role": "Associate Software Developer",
+      "duration": "2022 – Present (ongoing iterations)",
+      "client": "Vistaar Digital",
+      "stack": ["HTML", "CSS", "PHP", "JavaScript", "Integrations"],
+      "highlights": [
+        "Built features for a sales-focused product used in the field",
+        "Collaborated in Agile ceremonies and sprint planning",
+        "Focused on reliable delivery and client satisfaction"
+      ],
+      "content": "Enablrsales.com is an innovative web platform engineered to support sales efforts through cloud-based eDetailing. I contributed to feature development using HTML, CSS, and PHP, working within an Agile team that emphasizes stand-ups, sprint planning, and predictable releases. The work involved balancing product requirements with performance and maintainability so client teams could rely on the tool in real sales workflows."
+    },
+    {
+      "id": "laravel-react-cms",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1200&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=900&auto=format&fit=crop"
+      ],
+      "tags": ["Laravel", "React", "API", "CMS"],
+      "title": "Laravel CMS with React Frontend",
+      "summary": "Robust Laravel backend with extensive API integration powering a React-based admin and user experience.",
+      "role": "Associate Software Developer",
+      "duration": "2022 – Present",
+      "client": "Vistaar Digital",
+      "stack": ["Laravel", "React", "REST APIs", "MySQL"],
+      "highlights": [
+        "Designed API boundaries for efficient data management",
+        "Partnered with frontend for seamless user interactions",
+        "Supported filtering and reporting-heavy screens"
+      ],
+      "content": "I engineered and extended a Laravel-based CMS with broad API coverage so a React frontend could manage complex data safely. The focus was on consistent validation, clear endpoints for the SPA, and patterns that keep the codebase approachable for the rest of the team. This foundation supported rapid iteration as product requirements evolved."
+    },
+    {
+      "id": "government-energy-portal",
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886174f5c?q=80&w=1200&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1473341304170-971dccb5be1f?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=900&auto=format&fit=crop"
+      ],
+      "tags": ["WordPress", "JSON", "Charts", "Public Sector"],
+      "title": "Indian Government Energy & Weather Portal",
+      "summary": "WordPress site with dynamic charts and nested JSON illustrating weather and energy data for policy communication.",
+      "role": "Associate Software Developer",
+      "duration": "2022 – Present",
+      "client": "Government of India (via Vistaar Digital)",
+      "stack": ["WordPress", "PHP", "JavaScript", "JSON"],
+      "highlights": [
+        "Visualized complex datasets for public audiences",
+        "Structured nested JSON for chart consumption",
+        "Supported India’s energy transition storytelling"
+      ],
+      "content": "I contributed to a WordPress property for the Indian government that surfaces weather and energy insights through dynamic charts fed by nested JSON. The challenge was to keep authoring simple for editors while ensuring the visualization layer stayed accurate and fast. Close coordination with stakeholders helped prioritize clarity and trust in the numbers shown to citizens."
+    },
+    {
+      "id": "woocommerce-pandit-booking",
+      "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=1200&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=900&auto=format&fit=crop"
+      ],
+      "tags": ["WooCommerce", "WordPress", "E‑commerce", "Booking"],
+      "title": "E‑Commerce — Pandit Booking & Pooja Samagri",
+      "summary": "Full WooCommerce build for online pandit booking and sale of pooja samagri, from requirements through deployment.",
+      "role": "Associate Software Developer",
+      "duration": "2022 – 2024",
+      "client": "Confidential client",
+      "stack": ["WordPress", "WooCommerce", "PHP", "Payment flows"],
+      "highlights": [
+        "Owned lifecycle from discovery to go-live",
+        "Configured products, shipping, and checkout edge cases",
+        "Improved conversion with clear catalog UX"
+      ],
+      "content": "Designed and developed a WooCommerce-driven store combining service booking for pandits with physical product sales for pooja samagri. Work spanned theme customization, product structure, payment and fulfillment rules, and performance tuning. The goal was a trustworthy checkout and simple paths for users unfamiliar with dense e‑commerce UIs."
+    },
+    {
+      "id": "game-dev-wordpress",
+      "image": "https://images.unsplash.com/photo-1493711660812-7faf2f49985d?q=80&w=1200&auto=format&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=900&auto=format&fit=crop"
+      ],
+      "tags": ["WordPress", "CMS", "Creative", "Services site"],
+      "title": "Game Development Services Platform",
+      "summary": "Dynamic WordPress site marketing end-to-end game development—from concept to launch.",
+      "role": "Associate Software Developer",
+      "duration": "2023",
+      "client": "Creative studio",
+      "stack": ["WordPress", "PHP", "ACF", "JavaScript"],
+      "highlights": [
+        "Structured service pages for a long sales funnel",
+        "Fast landing experiences for campaign traffic",
+        "Editor-friendly modules for frequent content updates"
+      ],
+      "content": "Built a WordPress experience that showcases game development offerings with strong visual hierarchy and modular layouts. Emphasis on performance for media-heavy pages and clear calls to action for inquiries. Editors can update case studies and service tiers without developer intervention thanks to reusable components."
+    }
+  ]
+}

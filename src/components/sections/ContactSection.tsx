@@ -1,8 +1,14 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { site } from '@/data/portfolio';
+import { site, contactForm } from '@/data/portfolio';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import { sendContactEmail, isEmailJsConfigured } from '@/lib/sendContactEmail';
+
+type FormStatus = 'idle' | 'sending' | 'success' | 'error';
 
 export function ContactSection() {
+  const [status, setStatus] = useState<FormStatus>('idle');
+
   return (
     <section className="py-20 md:py-24 bg-green text-white" id="contact" aria-labelledby="contact-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
@@ -32,7 +38,10 @@ export function ContactSection() {
                 <div className="w-12 h-12 rounded-full bg-yellow flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-green text-[22px]">phone_in_talk</span>
                 </div>
-                <a className="text-white text-lg font-body hover:text-yellow transition-colors" href={`tel:${site.contact.phone.replace(/\s/g, '')}`}>
+                <a
+                  className="text-white text-lg font-body hover:text-yellow transition-colors"
+                  href={`tel:${site.contact.phone.replace(/\s/g, '')}`}
+                >
                   {site.contact.phone}
                 </a>
               </li>
@@ -65,16 +74,60 @@ export function ContactSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.08}>
-            <form
-              className="flex flex-col gap-6 mt-2 lg:mt-0"
-              onSubmit={(e) => {
-                e.preventDefault();
-              }}
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {status === 'success' ? (
+              <div
+                className="rounded-[1.5rem] border border-white/15 bg-white/5 p-8 md:p-10 mt-2 lg:mt-0"
+                role="status"
+              >
+                <p className="font-headline font-bold text-xl text-yellow mb-2">{contactForm.successTitle}</p>
+                <p className="font-body text-white/85 leading-relaxed mb-6">{contactForm.successBody}</p>
+                <button
+                  type="button"
+                  onClick={() => setStatus('idle')}
+                  className="text-sm font-headline font-bold text-yellow hover:text-white underline underline-offset-2 focus-visible:outline rounded"
+                >
+                  Send another message
+                </button>
+              </div>
+            ) : (
+              <form
+                className="flex flex-col gap-5 mt-2 lg:mt-0"
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  const fd = new FormData(e.currentTarget);
+                  const name = String(fd.get('name') ?? '').trim();
+                  const email = String(fd.get('email') ?? '').trim();
+                  const phone = String(fd.get('phone') ?? '').trim();
+                  const message = String(fd.get('message') ?? '').trim();
+                  const toEmail =
+                    (import.meta.env.VITE_CONTACT_TO_EMAIL as string | undefined)?.trim() || site.contact.email;
+
+                  setStatus('sending');
+                  try {
+                    if (!isEmailJsConfigured()) {
+                      throw new Error('EmailJS not configured');
+                    }
+                    await sendContactEmail({ name, email, phone, message, toEmail });
+                    setStatus('success');
+                    e.currentTarget.reset();
+                  } catch {
+                    setStatus('error');
+                  }
+                }}
+              >
+                {status === 'error' && (
+                  <div
+                    className="rounded-xl border border-red-300/40 bg-red-500/10 px-4 py-3 text-sm font-body"
+                    role="alert"
+                  >
+                    <p className="font-headline font-bold text-yellow mb-1">{contactForm.errorTitle}</p>
+                    <p className="text-white/90">{contactForm.errorBody}</p>
+                  </div>
+                )}
+
                 <div className="flex flex-col gap-2">
                   <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-name">
-                    Your Name *
+                    {contactForm.nameLabel} *
                   </label>
                   <input
                     id="contact-name"
@@ -82,13 +135,14 @@ export function ContactSection() {
                     type="text"
                     required
                     autoComplete="name"
-                    placeholder="Ex. John Doe"
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
+                    placeholder={contactForm.namePlaceholder}
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
                   />
                 </div>
+
                 <div className="flex flex-col gap-2">
                   <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-email">
-                    Email *
+                    {contactForm.emailLabel} *
                   </label>
                   <input
                     id="contact-email"
@@ -96,139 +150,59 @@ export function ContactSection() {
                     type="email"
                     required
                     autoComplete="email"
-                    placeholder="example@gmail.com"
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
+                    placeholder={contactForm.emailPlaceholder}
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
                   />
                 </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-phone">
-                    Phone *
+                    {contactForm.phoneLabel}
                   </label>
                   <input
                     id="contact-phone"
                     name="phone"
                     type="tel"
-                    required
                     autoComplete="tel"
-                    placeholder="Enter Phone Number"
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
+                    placeholder={contactForm.phonePlaceholder}
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
                   />
                 </div>
-                <div className="flex flex-col gap-2 relative z-0">
-                  <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-interest">
-                    I&apos;m Interested in *
-                  </label>
-                  <select
-                    id="contact-interest"
-                    name="interest"
-                    required
-                    defaultValue=""
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/90 font-body outline-none focus:ring-0 focus:border-yellow transition-colors appearance-none cursor-pointer"
-                  >
-                    <option value="" disabled>
-                      Select
-                    </option>
-                    <option value="uiux" className="text-green">
-                      UI/UX Design
-                    </option>
-                    <option value="web" className="text-green">
-                      Web Development
-                    </option>
-                  </select>
-                  <div className="absolute right-5 top-[46px] pointer-events-none text-white/60" aria-hidden>
-                    <span className="material-symbols-outlined text-[20px]">expand_more</span>
-                  </div>
-                </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2 relative z-0">
-                  <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-budget">
-                    Budget Range (USD) *
+                <div className="flex flex-col gap-2">
+                  <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-message">
+                    {contactForm.messageLabel} *
                   </label>
-                  <select
-                    id="contact-budget"
-                    name="budget"
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows={5}
                     required
-                    defaultValue=""
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/90 font-body outline-none focus:ring-0 focus:border-yellow transition-colors appearance-none cursor-pointer"
-                  >
-                    <option value="" disabled>
-                      Select Range
-                    </option>
-                    <option value="1k-5k" className="text-green">
-                      $1,000 - $5,000
-                    </option>
-                    <option value="5k-10k" className="text-green">
-                      $5,000 - $10,000
-                    </option>
-                  </select>
-                  <div className="absolute right-5 top-[46px] pointer-events-none text-white/60" aria-hidden>
-                    <span className="material-symbols-outlined text-[20px]">expand_more</span>
-                  </div>
+                    placeholder={contactForm.messagePlaceholder}
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35 resize-none min-h-[120px]"
+                  />
                 </div>
-                <div className="flex flex-col gap-2 relative z-0">
-                  <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-country">
-                    Country *
-                  </label>
-                  <select
-                    id="contact-country"
-                    name="country"
-                    required
-                    defaultValue=""
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white/90 font-body outline-none focus:ring-0 focus:border-yellow transition-colors appearance-none cursor-pointer"
+
+                <div className="mt-1">
+                  <motion.button
+                    type="submit"
+                    disabled={status === 'sending'}
+                    whileHover={{ scale: status === 'sending' ? 1 : 1.02 }}
+                    whileTap={{ scale: status === 'sending' ? 1 : 0.98 }}
+                    className="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-colors duration-300 w-fit group border-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:opacity-60"
                   >
-                    <option value="" disabled>
-                      Select Country
-                    </option>
-                    <option value="us" className="text-green">
-                      United States
-                    </option>
-                    <option value="uk" className="text-green">
-                      United Kingdom
-                    </option>
-                  </select>
-                  <div className="absolute right-5 top-[46px] pointer-events-none text-white/60" aria-hidden>
-                    <span className="material-symbols-outlined text-[20px]">expand_more</span>
-                  </div>
+                    <span className="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2">
+                      {status === 'sending' ? contactForm.sendingLabel : contactForm.submitLabel}
+                    </span>
+                    <span className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform relative z-10">
+                      <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 ml-0.5" aria-hidden>
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
+                      </svg>
+                    </span>
+                  </motion.button>
                 </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label className="font-headline font-bold text-white text-[15px]" htmlFor="contact-message">
-                  Your Message *
-                </label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  rows={5}
-                  required
-                  placeholder="Enter here.."
-                  className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-4 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35 resize-none min-h-[140px]"
-                />
-              </div>
-
-              <div className="mt-2">
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-colors duration-300 w-fit group border-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  <span className="bg-green text-white px-8 py-3.5 rounded-full font-bold font-headline text-sm tracking-wide mr-2">
-                    Submit
-                  </span>
-                  <span className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform relative z-10">
-                    <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 ml-0.5" aria-hidden>
-                      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
-                    </svg>
-                  </span>
-                </motion.button>
-              </div>
-            </form>
+              </form>
+            )}
           </ScrollReveal>
         </div>
       </div>

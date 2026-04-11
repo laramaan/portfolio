@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <circle cx="16" cy="16" r="16" fill="#faae19"/>
-  <text x="16" y="21" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="14" fill="#334d36">O</text>
+  <rect width="32" height="32" rx="8" fill="#334d36"/>
+  <path
+    fill="#faae19"
+    d="M8 24V8h3.4l3.8 10.2L19 8h3.4v16h-2.8V11.8L15.6 24h-1.2L11.4 11.8V24H8Z"
+  />
 </svg>

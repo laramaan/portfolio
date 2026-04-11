@@ -2,28 +2,23 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { services } from '@/data/portfolio';
-import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import { PageListHeading } from '@/components/ui/PageListHeading';
 
 export default function ServicesPage() {
   return (
     <>
       <Helmet>
         <title>All Services | Manish Portfolio</title>
-        <meta name="description" content="UI/UX design, application design, and website design services." />
+        <meta
+          name="description"
+          content="Web development, WordPress, Laravel + React, and freelance consulting services."
+        />
       </Helmet>
       <section className="pt-28 md:pt-36 pb-20 md:pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
-          <ScrollReveal className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 mb-12">
-            <h1 className="font-headline font-bold text-3xl md:text-5xl text-green">All Services</h1>
-            <Link
-              to="/"
-              className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit focus-visible:outline focus-visible:underline rounded"
-            >
-              <span className="material-symbols-outlined">home</span> Home
-            </Link>
-          </ScrollReveal>
+          <PageListHeading eyebrow="Services" titleBefore="All " titleAccent="Services" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, i) => (
               <motion.article
                 key={service.id}
@@ -42,10 +37,10 @@ export default function ServicesPage() {
                 </p>
                 <Link
                   to={`/service/${service.id}`}
-                  className="inline-flex items-center font-headline font-bold text-[15px] text-green hover:text-yellow transition-colors focus-visible:outline focus-visible:underline rounded"
+                  className="inline-flex items-center font-headline font-bold text-[15px] focus-visible:outline focus-visible:underline rounded"
                 >
-                  Learn more
-                  <span className="text-yellow ml-2" aria-hidden>
+                  <span className="text-green">Learn more</span>
+                  <span className="text-yellow ml-2 shrink-0" aria-hidden>
                     <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
                       <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
                     </svg>

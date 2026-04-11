@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "id": "web-development",
+      "icon": "code",
+      "title": "Web Development",
+      "short_desc": "Responsive, performant websites and web apps using modern HTML, CSS, JavaScript, and PHP—aligned with your product goals.",
+      "content": "From marketing sites to data-heavy dashboards, I build maintainable frontends and integrate them with CMS or custom backends. I follow accessibility and SEO best practices, collaborate in Agile teams, and ship on schedule. Typical stacks include WordPress (including Bedrock), Laravel APIs consumed by React, and classic PHP where it fits your hosting and timeline."
+    },
+    {
+      "id": "wordpress-cms",
+      "icon": "web",
+      "title": "WordPress & CMS Solutions",
+      "short_desc": "Custom WordPress themes, WooCommerce stores, Bedrock setups, and content workflows for teams that need flexibility without sacrificing quality.",
+      "content": "I design and develop WordPress experiences end to end: WooCommerce for e-commerce (including niche booking and product catalogs), Bedrock for structured enterprise WordPress, custom post types, ACF or block-based editing, and integrations with analytics and marketing tools. I have delivered government-facing portals with dynamic charts driven by nested JSON and marketing sites for digital agencies."
+    },
+    {
+      "id": "full-stack-laravel-react",
+      "icon": "integration_instructions",
+      "title": "Laravel + React Engineering",
+      "short_desc": "API-first Laravel backends paired with React frontends for dashboards, club management, e-detailing, and internal tools.",
+      "content": "I build Laravel CMS and REST APIs with clear contracts for React SPAs: authentication, filtering, reporting, and file handling. Recent work includes club activity management with e-detailing support, analytics with customizable filters, and React consumers that stay fast as data grows. I am comfortable with Git-based workflows, code review, and documenting endpoints for your team."
+    },
+    {
+      "id": "freelance-consulting",
+      "icon": "handshake",
+      "title": "Freelance & Consulting",
+      "short_desc": "Short-term engagements to unblock delivery, audit codebases, or own a vertical slice from discovery to deployment.",
+      "content": "Available for selected freelance work: rescue projects, performance passes, WordPress/Laravel upgrades, or building a thin slice to prove a concept. I communicate clearly with stakeholders, estimate honestly, and can plug into your existing Agile process. Remote-first; overlap with IST and flexible hours for global clients when agreed upfront."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "site": {
+    "brandName": "Manish.",
+    "logoLetter": "M",
+    "tagline": "Associate Software Developer",
+    "heroName": "Manish Gupta",
+    "heroRoles": ["Web & CMS Engineer", "Mumbai, India · Open to remote"],
+    "heroBio": "Results-oriented developer with experience building dynamic, responsive websites and Laravel + React systems. Comfortable owning delivery end to end, collaborating in Agile teams, and shipping quality on deadline.",
+    "hireEmail": "mailto:manishgupta0746@gmail.com",
+    "marquee": ["Laravel · React · WordPress", "2+ Years Professional Experience", "Mumbai · Remote OK"],
+    "heroBadgeLeft": "Web Development",
+    "heroBadgeRight": "Laravel & React",
+    "resumeUrl": "/Resume.pdf",
+    "resumeDownloadFilename": "Manish_Gupta_Resume.pdf",
+    "about": {
+      "lead": "About",
+      "nameHighlight": "Manish Gupta",
+      "body": "I am an Associate Software Developer at Vistaar Digital, Mumbai. I work across WordPress (including Bedrock and WooCommerce), Laravel APIs, and React frontends—often in the same week. I enjoy turning ambiguous requirements into shippable increments, mentoring peers, and keeping clients in the loop.",
+      "stats": [
+        { "value": "2+", "label": "Years experience" },
+        { "value": "10+", "label": "Projects shipped" },
+        { "value": "100%", "label": "Commitment to quality" }
+      ],
+      "signature": "Manish Gupta"
+    },
+    "heroPortrait": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&h=1125&q=85",
+    "aboutPortrait": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&h=900&q=85",
+    "social": {
+      "linkedin": "https://linkedin.com/in/manish-gupta07",
+      "github": "https://github.com/MANISH0746"
+    },
+    "contact": {
+      "intro": "Have a web project, Laravel/React work, or a freelance inquiry? Send a short message—I'll reply within a few business days.",
+      "phone": "+91 97688 09635",
+      "email": "manishgupta0746@gmail.com",
+      "socialHandle": "@MANISH0746 on GitHub",
+      "address": "Mumbai, Maharashtra, India"
+    },
+    "footer": {
+      "blurb": "Full-stack leaning web developer focused on WordPress, Laravel, and React. Building reliable products for agencies, startups, and public-sector teams.",
+      "phone": "+91 97688 09635",
+      "web": "linkedin.com/in/manish-gupta07",
+      "email": "manishgupta0746@gmail.com",
+      "addressLines": ["Mumbai, Maharashtra,", "India"],
+      "copyrightYear": 2026
+    }
+  },
+  "educationItems": [
+    {
+      "period": "2019 – 2022",
+      "title": "Thakur College of Science and Commerce",
+      "subtitle": "Bachelor of Computer Science — CGPA 8.75 · Mumbai, India"
+    },
+    {
+      "period": "2017 – 2019",
+      "title": "B.K.S High School and College of Science",
+      "subtitle": "Higher Secondary Certificate — 73.38% · Mumbai, India"
+    },
+    {
+      "period": "2017",
+      "title": "Rosary High School",
+      "subtitle": "Secondary School Certificate — 75.40% · Mumbai, India"
+    }
+  ],
+  "workItems": [
+    {
+      "period": "June 2022 – Present",
+      "title": "Associate Software Developer — Vistaar Digital",
+      "subtitle": "Borivali, Mumbai · Agile delivery, client accounts, WordPress/Laravel/React builds"
+    }
+  ],
+  "skillsRow1": [
+    { "icon": "language", "label": "HTML" },
+    { "icon": "palette", "label": "CSS" },
+    { "icon": "data_object", "label": "JavaScript" },
+    { "icon": "code_blocks", "label": "PHP" },
+    { "icon": "table_chart", "label": "SQL" }
+  ],
+  "skillsRow2": [
+    { "icon": "web", "label": "WordPress" },
+    { "icon": "layers", "label": "Laravel" },
+    { "icon": "view_module", "label": "Bootstrap" },
+    { "icon": "commit", "label": "Git" },
+    { "icon": "monitoring", "label": "Power BI & SEO" }
+  ],
+  "aboutSkillPills": [
+    ["WordPress", "WooCommerce"],
+    ["Laravel", "REST APIs", "React"],
+    ["Agile", "Client delivery"]
+  ],
+  "testimonialsSettings": {
+    "autoScrollIntervalMs": 3000,
+    "pauseOnHover": true
+  },
+  "testimonials": [
+    {
+      "id": "t1",
+      "text": "Manish took ownership of our Laravel API slice and kept the React team unblocked. Communication was clear and releases were predictable.",
+      "name": "Priya N.",
+      "role": "Engineering Manager, SaaS partner",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&h=200&q=85"
+    },
+    {
+      "id": "t2",
+      "text": "Our WooCommerce launch had tricky booking rules—Manish stayed patient through UAT and fixed edge cases quickly.",
+      "name": "Rahul S.",
+      "role": "Product owner, e‑commerce client",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=85"
+    },
+    {
+      "id": "t3",
+      "text": "Solid WordPress work on a tight government timeline. Charts and JSON pipelines were documented so the team could hand off smoothly.",
+      "name": "Anita K.",
+      "role": "Delivery lead, digital agency",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&h=200&q=85"
+    },
+    {
+      "id": "t4",
+      "text": "We brought Manish in for a short freelance sprint; he integrated with our stand-ups and shipped the CMS changes without drama.",
+      "name": "Vikram P.",
+      "role": "CTO, mid‑size startup",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=85"
+    },
+    {
+      "id": "t5",
+      "text": "Practical, no‑fluff estimates and honest pushback when a shortcut would have hurt maintainability. Exactly what we needed.",
+      "name": "Sneha M.",
+      "role": "Operations director",
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=85"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you take on freelance or contract work?",
+      "a": "Yes, selectively. I am open to short engagements for WordPress/Laravel/React delivery, rescue work, or well-defined milestones. Share your stack, timeline, and budget range in the contact form so we can assess fit quickly."
+    },
+    {
+      "q": "What services do you offer day to day?",
+      "a": "Custom web development, WordPress and WooCommerce builds (including Bedrock setups), Laravel APIs with React consumers, performance tuning, and integration with analytics or marketing tools such as NotifyVisitor. I can also support Salesforce-adjacent workflows when scoped clearly."
+    },
+    {
+      "q": "How do you run projects with clients?",
+      "a": "I default to Agile habits: short stand-ups when the team wants them, written acceptance criteria, and incremental demos. For freelance work I provide a lightweight statement of work and weekly checkpoints so stakeholders always know what shipped."
+    },
+    {
+      "q": "Can you describe the Enablrsales.com project in more detail?",
+      "a": "Enablrsales.com is a sales-enablement platform with cloud-based eDetailing. I contributed using HTML, CSS, and PHP within a team that ships on sprint cadence. The focus was reliable delivery for field users and tight collaboration with client stakeholders."
+    },
+    {
+      "q": "What was challenging about the government energy portal?",
+      "a": "Balancing accurate nested JSON for charts with an editorial workflow in WordPress. We invested in validation and caching so public viewers saw consistent numbers while editors could still publish updates safely."
+    }
+  ],
+  "contactForm": {
+    "successTitle": "Message sent",
+    "successBody": "Thanks for reaching out. I will get back to you soon.",
+    "errorTitle": "Could not send",
+    "errorBody": "Email delivery is not configured or failed. Please email manishgupta0746@gmail.com directly with your message.",
+    "sendingLabel": "Sending…",
+    "submitLabel": "Send message",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone (optional)",
+    "messageLabel": "Message",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "you@example.com",
+    "phonePlaceholder": "+91 …",
+    "messagePlaceholder": "Tell me about your project, timeline, and stack…"
+  }
+}

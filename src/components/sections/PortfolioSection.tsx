@@ -26,8 +26,8 @@ export function PortfolioSection() {
           <PillButtonLink to="/projects" label="View All Projects" />
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-          {projects.map((project, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          {projects.slice(0, 4).map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>

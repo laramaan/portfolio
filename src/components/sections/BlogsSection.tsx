@@ -23,8 +23,8 @@ export function BlogsSection() {
           <PillButtonLink to="/blogs" label="View All Blogs" />
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-          {blogs.map((blog, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {blogs.slice(0, 3).map((blog, i) => (
             <motion.article
               key={blog.id}
               initial={{ opacity: 0, y: 20 }}
@@ -46,8 +46,15 @@ export function BlogsSection() {
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-green font-bold text-[13px] px-4 py-2 rounded-full font-headline">
-                    {blog.date}
+                  <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+                    {blog.category && (
+                      <span className="bg-yellow text-green font-bold text-[11px] px-3 py-1.5 rounded-full font-headline uppercase tracking-wide">
+                        {blog.category}
+                      </span>
+                    )}
+                    <span className="bg-white/90 backdrop-blur-sm text-green font-bold text-[13px] px-4 py-2 rounded-full font-headline">
+                      {blog.date}
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-green/60 font-body text-[14px] mb-3">
@@ -59,8 +66,8 @@ export function BlogsSection() {
                 <h3 className="font-headline font-bold text-[22px] text-green group-hover:text-yellow transition-colors leading-[1.3] mb-4">
                   {blog.title}
                 </h3>
-                <p className="font-body text-green/70 leading-relaxed">
-                  {blog.content.slice(0, 100)}…
+                <p className="font-body text-green/70 leading-relaxed line-clamp-3">
+                  {blog.excerpt ?? `${blog.content.slice(0, 140)}…`}
                 </p>
               </Link>
             </motion.article>

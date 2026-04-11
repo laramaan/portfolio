@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { MobileBottomNav } from '@/components/layout/MobileBottomNav';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
 import { motion } from 'framer-motion';
 
@@ -12,6 +13,7 @@ export function RootLayout() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white pb-24 md:pb-0">
+      <ScrollToTop />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:bg-yellow focus:text-green focus:px-4 focus:py-2 focus:rounded-full focus:font-bold focus:shadow-lg"

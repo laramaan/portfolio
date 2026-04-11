@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { site } from '@/data/portfolio';
 import { PillButtonLink } from '@/components/ui/PillButton';
+import { DownloadResumeButton } from '@/components/ui/DownloadResumeButton';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 export function Hero() {
@@ -55,16 +55,7 @@ export function Hero() {
             transition={{ duration: 0.45, delay: 0.18 }}
           >
             <PillButtonLink to="/projects" label="View My Portfolio" />
-            <motion.a
-              href={site.hireEmail}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="border-2 border-green text-green rounded-full px-8 md:px-10 py-3.5 font-bold font-headline text-sm hover:bg-green hover:text-white transition-colors bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
-            >
-              Hire Me
-            </motion.a>
+            <DownloadResumeButton label="Download CV" />
           </motion.div>
         </div>
 
@@ -85,10 +76,10 @@ export function Hero() {
             />
           </div>
 
-          <Link
-            to={{ pathname: '/', hash: 'contact' }}
+          <a
+            href={site.hireEmail}
             className="absolute -top-2 -right-1 md:-top-4 md:-right-2 w-28 h-28 md:w-32 md:h-32 bg-green rounded-full flex justify-center items-center shadow-2xl p-2 z-30 hover:scale-105 transition-transform duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
-            aria-label="Go to contact — hire me"
+            aria-label="Hire me — send email"
           >
             <svg
               viewBox="0 0 100 100"
@@ -107,13 +98,13 @@ export function Hero() {
               </text>
             </svg>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="bg-yellow w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center -rotate-45">
-                <svg fill="currentColor" className="w-5 h-5 text-green" viewBox="0 0 24 24" aria-hidden>
-                  <path d="M5 13h11.17l-4.88 4.88c-0.39 0.39-0.39 1.03 0 1.42 0.39 0.39 1.02 0.39 1.41 0l6.59-6.59c0.39-0.39 0.39-1.02 0-1.41l-6.58-6.6c-0.39-0.39-1.02-0.39-1.41 0-0.39 0.39-0.39 1.02 0 1.41l4.88 4.89h-11.18c-0.55 0-1 0.45-1 1s0.45 1 1 1z" />
-                </svg>
+              <div className="bg-yellow w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center">
+                <span className="material-symbols-outlined text-green text-[22px] md:text-2xl" aria-hidden>
+                  mail
+                </span>
               </div>
             </div>
-          </Link>
+          </a>
 
           <div className="absolute bottom-6 -left-8 md:-left-16 z-30 hover:-translate-y-2 transition-transform hidden sm:block">
             <div
@@ -125,7 +116,7 @@ export function Hero() {
               </svg>
             </div>
             <div className="bg-green text-white px-6 py-2.5 rounded-full shadow-lg font-bold text-[15px] tracking-wide relative z-30">
-              Product Designer
+              {site.heroBadgeLeft ?? 'Web Development'}
             </div>
           </div>
 
@@ -139,7 +130,7 @@ export function Hero() {
               </svg>
             </div>
             <div className="bg-yellow text-green px-6 py-2.5 rounded-full shadow-lg font-bold text-[15px] tracking-wide relative z-30">
-              UI/UX Designer
+              {site.heroBadgeRight ?? 'Laravel & React'}
             </div>
           </div>
         </ScrollReveal>

@@ -10,6 +10,7 @@ const BlogsPage = lazy(() => import('@/pages/BlogsPage'));
 const ProjectDetailPage = lazy(() => import('@/pages/ProjectDetailPage'));
 const ServiceDetailPage = lazy(() => import('@/pages/ServiceDetailPage'));
 const BlogDetailPage = lazy(() => import('@/pages/BlogDetailPage'));
+const LegalPage = lazy(() => import('@/pages/LegalPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
 export default function App() {
@@ -24,6 +25,8 @@ export default function App() {
           <Route path="project/:id" element={<ProjectDetailPage />} />
           <Route path="service/:id" element={<ServiceDetailPage />} />
           <Route path="blog/:id" element={<BlogDetailPage />} />
+          <Route path="terms" element={<LegalPage />} />
+          <Route path="privacy" element={<LegalPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

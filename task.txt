@@ -1,0 +1,20 @@
+Turning on email from the contact form
+The form sends mail through EmailJS (works well with a Gmail account connected in the EmailJS dashboard).
+
+Sign up at EmailJS and create an Email service (e.g. Gmail).
+
+Create an email template with fields such as: from_name, reply_to, phone, message, to_email (match what src/lib/sendContactEmail.ts sends).
+
+In the template, set the “to” address to your admin Gmail (or use EmailJS’s dynamic field mapped from to_email).
+
+Copy Service ID, Template ID, and Public Key from EmailJS.
+
+In the project root, create .env (see .env.example) with:
+
+VITE_EMAILJS_SERVICE_ID
+VITE_EMAILJS_TEMPLATE_ID
+VITE_EMAILJS_PUBLIC_KEY
+VITE_CONTACT_TO_EMAIL — your inbox (passed as to_email if your template uses it)
+Restart the dev server (npm run dev) so Vite picks up the env vars.
+
+Until those variables are set, submit shows the error state with the copy in home.json (and you can still be reached via the visible mailto on the page).
