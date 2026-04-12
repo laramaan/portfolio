@@ -18,10 +18,11 @@ export default function BlogsPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <PageListHeading eyebrow="News & Blogs" titleBefore="All " titleAccent="Blogs" />
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {blogs.map((blog, i) => (
               <motion.article
                 key={blog.id}
+                className="h-full"
                 initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -29,7 +30,7 @@ export default function BlogsPage() {
               >
                 <Link
                   to={`/blog/${blog.id}`}
-                  className="group block h-full bg-white/60 rounded-3xl p-4 md:p-0 md:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
+                  className="group flex flex-col h-full bg-white/60 rounded-3xl p-4 md:p-0 md:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
                 >
                   <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 bg-white">
                     <img
@@ -61,7 +62,7 @@ export default function BlogsPage() {
                   <h2 className="font-headline font-bold text-[22px] text-green group-hover:text-yellow transition-colors leading-[1.3] mb-4">
                     {blog.title}
                   </h2>
-                  <p className="font-body text-green/70 leading-relaxed line-clamp-3">
+                  <p className="font-body text-green/70 leading-relaxed flex-1 min-h-0 mt-1">
                     {blog.excerpt ?? `${blog.content.slice(0, 140)}…`}
                   </p>
                 </Link>

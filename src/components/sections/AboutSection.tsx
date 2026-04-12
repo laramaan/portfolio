@@ -1,59 +1,24 @@
 import { motion } from 'framer-motion';
-import { site, aboutSkillPills } from '@/data/portfolio';
+import { site } from '@/data/portfolio';
 import { DownloadResumeButton } from '@/components/ui/DownloadResumeButton';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
-
-const rowTransforms = [
-  'translate-x-2',
-  '-translate-x-3',
-  'translate-x-1',
-] as const;
 
 export function AboutSection() {
   return (
     <section className="py-20 md:py-24 bg-green" id="about" aria-labelledby="about-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <ScrollReveal className="relative flex justify-center lg:justify-start">
-            <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px] z-10 pl-8 md:pl-12 pb-12">
-              <div
-                className="absolute inset-0 bg-yellow rounded-full z-0 transform translate-x-6 md:translate-x-8 -translate-y-4"
-                aria-hidden
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch">
+          <ScrollReveal className="relative flex justify-center lg:justify-start lg:items-center">
+            <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[400px] md:h-[400px]">
+              <img
+                src={site.aboutPortrait}
+                alt={site.about.signature}
+                width={400}
+                height={400}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white/20"
               />
-              <div className="relative w-full h-full z-10 flex items-center justify-center">
-                <img
-                  src={site.aboutPortrait}
-                  alt={site.about.signature}
-                  width={400}
-                  height={400}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-[90%] h-[90%] object-cover rounded-full shadow-lg"
-                />
-              </div>
-
-              <div className="absolute bottom-8 md:bottom-20 left-0 w-full px-2 z-30 flex flex-col items-center justify-center gap-3 md:gap-4 pointer-events-none scale-90 md:scale-100">
-                {aboutSkillPills.map((row, ri) => (
-                  <div
-                    key={ri}
-                    className={`flex flex-wrap justify-center gap-3 md:gap-4 w-full ${rowTransforms[ri]}`}
-                  >
-                    {row.map((label, j) => {
-                      const isYellow = (ri + j) % 2 === 0;
-                      return (
-                        <div
-                          key={label}
-                          className={`px-4 md:px-5 py-2 rounded-full text-xs font-headline font-bold shadow-md border-[1.5px] border-white/90 ${
-                            isYellow ? 'bg-yellow text-green' : 'bg-green text-white'
-                          }`}
-                        >
-                          {label}
-                        </div>
-                      );
-                    })}
-                  </div>
-                ))}
-              </div>
             </div>
           </ScrollReveal>
 

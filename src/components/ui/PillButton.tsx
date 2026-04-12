@@ -6,7 +6,8 @@ type Base = {
   className?: string;
 };
 
-function ArrowIcon() {
+/** Right-arrow icon used on pill CTAs and Download CV (pill). */
+export function PillArrowIcon() {
   return (
     <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 ml-0.5" aria-hidden>
       <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
@@ -25,7 +26,7 @@ export function PillButtonLink({ to, label, className = '' }: Base & { to: To })
           {label}
         </span>
         <div className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
-          <ArrowIcon />
+          <PillArrowIcon />
         </div>
       </Link>
     </motion.div>
@@ -49,7 +50,7 @@ export function PillButtonAnchor({
           {label}
         </span>
         <div className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
-          <ArrowIcon />
+          <PillArrowIcon />
         </div>
       </a>
     </motion.div>

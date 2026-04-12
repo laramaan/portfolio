@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <PageListHeading eyebrow="Services" titleBefore="All " titleAccent="Services" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {services.map((service, i) => (
               <motion.article
                 key={service.id}
@@ -26,18 +26,18 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="bg-grey p-8 rounded-2xl border border-black/5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                className="bg-grey p-8 rounded-2xl border border-black/5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
               >
-                <div className="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
+                <div className="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
                   <span className="material-symbols-outlined text-3xl text-green">{service.icon}</span>
                 </div>
                 <h2 className="font-headline font-bold text-[22px] text-green mb-3">{service.title}</h2>
-                <p className="font-body text-green/70 leading-relaxed mb-6 text-[15px]">
+                <p className="font-body text-green/70 leading-relaxed mb-6 text-[15px] flex-1 min-h-0">
                   {service.short_desc}
                 </p>
                 <Link
                   to={`/service/${service.id}`}
-                  className="inline-flex items-center font-headline font-bold text-[15px] focus-visible:outline focus-visible:underline rounded"
+                  className="inline-flex items-center font-headline font-bold text-[15px] focus-visible:outline focus-visible:underline rounded mt-auto"
                 >
                   <span className="text-green">Learn more</span>
                   <span className="text-yellow ml-2 shrink-0" aria-hidden>

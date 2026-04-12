@@ -94,7 +94,9 @@ export function ContactSection() {
                 className="flex flex-col gap-5 mt-2 lg:mt-0"
                 onSubmit={async (e) => {
                   e.preventDefault();
-                  const fd = new FormData(e.currentTarget);
+                  // Capture before any await — React clears synthetic event targets after await.
+                  const formEl = e.currentTarget;
+                  const fd = new FormData(formEl);
                   const name = String(fd.get('name') ?? '').trim();
                   const email = String(fd.get('email') ?? '').trim();
                   const phone = String(fd.get('phone') ?? '').trim();
@@ -108,9 +110,12 @@ export function ContactSection() {
                       throw new Error('EmailJS not configured');
                     }
                     await sendContactEmail({ name, email, phone, message, toEmail });
+                    formEl.reset();
                     setStatus('success');
-                    e.currentTarget.reset();
-                  } catch {
+                  } catch (err) {
+                    if (import.meta.env.DEV) {
+                      console.error('[contact]', err);
+                    }
                     setStatus('error');
                   }
                 }}

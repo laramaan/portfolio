@@ -115,7 +115,7 @@ export function TestimonialsSection() {
             aria-label="Client testimonials"
           >
             <div
-              className="flex gap-4 transition-transform duration-500 ease-out motion-reduce:transition-none"
+              className="flex gap-4 items-stretch transition-transform duration-500 ease-out motion-reduce:transition-none"
               style={{
                 transform: cardWidth > 0 ? `translateX(-${translateX}px)` : undefined,
               }}
@@ -123,7 +123,7 @@ export function TestimonialsSection() {
               {testimonials.map((test, i) => (
                 <article
                   key={test.id ?? `${test.name}-${i}`}
-                  className="shrink-0"
+                  className="shrink-0 h-full self-stretch flex"
                   style={{
                     width: cardWidth > 0 ? `${cardWidth}px` : '100%',
                   }}
@@ -134,9 +134,9 @@ export function TestimonialsSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-20px' }}
                     transition={{ duration: 0.4 }}
-                    className="bg-grey p-6 md:p-8 rounded-[1.75rem] flex flex-col justify-between min-h-[220px] md:min-h-[240px] h-full group transition-all duration-300 hover:bg-white hover:shadow-lg border border-transparent hover:border-black/5"
+                    className="bg-grey p-6 md:p-8 rounded-[1.75rem] flex flex-col flex-1 min-h-0 w-full h-full group transition-all duration-300 hover:bg-white hover:shadow-lg border border-transparent hover:border-black/5"
                   >
-                    <div>
+                    <div className="flex-1 min-h-0">
                       <div className="text-yellow mb-4" aria-hidden>
                         <svg fill="currentColor" viewBox="0 0 24 24" className="w-8 h-8 opacity-50">
                           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -146,7 +146,7 @@ export function TestimonialsSection() {
                         &ldquo;{test.text}&rdquo;
                       </p>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 mt-auto shrink-0">
                       <img
                         src={test.image}
                         alt=""

@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <PageListHeading eyebrow="My Portfolio" titleBefore="All " titleAccent="Projects" />
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {projects.map((p, i) => (
               <ProjectCard key={p.id} project={p} index={i} />
             ))}

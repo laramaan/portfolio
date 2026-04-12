@@ -33,9 +33,13 @@ export function Navbar({ activeSection, scrollSpyEnabled }: Props) {
         to="/"
         className="text-lg md:text-xl font-black text-white flex items-center gap-2 no-underline group hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded-full pl-0.5"
       >
-        <span className="w-8 h-8 rounded-full bg-yellow flex items-center justify-center text-green text-base font-black">
+        <motion.span
+          className="w-8 h-8 rounded-full bg-yellow flex items-center justify-center text-green text-base font-black shrink-0 origin-center will-change-transform"
+          whileHover={{ rotate: 360 }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+        >
           {site.logoLetter}
-        </span>
+        </motion.span>
         <span>{site.brandName}</span>
       </Link>
 

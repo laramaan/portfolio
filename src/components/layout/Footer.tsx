@@ -18,15 +18,15 @@ export function Footer() {
   return (
     <footer className="bg-white pt-16 md:pt-20 pb-0">
       <div className="max-w-7xl mx-auto px-6 md:px-8 pb-10 md:pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-black/5 pt-10 md:pt-12">
-          <div className="md:col-span-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 border-t border-black/5 pt-10 md:pt-12">
+          <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-yellow rounded-full flex items-center justify-center text-green font-black text-xl">
                 {site.logoLetter}
               </div>
               <span className="text-3xl md:text-4xl font-black text-green">{site.brandName}</span>
             </div>
-            <p className="text-green/70 max-w-sm mb-6 leading-relaxed font-body">{site.footer.blurb}</p>
+            <p className="text-green/70 max-w-md mb-6 leading-relaxed font-body">{site.footer.blurb}</p>
             <div className="flex flex-wrap gap-3" aria-label="Social links">
               {linkedin && (
                 <motion.a
@@ -61,7 +61,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-2">
+          <div className="md:col-span-3">
             <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Navigation</h2>
             <ul className="space-y-2.5 font-body text-sm">
               {footerNav.map((item) => (
@@ -77,45 +77,22 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="md:col-span-3">
+          <div className="md:col-span-4">
             <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Contact</h2>
             <ul className="space-y-2.5 text-green/80 font-body text-sm">
               <li>{site.footer.phone}</li>
               <li>{site.footer.web}</li>
-              <li>{site.footer.email}</li>
+              <li>
+                <a className="hover:text-yellow transition-colors" href={`mailto:${site.footer.email}`}>
+                  {site.footer.email}
+                </a>
+              </li>
               <li className="leading-relaxed">
                 {site.footer.addressLines[0]}
                 <br />
                 {site.footer.addressLines[1]}
               </li>
             </ul>
-          </div>
-
-          <div className="md:col-span-3">
-            <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Get the latest information</h2>
-            <form
-              className="flex items-center bg-[#F4F5F4] rounded-lg overflow-hidden border border-black/5"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <label htmlFor="footer-email" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="footer-email"
-                type="email"
-                placeholder="Email address"
-                className="bg-transparent border-none focus:ring-0 text-green px-4 py-3 w-full placeholder:text-green/40 text-sm font-body"
-              />
-              <button
-                type="submit"
-                className="bg-green text-yellow px-5 py-3 hover:bg-green/90 transition-colors flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
-                aria-label="Subscribe"
-              >
-                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden>
-                  <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" />
-                </svg>
-              </button>
-            </form>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 import { motion } from 'framer-motion';
 import { site } from '@/data/portfolio';
+import { PillArrowIcon } from '@/components/ui/PillButton';
 
 type Props = {
   label?: string;
@@ -8,14 +9,6 @@ type Props = {
   /** `pill` matches “View All Projects” (yellow ring + green label + white icon). */
   variant?: 'outline' | 'pill';
 };
-
-function DownloadIcon() {
-  return (
-    <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 ml-0.5" aria-hidden>
-      <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
-    </svg>
-  );
-}
 
 export function DownloadResumeButton({ label = 'Download CV', className = '', variant = 'outline' }: Props) {
   const [busy, setBusy] = useState(false);
@@ -57,7 +50,7 @@ export function DownloadResumeButton({ label = 'Download CV', className = '', va
             {busy ? 'Preparing…' : label}
           </span>
           <span className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
-            <DownloadIcon />
+            <PillArrowIcon />
           </span>
         </button>
       </motion.div>

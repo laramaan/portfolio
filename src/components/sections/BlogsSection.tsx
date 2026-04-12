@@ -23,10 +23,11 @@ export function BlogsSection() {
           <PillButtonLink to="/blogs" label="View All Blogs" />
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
           {blogs.slice(0, 3).map((blog, i) => (
             <motion.article
               key={blog.id}
+              className="h-full"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
@@ -34,9 +35,9 @@ export function BlogsSection() {
             >
               <Link
                 to={`/blog/${blog.id}`}
-                className="group block h-full rounded-3xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
+                className="group flex flex-col h-full rounded-3xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
               >
-                <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 bg-white">
+                <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 bg-white shrink-0">
                   <img
                     src={blog.image}
                     alt={blog.title}
@@ -66,7 +67,7 @@ export function BlogsSection() {
                 <h3 className="font-headline font-bold text-[22px] text-green group-hover:text-yellow transition-colors leading-[1.3] mb-4">
                   {blog.title}
                 </h3>
-                <p className="font-body text-green/70 leading-relaxed line-clamp-3">
+                <p className="font-body text-green/70 leading-relaxed flex-1 min-h-0 mt-1">
                   {blog.excerpt ?? `${blog.content.slice(0, 140)}…`}
                 </p>
               </Link>

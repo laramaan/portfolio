@@ -11,14 +11,14 @@ function TimelineCard({
   items: { period: string; title: string; subtitle: string }[];
 }) {
   return (
-    <div className="bg-[#F8F9F8] p-8 md:p-10 rounded-[2rem] border border-black/5 shadow-sm hover:shadow-md transition-shadow duration-300">
-      <div className="flex items-center gap-4 mb-8 md:mb-10 pb-8 border-b border-black/5">
+    <div className="bg-[#F8F9F8] p-8 md:p-10 rounded-[2rem] border border-black/5 shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+      <div className="flex items-center gap-4 mb-8 md:mb-10 pb-8 border-b border-black/5 shrink-0">
         <div className="w-14 h-14 bg-yellow rounded-full flex items-center justify-center shrink-0">
           <span className="material-symbols-outlined text-green text-[28px] drop-shadow-sm">{icon}</span>
         </div>
         <h3 className="font-headline text-2xl md:text-3xl font-bold text-green">{title}</h3>
       </div>
-      <div className="ml-2 md:ml-4 space-y-8 md:space-y-10 relative">
+      <div className="ml-2 md:ml-4 space-y-8 md:space-y-10 relative flex-1 min-h-0">
         <div
           className="absolute left-[13px] md:left-[15px] top-3 bottom-3 w-0.5 bg-green/20 rounded-full"
           aria-hidden
@@ -58,11 +58,11 @@ export function ExperienceSection() {
           </h2>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-          <ScrollReveal delay={0.05}>
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch">
+          <ScrollReveal delay={0.05} className="h-full">
             <TimelineCard title="Education" icon="school" items={educationItems} />
           </ScrollReveal>
-          <ScrollReveal delay={0.1}>
+          <ScrollReveal delay={0.1} className="h-full">
             <TimelineCard title="Work Experience" icon="work" items={workItems} />
           </ScrollReveal>
         </div>
