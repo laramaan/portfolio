@@ -4,6 +4,8 @@ const SECTION_IDS = [
   'home',
   'services',
   'portfolio',
+  'skills',
+  'testimonials',
   'about',
   'experience',
   'blogs',

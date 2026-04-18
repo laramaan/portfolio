@@ -44,13 +44,14 @@ export default function HomePage() {
       <ServicesSection />
       {/* <MobileAppPromoSection /> */}
       <PortfolioSection />
+      <SkillsSection />
       <TestimonialsSection />
       <AboutSection />
-      <SkillsSection />
       <ExperienceSection />
       <FAQSection />
       <BlogsSection />
       <ContactSection />
+      <MarqueeBanner singleYellow />
     </>
   );
 }

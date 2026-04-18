@@ -82,7 +82,7 @@ export function TestimonialsSection() {
   const dotCount = maxStart + 1;
 
   return (
-    <section className="py-20 md:py-24 bg-white" aria-labelledby="testimonials-heading">
+    <section id="testimonials" className="py-20 md:py-24 bg-white" aria-labelledby="testimonials-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <ScrollReveal className="text-center mb-12 md:mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
