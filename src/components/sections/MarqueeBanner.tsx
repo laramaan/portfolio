@@ -16,7 +16,7 @@ function MarqueeCells({
     cells.push(
       <span
         key={`${label}-${ariaHidden ? 'h' : 'v'}`}
-        className="whitespace-nowrap leading-none font-headline font-extrabold text-[#1A1A1A] tracking-tight"
+        className="whitespace-nowrap leading-normal font-headline font-extrabold text-[#1A1A1A] tracking-tight"
       >
         {label}
       </span>,

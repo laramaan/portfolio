@@ -5,7 +5,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 export function AboutSection() {
   return (
-    <section className="py-20 md:py-24 bg-green" id="about" aria-labelledby="about-heading">
+    <section className="py-20 md:py-24 bg-grey" id="about" aria-labelledby="about-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch">
           <ScrollReveal className="relative flex justify-center lg:justify-start lg:items-center">
@@ -17,16 +17,16 @@ export function AboutSection() {
                 height={400}
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white/20"
+                className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
               />
             </div>
           </ScrollReveal>
 
-          <div className="flex flex-col gap-6 text-white pt-4 lg:pt-0">
+          <div className="flex flex-col gap-6 text-green pt-4 lg:pt-0">
             <ScrollReveal>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-0.5 bg-yellow" aria-hidden />
-                <span className="text-white font-body text-[15px] tracking-wide">About Me</span>
+                <span className="text-green font-body text-[15px] tracking-wide">About Me</span>
               </div>
               <h2
                 id="about-heading"
@@ -35,7 +35,7 @@ export function AboutSection() {
                 {site.about.lead}{' '}
                 <span className="text-yellow italic font-normal">{site.about.nameHighlight}</span>
               </h2>
-              <p className="text-white/75 text-lg leading-relaxed max-w-xl font-body mb-2">
+              <p className="text-green/80 text-lg leading-relaxed max-w-xl font-body mb-2">
                 {site.about.body}
               </p>
             </ScrollReveal>
@@ -47,7 +47,7 @@ export function AboutSection() {
                     <div className="text-3xl md:text-[38px] font-headline font-bold text-yellow leading-none">
                       {s.value}
                     </div>
-                    <div className="text-[14px] text-white/70 font-body">{s.label}</div>
+                    <div className="text-[14px] text-green/80 font-body">{s.label}</div>
                   </div>
                 ))}
               </div>

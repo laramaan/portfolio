@@ -100,20 +100,20 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="bg-green py-5 px-6 md:px-8">
+      <div className="bg-white py-5 px-6 md:px-8 border-t border-black/5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-sm text-white/80 font-body text-center md:text-left">
+          <p className="text-sm text-green/80 font-body text-center md:text-left">
             Copyright © {site.footer.copyrightYear}{' '}
             <span className="text-yellow">{site.brandName}</span> All Rights Reserved.
           </p>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-sm text-white/80 font-body">
-            <Link className="hover:text-white transition-colors focus-visible:outline rounded" to="/terms">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-sm text-green/80 font-body">
+            <Link className="hover:text-yellow transition-colors focus-visible:outline rounded" to="/terms">
               User Terms &amp; Conditions
             </Link>
             <span className="opacity-40" aria-hidden>
               |
             </span>
-            <Link className="hover:text-white transition-colors focus-visible:outline rounded" to="/privacy">
+            <Link className="hover:text-yellow transition-colors focus-visible:outline rounded" to="/privacy">
               Privacy Policy
             </Link>
           </div>

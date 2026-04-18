@@ -49,11 +49,11 @@ export function BlogsSection() {
                   />
                   <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                     {blog.category && (
-                      <span className="bg-yellow text-green font-bold text-[11px] px-3 py-1.5 rounded-full font-headline uppercase tracking-wide">
+                      <span className="bg-yellow text-green font-bold text-[11px] px-3 py-1 rounded-full font-headline uppercase tracking-wide flex items-center justify-center leading-none">
                         {blog.category}
                       </span>
                     )}
-                    <span className="bg-white/90 backdrop-blur-sm text-green font-bold text-[13px] px-4 py-2 rounded-full font-headline">
+                    <span className="bg-white/90 backdrop-blur-sm text-green font-bold text-[13px] px-4 py-1.5 rounded-full font-headline flex items-center justify-center leading-none">
                       {blog.date}
                     </span>
                   </div>

@@ -38,7 +38,7 @@ export function ProjectCard({ project, index = 0 }: Props) {
             {project.tags.slice(0, 4).map((tag) => (
               <span
                 key={tag}
-                className="bg-yellow text-green font-headline font-bold text-[11px] md:text-[12px] px-3 py-1 rounded-full"
+                className="bg-yellow text-green font-headline font-bold text-[11px] md:text-[12px] px-3 py-1 rounded-full uppercase text-center flex items-center justify-center leading-none"
               >
                 {tag}
               </span>
