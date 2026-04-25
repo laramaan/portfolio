@@ -16,7 +16,7 @@ export function ContactSection() {
           <ScrollReveal>
             <div className="flex items-center gap-2 mb-4">
               <span className="w-4 h-0.5 bg-yellow" aria-hidden />
-              <p className="font-headline font-bold text-[15px] tracking-wide text-white">Contact Us</p>
+              <p className="font-headline font-bold text-[15px] tracking-wide text-white">Contact Me</p>
             </div>
             <h2
               id="contact-heading"

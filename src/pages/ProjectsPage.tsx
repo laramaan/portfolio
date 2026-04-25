@@ -4,6 +4,7 @@ import { ProjectCard } from '@/components/sections/ProjectCard';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { PillButtonLink } from '@/components/ui/PillButton';
 import { PageListHeading } from '@/components/ui/PageListHeading';
+import { MarqueeBanner } from '@/components/sections/MarqueeBanner';
 
 export default function ProjectsPage() {
   return (
@@ -15,6 +16,9 @@ export default function ProjectsPage() {
       <section className="pt-28 md:pt-36 pb-20 md:pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <PageListHeading eyebrow="My Portfolio" titleBefore="All " titleAccent="Projects" />
+          <div className="pt-8 md:pt-12 mb-16 md:mb-20">
+            <MarqueeBanner />
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {projects.map((p, i) => (

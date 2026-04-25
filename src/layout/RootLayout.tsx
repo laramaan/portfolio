@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { MarqueeBanner } from '@/components/sections/MarqueeBanner';
 import { MobileBottomNav } from '@/components/layout/MobileBottomNav';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
@@ -32,6 +33,7 @@ export function RootLayout() {
       >
         <Outlet />
       </motion.main>
+      <MarqueeBanner singleYellow />
       <Footer />
       <MobileBottomNav />
     </div>

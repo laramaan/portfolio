@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { blogs } from '@/data/portfolio';
 import { PageListHeading } from '@/components/ui/PageListHeading';
+import { MarqueeBanner } from '@/components/sections/MarqueeBanner';
 
 export default function BlogsPage() {
   return (
@@ -17,6 +18,9 @@ export default function BlogsPage() {
       <section className="pt-28 md:pt-36 pb-20 md:pb-24 bg-grey">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <PageListHeading eyebrow="News & Blogs" titleBefore="All " titleAccent="Blogs" />
+          <div className="pt-8 md:pt-12 mb-16 md:mb-20">
+            <MarqueeBanner />
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {blogs.map((blog, i) => (

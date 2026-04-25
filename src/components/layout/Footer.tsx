@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { site } from '@/data/portfolio';
 
@@ -7,20 +7,18 @@ const footerNav = [
   { path: '/services', label: 'All Services' },
   { path: '/projects', label: 'All Projects' },
   { path: '/blogs', label: 'All Blogs' },
-  { hash: 'contact', label: 'Contact Us' },
+  { hash: 'contact', label: 'Contact Me' },
 ] as const;
 
 export function Footer() {
-  const { pathname } = useLocation();
-  const isHomePage = pathname === '/';
   
   const linkedin = site.social?.linkedin;
   const github = site.social?.github;
 
   return (
-    <footer className={`bg-white pb-0 ${isHomePage ? 'pt-8 md:pt-10' : 'pt-16 md:pt-20'}`}>
+    <footer className="bg-white pb-0 pt-8 md:pt-10">
       <div className="max-w-7xl mx-auto px-6 md:px-8 pb-10 md:pb-12">
-        <div className={`grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 ${isHomePage ? 'pt-4 md:pt-6' : 'border-t border-black/5 pt-10 md:pt-12'}`}>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 pt-4 md:pt-6">
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-yellow rounded-full flex items-center justify-center text-green font-black text-xl">

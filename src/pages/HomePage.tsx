@@ -51,7 +51,6 @@ export default function HomePage() {
       <FAQSection />
       <BlogsSection />
       <ContactSection />
-      <MarqueeBanner singleYellow />
     </>
   );
 }
