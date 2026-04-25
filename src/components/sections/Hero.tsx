@@ -60,8 +60,6 @@ export function Hero() {
         </div>
 
         <ScrollReveal className="relative flex justify-center items-center mt-12 md:mt-0 px-2 md:px-0 z-10 h-full">
-          <div className="absolute w-[80%] h-[80%] bg-yellow asymmetric-shape -z-10 translate-x-4" aria-hidden />
-
           <div className="relative w-[90%] max-w-md aspect-[4/5] z-10 bottom-0">
             <img
               alt="Portrait"
@@ -71,14 +69,14 @@ export function Hero() {
               decoding="async"
               fetchPriority="high"
               className="w-full h-full object-cover rounded-[3rem] shadow-2xl relative z-10"
-              style={{ objectPosition: 'top center' }}
+              style={{ objectPosition: 'center' }}
               src={site.heroPortrait}
             />
           </div>
 
           <a
             href={site.hireEmail}
-            className="absolute -top-2 -right-1 md:-top-4 md:-right-2 w-28 h-28 md:w-32 md:h-32 bg-green rounded-full flex justify-center items-center shadow-2xl p-2 z-30 hover:scale-105 transition-transform duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+            className="absolute -top-4 -right-1 md:-top-8 md:-right-2 w-28 h-28 md:w-32 md:h-32 bg-green rounded-full flex justify-center items-center border-[8px] border-white p-2 z-30 hover:scale-105 transition-transform duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
             aria-label="Hire me — send email"
           >
             <svg

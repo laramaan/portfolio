@@ -44,12 +44,12 @@ function MarqueeCells({
 export function MarqueeBanner({ singleYellow = false }: { singleYellow?: boolean }) {
   const marquee = site.marquee;
   return (
-    <div className={`relative z-10 w-screen max-w-[100vw] left-1/2 -translate-x-1/2 overflow-x-hidden overflow-y-hidden pointer-events-none ${singleYellow ? 'mt-0' : '-mt-12 md:-mt-8'}`}>
+    <div className={`relative z-10 w-screen max-w-[100vw] left-1/2 -translate-x-1/2 pointer-events-none ${singleYellow ? 'mt-0' : '-mt-12 md:-mt-8'}`}>
       <div className="relative w-full min-h-[64px] md:min-h-[72px]">
         {/* Green strip only: rotated; full bleed width */}
         {!singleYellow && (
           <div
-            className="pointer-events-none absolute z-0 left-1/2 top-1/2 w-[110%] max-w-none -translate-x-1/2 -translate-y-1/2 h-[58px] md:h-[64px] bg-[#2D4030] -rotate-1 origin-center"
+            className="pointer-events-none absolute z-0 left-1/2 top-1/2 w-[110%] max-w-none -translate-x-1/2 -translate-y-1/2 h-[64px] md:h-[72px] bg-[#2D4030] -rotate-2 origin-center"
             aria-hidden
           />
         )}

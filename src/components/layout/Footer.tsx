@@ -3,12 +3,11 @@ import { motion } from 'framer-motion';
 import { site } from '@/data/portfolio';
 
 const footerNav = [
-  { hash: 'home', label: 'Home' },
-  { hash: 'services', label: 'Services' },
-  { hash: 'about', label: 'About' },
-  { hash: 'portfolio', label: 'Projects' },
-  { path: '/blogs', label: 'Blogs' },
-  { hash: 'faq', label: 'FAQs' },
+  { path: '/', label: 'Home' },
+  { path: '/services', label: 'All Services' },
+  { path: '/projects', label: 'All Projects' },
+  { path: '/blogs', label: 'All Blogs' },
+  { hash: 'contact', label: 'Contact Us' },
 ] as const;
 
 export function Footer() {
@@ -61,11 +60,24 @@ export function Footer() {
                   </svg>
                 </motion.a>
               )}
+              <motion.a
+                href="https://wa.me/919768809635"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                whileHover={{ scale: 1.06 }}
+                whileTap={{ scale: 0.96 }}
+                className="w-10 h-10 rounded-full bg-yellow flex items-center justify-center text-green hover:brightness-110 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden>
+                  <path d="M12.031 0C5.393 0 0 5.391 0 12.029c0 2.12.553 4.195 1.603 6.015L.231 24l6.107-1.601a11.97 11.97 0 005.693 1.433v-.001h.001C18.667 23.831 24 18.437 24 12.03 24 5.393 18.667 0 12.031 0zm0 21.829h-.001a9.98 9.98 0 01-5.093-1.39l-.365-.217-3.784.992.993-3.69-.237-.377a10.027 10.027 0 01-1.53-5.32c0-5.526 4.498-10.023 10.025-10.023 2.678 0 5.195 1.042 7.088 2.937A9.957 9.957 0 0122.023 12.03c0 5.524-4.496 10.02-10.023 10.02h.03zm5.503-7.519c-.302-.15-1.785-.88-2.062-.982-.277-.101-.48-.15-.682.15-.202.302-.78 .982-.956 1.183-.176.202-.352.227-.654.076-.302-.15-1.275-.47-2.428-1.501-.897-.803-1.503-1.796-1.679-2.098-.176-.303-.018-.467.133-.618.135-.135.302-.352.453-.528.152-.176.202-.303.303-.503.101-.202.05-.378-.025-.529-.076-.151-.682-1.644-.935-2.25-.246-.593-.497-.512-.682-.521-.176-.008-.378-.01-.58-.01-.202 0-.528.076-.805.378-.277.302-1.057 1.033-1.057 2.518s1.082 2.915 1.233 3.117c.152.202 2.127 3.245 5.15 4.549.718.309 1.28.494 1.718.632.72.23 1.376.198 1.895.12.58-.088 1.785-.729 2.036-1.433.251-.704.251-1.308.176-1.433-.075-.125-.277-.201-.58-.352z" />
+                </svg>
+              </motion.a>
             </div>
           </div>
 
           <div className="md:col-span-3">
-            <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Navigation</h2>
+            <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Quick Links</h2>
             <ul className="space-y-2.5 font-body text-sm">
               {footerNav.map((item) => (
                 <li key={'path' in item ? item.path : item.hash}>
@@ -82,18 +94,36 @@ export function Footer() {
 
           <div className="md:col-span-4">
             <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Contact</h2>
-            <ul className="space-y-2.5 text-green/80 font-body text-sm">
-              <li>{site.footer.phone}</li>
-              <li>{site.footer.web}</li>
+            <ul className="space-y-3.5 text-green/80 font-body text-sm">
               <li>
-                <a className="hover:text-yellow transition-colors" href={`mailto:${site.footer.email}`}>
-                  {site.footer.email}
+                <a href={`tel:${site.footer.phone.replace(/[^0-9+]/g, '')}`} className="flex items-start gap-2.5 hover:text-yellow transition-colors group">
+                  <span className="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100 mt-0.5">call</span>
+                  <span>{site.footer.phone}</span>
                 </a>
               </li>
-              <li className="leading-relaxed">
-                {site.footer.addressLines[0]}
-                <br />
-                {site.footer.addressLines[1]}
+              <li>
+                <a href={`https://${site.footer.web}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2.5 hover:text-yellow transition-colors group">
+                  <svg className="w-[18px] h-[18px] opacity-70 group-hover:opacity-100 mt-[3px] fill-current shrink-0" viewBox="0 0 24 24" aria-hidden>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                  <span>{site.footer.web}</span>
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${site.footer.email}`} className="flex items-start gap-2.5 hover:text-yellow transition-colors group">
+                  <span className="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100 mt-0.5">mail</span>
+                  <span>{site.footer.email}</span>
+                </a>
+              </li>
+              <li>
+                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.footer.addressLines.join(' '))}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2.5 hover:text-yellow transition-colors group">
+                  <span className="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100 mt-0.5">location_on</span>
+                  <span className="leading-relaxed">
+                    {site.footer.addressLines[0]}
+                    <br />
+                    {site.footer.addressLines[1]}
+                  </span>
+                </a>
               </li>
             </ul>
           </div>
