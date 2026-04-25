@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { blogs } from '@/data/portfolio';
 import { PageListHeading } from '@/components/ui/PageListHeading';
 import { MarqueeBanner } from '@/components/sections/MarqueeBanner';
+import { PillButtonLink } from '@/components/ui/PillButton';
 
 export default function BlogsPage() {
   return (
@@ -15,13 +16,16 @@ export default function BlogsPage() {
           content="Notes on Laravel, React, WordPress, AI-assisted development, and shipped client projects."
         />
       </Helmet>
-      <section className="pt-28 md:pt-36 pb-20 md:pb-24 bg-grey">
+      <section className="pt-28 md:pt-36 bg-white pb-16 md:pb-20">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <PageListHeading eyebrow="News & Blogs" titleBefore="All " titleAccent="Blogs" />
-          <div className="pt-8 md:pt-12 mb-16 md:mb-20">
-            <MarqueeBanner />
-          </div>
+        </div>
+      </section>
 
+      <MarqueeBanner />
+
+      <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-grey">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {blogs.map((blog, i) => (
               <motion.article
@@ -34,7 +38,7 @@ export default function BlogsPage() {
               >
                 <Link
                   to={`/blog/${blog.id}`}
-                  className="group flex flex-col h-full bg-white/60 rounded-3xl p-4 md:p-0 md:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
+                  className="group flex flex-col h-full bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-black/[0.03] transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green hover:-translate-y-1"
                 >
                   <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 bg-white">
                     <img
@@ -72,6 +76,18 @@ export default function BlogsPage() {
                 </Link>
               </motion.article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-green py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-headline font-bold text-white leading-[1.2] w-full max-w-3xl text-center md:text-left">
+            Let&apos;s Create an <span className="text-yellow">Amazing</span> <br className="hidden md:block" />
+            <span className="text-yellow italic font-normal">Project</span> Together!
+          </h2>
+          <div className="shrink-0">
+            <PillButtonLink to={{ pathname: '/', hash: 'contact' }} label="Contact Me Now" />
           </div>
         </div>
       </section>
