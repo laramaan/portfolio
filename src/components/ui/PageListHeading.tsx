@@ -14,8 +14,8 @@ type Props = {
  */
 export function PageListHeading({ eyebrow, titleBefore, titleAccent, titleAfter = '' }: Props) {
   return (
-    <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
-      <div className="max-w-2xl">
+    <ScrollReveal className="flex flex-row items-end justify-between mb-12 md:mb-16 gap-4 md:gap-8">
+      <div className="max-w-2xl text-left">
         <SectionEyebrow label={eyebrow} />
         <h1 className="font-headline font-bold text-3xl md:text-5xl tracking-tight leading-[1.1]">
           <span className="text-green">{titleBefore}</span>
@@ -25,7 +25,7 @@ export function PageListHeading({ eyebrow, titleBefore, titleAccent, titleAfter 
       </div>
       <Link
         to="/"
-        className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit md:self-end focus-visible:outline focus-visible:underline rounded shrink-0"
+        className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit self-end md:self-auto focus-visible:outline focus-visible:underline rounded shrink-0"
       >
         <span className="material-symbols-outlined">home</span> Home
       </Link>

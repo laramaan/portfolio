@@ -7,11 +7,11 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 export function Hero() {
   return (
     <header
-      className="relative pt-28 pb-8 md:pt-44 md:pb-12 bg-white overflow-hidden"
+      className="relative pt-28 pb-16 md:pt-44 md:pb-12 bg-white overflow-hidden"
       id="home"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-10 md:gap-12 items-center relative z-20">
-        <div className="z-30 relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 md:gap-12 items-center relative z-20">
+        <div className="z-30 relative flex flex-col items-center text-center md:items-start md:text-left">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -25,7 +25,7 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            className="font-headline font-bold text-3xl md:text-5xl leading-[1.1] text-green mb-6 z-30 relative"
+            className="font-headline font-bold text-[34px] sm:text-4xl md:text-5xl leading-[1.15] md:leading-[1.1] text-green mb-6 z-30 relative w-full"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.05 }}
@@ -49,13 +49,13 @@ export function Hero() {
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap gap-4 items-center z-30 relative"
+            className="flex flex-col sm:flex-row justify-center md:justify-start items-stretch sm:items-center gap-4 z-30 relative w-fit mx-auto md:mx-0"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.18 }}
           >
-            <PillButtonLink to="/projects" label="View My Portfolio" />
-            <DownloadResumeButton label="Download CV" />
+            <PillButtonLink to="/projects" label="View all projects" />
+            <DownloadResumeButton label="Resume" className="w-full sm:w-auto" />
           </motion.div>
         </div>
 
@@ -76,7 +76,7 @@ export function Hero() {
 
           <a
             href={site.hireEmail}
-            className="absolute -top-4 -right-1 md:-top-8 md:-right-2 w-28 h-28 md:w-32 md:h-32 bg-green rounded-full flex justify-center items-center border-[8px] border-white p-2 z-30 hover:scale-105 transition-transform duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+            className="absolute -top-3 -right-3 md:-top-8 md:-right-2 w-24 h-24 md:w-32 md:h-32 bg-green rounded-full flex justify-center items-center border-[6px] md:border-[8px] border-white p-1.5 md:p-2 z-30 hover:scale-105 transition-transform duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
             aria-label="Hire me — send email"
           >
             <svg
@@ -96,8 +96,8 @@ export function Hero() {
               </text>
             </svg>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="bg-yellow w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center">
-                <span className="material-symbols-outlined text-green text-[22px] md:text-2xl" aria-hidden>
+              <div className="bg-yellow w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center">
+                <span className="material-symbols-outlined text-green text-[18px] md:text-2xl" aria-hidden>
                   mail
                 </span>
               </div>

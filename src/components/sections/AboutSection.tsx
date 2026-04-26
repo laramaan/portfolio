@@ -23,8 +23,8 @@ export function AboutSection() {
           </ScrollReveal>
 
           <div className="flex flex-col gap-6 text-green pt-4 lg:pt-0">
-            <ScrollReveal>
-              <div className="flex items-center gap-3">
+            <ScrollReveal className="flex flex-col items-center text-center lg:items-start lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start gap-3">
                 <div className="w-5 h-0.5 bg-yellow" aria-hidden />
                 <span className="text-green font-body text-[15px] tracking-wide">About Me</span>
               </div>
@@ -41,23 +41,25 @@ export function AboutSection() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.08}>
-              <div className="flex flex-wrap gap-8 md:gap-14 pt-2 pb-6">
+              <div className="grid grid-cols-3 md:flex md:flex-wrap gap-2 sm:gap-6 md:gap-14 pt-2 pb-6">
                 {site.about.stats.map((s) => (
                   <div key={s.label} className="flex flex-col gap-1">
-                    <div className="text-3xl md:text-[38px] font-headline font-bold text-yellow leading-none">
+                    <div className="text-[22px] sm:text-3xl md:text-[38px] font-headline font-bold text-yellow leading-none">
                       {s.value}
                     </div>
-                    <div className="text-[14px] text-green/80 font-body">{s.label}</div>
+                    <div className="text-[11px] sm:text-[13px] md:text-[14px] leading-tight text-green/80 font-body pr-1 md:pr-0">
+                      {s.label}
+                    </div>
                   </div>
                 ))}
               </div>
             </ScrollReveal>
 
             <ScrollReveal delay={0.12}>
-              <div className="flex flex-wrap items-center gap-8 mt-2">
-                <DownloadResumeButton variant="pill" label="Download CV" />
+              <div className="flex flex-row items-center gap-4 sm:gap-8 mt-2 w-full">
+                <DownloadResumeButton variant="pill" label="Resume" />
                 <motion.div
-                  className="text-yellow italic signature-font text-4xl md:text-5xl origin-left"
+                  className="text-yellow italic signature-font text-3xl sm:text-4xl md:text-5xl origin-left shrink-0"
                   initial={{ opacity: 0, x: -8 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}

@@ -36,29 +36,34 @@ export default function BlogDetailPage() {
       </Helmet>
       <article className="pt-28 md:pt-36 pb-16 md:pb-20 bg-[#f6f7f6]">
         <div className="max-w-3xl mx-auto px-6 md:px-8">
-          <ScrollReveal className="mb-8">
+          <ScrollReveal className="flex flex-row justify-between items-end mb-12 md:mb-16 gap-4 md:gap-8">
+            <div className="flex flex-col items-start text-left">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="w-4 h-0.5 bg-yellow" aria-hidden />
+                <p className="font-headline font-bold text-[15px] tracking-wide text-green">News & Blogs</p>
+              </div>
+              {item.category && (
+                <span className="inline-block font-headline font-bold text-[12px] uppercase tracking-wider text-green bg-yellow/90 px-3 py-1 rounded-full mb-4">
+                  {item.category}
+                </span>
+              )}
+              <h1 className="font-headline font-bold text-3xl md:text-[2.75rem] leading-tight text-green mb-4">
+                {item.title}
+              </h1>
+              <p className="font-body text-green/55 text-sm md:text-base">
+                <span className="font-bold text-green/80">{item.date}</span>
+                <span className="mx-2" aria-hidden>
+                  ·
+                </span>
+                {item.time}
+              </p>
+            </div>
             <Link
               to="/blogs"
-              className="inline-flex items-center gap-2 text-green/70 hover:text-green font-body text-sm mb-8 focus-visible:outline focus-visible:underline rounded"
+              className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit focus-visible:outline focus-visible:underline rounded shrink-0"
             >
-              <span className="material-symbols-outlined text-lg">arrow_back</span>
-              All articles
+              <span className="material-symbols-outlined">arrow_back</span> All blogs
             </Link>
-            {item.category && (
-              <span className="inline-block font-headline font-bold text-[12px] uppercase tracking-wider text-green bg-yellow/90 px-3 py-1 rounded-full mb-4">
-                {item.category}
-              </span>
-            )}
-            <h1 className="font-headline font-bold text-3xl md:text-[2.75rem] leading-tight text-green mb-4">
-              {item.title}
-            </h1>
-            <p className="font-body text-green/55 text-sm md:text-base">
-              <span className="font-bold text-green/80">{item.date}</span>
-              <span className="mx-2" aria-hidden>
-                ·
-              </span>
-              {item.time}
-            </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.06}>

@@ -9,8 +9,8 @@ export function BlogsSection() {
   return (
     <section className="py-20 md:py-24 bg-grey" id="blogs" aria-labelledby="blogs-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
-          <div className="flex flex-col">
+        <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-8">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <SectionEyebrow label="News & Blogs" />
             <h2
               id="blogs-heading"
@@ -20,7 +20,9 @@ export function BlogsSection() {
               <span className="text-yellow italic font-normal"> News &amp; Blogs</span>
             </h2>
           </div>
-          <PillButtonLink to="/blogs" label="View All Blogs" />
+          <div className="hidden md:block">
+            <PillButtonLink to="/blogs" label="View All Blogs" />
+          </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
@@ -35,7 +37,7 @@ export function BlogsSection() {
             >
               <Link
                 to={`/blog/${blog.id}`}
-                className="group flex flex-col h-full rounded-3xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
+                className="group flex flex-col h-full rounded-3xl bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
               >
                 <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 bg-white shrink-0">
                   <img
@@ -73,6 +75,10 @@ export function BlogsSection() {
               </Link>
             </motion.article>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center md:hidden">
+          <PillButtonLink to="/blogs" label="View All Blogs" />
         </div>
       </div>
     </section>

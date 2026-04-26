@@ -13,7 +13,7 @@ export function RootLayout() {
   const activeSection = useScrollSpy(onHome);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white pb-24 md:pb-0">
+    <div className="min-h-screen flex flex-col bg-white pb-24 md:pb-0 overflow-x-hidden">
       <ScrollToTop />
       <a
         href="#main-content"

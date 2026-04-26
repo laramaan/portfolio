@@ -2,8 +2,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 const items = [
   { hash: 'home', icon: 'home', label: 'Home' },
-  { hash: 'services', icon: 'rebase_edit', label: 'Services' },
-  { hash: 'portfolio', icon: 'work', label: 'Projects' },
+  { path: '/services', icon: 'rebase_edit', label: 'Services' },
+  { path: '/projects', icon: 'work', label: 'Projects' },
   { path: '/blogs', icon: 'menu_book', label: 'Blogs' },
   { hash: 'about', icon: 'person', label: 'About' },
 ] as const;

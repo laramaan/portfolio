@@ -12,8 +12,8 @@ export function PortfolioSection() {
       aria-labelledby="portfolio-heading"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
-        <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
-          <div className="flex flex-col">
+        <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <SectionEyebrow label="My Portfolio" />
             <h2
               id="portfolio-heading"
@@ -23,13 +23,19 @@ export function PortfolioSection() {
               <span className="text-yellow italic font-normal"> Projects</span>
             </h2>
           </div>
-          <PillButtonLink to="/projects" label="View All Projects" />
+          <div className="hidden md:block">
+            <PillButtonLink to="/projects" label="View All Projects" />
+          </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 items-stretch">
           {projects.slice(0, 4).map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center md:hidden">
+          <PillButtonLink to="/projects" label="View All Projects" />
         </div>
       </div>
     </section>

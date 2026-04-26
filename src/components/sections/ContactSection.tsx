@@ -13,8 +13,8 @@ export function ContactSection() {
     <section className="py-20 md:py-24 bg-green text-white" id="contact" aria-labelledby="contact-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
-          <ScrollReveal>
-            <div className="flex items-center gap-2 mb-4">
+          <ScrollReveal className="flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
               <span className="w-4 h-0.5 bg-yellow" aria-hidden />
               <p className="font-headline font-bold text-[15px] tracking-wide text-white">Contact Me</p>
             </div>
@@ -141,7 +141,7 @@ export function ContactSection() {
                     required
                     autoComplete="name"
                     placeholder={contactForm.namePlaceholder}
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-4 py-3 md:px-5 md:py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
                   />
                 </div>
 
@@ -156,7 +156,7 @@ export function ContactSection() {
                     required
                     autoComplete="email"
                     placeholder={contactForm.emailPlaceholder}
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-4 py-3 md:px-5 md:py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
                   />
                 </div>
 
@@ -170,7 +170,7 @@ export function ContactSection() {
                     type="tel"
                     autoComplete="tel"
                     placeholder={contactForm.phonePlaceholder}
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-4 py-3 md:px-5 md:py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35"
                   />
                 </div>
 
@@ -184,11 +184,11 @@ export function ContactSection() {
                     rows={5}
                     required
                     placeholder={contactForm.messagePlaceholder}
-                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-5 py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35 resize-none min-h-[120px]"
+                    className="w-full bg-white/5 border border-white/10 rounded-[1.25rem] px-4 py-3 md:px-5 md:py-3.5 text-white font-body outline-none focus:ring-0 focus:border-yellow transition-colors placeholder:text-white/35 resize-none min-h-[120px]"
                   />
                 </div>
 
-                <div className="mt-1">
+                <div className="mt-2 flex justify-center lg:justify-start">
                   <motion.button
                     type="submit"
                     disabled={status === 'sending'}

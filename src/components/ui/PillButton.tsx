@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 type Base = {
   label: string;
   className?: string;
+  compactOnMobile?: boolean;
+  fontSizeClass?: string;
 };
 
 /** Right-arrow icon used on pill CTAs and Download CV (pill). */
@@ -15,17 +17,17 @@ export function PillArrowIcon() {
   );
 }
 
-export function PillButtonLink({ to, label, className = '' }: Base & { to: To }) {
+export function PillButtonLink({ to, label, className = '', compactOnMobile, fontSizeClass }: Base & { to: To }) {
   return (
     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className={className}>
       <Link
         to={to}
         className="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-colors duration-300 w-fit group border-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
       >
-        <span className="bg-green text-white px-8 py-3.5 rounded-full font-bold flex items-center font-headline text-sm tracking-wide mr-2 transition-colors">
+        <span className={`bg-green text-white rounded-full font-bold flex items-center font-headline tracking-wide mr-2 transition-colors ${compactOnMobile ? 'px-5 py-2.5 md:px-8 md:py-3.5' : 'px-8 py-3.5'} ${fontSizeClass || (compactOnMobile ? 'text-xs md:text-sm' : 'text-sm')}`}>
           {label}
         </span>
-        <div className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
+        <div className={`bg-white text-green rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300 ${compactOnMobile ? 'w-8 h-8 md:w-10 md:h-10' : 'w-10 h-10'}`}>
           <PillArrowIcon />
         </div>
       </Link>
@@ -38,6 +40,8 @@ export function PillButtonAnchor({
   label,
   className = '',
   external,
+  compactOnMobile,
+  fontSizeClass,
 }: Base & { href: string; external?: boolean }) {
   return (
     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className={className}>
@@ -46,10 +50,10 @@ export function PillButtonAnchor({
         {...(external ? { target: '_blank', rel: 'noreferrer' } : {})}
         className="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-colors duration-300 w-fit group border-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
       >
-        <span className="bg-green text-white px-8 py-3.5 rounded-full font-bold flex items-center font-headline text-sm tracking-wide mr-2 transition-colors">
+        <span className={`bg-green text-white rounded-full font-bold flex items-center font-headline tracking-wide mr-2 transition-colors ${compactOnMobile ? 'px-5 py-2.5 md:px-8 md:py-3.5' : 'px-8 py-3.5'} ${fontSizeClass || (compactOnMobile ? 'text-xs md:text-sm' : 'text-sm')}`}>
           {label}
         </span>
-        <div className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
+        <div className={`bg-white text-green rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300 ${compactOnMobile ? 'w-8 h-8 md:w-10 md:h-10' : 'w-10 h-10'}`}>
           <PillArrowIcon />
         </div>
       </a>

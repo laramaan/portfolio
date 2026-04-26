@@ -4,11 +4,11 @@ import { SectionEyebrow } from '@/components/ui/SectionEyebrow';
 
 function SkillChip({ icon, label }: { icon: string; label: string }) {
   return (
-    <div className="min-w-[120px] bg-white/10 border border-white/10 p-6 rounded-2xl flex flex-col items-center justify-center shrink-0 shadow-sm mx-3 transition-colors hover:bg-white/15">
-      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-yellow rounded-xl">
-        <span className="material-symbols-outlined text-3xl text-white">{icon}</span>
+    <div className="min-w-[90px] md:min-w-[120px] bg-white/10 border border-white/10 p-4 md:p-6 rounded-2xl flex flex-col items-center justify-center shrink-0 shadow-sm mx-2 md:mx-3 transition-colors hover:bg-white/15">
+      <div className="w-8 h-8 md:w-10 md:h-10 mb-2 md:mb-3 flex items-center justify-center bg-yellow rounded-xl">
+        <span className="material-symbols-outlined text-2xl md:text-3xl text-white">{icon}</span>
       </div>
-      <span className="font-bold text-white text-[13px] whitespace-nowrap">{label}</span>
+      <span className="font-bold text-white text-[11px] md:text-[13px] whitespace-nowrap">{label}</span>
     </div>
   );
 }
@@ -36,7 +36,7 @@ export function SkillsSection() {
     <section className="py-20 md:py-24 bg-green overflow-hidden" id="skills" aria-labelledby="skills-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          <ScrollReveal className="lg:col-span-4 z-10 mb-4 lg:mb-0">
+          <ScrollReveal className="lg:col-span-4 z-10 mb-6 lg:mb-0 flex flex-col items-center text-center lg:items-start lg:text-left">
             <SectionEyebrow label="Skills & Tools" light />
             <h2
               id="skills-heading"
@@ -45,7 +45,7 @@ export function SkillsSection() {
               <span className="text-yellow italic font-normal">Skills & Tools</span>
               <span className="text-white"> I Bring to the Table</span>
             </h2>
-            <p className="text-white/80 leading-relaxed font-body">
+            <p className="text-white/80 leading-relaxed font-body max-w-md">
               I leverage a diverse stack of industry-leading tools to bring conceptual ideas into technical reality.
             </p>
           </ScrollReveal>

@@ -18,16 +18,16 @@ export function Footer() {
   return (
     <footer className="bg-white pb-0 pt-8 md:pt-10">
       <div className="max-w-7xl mx-auto px-6 md:px-8 pb-10 md:pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 pt-4 md:pt-6">
-          <div className="md:col-span-5">
-            <div className="flex items-center gap-3 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 pt-4 md:pt-6 text-center md:text-left">
+          <div className="md:col-span-5 flex flex-col items-center md:items-start">
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
               <div className="w-12 h-12 bg-yellow rounded-full flex items-center justify-center text-green font-black text-xl">
                 {site.logoLetter}
               </div>
               <span className="text-3xl md:text-4xl font-black text-green">{site.brandName}</span>
             </div>
             <p className="text-green/70 max-w-md mb-6 leading-relaxed font-body">{site.footer.blurb}</p>
-            <div className="flex flex-wrap gap-3" aria-label="Social links">
+            <div className="flex flex-wrap justify-center md:justify-start gap-3" aria-label="Social links">
               {linkedin && (
                 <motion.a
                   href={linkedin}
@@ -74,9 +74,9 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-3">
+          <div className="md:col-span-3 flex flex-col items-center md:items-start">
             <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Quick Links</h2>
-            <ul className="space-y-2.5 font-body text-sm">
+            <ul className="space-y-2.5 font-body text-sm flex flex-col items-center md:items-start">
               {footerNav.map((item) => (
                 <li key={'path' in item ? item.path : item.hash}>
                   <Link
@@ -90,9 +90,9 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="md:col-span-4">
+          <div className="md:col-span-4 flex flex-col items-center md:items-start">
             <h2 className="text-yellow font-bold text-lg mb-4 font-headline">Contact</h2>
-            <ul className="space-y-3.5 text-green/80 font-body text-sm">
+            <ul className="space-y-3.5 text-green/80 font-body text-sm flex flex-col items-center md:items-start text-center md:text-left">
               <li>
                 <a href={`tel:${site.footer.phone.replace(/[^0-9+]/g, '')}`} className="flex items-start gap-2.5 hover:text-yellow transition-colors group">
                   <span className="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100 mt-0.5">call</span>

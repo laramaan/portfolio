@@ -87,7 +87,7 @@ export default function BlogsPage() {
             <span className="text-yellow italic font-normal">Project</span> Together!
           </h2>
           <div className="shrink-0">
-            <PillButtonLink to={{ pathname: '/', hash: 'contact' }} label="Contact Me Now" />
+            <PillButtonLink to={{ pathname: '/', hash: 'contact' }} label="Contact Me" />
           </div>
         </div>
       </section>

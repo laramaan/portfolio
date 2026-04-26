@@ -9,8 +9,8 @@ export function ServicesSection() {
   return (
     <section className="py-20 md:py-24 bg-white" id="services" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
-          <div className="max-w-2xl">
+        <ScrollReveal className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-8">
+          <div className="max-w-2xl flex flex-col items-center text-center md:items-start md:text-left">
             <SectionEyebrow label="Services" />
             <h2
               id="services-heading"
@@ -20,7 +20,9 @@ export function ServicesSection() {
               <span className="text-green"> I Provide</span>
             </h2>
           </div>
-          <PillButtonLink to="/services" label="View All Services" />
+          <div className="hidden md:block">
+            <PillButtonLink to="/services" label="View All Services" />
+          </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -53,6 +55,10 @@ export function ServicesSection() {
               </Link>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center md:hidden">
+          <PillButtonLink to="/services" label="View All Services" />
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ type Props = {
   variant?: 'outline' | 'pill';
 };
 
-export function DownloadResumeButton({ label = 'Download CV', className = '', variant = 'outline' }: Props) {
+export function DownloadResumeButton({ label = 'Resume', className = '', variant = 'outline' }: Props) {
   const [busy, setBusy] = useState(false);
   const url = site.resumeUrl ?? '/Resume.pdf';
   const filename = site.resumeDownloadFilename ?? 'Resume.pdf';
@@ -46,10 +46,10 @@ export function DownloadResumeButton({ label = 'Download CV', className = '', va
           disabled={busy}
           className="inline-flex items-center bg-yellow p-[2px] rounded-full shadow-sm transition-colors duration-300 w-fit group border-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow disabled:opacity-70"
         >
-          <span className="bg-green text-white px-8 py-3.5 rounded-full font-bold flex items-center font-headline text-sm tracking-wide mr-2 transition-colors">
+          <span className="bg-green text-white px-5 py-2.5 md:px-8 md:py-3.5 rounded-full font-bold flex items-center font-headline text-xs md:text-sm tracking-wide mr-2 transition-colors">
             {busy ? 'Preparing…' : label}
           </span>
-          <span className="bg-white text-green w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
+          <span className="bg-white text-green w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center shadow-sm mr-1 group-hover:translate-x-1 transition-transform duration-300">
             <PillArrowIcon />
           </span>
         </button>
@@ -64,7 +64,7 @@ export function DownloadResumeButton({ label = 'Download CV', className = '', va
       disabled={busy}
       whileHover={{ scale: busy ? 1 : 1.02 }}
       whileTap={{ scale: busy ? 1 : 0.98 }}
-      className={`border-2 border-green text-green rounded-full px-8 md:px-10 py-3.5 font-bold font-headline text-sm hover:bg-green hover:text-white transition-colors bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green disabled:opacity-70 ${className}`}
+      className={`border-2 border-green text-green rounded-full px-6 py-2.5 md:px-10 md:py-3.5 font-bold font-headline text-xs md:text-sm hover:bg-green hover:text-white transition-colors bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green disabled:opacity-70 ${className}`}
     >
       {busy ? 'Preparing…' : label}
     </motion.button>
