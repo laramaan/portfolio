@@ -35,14 +35,14 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col aspect-square border border-black/[0.03]"
+                className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full border border-black/[0.03]"
               >
                 <div className="mb-6 w-16 h-16 bg-grey rounded-full flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-3xl text-green">{service.icon}</span>
                 </div>
                 <h2 className="font-headline font-bold text-[22px] text-green mb-3">{service.title}</h2>
-                <p className="font-body text-green/60 leading-relaxed mb-6 text-[15px] flex-1 overflow-hidden">
-                  {service.short_desc}
+                <p className="font-body text-green/60 leading-relaxed mb-6 text-[15px] flex-1">
+                  {service.description}
                 </p>
                 <Link
                   to={`/service/${service.id}`}

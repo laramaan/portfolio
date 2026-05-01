@@ -1,9 +1,31 @@
-export type Service = {
+export type HomeService = {
   id: string;
   icon: string;
   title: string;
-  short_desc: string;
-  content: string;
+  description: string;
+};
+
+export type ProcessStep = {
+  step: number;
+  title: string;
+  description: string;
+};
+
+export type Service = {
+  id: string;
+  icon: string;
+  image: string;
+  title: string;
+  description: string;
+  detailed_description: string;
+  services_included: string[];
+  industries: string[];
+  benefits: string[];
+  use_cases: string[];
+  problems_solved: string[];
+  process: ProcessStep[];
+  deliverables: string[];
+  outcomes: string[];
 };
 
 export type Project = {

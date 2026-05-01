@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { services } from '@/data/portfolio';
+import { homeServices } from '@/data/portfolio';
 import { PillButtonLink } from '@/components/ui/PillButton';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SectionEyebrow } from '@/components/ui/SectionEyebrow';
@@ -26,25 +26,25 @@ export function ServicesSection() {
         </ScrollReveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {services.map((service, i) => (
+          {homeServices.map((service, i) => (
             <motion.div
-              key={service.id}
+              key={service.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
-              className="bg-grey p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-md"
+              className="bg-grey p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-md flex flex-col h-full"
             >
               <div className="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <span className="material-symbols-outlined text-3xl text-green">{service.icon}</span>
               </div>
               <h3 className="font-headline font-bold text-[22px] text-green mb-3">{service.title}</h3>
-              <p className="font-body text-green/70 leading-relaxed mb-6 text-[15px]">
-                {service.short_desc}
+              <p className="font-body text-green/70 leading-relaxed mb-6 text-[15px] flex-1">
+                {service.description}
               </p>
               <Link
                 to={`/service/${service.id}`}
-                className="inline-flex items-center font-headline font-bold text-[15px] text-green group-hover:translate-x-0.5 transition-transform duration-300 focus-visible:outline focus-visible:underline rounded"
+                className="inline-flex items-center font-headline font-bold text-[15px] text-green group-hover:translate-x-0.5 transition-transform duration-300 focus-visible:outline focus-visible:underline rounded mt-auto"
               >
                 <span className="text-green">Learn more</span>
                 <span className="text-yellow ml-2 shrink-0" aria-hidden>

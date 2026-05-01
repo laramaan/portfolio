@@ -44,9 +44,8 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.12 }}
-          >
-            {site.heroBio}
-          </motion.p>
+            dangerouslySetInnerHTML={{ __html: site.heroBio }}
+          />
 
           <motion.div
             className="flex flex-col sm:flex-row justify-center md:justify-start items-stretch sm:items-center gap-4 z-30 relative w-fit mx-auto md:mx-0"
@@ -104,9 +103,23 @@ export function Hero() {
             </div>
           </a>
 
+          <div className="absolute top-[10%] -left-4 md:-left-10 z-30 hover:-translate-y-2 transition-transform hidden sm:block">
+            <div
+              className="absolute -bottom-6 -right-4 w-8 h-8 text-white rotate-180 filter drop-shadow-md z-40 pointer-events-none"
+              aria-hidden
+            >
+              <svg fill="currentColor" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                <path d="M5.5 2.5L20 10.5L13.5 13.5L10.5 20L5.5 2.5Z" />
+              </svg>
+            </div>
+            <div className="bg-white text-green px-6 py-2.5 rounded-full shadow-lg font-bold text-[15px] tracking-wide relative z-30 border border-green/10">
+              {site.heroBadgeMiddle ?? 'Startups'}
+            </div>
+          </div>
+
           <div className="absolute bottom-6 -left-8 md:-left-16 z-30 hover:-translate-y-2 transition-transform hidden sm:block">
             <div
-              className="absolute -top-6 -left-6 w-8 h-8 text-green -rotate-12 filter drop-shadow-md z-40 pointer-events-none"
+              className="absolute -top-6 -right-4 w-8 h-8 text-green rotate-90 filter drop-shadow-md z-40 pointer-events-none"
               aria-hidden
             >
               <svg fill="currentColor" stroke="white" strokeWidth={1.5} viewBox="0 0 24 24">
@@ -120,7 +133,7 @@ export function Hero() {
 
           <div className="absolute top-2/3 -right-6 md:-right-10 z-30 hover:-translate-y-2 transition-transform mt-8 hidden sm:block">
             <div
-              className="absolute -top-6 -left-6 w-8 h-8 text-yellow -rotate-45 filter drop-shadow-md z-40 pointer-events-none"
+              className="absolute -top-6 -left-6 w-8 h-8 text-yellow rotate-0 filter drop-shadow-md z-40 pointer-events-none"
               aria-hidden
             >
               <svg fill="currentColor" stroke="white" strokeWidth={1.5} viewBox="0 0 24 24">

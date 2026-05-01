@@ -33,7 +33,7 @@ function MarqueeCells({
   });
   return (
     <div
-      className="marquee-content flex items-center shrink-0 min-w-full justify-around gap-8 md:gap-12 px-5 md:px-8 text-xl md:text-2xl"
+      className="marquee-content flex items-center shrink-0 min-w-full justify-around gap-8 md:gap-12 px-5 md:px-8 text-lg md:text-xl"
       aria-hidden={ariaHidden}
     >
       {cells}
@@ -45,16 +45,16 @@ export function MarqueeBanner({ singleYellow = false }: { singleYellow?: boolean
   const marquee = site.marquee;
   return (
     <div className={`relative z-10 w-screen max-w-[100vw] left-1/2 -translate-x-1/2 pointer-events-none ${singleYellow ? 'mt-0' : '-mt-12 md:-mt-8'}`}>
-      <div className="relative w-full min-h-[64px] md:min-h-[72px]">
+      <div className="relative w-full min-h-[52px] md:min-h-[60px]">
         {/* Green strip only: rotated; full bleed width */}
         {!singleYellow && (
           <div
-            className="pointer-events-none absolute z-0 left-1/2 top-1/2 w-[110%] max-w-none -translate-x-1/2 -translate-y-1/2 h-[64px] md:h-[72px] bg-[#2D4030] -rotate-2 origin-center"
+            className="pointer-events-none absolute z-0 left-1/2 top-1/2 w-[110%] max-w-none -translate-x-1/2 -translate-y-1/2 h-[52px] md:h-[60px] bg-[#2D4030] -rotate-2 origin-center"
             aria-hidden
           />
         )}
         {/* Yellow strip: no rotation; clips marquee — no page scrollbars */}
-        <div className="relative z-10 w-full bg-[#FCAF17] py-3.5 md:py-4 shadow-[0_1px_0_rgba(0,0,0,0.06)] pointer-events-auto overflow-hidden">
+        <div className="relative z-10 w-full bg-[#FCAF17] py-2.5 md:py-3 shadow-[0_1px_0_rgba(0,0,0,0.06)] pointer-events-auto overflow-hidden">
           <div className="marquee-container w-full">
             <MarqueeCells marquee={marquee} />
             <MarqueeCells marquee={marquee} ariaHidden />

@@ -4,7 +4,7 @@ import type {
   LegalContent,
   TestimonialsCarouselConfig,
 } from '@/types/site';
-import type { Blog, Faq, Project, Service, Testimonial, TimelineItem } from '@/types';
+import type { Blog, Faq, Project, Service, Testimonial, TimelineItem, HomeService } from '@/types';
 
 import home from './content/home.json';
 import projectsData from './content/projects.json';
@@ -23,6 +23,7 @@ type HomeJson = {
   faqs: Faq[];
   testimonialsSettings?: TestimonialsCarouselConfig;
   contactForm: ContactFormCopy;
+  services: HomeService[];
 };
 
 const homeTyped = home as HomeJson;
@@ -41,6 +42,7 @@ export const testimonialsSettings: TestimonialsCarouselConfig =
     pauseOnHover: true,
   };
 export const contactForm = homeTyped.contactForm;
+export const homeServices = homeTyped.services;
 
 export const services = (servicesData as { services: Service[] }).services;
 export const projects = (projectsData as { projects: Project[] }).projects;

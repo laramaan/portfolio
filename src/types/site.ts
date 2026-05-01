@@ -11,6 +11,7 @@ export type SiteSettings = {
   marquee: string[];
   /** Optional hero floating pill labels */
   heroBadgeLeft?: string;
+  heroBadgeMiddle?: string;
   heroBadgeRight?: string;
   /** Public path to resume PDF */
   resumeUrl?: string;
