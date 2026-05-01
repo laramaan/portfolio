@@ -26,7 +26,7 @@ type HomeJson = {
   services: HomeService[];
 };
 
-const homeTyped = home as HomeJson;
+const homeTyped = home as unknown as HomeJson;
 
 export const site = homeTyped.site;
 export const educationItems = homeTyped.educationItems;
