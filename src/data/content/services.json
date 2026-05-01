@@ -6,17 +6,17 @@
       "image": "/images/services/full-stack.jpg",
       "title": "Full Stack Website Development",
       "description": "End-to-end development of scalable web applications — from modern frontend interfaces to robust backend systems, built for performance, security, and long-term growth.",
-      "detailed_description": "I architect and build complete web applications from the ground up — handling everything from database schema design and server-side logic to pixel-perfect frontend interfaces. Using Laravel 12 on the backend and React or Livewire on the frontend, I deliver systems that are fast, maintainable, and built to scale. Every project is engineered with clean code architecture, security best practices, and CI/CD-ready deployment in mind — so your product is production-ready from day one.",
+      "detailed_description": "I architect and build complete web applications from the ground up — handling everything from database schema design and server-side business logic to pixel-perfect frontend interfaces. Every project is engineered with clean code architecture, security best practices, and deployment-ready infrastructure in mind — so your product is production-ready from day one, not after a second round of fixes.",
       "services_included": [
-        "Custom web application development (Laravel + React / Livewire)",
-        "Single Page Applications (SPA) with Inertia.js",
-        "Server-Side Rendering (SSR) for SEO-critical applications",
-        "Multi-tenant SaaS architecture with isolated environments",
-        "Role-based access control and authentication (Laravel Sanctum / Passport)",
-        "Database design, Eloquent ORM, and query optimisation",
-        "Admin panel development (Laravel Nova / Filament)",
-        "Automated testing with PHPUnit and Pest",
-        "CI/CD pipeline setup and version control workflows"
+        "Custom web application development — frontend and backend",
+        "Single Page Applications (SPA) with server-side rendering where needed",
+        "Multi-tenant architecture for platforms serving multiple organisations",
+        "Role-based access control and secure authentication systems",
+        "Database design, modelling, and query optimisation",
+        "Admin panel development for content and user management",
+        "Automated testing and quality assurance",
+        "CI/CD pipeline setup and version control workflows",
+        "Post-launch maintenance and feature development"
       ],
       "industries": [
         "SaaS & Software Startups",
@@ -30,34 +30,34 @@
       ],
       "benefits": [
         "One engineer owning the full stack means fewer handoff gaps and faster delivery",
-        "Laravel + React is a battle-tested, enterprise-grade combination used in production by thousands of companies",
+        "Battle-tested, enterprise-grade technology used in production by thousands of companies worldwide",
         "Clean, documented code that your next developer can maintain without a full rewrite",
         "Built for growth — architecture decisions made with scale in mind from day one",
-        "Agile delivery with incremental demos so you always know what's shipped"
+        "Agile delivery with incremental demos so you always know what has shipped"
       ],
       "use_cases": [
         "A startup needing an MVP launched in 6–8 weeks with a clean API for a future mobile app",
-        "A business replacing a legacy PHP monolith with a modern Laravel + React system",
-        "An agency needing a white-label CMS platform for multiple clients",
-        "A SaaS company requiring a multi-tenant application with per-client billing and isolated data"
+        "A business replacing a legacy system with a modern, maintainable web application",
+        "An agency needing a white-label platform deployable across multiple clients",
+        "A company requiring a multi-tenant application with per-client billing and isolated data"
       ],
       "problems_solved": [
         "Slow, unmaintainable codebases that developers are afraid to touch",
         "Disconnected frontend and backend teams causing integration delays",
         "Scaling bottlenecks when traffic or data volume grows unexpectedly",
         "Security vulnerabilities from poorly structured authentication and data handling",
-        "Missed deadlines from unclear requirements and no iterative delivery"
+        "Missed deadlines from unclear requirements and no iterative delivery process"
       ],
       "process": [
         {
           "step": 1,
           "title": "Discovery & scoping",
-          "description": "Requirements gathering, technical audit (for existing systems), and a written specification with acceptance criteria."
+          "description": "Requirements gathering, technical audit of existing systems if applicable, and a written specification with acceptance criteria."
         },
         {
           "step": 2,
           "title": "Architecture & design",
-          "description": "Database schema, API contracts, component structure, and tech stack decisions documented before a line of code is written."
+          "description": "Database schema, API contracts, component structure, and infrastructure decisions documented before a line of code is written."
         },
         {
           "step": 3,
@@ -77,7 +77,7 @@
       ],
       "deliverables": [
         "Fully functional web application with documented codebase",
-        "API documentation (Postman collection or OpenAPI spec)",
+        "API documentation",
         "Database schema and migration files",
         "Admin panel for content and user management",
         "Deployment scripts and environment configuration",
@@ -86,7 +86,7 @@
       "outcomes": [
         "A production-ready application shipped on time and within scope",
         "Codebase your team can maintain, extend, and hand off to new developers",
-        "Measurable performance benchmarks met (load time, uptime, response time)",
+        "Measurable performance benchmarks met — load time, uptime, and response time",
         "Reduced operational overhead through automation and clean architecture",
         "A clear technical foundation to build your next feature on"
       ]
@@ -97,16 +97,16 @@
       "image": "/images/services/mobile-app.jpg",
       "title": "Mobile App Development",
       "description": "Cross-platform mobile applications with strong backend support — delivering smooth, responsive user experiences across iOS and Android from a single codebase.",
-      "detailed_description": "I build cross-platform mobile applications using React Native and Flutter — the two leading frameworks backed by Meta and Google respectively — that run natively on both iOS and Android from a single codebase. This means faster delivery, lower maintenance cost, and a consistent experience for your users on every device. Every mobile app I build is connected to a robust backend API, whether Laravel-powered or third-party, and designed with offline capability, push notifications, and app store deployment in mind.",
+      "detailed_description": "I build cross-platform mobile applications that run natively on both iOS and Android from a single codebase — meaning faster delivery, lower maintenance cost, and a consistent experience for your users on every device. Every mobile app is connected to a robust backend, designed with offline capability, push notifications, and app store deployment in mind from day one.",
       "services_included": [
-        "Cross-platform iOS and Android development (React Native / Flutter)",
-        "Mobile UI/UX implementation with platform-specific design conventions",
-        "Integration with Laravel or third-party REST APIs",
-        "Push notifications (Firebase Cloud Messaging)",
-        "Offline mode and local data sync",
+        "Cross-platform iOS and Android app development",
+        "Mobile UI implementation with platform-specific design conventions",
+        "Backend API integration — new or existing",
+        "Push notifications and in-app messaging",
+        "Offline mode and local data synchronisation",
         "In-app payments and subscription management",
-        "Social and OAuth authentication",
-        "Google Maps and location-based features",
+        "Social login and secure authentication",
+        "Location-based features and map integration",
         "App Store and Google Play submission and deployment"
       ],
       "industries": [
@@ -120,35 +120,35 @@
         "On-demand Services"
       ],
       "benefits": [
-        "One codebase for iOS and Android — 30–50% faster to build and cheaper to maintain than two native apps",
-        "Near-native performance with React Native's New Architecture and Flutter's Impeller engine",
+        "One codebase for iOS and Android — 30–50% faster to build and significantly cheaper to maintain",
+        "Near-native performance delivering a smooth, responsive experience users expect",
         "Seamlessly connected to your existing web backend — no duplicate business logic",
-        "Built to App Store and Play Store guidelines from the start — no last-minute rejections",
+        "Built to App Store and Play Store guidelines from day one — no last-minute rejections",
         "Consistent user experience across all devices and screen sizes"
       ],
       "use_cases": [
-        "A startup wanting a mobile app that shares a Laravel backend with their existing web platform",
+        "A startup wanting a mobile app that shares a backend with their existing web platform",
         "An e-commerce business needing a mobile storefront with push notifications and in-app checkout",
         "A service provider building an on-demand booking app for customers and a separate app for field staff",
-        "An internal enterprise tool replacing paper-based or desktop-only workflows with a mobile-first interface"
+        "An enterprise replacing paper-based or desktop-only workflows with a mobile-first tool"
       ],
       "problems_solved": [
         "High cost and complexity of maintaining separate iOS and Android native codebases",
-        "Mobile app that doesn't match the quality and performance of the web product",
-        "App store rejections due to guideline violations caught late in development",
+        "Mobile app quality and performance that does not match the web product",
+        "App store rejections due to guideline violations caught too late in development",
         "Poor offline experience causing user frustration in low-connectivity environments",
-        "Disconnected mobile and web data — users seeing different information on different devices"
+        "Users seeing different data on mobile versus web because the systems are not in sync"
       ],
       "process": [
         {
           "step": 1,
           "title": "Scope & platform decision",
-          "description": "Define features, target platforms, and choose React Native or Flutter based on project requirements and team context."
+          "description": "Define features, target platforms, and framework approach based on project requirements and timeline."
         },
         {
           "step": 2,
-          "title": "UI design implementation",
-          "description": "Build screens using platform-appropriate components — iOS Human Interface Guidelines and Android Material Design respected."
+          "title": "UI implementation",
+          "description": "Build screens using platform-appropriate components — iOS and Android design conventions respected throughout."
         },
         {
           "step": 3,
@@ -168,7 +168,7 @@
       ],
       "deliverables": [
         "Fully functional iOS and Android application",
-        "Source code repository with clear documentation",
+        "Source code repository with documentation",
         "App Store and Google Play listings with screenshots and descriptions",
         "Push notification setup and configuration",
         "API integration documentation",
@@ -178,7 +178,7 @@
         "Live app available to users on both major platforms simultaneously",
         "Single codebase that reduces future update and maintenance cost by up to 50%",
         "Higher user engagement through push notifications and offline capability",
-        "A mobile presence that matches the quality standard of your web product",
+        "A mobile presence that matches the quality of your web product",
         "Clear upgrade path for adding new features incrementally"
       ]
     },
@@ -188,17 +188,17 @@
       "image": "/images/services/ecommerce.jpg",
       "title": "E-commerce Development",
       "description": "Custom e-commerce solutions built for conversions and performance — including WooCommerce and Shopify stores with product management, secure payment integration, and scalable storefront architecture.",
-      "detailed_description": "I build e-commerce platforms that are engineered to convert visitors into customers and scale as your catalogue and traffic grow. Whether you need a WooCommerce store with complex product logic, a Shopify storefront with custom theme development, or a fully bespoke Laravel-powered marketplace, I handle the complete build — from storefront design to payment gateway integration, inventory management, and post-launch support. Every store is optimised for speed, mobile experience, and search engine visibility from the start.",
+      "detailed_description": "I build e-commerce platforms engineered to convert visitors into customers and scale as your catalogue and traffic grow. Whether you need a feature-rich online store, a fully bespoke marketplace, or a platform migration, I handle the complete build — from storefront design to payment gateway integration, inventory management, and post-launch support. Every store is optimised for speed, mobile experience, and search engine visibility from the start.",
       "services_included": [
-        "WooCommerce store setup, custom themes, and plugin development",
-        "Shopify theme development and app integration",
-        "Custom Laravel e-commerce platforms and marketplaces",
-        "Payment gateway integration (Razorpay, Stripe, PayPal, PayU)",
+        "Custom online store setup with tailored themes and functionality",
         "Product catalogue management and bulk import tools",
-        "Multi-currency and multi-language storefronts",
+        "Payment gateway integration — local and international options",
+        "Multi-currency and multi-language storefront support",
         "Abandoned cart recovery and email automation",
         "Inventory and order management systems",
-        "Customer account portals and loyalty programmes"
+        "Customer account portals and loyalty programmes",
+        "Platform migration — moving from one e-commerce solution to another",
+        "B2B wholesale portals with customer-specific pricing"
       ],
       "industries": [
         "Fashion & Apparel",
@@ -212,29 +212,29 @@
       ],
       "benefits": [
         "Conversion-focused architecture — fast load times, streamlined checkout, and mobile-first design",
-        "Secure, PCI-compliant payment handling with multiple gateway options",
+        "Secure, compliant payment handling with multiple gateway options for your market",
         "Flexible product management — simple products, variants, bundles, subscriptions, digital downloads",
-        "Built-in SEO foundations — structured data, sitemap, canonical URLs, and Core Web Vitals optimised",
+        "Built-in SEO foundations — structured data, sitemap, canonical URLs, and performance optimised",
         "Scales cleanly from 10 products to 10,000 without a platform rebuild"
       ],
       "use_cases": [
         "A retail brand launching an online store with complex product variants and booking options",
-        "A pooja samagri or religious products business needing an online storefront with COD and UPI support",
+        "A religious or cultural products business needing an online storefront with local payment methods",
         "A B2B wholesaler needing a private, login-gated catalogue with customer-specific pricing",
         "A creator or service provider selling digital products, courses, or bookings online"
       ],
       "problems_solved": [
         "Slow storefront load times losing customers before the first product page loads",
         "Checkout friction causing cart abandonment — too many steps, limited payment options",
-        "Inventory mismatches between the website and actual stock",
-        "Poor mobile experience on a store where 70%+ of traffic comes from phones",
+        "Inventory mismatches between the website and actual stock levels",
+        "Poor mobile experience on a store where the majority of traffic comes from phones",
         "No visibility into sales data, customer behaviour, or inventory health"
       ],
       "process": [
         {
           "step": 1,
           "title": "Platform selection",
-          "description": "Recommend WooCommerce, Shopify, or custom Laravel based on your catalogue size, budget, and required features."
+          "description": "Recommend the right platform based on your catalogue size, budget, required features, and long-term roadmap."
         },
         {
           "step": 2,
@@ -254,19 +254,19 @@
         {
           "step": 5,
           "title": "Launch & support",
-          "description": "Go-live support, staff training on store management, and a post-launch support window."
+          "description": "Go-live support, team training on store management, and a post-launch support window."
         }
       ],
       "deliverables": [
         "Fully functional e-commerce store on your chosen platform",
-        "Payment gateway integration and test transaction confirmation",
+        "Payment gateway integration with test transaction confirmation",
         "Product catalogue with categories, variants, and pricing configured",
         "Admin training documentation for managing products and orders",
         "Speed and SEO optimisation report",
         "Post-launch support period"
       ],
       "outcomes": [
-        "A store that loads in under 3 seconds and converts mobile visitors at a competitive rate",
+        "A store that loads fast and converts mobile visitors at a competitive rate",
         "Secure, reliable checkout that customers trust — reducing cart abandonment",
         "Full control over your product catalogue, inventory, and orders without developer dependency",
         "SEO-ready foundation that can rank for product and category keywords",
@@ -279,22 +279,22 @@
       "image": "/images/services/saas-mvp.jpg",
       "title": "SaaS & MVP Development",
       "description": "Rapid development of MVPs and SaaS platforms — turning ideas into production-ready products with scalable architecture and clean, maintainable code.",
-      "detailed_description": "I specialise in turning well-defined product ideas into working software quickly — without cutting corners on architecture. Using Laravel for the backend, React or Livewire for the frontend, and AWS for infrastructure, I build MVPs that are genuinely production-ready: multi-tenant where needed, API-first, and designed to support your next ten features without a rewrite. Whether you are a founder validating an idea or a business spinning up an internal SaaS tool, I deliver working software, not prototypes.",
+      "detailed_description": "I specialise in turning well-defined product ideas into working software quickly — without cutting corners on architecture. I build MVPs that are genuinely production-ready: multi-tenant where needed, API-first, and designed to support your next ten features without a rewrite. Whether you are a founder validating an idea or a business building an internal platform, I deliver working software on a timeline that lets you learn from real users before over-investing.",
       "services_included": [
-        "MVP scoping and feature prioritisation",
-        "Multi-tenant SaaS architecture (database-per-tenant or shared schema)",
-        "Subscription billing integration (Stripe / Razorpay with Laravel Cashier)",
+        "MVP scoping and feature prioritisation workshops",
+        "Multi-tenant architecture for platforms serving multiple clients",
+        "Subscription billing integration and plan management",
         "User onboarding flows and account management",
         "Role and permission systems",
-        "Analytics and usage dashboards",
-        "API-first architecture for future mobile or integration use",
-        "Automated email workflows and notification systems",
-        "Staging and production environment setup on AWS"
+        "Usage analytics and reporting dashboards",
+        "API-first architecture for future mobile or partner integrations",
+        "Automated notification and email workflow systems",
+        "Staging and production environment setup on cloud infrastructure"
       ],
       "industries": [
         "HR & Recruitment Tech",
         "Proptech & Real Estate",
-        "Edtech & Online Learning",
+        "EdTech & Online Learning",
         "Healthtech & Wellness",
         "Legaltech & Compliance",
         "Logistics & Fleet Management",
@@ -302,30 +302,30 @@
         "Club & Community Management"
       ],
       "benefits": [
-        "Go from idea to working product in 6–12 weeks — fast enough to validate before competitors",
-        "API-first architecture means your MVP can power a mobile app or third-party integration on day one",
+        "Go from idea to working product in 6–12 weeks — fast enough to validate before competitors move",
+        "API-first architecture means your product can power a mobile app or partner integration from day one",
         "Subscription billing and user management built-in — revenue-ready from launch",
-        "Clean codebase that a future team can extend without burning it down",
+        "Clean codebase that a future engineering team can extend without burning it down",
         "Agile process means you can pivot based on early user feedback without wasted build"
       ],
       "use_cases": [
-        "A founder needing a working SaaS demo to show investors within 8 weeks",
-        "A business automating an internal workflow that currently runs on spreadsheets",
+        "A founder needing a working product to show investors within 8 weeks",
+        "A business automating an internal workflow that currently runs on spreadsheets and email",
         "A club or association needing a members portal with activity tracking and analytics",
-        "A startup building a sales-enablement or eDetailing platform for field teams"
+        "A company building a sales-enablement or field team management platform"
       ],
       "problems_solved": [
-        "Ideas stuck in planning because building feels too big and too expensive",
-        "Prototypes that work in demos but break under real usage or real data",
-        "SaaS platforms that become unsaleable because of poor multi-tenancy or billing architecture",
-        "MVPs that can't be extended — every new feature requires a rewrite of existing code",
-        "Long development cycles with no visible progress until the end"
+        "Ideas stuck in planning because building feels too big and too expensive to start",
+        "Prototypes that work in demos but break under real usage or real data volumes",
+        "Platforms that cannot be extended — every new feature requires rewriting existing code",
+        "Long development cycles with no visible progress or working software until the very end",
+        "MVPs with no billing or user management — not actually ready to acquire paying customers"
       ],
       "process": [
         {
           "step": 1,
           "title": "Product scoping",
-          "description": "Define the core problem, the must-have feature set for launch, and what to defer to v2. Written spec with acceptance criteria."
+          "description": "Define the core problem, the must-have feature set for launch, and what to defer. Written spec with acceptance criteria."
         },
         {
           "step": 2,
@@ -345,22 +345,22 @@
         {
           "step": 5,
           "title": "Production launch",
-          "description": "AWS deployment, monitoring setup, go-live support, and handover documentation."
+          "description": "Cloud deployment, monitoring setup, go-live support, and handover documentation."
         }
       ],
       "deliverables": [
-        "Production-ready SaaS application with documented codebase",
+        "Production-ready application with documented codebase",
         "Multi-tenant or single-tenant architecture as specified",
-        "Stripe or Razorpay subscription billing integration",
+        "Subscription billing integration",
         "Admin and user dashboards",
         "API documentation",
-        "AWS deployment and environment configuration",
+        "Cloud deployment and environment configuration",
         "Post-launch support period"
       ],
       "outcomes": [
-        "A working product in the hands of real users — not a Figma file or a prototype",
-        "Revenue-ready platform with subscription billing from launch day",
-        "Architecture that supports 10x user growth without structural rework",
+        "A working product in the hands of real users — not a prototype or a Figma file",
+        "Revenue-ready platform with billing from launch day",
+        "Architecture that supports significant user growth without structural rework",
         "Codebase your next hire can onboard to in days, not weeks",
         "Validated learning about your market before investing in a full product team"
       ]
@@ -371,16 +371,16 @@
       "image": "/images/services/cloud-devops.jpg",
       "title": "Cloud & DevOps (AWS)",
       "description": "Deployment, server configuration, and cloud infrastructure on AWS — ensuring your applications are secure, scalable, and highly available.",
-      "detailed_description": "I configure and manage production cloud infrastructure on AWS — setting up the environments your application needs to be secure, performant, and resilient. From initial server setup and SSL configuration to S3 asset pipelines and Lambda-powered serverless functions, I handle the infrastructure layer so your development team can focus on shipping features. I also implement CI/CD pipelines, automated backups, and monitoring — giving you confidence that your production environment is production-grade.",
+      "detailed_description": "I configure and manage production cloud infrastructure that your application needs to be secure, performant, and resilient. From initial server setup and SSL configuration to asset storage pipelines and serverless functions, I handle the infrastructure layer so your team can focus on shipping features. I also implement automated deployment pipelines, monitoring, and backup strategies — giving you confidence that your production environment can handle real-world demands.",
       "services_included": [
-        "AWS EC2 server setup and configuration (Ubuntu / Amazon Linux)",
-        "Nginx and Apache web server configuration",
-        "SSL certificate setup and auto-renewal (Let's Encrypt / ACM)",
-        "S3 bucket setup for file storage and static asset delivery",
-        "AWS Lambda serverless function development and deployment",
-        "CloudFront CDN configuration for global asset delivery",
-        "RDS database setup and configuration (MySQL / PostgreSQL)",
-        "CI/CD pipeline setup (GitHub Actions / Bitbucket Pipelines)",
+        "Cloud server provisioning and configuration",
+        "Web server setup and optimisation",
+        "SSL certificate setup and auto-renewal",
+        "Cloud storage setup for files and static asset delivery",
+        "Serverless function development and deployment",
+        "Content Delivery Network (CDN) configuration for global performance",
+        "Managed database setup and configuration",
+        "Automated deployment pipeline setup",
         "Server monitoring, alerting, and automated backups"
       ],
       "industries": [
@@ -394,22 +394,22 @@
         "Agencies Managing Multiple Client Applications"
       ],
       "benefits": [
-        "AWS infrastructure used by millions of businesses globally — reliable, secure, and well-documented",
-        "Pay-as-you-scale pricing — no over-provisioning for traffic you don't have yet",
-        "Automated deployments reduce human error and make releasing software a non-event",
-        "S3 and CloudFront deliver assets faster to users globally without touching your server",
+        "Enterprise-grade cloud infrastructure used by millions of businesses globally — reliable and well-documented",
+        "Pay-as-you-scale pricing — no over-provisioning for traffic you do not have yet",
+        "Automated deployments reduce human error and make releasing new versions a routine non-event",
+        "CDN delivers assets faster to users globally without adding load to your application server",
         "Monitoring and alerting means you know about problems before your users do"
       ],
       "use_cases": [
-        "A Laravel application that needs a production-grade server setup with zero-downtime deployments",
-        "A media platform needing S3 storage and CloudFront CDN for fast global video or image delivery",
-        "A startup that needs serverless Lambda functions for background processing tasks",
-        "An existing application on shared hosting that needs to migrate to a dedicated AWS environment"
+        "A web application that needs a production-grade server setup with zero-downtime deployments",
+        "A media platform needing scalable storage and global CDN delivery for fast image or video serving",
+        "A product that needs serverless background processing for tasks that should not block the main application",
+        "An application on shared hosting that needs migrating to a dedicated cloud environment"
       ],
       "problems_solved": [
-        "Applications going down under traffic spikes because of under-configured servers",
+        "Applications going down under traffic spikes because of under-configured or shared hosting",
         "Security vulnerabilities from misconfigured servers, open ports, and missing SSL",
-        "Slow asset delivery because files are being served directly from the application server",
+        "Slow asset delivery because files are served directly from the application server",
         "Manual, error-prone deployments that cause downtime every time code is released",
         "No visibility into server health, error rates, or response times until users complain"
       ],
@@ -417,12 +417,12 @@
         {
           "step": 1,
           "title": "Infrastructure audit",
-          "description": "Review current setup (or start from scratch), define requirements for compute, storage, database, and networking."
+          "description": "Review current setup or define requirements from scratch — compute, storage, database, and networking."
         },
         {
           "step": 2,
           "title": "Environment setup",
-          "description": "Provision EC2 instances, configure web server, set up RDS, S3, and security groups."
+          "description": "Provision cloud servers, configure web server, set up managed database, storage, and security rules."
         },
         {
           "step": 3,
@@ -431,8 +431,8 @@
         },
         {
           "step": 4,
-          "title": "CI/CD pipeline",
-          "description": "Automate deployments via GitHub Actions or Bitbucket Pipelines — push to main, deploy to production."
+          "title": "Deployment pipeline",
+          "description": "Automate deployments via a CI/CD pipeline — push to the main branch, deploy to production reliably."
         },
         {
           "step": 5,
@@ -441,11 +441,11 @@
         }
       ],
       "deliverables": [
-        "Configured AWS environment (EC2, RDS, S3, CloudFront as applicable)",
-        "Web server configuration files (Nginx/Apache)",
-        "CI/CD pipeline configuration",
+        "Configured cloud environment with all required services",
+        "Web server configuration",
+        "Automated deployment pipeline",
         "SSL setup with auto-renewal",
-        "Monitoring and alerting setup",
+        "Monitoring and alerting configuration",
         "Infrastructure documentation and access credentials handover"
       ],
       "outcomes": [
@@ -462,17 +462,17 @@
       "image": "/images/services/seo-performance.jpg",
       "title": "SEO & Performance Optimisation",
       "description": "On-page SEO implementation, Core Web Vitals tuning, database query optimisation, and caching strategy — so your product loads faster, ranks higher, and scales cleanly.",
-      "detailed_description": "I approach SEO and performance as an engineering problem, not a checklist. Fast load times, clean HTML structure, proper meta and structured data implementation, and a well-indexed site architecture are the foundations of sustainable organic search performance. I diagnose and fix Core Web Vitals failures, implement server-side caching, optimise slow database queries, and ensure your application performs under load — because a site that loads in 1 second converts measurably better than one that loads in 3.",
+      "detailed_description": "I approach SEO and performance as an engineering problem, not a checklist exercise. Fast load times, clean HTML structure, proper metadata and structured data, and a well-indexed site architecture are the foundations of sustainable organic search performance. I diagnose and fix Core Web Vitals failures, implement server-side caching, optimise slow database queries, and ensure your application performs under load — because a site that loads in one second converts measurably better than one that loads in three.",
       "services_included": [
-        "Core Web Vitals audit and remediation (LCP, INP, CLS)",
-        "On-page SEO implementation — meta tags, canonical URLs, Open Graph, structured data (JSON-LD)",
+        "Core Web Vitals audit and remediation — LCP, INP, and CLS",
+        "On-page SEO implementation — meta tags, canonical URLs, Open Graph, structured data",
         "XML sitemap generation and Google Search Console setup",
         "Page speed optimisation — image compression, lazy loading, code minification, asset bundling",
-        "Server-side caching implementation (Laravel Cache, Redis, OPcache)",
+        "Server-side caching implementation",
         "Database query optimisation and indexing strategy",
         "Technical SEO audit — crawl errors, redirect chains, duplicate content, broken links",
-        "WordPress Yoast/RankMath configuration and content SEO guidelines",
-        "Performance monitoring setup (Google PageSpeed Insights, Lighthouse CI)"
+        "Content SEO guidelines and keyword implementation review",
+        "Performance monitoring setup and ongoing benchmarking"
       ],
       "industries": [
         "E-commerce & Retail",
@@ -485,30 +485,30 @@
         "Local Businesses & Directories"
       ],
       "benefits": [
-        "Faster load times directly correlate with higher conversion rates — every second counts",
-        "Google ranks fast, well-structured sites higher — performance is an SEO advantage",
-        "Structured data and proper meta implementation improve click-through rates from search results",
+        "Faster load times directly correlate with higher conversion rates — every second of improvement matters",
+        "Google ranks fast, well-structured sites higher — performance is a direct SEO advantage",
+        "Structured data and proper metadata improve click-through rates from search results",
         "Database and caching optimisation reduce server load and hosting costs under scale",
-        "One-time technical improvements compound over time — unlike paid ads"
+        "One-time technical improvements compound over time — unlike paid advertising spend"
       ],
       "use_cases": [
-        "A WooCommerce store with a poor Google PageSpeed score losing rankings to faster competitors",
-        "A WordPress blog with thousands of posts needing technical SEO cleanup and structured data",
-        "A Laravel application with slow database queries causing timeouts under moderate traffic",
-        "A new website needing a complete SEO foundation set up before launch"
+        "An online store with a poor performance score losing rankings to faster competitors",
+        "A content site with thousands of pages needing technical SEO cleanup and structured data",
+        "A web application with slow database queries causing timeouts under moderate traffic",
+        "A new website needing a complete SEO and performance foundation set up before launch"
       ],
       "problems_solved": [
         "Poor Core Web Vitals scores causing ranking penalties in Google Search",
         "Slow database queries timing out under normal traffic loads",
         "Unindexed pages, crawl errors, and duplicate content diluting search authority",
-        "Images and assets served uncompressed, destroying load time on mobile",
+        "Unoptimised images and assets destroying load time on mobile devices",
         "No caching strategy means every page request hits the database and server fresh"
       ],
       "process": [
         {
           "step": 1,
           "title": "Audit",
-          "description": "Full technical SEO and performance audit using Lighthouse, Google Search Console, PageSpeed Insights, and database profiling tools."
+          "description": "Full technical SEO and performance audit using industry-standard tools and database profiling."
         },
         {
           "step": 2,
@@ -528,22 +528,22 @@
         {
           "step": 5,
           "title": "Reporting",
-          "description": "Deliver before/after performance benchmarks and a monitoring setup so you can track improvements over time."
+          "description": "Deliver before/after performance benchmarks and a monitoring setup to track improvements over time."
         }
       ],
       "deliverables": [
         "Technical SEO and performance audit report with prioritised fix list",
-        "Core Web Vitals improvement (LCP, INP, CLS benchmarks documented)",
+        "Core Web Vitals improvement with benchmarks documented",
         "Caching and query optimisation implementation",
         "Structured data and on-page SEO implementation",
-        "Google Search Console and sitemap setup",
-        "Before/after PageSpeed Insights and Lighthouse scores"
+        "Search Console and sitemap setup",
+        "Before/after performance scores"
       ],
       "outcomes": [
-        "Measurable improvement in Core Web Vitals — LCP under 2.5s, CLS under 0.1, INP under 200ms",
+        "Measurable improvement in Core Web Vitals — documented before and after",
         "Higher organic search rankings driven by improved technical SEO signals",
         "Reduced server load and infrastructure cost through caching",
-        "Faster pages with higher user engagement, lower bounce rates, and better conversions",
+        "Faster pages with higher engagement, lower bounce rates, and better conversions",
         "A clean technical foundation that future content and SEO efforts can build on"
       ]
     },
@@ -553,16 +553,16 @@
       "image": "/images/services/api-integration.jpg",
       "title": "API Development & Integration",
       "description": "Design and integration of RESTful APIs — enabling seamless communication between systems, third-party services, and web or mobile applications.",
-      "detailed_description": "I design, build, and integrate APIs that connect your systems cleanly and reliably. Whether you need a RESTful API backend for your mobile app, a set of webhooks to sync data between platforms, or integration with third-party services like payment gateways, CRMs, or marketing tools, I architect the data contracts and write the integration code that makes it work — and keeps working when the external service changes. Every API I build is versioned, documented, and secured.",
+      "detailed_description": "I design, build, and integrate APIs that connect your systems cleanly and reliably. Whether you need a backend API to power your mobile app, webhooks to sync data between platforms, or integration with third-party services, I architect the data contracts and write the integration code that works in production — and keeps working when external services update. Every API I build is versioned, documented, and secured from the start.",
       "services_included": [
-        "RESTful API design and development (Laravel API / Lumen)",
+        "RESTful API design and development",
         "API versioning and backward-compatible upgrade strategy",
-        "Authentication and authorisation (Sanctum, Passport, JWT, OAuth2)",
+        "Authentication and authorisation — tokens, OAuth2, API keys",
         "Webhook development and inbound webhook handling",
-        "Third-party API integration (payment gateways, CRMs, marketing tools)",
+        "Third-party API integration — payment gateways, CRMs, logistics, and more",
         "API rate limiting, throttling, and abuse prevention",
-        "API documentation (Postman collections, OpenAPI / Swagger spec)",
-        "API testing and automated contract testing",
+        "API documentation — collections and specification files",
+        "Automated API testing and contract testing",
         "GraphQL API development for flexible data querying"
       ],
       "industries": [
@@ -576,35 +576,35 @@
         "Government & Public Services"
       ],
       "benefits": [
-        "Well-designed APIs let your web app, mobile app, and third-party tools all share one source of truth",
+        "Well-designed APIs let your web app, mobile app, and partners all share one trusted source of truth",
         "Versioned APIs mean you can update your backend without breaking existing integrations",
-        "Documented APIs with Postman collections reduce onboarding time for every future developer",
-        "Proper authentication means your data is only accessible to the systems that should have it",
+        "Documented APIs reduce onboarding time for every future developer significantly",
+        "Proper authentication means your data is only accessible to systems that should have it",
         "Webhook-driven integrations reduce polling overhead and keep data in sync in near real-time"
       ],
       "use_cases": [
-        "A mobile app that needs a secure, well-structured Laravel API to power its features",
-        "An e-commerce platform integrating with Razorpay, Shiprocket, and a CRM simultaneously",
-        "A SaaS platform that needs to expose a public API so enterprise clients can integrate",
-        "A business replacing manual data entry by syncing two internal systems via webhooks"
+        "A mobile app that needs a secure, well-structured backend API to power its features",
+        "An e-commerce platform integrating with a payment gateway, shipping provider, and CRM simultaneously",
+        "A platform that needs to expose a public API so enterprise clients can build their own integrations",
+        "A business replacing manual data entry by syncing two internal systems via webhooks automatically"
       ],
       "problems_solved": [
         "Brittle integrations that break every time a third-party API changes its response format",
-        "Unsecured API endpoints exposing sensitive data without proper authentication",
-        "No API documentation, making it impossible to onboard new developers or build a mobile app",
-        "Duplicate data across systems because there is no reliable sync mechanism",
-        "Slow API responses caused by N+1 query problems and missing eager loading"
+        "Unsecured endpoints exposing sensitive data without proper authentication",
+        "No API documentation, making it impossible to onboard new developers or build a mobile client",
+        "Duplicate data across systems because there is no reliable synchronisation mechanism",
+        "Slow API responses caused by inefficient queries and missing data optimisation"
       ],
       "process": [
         {
           "step": 1,
           "title": "API design",
-          "description": "Define resource structure, endpoints, request/response contracts, and authentication strategy before writing code."
+          "description": "Define resource structure, endpoints, request and response contracts, and authentication strategy before writing code."
         },
         {
           "step": 2,
           "title": "Development",
-          "description": "Build API endpoints with proper error handling, validation, rate limiting, and logging."
+          "description": "Build endpoints with proper error handling, validation, rate limiting, and logging."
         },
         {
           "step": 3,
@@ -619,13 +619,13 @@
         {
           "step": 5,
           "title": "Documentation & handover",
-          "description": "Postman collection or OpenAPI spec delivered alongside the codebase."
+          "description": "Full API documentation delivered alongside the codebase."
         }
       ],
       "deliverables": [
-        "Fully functional REST API with versioning",
+        "Fully functional API with versioning",
         "Authentication and authorisation implementation",
-        "Postman collection or OpenAPI documentation",
+        "API documentation",
         "Third-party integration code with error handling and logging",
         "Automated API test suite",
         "Rate limiting and security configuration"
@@ -635,7 +635,7 @@
         "Reduced manual data entry through automated system-to-system sync",
         "Secure data access with proper authentication — no more exposed endpoints",
         "Documentation that cuts new developer onboarding time significantly",
-        "A foundation for building a partner ecosystem or public API offering"
+        "A foundation for building a partner ecosystem or public-facing API offering"
       ]
     },
     {
@@ -643,17 +643,17 @@
       "icon": "web",
       "image": "/images/services/wordpress.jpg",
       "title": "WordPress & WooCommerce",
-      "description": "Custom themes, bespoke plugins, and Bedrock-based WordPress setups tailored to your workflow — including WooCommerce stores with complex booking logic, dynamic data visualisations, and editorial pipelines.",
-      "detailed_description": "I build WordPress solutions that go well beyond off-the-shelf themes and plugins. Using Bedrock for a modern, Composer-driven project structure and ACF for flexible content architecture, I deliver WordPress sites that are maintainable, secure, and built to your exact editorial and functional requirements. For WooCommerce, I handle everything from complex product configurations and custom booking rules to payment gateway integration and performance optimisation for large catalogues.",
+      "description": "Custom themes, bespoke plugins, and modern WordPress setups tailored to your workflow — including WooCommerce stores with complex booking logic, dynamic data visualisations, and editorial pipelines.",
+      "detailed_description": "I build WordPress solutions that go well beyond off-the-shelf themes and plugins. Using a modern, version-controlled project structure and flexible content architecture, I deliver WordPress sites that are maintainable, secure, and built to your exact editorial and functional requirements. For WooCommerce, I handle everything from complex product configurations and custom booking rules to payment gateway integration and performance optimisation for large catalogues.",
       "services_included": [
-        "Custom WordPress theme development (from scratch or child theme)",
-        "Bedrock-based modern WordPress project setup (Composer, environment management)",
-        "Advanced Custom Fields (ACF) and Gutenberg block development",
+        "Custom WordPress theme development — built from the ground up or as a refined child theme",
+        "Modern WordPress project setup with environment management",
+        "Flexible content architecture and custom block development",
         "Custom WordPress plugin development",
         "WooCommerce store setup with custom product types and checkout flows",
         "Complex booking and reservation system implementation",
-        "WordPress REST API integration with external systems",
-        "Dynamic charts and data visualisation in WordPress",
+        "WordPress integration with external systems and data sources",
+        "Dynamic charts and data visualisation within the CMS",
         "WordPress multisite setup and management"
       ],
       "industries": [
@@ -667,45 +667,45 @@
         "Restaurants & Hospitality"
       ],
       "benefits": [
-        "Bedrock project structure means consistent deployments across dev, staging, and production environments",
+        "Consistent deployments across development, staging, and production environments",
         "Custom themes built to your brand — not adapted from a generic template someone else is using",
-        "Editorial teams get an intuitive CMS experience without needing developer involvement for content updates",
-        "Custom plugins built specifically for your workflow — no bloat from generic solutions",
-        "WooCommerce on WordPress gives you one platform for content and commerce"
+        "Editorial teams can manage content without developer involvement for routine updates",
+        "Plugins built specifically for your workflow — no bloat from generic solutions trying to do too much",
+        "One platform for content management and commerce — no synchronisation overhead"
       ],
       "use_cases": [
-        "A digital marketing agency needing a custom Bedrock WordPress showcase site that reflects their technical credibility",
-        "A government department publishing energy or environmental data with dynamic charts and nested JSON feeds",
-        "A religious or cultural services business needing a WooCommerce site with pandit booking and product sales",
-        "A business needing a bespoke WordPress plugin to automate an editorial or approval workflow"
+        "A digital marketing agency needing a custom showcase site that reflects their technical credibility",
+        "A government department publishing structured data with dynamic charts and complex data feeds",
+        "A services business needing a WooCommerce site with specialised booking and product sales",
+        "A business needing a bespoke plugin to automate an editorial or approval workflow"
       ],
       "problems_solved": [
-        "WordPress sites that are slow, bloated, and reliant on 30+ plugins for basic functionality",
-        "Editorial workflows that require a developer every time content needs to change",
+        "WordPress sites that are slow, bloated, and reliant on dozens of plugins for basic functionality",
+        "Editorial workflows that require a developer every time content needs to be updated",
         "WooCommerce stores with product or checkout logic that standard plugins cannot handle",
         "Inconsistent deployments caused by manual file uploads instead of version-controlled code",
-        "Security vulnerabilities from outdated themes, plugins, and WordPress core versions"
+        "Security vulnerabilities from outdated themes, plugins, and core versions"
       ],
       "process": [
         {
           "step": 1,
           "title": "Requirements & content architecture",
-          "description": "Map content types, editorial workflow, and WooCommerce product/checkout requirements."
+          "description": "Map content types, editorial workflow, and WooCommerce product and checkout requirements."
         },
         {
           "step": 2,
           "title": "Theme & plugin development",
-          "description": "Build custom theme and any required plugins — all version-controlled in a Bedrock project structure."
+          "description": "Build the custom theme and any required plugins — all version-controlled and documented."
         },
         {
           "step": 3,
           "title": "Content entry & configuration",
-          "description": "Set up ACF fields, configure WooCommerce, enter initial content, and configure payment gateways."
+          "description": "Set up content fields, configure WooCommerce, enter initial content, and configure payment gateways."
         },
         {
           "step": 4,
           "title": "Testing",
-          "description": "Cross-browser testing, mobile testing, WooCommerce checkout testing, and performance audit."
+          "description": "Cross-browser testing, mobile testing, checkout flow testing, and performance audit."
         },
         {
           "step": 5,
@@ -714,19 +714,18 @@
         }
       ],
       "deliverables": [
-        "Custom WordPress theme (version-controlled, documented)",
+        "Custom WordPress theme — version-controlled and documented",
         "Custom plugins as specified",
-        "Bedrock project configuration with environment files",
         "WooCommerce setup with payment gateway integration",
         "Editorial team training documentation",
         "Performance and security hardening report"
       ],
       "outcomes": [
-        "A WordPress site your editorial team can manage independently — no developer dependency for content",
+        "An editorial team that can manage content independently — no developer dependency for routine updates",
         "Consistent, reproducible deployments across all environments",
-        "WooCommerce store handling your specific product and checkout logic reliably",
-        "Performance optimised site with fast load times and clean Core Web Vitals scores",
-        "A maintainable codebase that any WordPress developer can extend"
+        "WooCommerce handling your specific product and checkout requirements reliably",
+        "Performance-optimised site with fast load times and clean Core Web Vitals scores",
+        "A maintainable codebase that any experienced WordPress developer can extend"
       ]
     },
     {
@@ -735,17 +734,17 @@
       "image": "/images/services/shopify.jpg",
       "title": "Shopify Development",
       "description": "Custom Shopify storefronts and theme development — tailored to your brand, optimised for conversions, and built to scale as your business grows.",
-      "detailed_description": "I build Shopify stores that perform and convert — custom-themed to your brand, integrated with the apps and systems your business runs on, and optimised for the speed and experience that turns browsers into buyers. Whether you are launching a new store, migrating from WooCommerce or another platform, or needing a full custom Shopify theme built with Online Store 2.0 and Liquid, I handle the complete build and deliver a store your team can manage confidently.",
+      "detailed_description": "I build Shopify stores that perform and convert — custom-themed to your brand, integrated with the apps and systems your business runs on, and optimised for the speed and experience that turns browsers into buyers. Whether you are launching a new store, migrating from another platform, or needing a fully custom theme with complete merchant control, I handle the complete build and deliver a store your team can manage confidently without developer support.",
       "services_included": [
-        "Custom Shopify theme development (Liquid, Online Store 2.0, Sections Everywhere)",
-        "Shopify theme customisation and existing theme modification",
-        "WooCommerce to Shopify migration (products, orders, customers)",
+        "Custom Shopify theme development with full merchant editorial control",
+        "Shopify theme customisation and modification of existing themes",
+        "Platform migration to Shopify — products, orders, and customers",
         "Shopify app integration and configuration",
-        "Custom Shopify app development (Shopify CLI / Node.js)",
-        "Shopify Markets setup for multi-currency and multi-language",
-        "Checkout customisation (Shopify Plus)",
+        "Custom app development for specialised functionality",
+        "Multi-currency and multi-language store setup",
+        "Checkout customisation for Shopify Plus merchants",
         "Product page and collection page optimisation for conversions",
-        "Shopify analytics and Google Shopping feed setup"
+        "Analytics, tracking, and Google Shopping feed setup"
       ],
       "industries": [
         "Fashion & Apparel",
@@ -759,23 +758,23 @@
       ],
       "benefits": [
         "Shopify handles hosting, SSL, and platform maintenance — you focus on selling, not servers",
-        "Custom Online Store 2.0 themes give merchants full editorial control without touching code",
+        "Custom themes give merchants full editorial control without touching code",
         "Built-in payment processing, shipping integrations, and tax calculations reduce setup complexity",
-        "Shopify's CDN delivers fast load times globally out of the box",
-        "The Shopify app ecosystem covers almost every business need without custom development"
+        "Global content delivery ensures fast load times for customers wherever they are",
+        "The Shopify app ecosystem covers almost every business need without heavy custom development"
       ],
       "use_cases": [
-        "A fashion or lifestyle brand launching a premium online store that needs to reflect their brand identity — not a default template",
-        "A WooCommerce merchant overwhelmed by plugin maintenance wanting to migrate to a simpler, managed platform",
-        "A business selling in multiple countries needing Shopify Markets for localised pricing and currency",
-        "An existing Shopify merchant whose store has performance or conversion issues that need a developer to fix"
+        "A brand launching a premium online store that needs to reflect brand identity — not a default template",
+        "A merchant on another platform overwhelmed by maintenance wanting to move to a simpler managed solution",
+        "A business selling in multiple countries needing localised pricing, currency, and language",
+        "An existing Shopify merchant whose store has performance or conversion issues that need a developer to resolve"
       ],
       "problems_solved": [
-        "Generic Shopify themes that look identical to competitors and don't reflect brand identity",
-        "Poor mobile checkout experience causing high abandonment rates on phones",
-        "Slow product pages caused by too many unoptimised apps loading scripts on every page",
-        "WooCommerce migration anxiety — product data, orders, and customer records all need to move cleanly",
-        "Shopify store that merchants cannot update themselves without breaking the layout"
+        "Generic themes that look identical to competitors and do not reflect brand identity",
+        "Poor mobile checkout experience causing high abandonment rates",
+        "Slow product pages caused by too many unoptimised apps loading on every page view",
+        "Platform migration anxiety — product data, orders, and customer records all need to move cleanly",
+        "Stores that merchants cannot update themselves without breaking the layout"
       ],
       "process": [
         {
@@ -786,7 +785,7 @@
         {
           "step": 2,
           "title": "Theme development",
-          "description": "Build the custom Liquid theme with Online Store 2.0 sections — editable by your team without code."
+          "description": "Build the custom theme with editable sections — fully controllable by your team without touching code."
         },
         {
           "step": 3,
@@ -801,11 +800,11 @@
         {
           "step": 5,
           "title": "Launch & training",
-          "description": "Go-live with a redirect plan from the old store, train the team on Shopify admin, and provide documentation."
+          "description": "Go-live with a redirect plan from the old store, train the team on store management, and provide documentation."
         }
       ],
       "deliverables": [
-        "Custom Shopify theme (Liquid, Online Store 2.0, fully editable)",
+        "Custom Shopify theme — fully editable by your team",
         "Product catalogue and collection setup",
         "Payment, shipping, and tax configuration",
         "App integrations as specified",
@@ -815,7 +814,7 @@
       "outcomes": [
         "A high-converting Shopify store that reflects your brand — not a template",
         "Merchant team fully capable of managing products, collections, and content independently",
-        "Fast, mobile-optimised storefront with Shopify's global CDN",
+        "Fast, mobile-optimised storefront with reliable global delivery",
         "Smooth migration from the previous platform with no data loss",
         "A platform your business can grow on without needing constant developer support"
       ]
@@ -825,18 +824,18 @@
       "icon": "view_quilt",
       "image": "/images/services/frontend.jpg",
       "title": "Frontend Engineering",
-      "description": "Responsive, accessible interfaces built with React, Tailwind, and Bootstrap — performant from the first load and wired cleanly to any backend or third-party API.",
-      "detailed_description": "I build frontend interfaces that are fast, accessible, and a pleasure to use — and that stay maintainable as your product grows. Using React with component-driven architecture, Tailwind CSS for utility-first styling, and modern tooling like Vite and TypeScript, I deliver frontends that perform on every device, integrate cleanly with any backend API, and follow accessibility standards. Whether you need a standalone React SPA, a Livewire-powered Laravel frontend, or a React component library for your design system, I build it right.",
+      "description": "Responsive, accessible interfaces built with modern frameworks — performant from the first load and wired cleanly to any backend or third-party API.",
+      "detailed_description": "I build frontend interfaces that are fast, accessible, and a pleasure to use — and that stay maintainable as your product grows. Using component-driven architecture, utility-first styling, and modern tooling, I deliver frontends that perform on every device, integrate cleanly with any backend API, and follow accessibility standards from day one. Whether you need a full single-page application, a server-driven reactive interface, or a component library for your design system, I build it to last.",
       "services_included": [
-        "React SPA development (Vite, React Router, React Query)",
-        "Laravel + Inertia.js SPA (no separate API required)",
-        "Laravel Livewire for reactive server-driven UI",
-        "Tailwind CSS implementation and design system setup",
+        "Single Page Application (SPA) development",
+        "Server-driven reactive UI for dynamic, real-time interfaces",
         "Responsive design across mobile, tablet, and desktop",
-        "Component library development and Storybook documentation",
-        "Dashboard and data visualisation UI (charts, tables, filters)",
+        "Component library development with usage documentation",
+        "Dashboard and data visualisation UI — charts, tables, filters",
         "Form validation, error handling, and UX micro-interactions",
-        "Accessibility (WCAG 2.1 AA) implementation and audit"
+        "Accessibility implementation to WCAG 2.1 AA standard",
+        "Design-to-code implementation from Figma or design specifications",
+        "Frontend performance optimisation and Lighthouse auditing"
       ],
       "industries": [
         "SaaS & Software Products",
@@ -850,64 +849,64 @@
       ],
       "benefits": [
         "Component-driven architecture means every UI element is reusable, testable, and easy to update",
-        "Tailwind CSS eliminates unused CSS and enforces consistent spacing, colour, and typography",
-        "React Query and proper state management eliminate the most common frontend performance problems",
+        "Utility-first styling enforces consistent spacing, colour, and typography across the entire interface",
+        "Proper state management eliminates the most common frontend performance and reliability problems",
         "Accessibility compliance opens your product to a wider audience and reduces legal risk",
-        "Inertia.js and Livewire options mean you get SPA-like experience without the complexity of a separate API"
+        "A component library speeds up every future feature addition — design and code in sync"
       ],
       "use_cases": [
-        "A SaaS product needing a React dashboard with complex data tables, filters, and real-time updates",
-        "A Laravel application whose Blade templates need replacing with a modern, reactive Livewire or Inertia frontend",
-        "A design team that has Figma mockups and needs an engineer to translate them into pixel-perfect React components",
-        "An enterprise tool with a functional but dated UI that needs a frontend redesign without touching the backend"
+        "A platform needing a complex dashboard with data tables, filters, and real-time updates",
+        "An application whose older frontend needs replacing with a modern, reactive interface",
+        "A design team that has detailed mockups and needs an engineer to translate them into production components",
+        "An enterprise tool with a functional but dated UI that needs a frontend overhaul without touching the backend"
       ],
       "problems_solved": [
-        "Slow, janky frontend UX caused by poor state management and unnecessary re-renders",
-        "Inconsistent UI — every page looks slightly different because there is no component system",
-        "Inaccessible interfaces that fail on keyboard navigation, screen readers, or colour contrast",
-        "Tightly coupled frontend code that makes every change risky and slow",
-        "Mobile experience that is an afterthought — designed desktop-first and broken on phones"
+        "Slow, janky frontend caused by poor state management and unnecessary re-renders",
+        "Inconsistent UI — every page looks slightly different because there is no shared component system",
+        "Inaccessible interfaces that fail on keyboard navigation, screen readers, or colour contrast requirements",
+        "Tightly coupled frontend code that makes every change slow and risky",
+        "Mobile experience that is an afterthought — designed desktop-first and broken on smaller screens"
       ],
       "process": [
         {
           "step": 1,
           "title": "Design review",
-          "description": "Review Figma designs or existing UI, identify component boundaries, and plan the component hierarchy."
+          "description": "Review designs or existing UI, identify component boundaries, and plan the component hierarchy."
         },
         {
           "step": 2,
           "title": "Project setup",
-          "description": "Configure Vite, TypeScript, Tailwind, ESLint, and folder structure for the project scale."
+          "description": "Configure tooling, styling system, and folder structure appropriate for the project scale."
         },
         {
           "step": 3,
           "title": "Component development",
-          "description": "Build components from atoms up — design tokens, base components, composite components, page layouts."
+          "description": "Build components from foundational elements up — design tokens, base components, composite components, page layouts."
         },
         {
           "step": 4,
           "title": "API integration",
-          "description": "Connect to backend APIs with React Query or Axios, implement loading states, error boundaries, and optimistic updates."
+          "description": "Connect to backend APIs with proper loading states, error boundaries, and graceful handling of failures."
         },
         {
           "step": 5,
           "title": "QA & performance",
-          "description": "Cross-browser testing, Lighthouse performance audit, accessibility audit, and code review."
+          "description": "Cross-browser testing, performance audit, accessibility audit, and code review."
         }
       ],
       "deliverables": [
-        "React or Livewire frontend codebase (TypeScript, documented components)",
-        "Tailwind CSS configuration and design token setup",
+        "Frontend codebase with documented components",
+        "Design system and styling configuration",
         "Component library with usage documentation",
         "API integration layer with error handling",
-        "Lighthouse performance and accessibility report",
+        "Performance and accessibility audit report",
         "Responsive implementation tested across devices"
       ],
       "outcomes": [
         "A fast, consistent UI that your users actually enjoy using",
         "Component library that speeds up every future feature addition",
         "Accessible interface that works for all users and meets compliance requirements",
-        "Frontend codebase any React developer can onboard to and extend",
+        "Frontend codebase any developer can onboard to and extend confidently",
         "Performance benchmarks that support strong Core Web Vitals scores"
       ]
     },
@@ -916,90 +915,90 @@
       "icon": "electric_bolt",
       "image": "/images/services/websocket.jpg",
       "title": "WebSocket & Real-Time Features",
-      "description": "Live notifications, real-time data feeds, and event-driven systems — built with WebSocket to keep your users connected and your data always current.",
-      "detailed_description": "I implement real-time features that transform static applications into live, responsive experiences. Using Laravel Broadcasting with Pusher or Laravel Reverb (the new first-party WebSocket server), I build event-driven systems that push data to connected clients the moment it changes — without polling, without page refreshes, and without complexity for the end user. From live notifications and chat to real-time dashboards and collaborative tools, I design and build the full stack of the real-time feature.",
+      "description": "Live notifications, real-time data feeds, and event-driven systems — keeping your users connected and your data always current without page refreshes.",
+      "detailed_description": "I implement real-time features that transform static applications into live, responsive experiences. Using event-driven architecture and WebSocket technology, I build systems that push data to connected users the moment it changes — without polling, without page refreshes, and without complexity for the end user. From live notifications and chat to real-time dashboards and collaborative tools, I design and build the complete real-time feature stack.",
       "services_included": [
-        "Laravel Broadcasting with Pusher or Laravel Reverb setup",
-        "Real-time notification systems (in-app and push)",
+        "Real-time notification systems — in-app and push",
         "Live data dashboards with auto-updating charts and tables",
         "Chat and messaging features",
-        "Presence channels (who is currently online / viewing)",
-        "Real-time form collaboration",
+        "Presence channels — who is currently online or viewing",
+        "Real-time collaborative editing and form synchronisation",
         "WebSocket connection management, reconnection, and fallback handling",
-        "Event-driven architecture with Laravel queues and jobs",
-        "Laravel Echo (JavaScript client) integration"
+        "Event-driven background processing with queues",
+        "Real-time order and status tracking",
+        "Live inventory and availability updates"
       ],
       "industries": [
         "SaaS & Collaboration Tools",
         "Healthcare & Patient Monitoring",
         "Logistics & Fleet Tracking",
-        "Finance & Live Trading Platforms",
+        "Finance & Live Data Platforms",
         "Sports & Live Scoring",
         "Customer Support & Helpdesks",
-        "E-commerce (live inventory, order tracking)",
+        "E-commerce (live inventory and order tracking)",
         "EdTech & Live Learning"
       ],
       "benefits": [
-        "Real-time updates eliminate the need for users to refresh — better UX and higher engagement",
+        "Real-time updates eliminate the need for users to refresh — better experience and higher engagement",
         "WebSocket is dramatically more efficient than polling — fewer server requests, lower infrastructure cost",
-        "Laravel Reverb is a first-party, self-hosted WebSocket solution — no third-party dependency or per-message pricing",
-        "Event-driven architecture decouples your application — adding a new real-time feature doesn't require rewriting existing code",
-        "Presence channels let you build collaborative features — showing who is online or viewing the same record"
+        "Self-hosted real-time solutions remove third-party dependency and per-message pricing",
+        "Event-driven architecture decouples the system — adding a new real-time feature does not require rewriting existing code",
+        "Presence awareness lets you build collaborative features — showing who is online or viewing the same record"
       ],
       "use_cases": [
-        "A SaaS platform where multiple users edit shared data and need to see each other's changes in real time",
-        "A logistics dashboard showing live vehicle positions, delivery statuses, and alerts without page refresh",
-        "A helpdesk or support tool where agents and customers exchange messages in a real-time chat interface",
-        "An e-commerce site showing live stock levels on product pages to create urgency"
+        "A platform where multiple users edit shared data and need to see each other's changes in real time",
+        "A logistics dashboard showing live vehicle positions and delivery statuses without page refresh",
+        "A support tool where agents and customers exchange messages in a real-time chat interface",
+        "An e-commerce site showing live stock levels on product pages to create urgency and reduce overselling"
       ],
       "problems_solved": [
-        "Users working on stale data because the page was loaded 10 minutes ago and nothing has updated",
-        "High server load from constant polling — hundreds of clients each requesting fresh data every few seconds",
-        "Real-time features that work in demos but fail under concurrent users in production",
-        "Notification systems that deliver alerts minutes after the triggering event",
-        "Collaborative tools where users overwrite each other's work because there is no live presence awareness"
+        "Users working on stale data because the page was loaded minutes ago and nothing has updated",
+        "High server load from constant polling — hundreds of clients requesting fresh data every few seconds",
+        "Real-time features that work in demos but fail under concurrent production users",
+        "Notification systems that deliver alerts minutes after the triggering event occurred",
+        "Collaborative tools where users overwrite each other's work because there is no live awareness"
       ],
       "process": [
         {
           "step": 1,
           "title": "Event architecture",
-          "description": "Define which events need to broadcast, to which channels, and to which users — before writing any WebSocket code."
+          "description": "Define which events need to broadcast, to which channels, and to which users — before writing any real-time code."
         },
         {
           "step": 2,
           "title": "Server setup",
-          "description": "Configure Laravel Reverb or Pusher, set up broadcasting channels with proper authentication."
+          "description": "Configure the WebSocket server and set up broadcast channels with proper authentication."
         },
         {
           "step": 3,
-          "title": "Event broadcasting",
-          "description": "Implement Laravel events, listeners, and broadcast conditions on the backend."
+          "title": "Event implementation",
+          "description": "Implement events, listeners, and broadcast conditions on the backend."
         },
         {
           "step": 4,
           "title": "Frontend integration",
-          "description": "Connect with Laravel Echo on the frontend, update UI reactively when events arrive."
+          "description": "Connect the client-side listener and update the UI reactively when events arrive."
         },
         {
           "step": 5,
           "title": "Load testing",
-          "description": "Test with concurrent connections to validate performance under realistic usage."
+          "description": "Test with concurrent connections to validate performance under realistic usage conditions."
         }
       ],
       "deliverables": [
-        "WebSocket server setup (Reverb or Pusher)",
-        "Laravel Broadcasting event and channel implementation",
-        "Laravel Echo frontend integration",
-        "Real-time UI components (notifications, live data tables, chat)",
+        "WebSocket server setup and configuration",
+        "Event and channel implementation",
+        "Client-side real-time integration",
+        "Real-time UI components — notifications, live data tables, chat",
         "Connection resilience and reconnection handling",
         "Load test results documentation"
       ],
       "outcomes": [
         "Users see data updates the moment they happen — no refresh required",
         "Reduced server load compared to polling-based approaches",
-        "Higher user engagement through live notifications and collaborative features",
+        "Higher engagement through live notifications and collaborative features",
         "Reliable real-time features that hold up under concurrent users",
-        "Event-driven foundation that makes adding future real-time features fast and clean"
+        "Event-driven foundation that makes future real-time features fast to add"
       ]
     },
     {
@@ -1007,24 +1006,24 @@
       "icon": "auto_awesome",
       "image": "/images/services/ai-development.jpg",
       "title": "AI-Enhanced Development",
-      "description": "From embedding LLM-powered features — chat, summarisation, classification — into your product, to automating workflows and business logic using AI tools. Faster delivery, smarter systems, less manual overhead.",
-      "detailed_description": "I integrate AI capabilities into web and mobile products at two levels. The first is product-level: embedding LLM-powered features — intelligent chat, document summarisation, content classification, automated data extraction — directly into your application via APIs like OpenAI, Anthropic Claude, or Gemini. The second is workflow-level: using AI tools to accelerate development, automate business logic, and reduce the manual overhead that slows teams down. Both compound over time — better products built faster.",
+      "description": "From embedding intelligent features — chat, summarisation, classification — into your product, to automating workflows and business logic using AI. Faster delivery, smarter systems, less manual overhead.",
+      "detailed_description": "I integrate AI capabilities into web and mobile products at two levels. The first is product-level: embedding intelligent features — conversational interfaces, document summarisation, content classification, automated data extraction — directly into your application. The second is workflow-level: using AI to accelerate development, automate business logic, and reduce the manual overhead that slows teams down. Both compound over time — better products, built faster.",
       "services_included": [
-        "LLM API integration (OpenAI GPT-4, Anthropic Claude, Google Gemini)",
         "AI-powered chat and conversational interface development",
         "Document and content summarisation features",
         "Text classification, tagging, and content moderation",
         "AI-assisted data extraction from unstructured content",
-        "Prompt engineering and system prompt design",
-        "RAG (Retrieval-Augmented Generation) with vector databases",
+        "Intelligent search — semantic and natural language queries",
+        "Prompt engineering and system design for reliable AI outputs",
+        "Knowledge base integration for AI-powered Q&A features",
         "AI workflow automation for internal business processes",
-        "AI-augmented code generation and development tooling setup"
+        "AI usage monitoring and cost management"
       ],
       "industries": [
         "SaaS & Software Products",
         "Legal & Compliance",
         "Healthcare & Medical Records",
-        "E-commerce (product recommendations, search)",
+        "E-commerce — product recommendations and search",
         "EdTech & Personalised Learning",
         "Customer Support & Helpdesks",
         "Media & Content Platforms",
@@ -1032,65 +1031,65 @@
       ],
       "benefits": [
         "AI features differentiate your product in a market where basic functionality is commoditised",
-        "LLM APIs abstract the complexity of machine learning — you get the capability without building models",
+        "Intelligent APIs abstract the complexity of machine learning — you get the capability without building models",
         "AI-assisted development accelerates delivery — features that would take weeks are scoped and built faster",
-        "Automated classification and extraction reduces manual data entry and human error",
-        "RAG-based features let your product answer questions using your own proprietary knowledge base"
+        "Automated classification and extraction reduces manual data entry and human error at scale",
+        "Knowledge base-powered features let your product answer questions using your own proprietary content"
       ],
       "use_cases": [
-        "A SaaS CRM that needs an AI assistant to summarise customer history and suggest next actions",
-        "A legal tech platform that needs to extract key clauses from uploaded contracts automatically",
-        "A support helpdesk adding an AI first-response layer that resolves common tickets without human involvement",
-        "An e-commerce site adding AI-powered semantic search so customers find products by describing what they need"
+        "A platform that needs an intelligent assistant to summarise history and suggest next actions",
+        "A document-heavy application that needs to automatically extract key information from uploads",
+        "A support helpdesk adding an intelligent first-response layer that resolves common queries without human involvement",
+        "A catalogue or content site adding semantic search so users find results by describing what they need"
       ],
       "problems_solved": [
         "Repetitive manual tasks — classification, tagging, data entry — consuming team time that could be automated",
-        "Search that only works if the user knows the exact product name or SKU",
+        "Search that only works if the user knows the exact name or identifier to look for",
         "Support volume that scales with user growth and cannot be handled by a fixed-size team",
-        "Slow development cycles from writing boilerplate code that AI tooling can generate in seconds",
+        "Development cycles slowed by boilerplate and repetitive implementation work",
         "Proprietary knowledge locked in documents and databases that users cannot query conversationally"
       ],
       "process": [
         {
           "step": 1,
           "title": "AI feature scoping",
-          "description": "Define the specific problem AI should solve, choose the right model and approach (chat, classification, RAG, etc.)."
+          "description": "Define the specific problem AI should solve and choose the right approach — chat, classification, extraction, search, or automation."
         },
         {
           "step": 2,
           "title": "Prompt engineering",
-          "description": "Design and test system prompts and user prompt structures to get reliable, accurate model outputs."
+          "description": "Design and test prompt structures to get reliable, accurate, and consistent outputs."
         },
         {
           "step": 3,
-          "title": "API integration",
-          "description": "Integrate the chosen LLM API into your application with proper authentication, error handling, and cost controls."
+          "title": "Integration",
+          "description": "Build the AI feature into your application with proper authentication, error handling, and cost controls."
         },
         {
           "step": 4,
           "title": "Testing & evaluation",
-          "description": "Test outputs across edge cases, measure accuracy, and tune prompts for production reliability."
+          "description": "Test across edge cases, measure accuracy, and tune for production reliability."
         },
         {
           "step": 5,
           "title": "Deployment & monitoring",
-          "description": "Deploy with usage monitoring and cost alerts — AI API costs scale with usage and need visibility."
+          "description": "Deploy with usage monitoring and cost alerts — AI features need visibility on usage and spend."
         }
       ],
       "deliverables": [
-        "LLM API integration (production-ready with error handling and retry logic)",
-        "Prompt library and system prompt documentation",
-        "AI feature UI (chat interface, classification output display, etc.)",
+        "AI feature integration — production-ready with error handling and retry logic",
+        "Prompt library and system design documentation",
+        "AI feature UI — chat interface, classification output, extraction results",
         "Cost monitoring and usage alerts setup",
-        "Evaluation report on accuracy and output quality",
+        "Accuracy evaluation report",
         "Documentation for extending and maintaining the AI integration"
       ],
       "outcomes": [
-        "AI-powered features live in your product that users can interact with immediately",
+        "Intelligent features live in your product that users can interact with immediately",
         "Measurable reduction in manual tasks through automation",
         "Faster development velocity through AI-assisted tooling",
-        "A competitive product differentiator that is hard for non-technical competitors to replicate",
-        "Clear understanding of AI API costs with monitoring to prevent surprise billing"
+        "A competitive product differentiator that non-technical competitors cannot easily replicate",
+        "Clear understanding of AI feature costs with monitoring to prevent unexpected billing"
       ]
     },
     {
@@ -1098,18 +1097,18 @@
       "icon": "dashboard_customize",
       "image": "/images/services/cms.jpg",
       "title": "Custom CMS Development",
-      "description": "Purpose-built content management systems in Laravel — designed around your editorial workflow, not the other way around. Clean interfaces, structured data, and APIs your frontend team will enjoy working with.",
-      "detailed_description": "Off-the-shelf CMS platforms force your editorial workflow to fit their data model. I build custom CMS systems in Laravel that are designed around exactly how your team works — the content types you have, the approval workflows you need, the APIs your frontend consumes, and the permissions model that matches your organisation. Whether you need a headless CMS powering a React frontend, a full-stack content platform with its own editorial UI, or a Laravel CMS with Filament or Nova admin panel, I build it to fit.",
+      "description": "Purpose-built content management systems designed around your editorial workflow — not the other way around. Clean interfaces, structured data, and APIs your team will enjoy working with.",
+      "detailed_description": "Off-the-shelf CMS platforms force your editorial workflow to fit their data model. I build custom content management systems designed around exactly how your team works — the content types you have, the approval workflows you need, the APIs your frontend consumes, and the permissions model that matches your organisation. Whether you need a headless CMS powering a modern frontend, a full-stack platform with its own editorial UI, or a tailored admin interface with a powerful content API, I build it to fit.",
       "services_included": [
-        "Custom Laravel CMS with tailored content types and schemas",
-        "Filament or Laravel Nova admin panel implementation",
-        "Headless CMS with RESTful or GraphQL API for frontend consumption",
-        "Multi-role editorial workflow (draft, review, publish, schedule)",
+        "Custom CMS with tailored content types and data schemas",
+        "Intuitive admin panel designed for editorial teams",
+        "Headless CMS with REST or GraphQL API for frontend consumption",
+        "Multi-role editorial workflow — draft, review, publish, schedule",
         "Media library and asset management",
         "Content versioning and revision history",
         "Multi-language and multi-region content management",
         "Dynamic form builder and custom field types",
-        "Analytics integration and content performance dashboards"
+        "Content performance analytics and reporting dashboards"
       ],
       "industries": [
         "Digital Publishing & Media",
@@ -1117,29 +1116,29 @@
         "Corporate & Enterprise",
         "Healthcare & Patient Information",
         "Education & Knowledge Bases",
-        "E-commerce (product content management)",
+        "E-commerce — product content management",
         "Tourism & Hospitality",
         "Membership Organisations"
       ],
       "benefits": [
-        "Content types, fields, and workflows built exactly for your data — no workarounds or plugin hacks",
-        "Headless architecture means your content powers any frontend — web, mobile, kiosk, or all three",
-        "Fine-grained role and permission control — editors, reviewers, admins, and read-only users all handled correctly",
-        "Scheduled publishing, content versioning, and revision history give editors confidence and control",
-        "API-first design means any future frontend or integration can consume your content without a CMS rebuild"
+        "Content types, fields, and workflows built exactly for your data — no workarounds or forced compromises",
+        "Headless architecture means your content powers any channel — web, mobile, kiosk, or all three",
+        "Fine-grained permissions give editors, reviewers, admins, and read-only users exactly the access they need",
+        "Scheduled publishing, versioning, and revision history give editorial teams confidence and control",
+        "API-first design means any future frontend or integration can consume your content without rebuilding the CMS"
       ],
       "use_cases": [
-        "A government department publishing structured data (energy, weather, policy) that WordPress cannot model cleanly",
-        "A media company needing a custom editorial workflow with multi-stage approval before articles go live",
-        "A SaaS product that needs an embedded CMS for its own users to manage their content within the platform",
-        "A club or association managing member activity, event scheduling, and communications through one custom-built admin interface"
+        "A government department publishing structured data that standard CMS platforms cannot model cleanly",
+        "A media company needing a custom editorial workflow with multi-stage approval before content goes live",
+        "A platform that needs an embedded CMS so its own users can manage content within the product",
+        "An organisation managing events, members, and communications through one unified custom admin interface"
       ],
       "problems_solved": [
-        "WordPress or other CMS platforms that cannot model your content types without heavy plugin customisation",
-        "Editorial teams blocked by developers for every content change because the CMS is not built for their workflow",
-        "Content that lives in one place but needs to power multiple channels — and currently has to be duplicated manually",
+        "Standard CMS platforms that cannot model your content types without heavy customisation and compromise",
+        "Editorial teams blocked by developers for every content update because the CMS is not built for their workflow",
+        "Content that needs to power multiple channels but currently has to be duplicated and managed separately",
         "No approval workflow — content goes live immediately without review, causing quality and compliance issues",
-        "Slow CMS admin interfaces caused by unoptimised queries on large content databases"
+        "Slow admin interfaces caused by unoptimised queries and bloated plugins on large content databases"
       ],
       "process": [
         {
@@ -1150,17 +1149,17 @@
         {
           "step": 2,
           "title": "Schema & API design",
-          "description": "Design the database schema and API contracts the frontend will consume."
+          "description": "Design the data schema and API contracts the editorial interface and frontend will consume."
         },
         {
           "step": 3,
           "title": "Admin panel development",
-          "description": "Build the editorial interface with Filament or Nova — intuitive, fast, and role-aware."
+          "description": "Build the editorial interface — intuitive, fast, and role-aware for each type of user."
         },
         {
           "step": 4,
-          "title": "API development",
-          "description": "Build the content delivery API with filtering, pagination, search, and caching."
+          "title": "Content delivery API",
+          "description": "Build the content API with filtering, pagination, search, and caching."
         },
         {
           "step": 5,
@@ -1169,19 +1168,19 @@
         }
       ],
       "deliverables": [
-        "Custom Laravel CMS with documented content types and schemas",
-        "Filament or Nova admin panel configured for your editorial team",
-        "Content delivery API (REST or GraphQL) with documentation",
+        "Custom CMS with documented content types and schemas",
+        "Admin panel configured for your editorial team",
+        "Content delivery API with documentation",
         "Role and permission configuration",
         "Editorial team training documentation",
-        "Content migration from previous system (if applicable)"
+        "Content migration from previous system if applicable"
       ],
       "outcomes": [
         "Editorial team publishing and managing content independently — no developer bottleneck",
         "Structured content that can power any current or future frontend channel",
         "Approval workflows that prevent unreviewed content from going live",
         "A CMS that is fast, intuitive, and built around how your team actually works",
-        "API foundation that makes future integrations and channel additions straightforward"
+        "An API foundation that makes future integrations and new channel additions straightforward"
       ]
     },
     {
@@ -1190,17 +1189,17 @@
       "image": "/images/services/database.jpg",
       "title": "Database Design & Optimisation",
       "description": "Scalable relational schema design, query optimisation, and indexing strategy — built to handle growth without performance degradation.",
-      "detailed_description": "A poorly designed database is the most common reason web applications become slow and expensive to change. I design relational database schemas that are normalised correctly, indexed appropriately, and structured so that your most frequent queries are fast from day one. For existing applications, I audit slow queries, identify missing indexes, fix N+1 problems, and implement caching layers — delivering measurable performance improvements without requiring a full application rewrite.",
+      "detailed_description": "A poorly designed database is the most common reason web applications become slow and expensive to change. I design relational schemas that are structured correctly, indexed appropriately, and built so your most frequent queries are fast from day one. For existing applications, I audit slow queries, identify missing indexes, fix inefficient data retrieval patterns, and implement caching layers — delivering measurable performance improvements without requiring a full application rewrite.",
       "services_included": [
-        "Relational database schema design (MySQL / PostgreSQL)",
-        "Database normalisation and data integrity enforcement",
-        "Indexing strategy — composite indexes, covering indexes, partial indexes",
-        "Query optimisation and Eloquent ORM performance tuning",
-        "N+1 query detection and eager loading implementation",
-        "Database caching with Redis (query cache, model cache)",
-        "Database migration planning and zero-downtime migration execution",
-        "Slow query log analysis and EXPLAIN plan interpretation",
-        "PostgreSQL advanced features — JSONB, full-text search, partitioning"
+        "Relational database schema design for new applications",
+        "Data normalisation and integrity enforcement",
+        "Indexing strategy — composite, covering, and partial indexes",
+        "Query optimisation and ORM performance tuning",
+        "Inefficient data retrieval detection and resolution",
+        "Database caching for frequently accessed, rarely changing data",
+        "Migration planning and zero-downtime migration execution",
+        "Slow query analysis and execution plan interpretation",
+        "Advanced database features — full-text search, partitioning, JSONB"
       ],
       "industries": [
         "SaaS & Software Platforms",
@@ -1210,69 +1209,69 @@
         "Logistics & Supply Chain",
         "Analytics & Reporting Platforms",
         "Government & Public Sector",
-        "Any application with large or growing datasets"
+        "Any application with large or rapidly growing datasets"
       ],
       "benefits": [
         "A well-indexed schema means queries stay fast as your data grows from thousands to millions of rows",
-        "Fixing N+1 queries can reduce page load times by 50–90% without changing any business logic",
-        "Redis caching eliminates repeat database reads for frequently accessed, rarely changing data",
-        "Correct normalisation prevents data inconsistencies and reduces the risk of bugs from stale data",
-        "Zero-downtime migration strategies let you change the database without taking your application offline"
+        "Fixing inefficient retrieval patterns can reduce page load times by 50–90% without changing business logic",
+        "Caching eliminates repeat database reads for frequently accessed, rarely changing data",
+        "Correct normalisation prevents data inconsistencies and reduces the risk of bugs from stale or duplicated data",
+        "Zero-downtime migration strategies let you change the schema without taking your application offline"
       ],
       "use_cases": [
-        "A SaaS application whose database queries are getting slower as the customer count grows",
-        "An analytics platform running complex aggregation queries that time out under normal usage",
+        "A platform whose database queries are getting slower as the customer count and data volume grow",
+        "An analytics application running complex aggregation queries that time out under normal usage",
         "A new application that needs a database schema designed correctly before the first line of business logic is written",
-        "An existing application migrating from MySQL to PostgreSQL to take advantage of JSONB and full-text search"
+        "An existing system needing performance improvements without a full application rewrite"
       ],
       "problems_solved": [
         "Application pages timing out because a single poorly optimised query is scanning the entire table",
-        "Data inconsistencies caused by denormalised schemas that store the same information in multiple places",
+        "Data inconsistencies caused by schemas that store the same information in multiple places",
         "Database becoming the bottleneck — CPU and memory spiking under moderate traffic",
-        "Developers afraid to change the schema because there is no migration strategy and the data cannot be taken offline",
-        "Reports and dashboards that take minutes to load because aggregation queries have no caching or optimisation"
+        "No migration strategy means schema changes require taking the application offline",
+        "Reports and dashboards taking minutes to load because aggregation queries have no caching"
       ],
       "process": [
         {
           "step": 1,
           "title": "Audit",
-          "description": "Analyse slow query logs, run EXPLAIN plans on the worst-performing queries, and map the current schema."
+          "description": "Analyse slow query logs, run execution plans on the worst-performing queries, and map the current schema structure."
         },
         {
           "step": 2,
           "title": "Diagnosis",
-          "description": "Identify N+1 problems, missing indexes, over-normalisation or under-normalisation, and caching opportunities."
+          "description": "Identify inefficient retrieval patterns, missing indexes, normalisation issues, and caching opportunities."
         },
         {
           "step": 3,
           "title": "Optimisation",
-          "description": "Add indexes, rewrite queries, implement eager loading, introduce Redis caching where appropriate."
+          "description": "Add indexes, rewrite queries, resolve inefficient patterns, implement caching where appropriate."
         },
         {
           "step": 4,
-          "title": "Schema redesign (if needed)",
+          "title": "Schema redesign if needed",
           "description": "Design and execute schema migrations with zero-downtime strategies for production systems."
         },
         {
           "step": 5,
           "title": "Benchmarking & documentation",
-          "description": "Before/after query execution time benchmarks, index documentation, and caching layer documentation."
+          "description": "Before-and-after query execution time benchmarks, index documentation, and caching layer documentation."
         }
       ],
       "deliverables": [
         "Database audit report with prioritised improvement recommendations",
-        "Optimised queries and Eloquent scopes",
+        "Optimised queries and reusable data access patterns",
         "Index strategy implementation and documentation",
-        "Redis caching layer configuration",
+        "Caching layer configuration",
         "Migration files for any schema changes",
-        "Before/after performance benchmarks"
+        "Before-and-after performance benchmarks"
       ],
       "outcomes": [
-        "Measurably faster queries — before/after execution times documented",
+        "Measurably faster queries — execution times documented before and after",
         "Application that stays performant as data volume grows — not just today",
         "Reduced database server load — less compute needed for the same traffic",
         "Data integrity enforced at the schema level — fewer bugs from inconsistent data",
-        "Development team that understands the schema and can extend it confidently"
+        "A development team that understands the schema and can extend it confidently"
       ]
     },
     {
@@ -1280,17 +1279,17 @@
       "icon": "hub",
       "image": "/images/services/integrations.jpg",
       "title": "Third-Party Integrations",
-      "description": "Connecting your product to the tools your business runs on — payment gateways, CRMs, marketing platforms, analytics, and more. Clean, maintainable integration code that doesn't break when APIs change.",
-      "detailed_description": "Modern products do not operate in isolation — they need to talk to payment processors, CRMs, shipping providers, marketing tools, analytics platforms, and more. I design and build integration layers that are resilient, well-logged, and maintainable. Every integration I write uses the adapter pattern to isolate third-party dependencies — so when Razorpay updates their API or you decide to switch from Mailchimp to another platform, you change one file, not thirty.",
+      "description": "Connecting your product to the tools your business runs on — payment gateways, CRMs, marketing platforms, analytics, and more. Clean, maintainable integration code that holds up when external APIs change.",
+      "detailed_description": "Modern products do not operate in isolation — they need to communicate with payment processors, CRMs, shipping providers, marketing tools, analytics platforms, and more. I design and build integration layers that are resilient, well-logged, and maintainable. Every integration is structured so that when an external API updates or you decide to switch providers, you change as little of your codebase as possible — not dozens of files.",
       "services_included": [
-        "Payment gateway integration (Razorpay, Stripe, PayPal, PayU, Cashfree)",
-        "CRM integration (Salesforce, HubSpot, Zoho)",
-        "Email and marketing platform integration (Mailchimp, SendGrid, NotifyVisitor)",
-        "Shipping and logistics API integration (Shiprocket, Delhivery, EasyShip)",
-        "SMS and communication integration (Twilio, MSG91, Exotel)",
-        "Google services integration (Maps, Analytics, Search Console, OAuth)",
-        "Social media API integration (Meta, LinkedIn, Twitter/X)",
-        "Accounting software integration (QuickBooks, Tally, Zoho Books)",
+        "Payment gateway integration — local and international options",
+        "CRM integration — bidirectional data sync and lead management",
+        "Email and marketing platform integration",
+        "Shipping and logistics provider integration",
+        "SMS and communication platform integration",
+        "Google services integration — Maps, Analytics, OAuth",
+        "Social media platform integration",
+        "Accounting software integration",
         "Webhook development and inbound event processing"
       ],
       "industries": [
@@ -1304,35 +1303,35 @@
         "Real Estate & PropTech"
       ],
       "benefits": [
-        "Adapter pattern isolates third-party dependencies — switching providers requires minimal code change",
-        "Centrally logged integration events make debugging production issues fast and straightforward",
-        "Webhook handling with retry logic and idempotency prevents duplicate processing of events",
-        "Clean integration layer reduces onboarding time for new developers who need to understand external dependencies",
-        "Proper error handling means your application degrades gracefully when a third-party service is unavailable"
+        "Architecture that isolates third-party dependencies — switching providers requires minimal code change",
+        "Centralised integration logging makes debugging production issues fast and straightforward",
+        "Webhook handling with retry logic and idempotency prevents duplicate or missed event processing",
+        "Clean integration layer reduces onboarding time for developers who need to understand external dependencies",
+        "Graceful degradation means your application handles third-party outages without complete failure"
       ],
       "use_cases": [
-        "An e-commerce platform integrating Razorpay for payments, Shiprocket for shipping, and Mailchimp for post-purchase emails",
-        "A SaaS CRM syncing leads and contacts with Salesforce bidirectionally via webhooks",
-        "A healthcare platform integrating with an SMS gateway for appointment reminders and a payment gateway for consultations",
-        "A marketplace needing Google Maps for location features, Google Analytics for behaviour tracking, and OAuth for login"
+        "A platform integrating a payment gateway, shipping provider, and email tool as part of a single order workflow",
+        "A CRM syncing leads and contacts with an external sales platform bidirectionally via webhooks",
+        "A healthcare application integrating SMS reminders, video consultations, and online payments",
+        "A marketplace needing map-based search, behaviour analytics, and social login all working together"
       ],
       "problems_solved": [
         "Integration code scattered across the application — impossible to update when the external API changes",
-        "No retry logic on webhook endpoints — missed events that are never processed",
-        "Payment integration that works in testing but has edge cases that silently fail in production",
-        "No logging on integration calls — impossible to diagnose why an order was not fulfilled",
-        "Tight coupling to one provider — switching from Stripe to Razorpay requires changes in dozens of files"
+        "No retry logic on webhook endpoints — missed events that are silently never processed",
+        "Payment integration that works in testing but has edge cases that fail silently in production",
+        "No logging on integration calls — impossible to diagnose why an order was not fulfilled or a notification not sent",
+        "Tight coupling to one provider — switching requires changes across dozens of files"
       ],
       "process": [
         {
           "step": 1,
           "title": "Integration mapping",
-          "description": "Map all required integrations, data flows, and event triggers before writing code."
+          "description": "Map all required integrations, data flows, and event triggers before writing any code."
         },
         {
           "step": 2,
-          "title": "Adapter design",
-          "description": "Design the integration interface and adapter pattern to isolate each third-party dependency."
+          "title": "Architecture design",
+          "description": "Design the integration structure to isolate each external dependency cleanly."
         },
         {
           "step": 3,
@@ -1342,28 +1341,28 @@
         {
           "step": 4,
           "title": "Testing",
-          "description": "Test in sandbox/test mode, validate edge cases (failed payments, webhook retries, rate limits)."
+          "description": "Test in sandbox or test mode, validate edge cases — failed payments, webhook retries, rate limits."
         },
         {
           "step": 5,
           "title": "Documentation & monitoring",
-          "description": "Document each integration, log formats, and set up alerting for integration failures."
+          "description": "Document each integration and set up alerting for integration failures in production."
         }
       ],
       "deliverables": [
-        "Integration adapter layer for each third-party service",
+        "Integration layer for each third-party service",
         "Webhook endpoint implementation with signature validation and retry handling",
-        "Integration test suite (sandbox/test mode coverage)",
+        "Integration test coverage",
         "Logging and monitoring for each integration",
-        "Integration documentation (credentials, endpoints, event reference)",
+        "Integration documentation",
         "Error handling and graceful degradation implementation"
       ],
       "outcomes": [
         "All business-critical systems connected and exchanging data reliably",
         "Integration failures surfaced immediately via alerts — not discovered by users",
-        "Clean adapter architecture that makes future provider switches a one-file change",
-        "Reduced manual data entry through automated system-to-system sync",
-        "Confidence that payment processing, notifications, and data sync all work correctly in production"
+        "Clean architecture that makes future provider switches a minimal-effort change",
+        "Reduced manual data entry through automated system-to-system synchronisation",
+        "Confidence that payments, notifications, and data sync all work correctly in production"
       ]
     },
     {
@@ -1372,22 +1371,22 @@
       "image": "/images/services/consulting.jpg",
       "title": "Tech Consulting & Rescue",
       "description": "Auditing stuck or legacy projects, untangling technical debt, and unblocking delivery — honest assessment, clear priorities, and hands-on fixes.",
-      "detailed_description": "I work with teams that are stuck — applications that have grown too complex to change safely, projects that are behind schedule, codebases that the original developer left without documentation, or technical decisions made early that are now causing problems at scale. I audit the situation honestly, prioritise the highest-impact improvements, and either fix them hands-on or give your team a clear, actionable plan to fix them themselves. No fluff, no overpromising — just an accurate diagnosis and a path forward.",
+      "detailed_description": "I work with teams that are stuck — applications that have grown too complex to change safely, projects behind schedule, codebases left without documentation, or early technical decisions now causing problems at scale. I audit the situation honestly, prioritise the highest-impact improvements, and either fix them hands-on or give your team a clear, actionable plan to execute themselves. No inflated reports, no recommendations designed to create more consulting work — just an accurate diagnosis and a practical path forward.",
       "services_included": [
         "Full technical audit of existing codebase, architecture, and infrastructure",
         "Technical debt assessment and prioritised remediation roadmap",
-        "Performance bottleneck diagnosis (application, database, server)",
+        "Performance bottleneck diagnosis — application, database, and server",
         "Security vulnerability audit and remediation plan",
-        "Code review and architecture review for in-progress projects",
-        "Legacy PHP / WordPress rescue and modernisation",
-        "Team unblocking — fixing the specific problem stopping delivery",
-        "Technology stack evaluation and migration planning",
-        "Developer onboarding documentation for codebases without it"
+        "Code and architecture review for in-progress projects",
+        "Legacy application rescue and modernisation planning",
+        "Team unblocking — fixing the specific issue stopping delivery",
+        "Technology evaluation and migration planning",
+        "Developer onboarding documentation for undocumented codebases"
       ],
       "industries": [
         "Startups Scaling Past Their MVP",
         "Agencies Inheriting Client Codebases",
-        "Businesses with Legacy PHP Applications",
+        "Businesses with Legacy Applications",
         "Teams with High Developer Turnover",
         "Companies Preparing for Investment or Acquisition",
         "Organisations Migrating to Modern Stacks",
@@ -1395,24 +1394,24 @@
         "Projects That Have Gone Over Time and Budget"
       ],
       "benefits": [
-        "An outside perspective surfaces problems the team is too close to see — or too afraid to say out loud",
-        "Prioritised remediation roadmap means you fix the right things first, not just the most visible ones",
-        "Hands-on fixes deliver immediate relief — not just a report that sits in a drawer",
-        "Honest assessment of what is actually wrong — no vendor interest in recommending a full rewrite if a targeted fix will do",
-        "Documentation deliverable means your team can maintain and extend the codebase after the engagement ends"
+        "An outside perspective surfaces problems the team is too close to see — or too cautious to say out loud",
+        "A prioritised roadmap means you fix the right things first, not just the most visible symptoms",
+        "Hands-on fixes deliver immediate relief — not just a report that sits unread",
+        "Honest assessment with no interest in recommending a full rewrite if a targeted fix will do",
+        "Documentation deliverable means your team can maintain the codebase long after the engagement ends"
       ],
       "use_cases": [
-        "A startup whose Laravel application has become slow and unmaintainable as the team has grown and features have been bolted on",
+        "A product that has become slow and unmaintainable as the team has grown and features have been bolted on",
         "An agency that has inherited a client codebase with no documentation and a deadline approaching",
         "A business whose original developer has left and the replacement team cannot understand the application",
-        "A company whose WordPress site has accumulated years of plugin bloat, security vulnerabilities, and performance debt"
+        "A company whose web presence has accumulated years of technical debt and security vulnerabilities"
       ],
       "problems_solved": [
-        "No one on the team understands how the whole system works — tribal knowledge walked out the door",
-        "Every new feature takes three times longer than it should because the existing code resists change",
-        "Application is slow but no one knows exactly why — no monitoring, no profiling, no baseline",
-        "Security audit revealed vulnerabilities but the team does not know how to prioritise or fix them",
-        "Project is behind schedule and the team needs someone to diagnose why and help them recover"
+        "No one on the team understands how the whole system works — critical knowledge walked out with a departing developer",
+        "Every new feature takes far longer than it should because the existing code resists change",
+        "Application is slow but no one knows exactly why — no monitoring, no profiling, no baseline to measure from",
+        "Security vulnerabilities identified but the team does not know how to prioritise or safely address them",
+        "Project is behind schedule and the team needs someone to diagnose why and help recover the timeline"
       ],
       "process": [
         {
@@ -1423,38 +1422,38 @@
         {
           "step": 2,
           "title": "Findings report",
-          "description": "Deliver a written report with a clear diagnosis, prioritised issues, and specific recommendations — not generalities."
+          "description": "Deliver a written report with a clear diagnosis, prioritised issues, and specific recommendations."
         },
         {
           "step": 3,
           "title": "Remediation planning",
-          "description": "Define a phased plan to address the highest-impact issues first without requiring a full application rewrite."
+          "description": "Define a phased plan to address the highest-impact issues first without requiring a full rewrite."
         },
         {
           "step": 4,
           "title": "Hands-on fixes",
-          "description": "Implement the agreed fixes directly — performance improvements, security hardening, documentation, refactoring."
+          "description": "Implement agreed fixes directly — performance improvements, security hardening, documentation, targeted refactoring."
         },
         {
           "step": 5,
           "title": "Handover",
-          "description": "Transfer knowledge to the internal team with documentation, pair programming sessions, and a clear ongoing maintenance guide."
+          "description": "Transfer knowledge to the internal team with documentation, walkthroughs, and a clear maintenance guide."
         }
       ],
       "deliverables": [
         "Technical audit report with prioritised findings and recommendations",
-        "Remediation roadmap with time and effort estimates",
-        "Hands-on fixes for agreed highest-priority issues",
-        "Codebase documentation (architecture overview, setup guide, key decisions)",
+        "Remediation roadmap with effort estimates",
+        "Hands-on fixes for the agreed highest-priority issues",
+        "Codebase documentation — architecture overview, setup guide, key decisions",
         "Performance benchmarks before and after remediation",
         "Security hardening implementation and report"
       ],
       "outcomes": [
         "Team unblocked — able to develop and deploy with confidence again",
-        "Clear understanding of what the application does and how — no more tribal knowledge risk",
-        "Measurable performance improvement on the worst-performing pages or queries",
+        "Clear understanding of what the application does and how — no more single-point-of-knowledge risk",
+        "Measurable performance improvement on the worst-performing areas",
         "Security vulnerabilities addressed and documented",
-        "A prioritised roadmap the team can execute independently without consultant dependency"
+        "A prioritised roadmap the team can execute independently without ongoing consultant dependency"
       ]
     }
   ]

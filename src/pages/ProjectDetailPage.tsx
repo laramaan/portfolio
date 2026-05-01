@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { getProjectById } from '@/data/portfolio';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import { PillButtonLink } from '@/components/ui/PillButton';
 
 export default function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -152,6 +153,19 @@ export default function ProjectDetailPage() {
           </ScrollReveal>
         </div>
       </article>
+
+      {/* Call to Action */}
+      <section className="bg-green py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-headline font-bold text-white leading-[1.2] w-full max-w-3xl text-center md:text-left">
+            Want to see <span className="text-yellow">Similar</span> <br className="hidden md:block" />
+            <span className="text-yellow italic font-normal">Results</span> for your business?
+          </h2>
+          <div className="shrink-0">
+            <PillButtonLink to={{ pathname: '/', hash: 'contact' }} label="Contact Me" />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

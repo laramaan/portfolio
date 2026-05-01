@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { getServiceById } from '@/data/portfolio';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import { PillButtonLink } from '@/components/ui/PillButton';
 
 export default function ServiceDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -26,31 +27,24 @@ export default function ServiceDetailPage() {
       </Helmet>
       
       {/* Hero Section */}
-      <article className="pt-28 md:pt-36 pb-20 md:pb-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
-          <ScrollReveal className="mb-12 md:mb-16">
-            <div className="flex items-center gap-2 mb-6">
-              <Link to="/services" className="text-green/70 hover:text-green font-headline font-bold text-sm tracking-wide uppercase flex items-center gap-1 transition-colors">
-                <span className="material-symbols-outlined text-[18px]">arrow_back</span>
-                Services
+      <article className="pt-28 md:pt-36 pb-8 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <ScrollReveal>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+              <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl text-green leading-[1.1] tracking-tight">
+                {item.title}
+              </h1>
+              <Link
+                to="/services"
+                className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit focus-visible:outline focus-visible:underline rounded shrink-0"
+              >
+                <span className="material-symbols-outlined">arrow_back</span> All services
               </Link>
-              <span className="text-green/40">/</span>
-              <span className="font-headline font-bold text-sm tracking-wide text-green uppercase">{item.title}</span>
             </div>
             
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-8">
-              <div className="flex-1">
-                <h1 className="font-headline font-bold text-4xl md:text-5xl text-green leading-[1.1] tracking-tight mb-6">
-                  {item.title}
-                </h1>
-                <p className="font-body text-xl text-green/80 leading-relaxed max-w-2xl">
-                  {item.description}
-                </p>
-              </div>
-              <div className="w-20 h-20 bg-grey rounded-full flex items-center justify-center shrink-0 hidden md:flex">
-                <span className="material-symbols-outlined text-4xl text-green">{item.icon}</span>
-              </div>
-            </div>
+            <p className="font-body text-xl text-green/80 leading-relaxed max-w-5xl mb-12">
+              {item.description}
+            </p>
 
             {item.image && (
               <div className="w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-sm">
@@ -63,33 +57,37 @@ export default function ServiceDetailPage() {
 
       {/* About & Benefits Section */}
       <section className="py-20 md:py-24 bg-grey">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            <ScrollReveal>
-              <h2 className="font-headline font-bold text-2xl text-green mb-6">Overview</h2>
-              <p className="font-body text-lg text-green/80 leading-relaxed">
-                {item.detailed_description}
-              </p>
-            </ScrollReveal>
-            
-            <ScrollReveal delay={0.1}>
-              <h2 className="font-headline font-bold text-2xl text-green mb-6">Key Benefits</h2>
-              <ul className="space-y-4">
-                {item.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-yellow mt-0.5 shrink-0">check_circle</span>
-                    <span className="font-body text-green/80 text-lg leading-relaxed">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
-            </ScrollReveal>
-          </div>
+        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-16 md:gap-20">
+          <ScrollReveal>
+            <h2 className="font-headline font-bold text-2xl text-green mb-6">Overview</h2>
+            <p className="font-body text-[17px] text-green/80 leading-relaxed md:leading-loose">
+              {item.detailed_description}
+            </p>
+          </ScrollReveal>
+          
+          <ScrollReveal delay={0.1}>
+            <h2 className="font-headline font-bold text-2xl text-green mb-8">Key Benefits</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {item.benefits.map((benefit, i) => (
+                <div key={i} className="bg-white p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-black/[0.03] flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+                  <div className="w-10 h-10 rounded-full bg-green flex items-center justify-center mb-5 shrink-0">
+                    <span className="font-headline font-bold text-white text-[15px]">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <p className="font-body text-green/80 text-[15px] leading-relaxed">
+                    {benefit}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* What's Included & Deliverables (Dark Section) */}
       <section className="py-20 md:py-24 bg-green text-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
           <ScrollReveal>
             <h2 className="font-headline font-bold text-3xl mb-12 text-center text-yellow">Everything You Need</h2>
           </ScrollReveal>
@@ -143,54 +141,54 @@ export default function ServiceDetailPage() {
         </div>
       </section>
 
-      {/* Process & Use Cases Section */}
+      {/* Process, Use Cases, Industries */}
       <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <ScrollReveal>
-              <h2 className="font-headline font-bold text-2xl text-green mb-8">Our Process</h2>
-              <div className="space-y-8">
-                {item.process.map((step, i) => (
-                  <div key={i} className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-grey border border-black/5 text-green font-headline font-bold flex items-center justify-center shrink-0">
-                      {step.step}
-                    </div>
-                    <div>
-                      <h4 className="font-headline font-bold text-lg text-green mb-1">{step.title}</h4>
-                      <p className="font-body text-green/70 leading-relaxed">{step.description}</p>
-                    </div>
+        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-20">
+          <ScrollReveal>
+            <h2 className="font-headline font-bold text-3xl text-green mb-10">Our Process</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {item.process.map((step, i) => (
+                <div key={i} className="bg-white p-8 md:px-8 md:py-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-black/[0.03] relative overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                  {/* Large Watermark Number */}
+                  <div className="absolute -right-2 -top-2 text-8xl font-headline font-black text-green/[0.03] select-none group-hover:text-green/[0.05] transition-colors group-hover:scale-105 duration-500">
+                    {String(step.step).padStart(2, '0')}
                   </div>
-                ))}
-              </div>
-            </ScrollReveal>
-            
-            <ScrollReveal delay={0.1}>
-              <h2 className="font-headline font-bold text-2xl text-green mb-8">Ideal Use Cases</h2>
-              <div className="grid grid-cols-1 gap-4 mb-10">
-                {item.use_cases.map((useCase, i) => (
-                  <div key={i} className="bg-grey rounded-xl p-5 flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green/40 shrink-0 mt-0.5">lightbulb</span>
-                    <span className="font-body text-green/80 font-medium leading-relaxed">{useCase}</span>
-                  </div>
-                ))}
-              </div>
+                  
+                  <h4 className="font-headline font-bold text-xl text-green mb-4 relative z-10">{step.title}</h4>
+                  <p className="font-body text-green/80 leading-relaxed text-[15px] relative z-10">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+          
+          <ScrollReveal delay={0.1}>
+            <h2 className="font-headline font-bold text-3xl text-green mb-8">Ideal Use Cases</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {item.use_cases.map((useCase, i) => (
+                <div key={i} className="bg-grey rounded-2xl p-6 flex flex-col items-start gap-4 h-full border border-black/[0.02]">
+                  <span className="material-symbols-outlined text-yellow text-3xl shrink-0">lightbulb</span>
+                  <span className="font-body text-green/80 leading-relaxed text-[15px]">{useCase}</span>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
 
-              <h3 className="font-headline font-bold text-xl text-green mb-6">Industries</h3>
-              <div className="flex flex-wrap gap-2">
-                {item.industries.map((industry, i) => (
-                  <span key={i} className="px-4 py-2 bg-green/5 text-green font-body font-medium rounded-full text-sm">
-                    {industry}
-                  </span>
-                ))}
-              </div>
-            </ScrollReveal>
-          </div>
+          <ScrollReveal delay={0.2}>
+            <h2 className="font-headline font-bold text-3xl text-green mb-6">Industries</h2>
+            <div className="flex flex-wrap gap-3">
+              {item.industries.map((industry, i) => (
+                <span key={i} className="px-5 py-2.5 bg-green/5 text-green font-body font-medium rounded-full border border-green/10">
+                  {industry}
+                </span>
+              ))}
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Problems Solved */}
       <section className="py-20 bg-grey">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
           <ScrollReveal>
             <h2 className="font-headline font-bold text-3xl text-green mb-12 text-center">Problems Solved</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -206,22 +204,15 @@ export default function ServiceDetailPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-green text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <ScrollReveal>
-            <h2 className="font-headline font-bold text-3xl md:text-4xl text-yellow mb-6">
-              Ready to start your project?
-            </h2>
-            <p className="font-body text-lg text-white/80 mb-8 max-w-xl mx-auto">
-              Let's discuss how we can build something amazing together. Reach out and I'll get back to you shortly.
-            </p>
-            <a 
-              href="/#contact"
-              className="inline-flex items-center justify-center h-14 px-8 rounded-full bg-white text-green font-headline font-bold text-lg hover:bg-yellow hover:text-white transition-colors"
-            >
-              Get in Touch
-            </a>
-          </ScrollReveal>
+      <section className="bg-green py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-headline font-bold text-white leading-[1.2] w-full max-w-3xl text-center md:text-left">
+            Ready to build your <span className="text-yellow">Amazing</span> <br className="hidden md:block" />
+            <span className="text-yellow italic font-normal">Product?</span> Let&apos;s talk.
+          </h2>
+          <div className="shrink-0">
+            <PillButtonLink to={{ pathname: '/', hash: 'contact' }} label="Contact Me" />
+          </div>
         </div>
       </section>
     </>
