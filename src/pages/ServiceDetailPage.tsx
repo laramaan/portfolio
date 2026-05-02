@@ -194,54 +194,48 @@ export default function ServiceDetailPage() {
       {/* Ideal For: Use Cases & Industries */}
       <section className="py-24 bg-grey">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <SectionEyebrow label="Ideal For" className="justify-center" />
-              <h2 className="font-headline font-bold text-4xl md:text-6xl text-green">
-                Who This Service <span className="text-yellow italic font-normal">Empowers</span>
-              </h2>
-            </div>
-          </ScrollReveal>
 
-          <div className="grid lg:grid-cols-12 gap-12 items-start">
-            {/* Ideal Use Cases */}
+
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start max-w-6xl mx-auto">
+            {/* Ideal Use Cases - Left Side */}
             <div className="lg:col-span-7">
-              <ScrollReveal>
+              <ScrollReveal delay={0.1}>
                 <h3 className="font-headline font-bold text-2xl text-green mb-8 flex items-center gap-3">
                   <span className="w-1.5 h-6 bg-yellow rounded-full" />
-                  Perfect Use Cases
+                  Use Cases
                 </h3>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-5">
                   {item.use_cases.map((useCase, i) => (
-                    <div key={i} className="bg-white p-6 rounded-[2rem] border border-black/[0.03] shadow-sm hover:shadow-md transition-all h-full">
-                      <div className="w-8 h-8 rounded-full bg-yellow/10 flex items-center justify-center mb-4 text-yellow">
-                        <span className="material-symbols-outlined text-xl">verified</span>
+                    <div key={i} className="bg-white p-6 md:p-8 rounded-[2rem] border border-black/[0.03] shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col sm:flex-row items-start gap-5 group">
+                      <div className="w-12 h-12 rounded-2xl bg-yellow/10 flex items-center justify-center shrink-0 text-yellow group-hover:scale-110 group-hover:bg-yellow group-hover:text-white transition-all duration-300">
+                        <span className="material-symbols-outlined text-2xl">verified</span>
                       </div>
-                      <p className="font-body text-green/80 text-[15px] leading-relaxed">{useCase}</p>
+                      <p className="font-body text-green/80 text-[16px] leading-relaxed pt-1 sm:pt-2">{useCase}</p>
                     </div>
                   ))}
                 </div>
               </ScrollReveal>
             </div>
 
-            {/* Target Industries */}
-            <div className="lg:col-span-5">
+            {/* Target Industries - Right Side */}
+            <div className="lg:col-span-5 lg:sticky lg:top-32">
               <ScrollReveal delay={0.2}>
                 <h3 className="font-headline font-bold text-2xl text-green mb-8 flex items-center gap-3">
                   <span className="w-1.5 h-6 bg-yellow rounded-full" />
                   Target Industries
                 </h3>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-col gap-2">
                   {item.industries.map((industry, i) => (
-                    <div key={i} className="px-5 py-3 bg-white text-green font-headline font-bold rounded-xl border border-black/[0.03] hover:border-yellow transition-colors cursor-default text-sm shadow-sm">
-                      {industry}
+                    <div key={i} className="flex items-center gap-4 group cursor-default p-4 rounded-2xl hover:bg-white border border-transparent hover:border-black/[0.03] hover:shadow-sm transition-all">
+                      <span className="w-2.5 h-2.5 rounded-full bg-yellow/40 group-hover:bg-yellow transition-colors shrink-0" />
+                      <span className="text-green/90 font-headline font-bold text-lg group-hover:text-green transition-colors">{industry}</span>
                     </div>
                   ))}
                 </div>
-                
               </ScrollReveal>
             </div>
           </div>
+
         </div>
       </section>
 

@@ -1,12 +1,20 @@
+import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { getProjectById } from '@/data/portfolio';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { PillButtonLink } from '@/components/ui/PillButton';
+import { SectionEyebrow } from '@/components/ui/SectionEyebrow';
 
 export default function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>();
   const item = id ? getProjectById(id) : undefined;
+
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    setActiveImage(null);
+  }, [id]);
 
   if (!item) {
     return (
@@ -20,7 +28,10 @@ export default function ProjectDetailPage() {
   }
 
   const metaDesc = (item.summary ?? item.content).slice(0, 155);
-  const galleryThumbs = (item.gallery ?? []).filter((src) => src !== item.image);
+  
+  const currentMainImage = activeImage || item.image;
+  const allImages = Array.from(new Set([item.image, ...(item.gallery ?? [])]));
+  const galleryThumbs = allImages.filter((src) => src !== currentMainImage);
 
   return (
     <>
@@ -79,7 +90,7 @@ export default function ProjectDetailPage() {
               {/* Main Image */}
               <div className="lg:col-span-9 h-[300px] md:h-[500px] rounded-lg overflow-hidden shadow-sm relative group">
                 <img
-                  src={item.image}
+                  src={currentMainImage}
                   alt={item.title}
                   width={1200}
                   height={750}
@@ -102,20 +113,18 @@ export default function ProjectDetailPage() {
               {galleryThumbs.length > 0 && (
                 <div className="lg:col-span-3 flex lg:flex-col gap-4 h-[300px] md:h-[500px]">
                   {galleryThumbs.map((src, i) => (
-                    <a
+                    <button
                       key={src}
-                      href={src}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="relative flex-1 rounded-lg overflow-hidden bg-grey shadow-sm hover:shadow-md transition-all group border border-black/5"
+                      onClick={() => setActiveImage(src)}
+                      className="relative flex-1 rounded-lg overflow-hidden bg-grey shadow-sm hover:shadow-md transition-all group border border-black/5 p-0 cursor-pointer w-full"
                     >
                       <img
                         src={src}
-                        alt={`${item.title} screenshot ${i + 1}`}
+                        alt={`${item.title} gallery thumbnail`}
                         loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                    </a>
+                    </button>
                   ))}
                 </div>
               )}
@@ -126,51 +135,68 @@ export default function ProjectDetailPage() {
 
       {/* Overview & The Challenge/Solution */}
       <section className="py-20 md:py-24 bg-grey">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-16 md:gap-20">
-          
-          <ScrollReveal>
-            <h2 className="font-headline font-bold text-2xl text-green mb-6">Overview</h2>
-            <div className="font-body text-[16px] text-green/80 leading-relaxed space-y-4 max-w-4xl">
-              {item.content.split(/\n\n+/).map((para, idx) => (
-                <p key={idx}>{para}</p>
-              ))}
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+            
+            {/* Left: Overview */}
+            <div className="lg:col-span-7">
+              <ScrollReveal>
+                <SectionEyebrow label="Overview" />
+                <h2 className="font-headline font-bold text-3xl md:text-[3rem] text-green mb-8 leading-[1.15]">
+                  <span className="text-yellow italic font-normal">Project</span> Overview
+                </h2>
+                <div className="font-body text-[17px] text-green/80 leading-[1.8] space-y-6">
+                  {item.content.split(/\n\n+/).map((para, idx) => (
+                    <p key={idx}>{para}</p>
+                  ))}
+                </div>
+              </ScrollReveal>
             </div>
-          </ScrollReveal>
 
-          {(item.problem || item.solution) && (
-            <ScrollReveal delay={0.1}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Right: Challenge & Solution */}
+            {(item.problem || item.solution) && (
+              <div className="lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-32">
                 {item.problem && (
-                  <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-black/5">
-                    <h3 className="font-headline font-bold text-xl text-green mb-4 flex items-center gap-2">
-                      <span className="material-symbols-outlined text-yellow text-2xl">error</span>
-                      The Challenge
-                    </h3>
-                    <p className="font-body text-[16px] text-green/80 leading-relaxed">
-                      {item.problem}
-                    </p>
-                  </div>
+                  <ScrollReveal delay={0.1}>
+                    <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-black/[0.03] hover:shadow-lg hover:-translate-y-1 transition-all group">
+                      <h3 className="font-headline font-bold text-xl text-green mb-4 flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-yellow/10 flex items-center justify-center shrink-0 group-hover:bg-yellow transition-colors duration-300">
+                          <span className="material-symbols-outlined text-yellow text-[20px] group-hover:text-white transition-colors duration-300">error</span>
+                        </div>
+                        The Challenge
+                      </h3>
+                      <p className="font-body text-[15px] text-green/80 leading-relaxed">
+                        {item.problem}
+                      </p>
+                    </div>
+                  </ScrollReveal>
                 )}
                 {item.solution && (
-                  <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-black/5">
-                    <h3 className="font-headline font-bold text-xl text-green mb-4 flex items-center gap-2">
-                      <span className="material-symbols-outlined text-yellow text-2xl">lightbulb</span>
-                      The Solution
-                    </h3>
-                    <p className="font-body text-[16px] text-green/80 leading-relaxed">
-                      {item.solution}
-                    </p>
-                  </div>
+                  <ScrollReveal delay={0.2}>
+                    <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-black/[0.03] hover:shadow-lg hover:-translate-y-1 transition-all group">
+                      <h3 className="font-headline font-bold text-xl text-green mb-4 flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-yellow/10 flex items-center justify-center shrink-0 group-hover:bg-yellow transition-colors duration-300">
+                          <span className="material-symbols-outlined text-yellow text-[20px] group-hover:text-white transition-colors duration-300">lightbulb</span>
+                        </div>
+                        The Solution
+                      </h3>
+                      <p className="font-body text-[15px] text-green/80 leading-relaxed">
+                        {item.solution}
+                      </p>
+                    </div>
+                  </ScrollReveal>
                 )}
               </div>
-            </ScrollReveal>
-          )}
+            )}
+
+          </div>
         </div>
       </section>
 
       {/* Key Features & Project Highlights (Dark Section) */}
       {(item.features?.length || item.highlights?.length) ? (
         <section className="py-20 md:py-24 bg-green text-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
               {item.features && item.features.length > 0 && (
                 <ScrollReveal>
@@ -214,6 +240,7 @@ export default function ProjectDetailPage() {
                 </ScrollReveal>
               )}
             </div>
+          </div>
         </section>
       ) : null}
 
@@ -222,7 +249,12 @@ export default function ProjectDetailPage() {
         <section className="py-20 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-8">
             <ScrollReveal>
-              <h2 className="font-headline font-bold text-3xl mb-12 text-center text-green">Project Results & Outcomes</h2>
+              <div className="text-center mb-16">
+                <SectionEyebrow label="Outcomes" className="justify-center" />
+                <h2 className="font-headline font-bold text-4xl md:text-[3rem] text-green leading-[1.15]">
+                  Project <span className="text-yellow italic font-normal">Results</span> & Outcomes
+                </h2>
+              </div>
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">

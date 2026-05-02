@@ -38,7 +38,7 @@ export default function BlogsPage() {
               >
                 <Link
                   to={`/blog/${blog.id}`}
-                  className="group flex flex-col h-full bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-black/[0.03] transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green hover:-translate-y-1"
+                  className="group flex flex-col h-full rounded-3xl bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
                 >
                   <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 bg-white">
                     <img
@@ -52,11 +52,11 @@ export default function BlogsPage() {
                     />
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                       {blog.category && (
-                        <span className="bg-yellow text-green font-bold text-[11px] px-3 py-1.5 rounded-full font-headline uppercase tracking-wide">
+                        <span className="bg-yellow text-green font-bold text-[11px] px-3 py-1 rounded-full font-headline uppercase tracking-wide flex items-center justify-center leading-none">
                           {blog.category}
                         </span>
                       )}
-                      <span className="bg-white/90 backdrop-blur-sm text-green font-bold text-[13px] px-4 py-2 rounded-full font-headline">
+                      <span className="bg-white/90 backdrop-blur-sm text-green font-bold text-[13px] px-4 py-1.5 rounded-full font-headline flex items-center justify-center leading-none">
                         {blog.date}
                       </span>
                     </div>

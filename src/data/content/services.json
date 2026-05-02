@@ -369,7 +369,7 @@
       "id": "cloud-devops",
       "icon": "cloud",
       "image": "/images/services/cloud-devops.jpg",
-      "title": "Cloud & DevOps (AWS)",
+      "title": "Cloud & DevOps",
       "description": "Deployment, server configuration, and cloud infrastructure on AWS ensuring your applications are secure, scalable, and highly available.",
       "detailed_description": "I configure and manage production cloud infrastructure that your application needs to be secure, performant, and resilient. From initial server setup and SSL configuration to asset storage pipelines and serverless functions, I handle the infrastructure layer so your team can focus on shipping features. I also implement automated deployment pipelines, monitoring, and backup strategies giving you confidence that your production environment can handle real-world demands.",
       "services_included": [
