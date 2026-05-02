@@ -112,7 +112,7 @@ export default function ProjectDetailPage() {
               {/* Gallery Thumbnails */}
               {galleryThumbs.length > 0 && (
                 <div className="lg:col-span-3 flex lg:flex-col gap-4 h-[300px] md:h-[500px]">
-                  {galleryThumbs.map((src, i) => (
+                  {galleryThumbs.map((src) => (
                     <button
                       key={src}
                       onClick={() => setActiveImage(src)}
