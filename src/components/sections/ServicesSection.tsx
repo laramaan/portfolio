@@ -35,8 +35,8 @@ export function ServicesSection() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="bg-grey p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-md flex flex-col h-full"
             >
-              <div className="mb-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-                <span className="material-symbols-outlined text-3xl text-green">{service.icon}</span>
+              <div className="mb-6 w-14 h-14 bg-yellow rounded-full flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-2xl text-green">{service.icon}</span>
               </div>
               <h3 className="font-headline font-bold text-[22px] text-green mb-3">{service.title}</h3>
               <p className="font-body text-green/70 leading-relaxed mb-6 text-[15px] flex-1">

@@ -23,9 +23,18 @@ export type SiteSettings = {
   about: {
     lead: string;
     nameHighlight: string;
-    body: string;
+    body_paragraph1: string;
+    body_paragraph2: string;
+    body_closing: string;
     stats: SiteStat[];
-    signature: string;
+    highlights: { icon: string; label: string }[];
+    values: { title: string; description: string }[];
+    currently: {
+      role: string;
+      company: string;
+      location: string;
+      open_to: string;
+    };
   };
   heroPortrait: string;
   aboutPortrait: string;

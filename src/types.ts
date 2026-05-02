@@ -64,7 +64,7 @@ export type Testimonial = {
   text: string;
   name: string;
   role: string;
-  image: string;
+  image?: string;
 };
 
 export type Faq = { q: string; a: string };

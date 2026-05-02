@@ -7,7 +7,7 @@ type Props = {
   label?: string;
   className?: string;
   /** `pill` matches “View All Projects” (yellow ring + green label + white icon). */
-  variant?: 'outline' | 'pill';
+  variant?: 'outline' | 'pill' | 'icon';
 };
 
 export function DownloadResumeButton({ label = 'Resume', className = '', variant = 'outline' }: Props) {
@@ -57,6 +57,32 @@ export function DownloadResumeButton({ label = 'Resume', className = '', variant
     );
   }
 
+  if (variant === 'icon') {
+    return (
+      <div className={`relative group ${className}`}>
+        <motion.button
+          type="button"
+          onClick={onClick}
+          disabled={busy}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex items-center justify-center w-12 h-12 bg-yellow hover:bg-yellow/90 text-green rounded-full shadow-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow disabled:opacity-70"
+          aria-label={label}
+        >
+          {busy ? (
+            <span className="material-symbols-outlined text-[24px] animate-spin">sync</span>
+          ) : (
+            <span className="material-symbols-outlined text-[24px]">download</span>
+          )}
+        </motion.button>
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-green text-white text-[11px] font-bold font-headline rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10 shadow-lg">
+          {busy ? 'Preparing…' : 'Download Resume'}
+          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-green" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <motion.button
       type="button"
@@ -64,7 +90,7 @@ export function DownloadResumeButton({ label = 'Resume', className = '', variant
       disabled={busy}
       whileHover={{ scale: busy ? 1 : 1.02 }}
       whileTap={{ scale: busy ? 1 : 0.98 }}
-      className={`border-2 border-green text-green rounded-full px-6 py-2.5 md:px-10 md:py-3.5 font-bold font-headline text-xs md:text-sm hover:bg-green hover:text-white transition-colors bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green disabled:opacity-70 ${className}`}
+      className={`border-2 border-green text-green rounded-full px-6 py-2.5 md:px-10 md:h-[52px] font-bold font-headline text-xs md:text-sm hover:bg-green hover:text-white transition-colors bg-white flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green disabled:opacity-70 ${className}`}
     >
       {busy ? 'Preparing…' : label}
     </motion.button>

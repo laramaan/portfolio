@@ -34,9 +34,9 @@ export default {
         },
       },
       animation: {
-        scroll: 'scroll 20s linear infinite',
-        'scroll-reverse': 'scroll 20s linear infinite reverse',
-        'scroll-slow': 'scroll 25s linear infinite',
+        scroll: 'scroll 50s linear infinite',
+        'scroll-reverse': 'scroll 50s linear infinite reverse',
+        'scroll-slow': 'scroll 50s linear infinite',
         'fade-in': 'fade-in 0.45s ease-out forwards',
       },
     },

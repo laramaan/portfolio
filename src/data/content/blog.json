@@ -17,7 +17,7 @@
       "category": "Projects",
       "title": "Nested JSON and Dynamic Charts on a Government WordPress Build",
       "excerpt": "How we turned complex energy and weather datasets into readable visuals for a public audience.",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886174f5c?q=80&w=1200&auto=format&fit=crop",
+      "image": "/images/blogs/government-data.png",
       "content": "Public-sector sites need clarity and accuracy. We modeled nested JSON from upstream sources, normalized keys for the charting layer, and cached aggressively where editors did not need minute-level freshness.\n\nWordPress remained the authoring hub while the visualization script consumed sanitized JSON endpoints. That separation let policy teams iterate on copy without risking the numbers pipeline.\n\nIf you are building something similar, document the schema for editors and add validation before publish—small mistakes in JSON propagate quickly into misleading charts."
     },
     {

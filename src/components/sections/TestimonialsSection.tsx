@@ -48,38 +48,47 @@ export function TestimonialsSection() {
 
   const maxStart = Math.max(0, n - perView);
   const [start, setStart] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const [paused, setPaused] = useState(false);
   const pausedRef = useRef(paused);
   pausedRef.current = paused;
 
   const stride = cardWidth > 0 ? cardWidth + GAP_PX : 0;
 
-  useEffect(() => {
-    setStart((s) => Math.min(s, maxStart));
-  }, [maxStart]);
+  // Cloned items for infinite loop
+  const extendedTestimonials = [...testimonials, ...testimonials.slice(0, perView)];
+  const nTotal = extendedTestimonials.length;
 
   useEffect(() => {
-    if (maxStart <= 0 || stride <= 0) return;
+    if (stride <= 0) return;
 
-    const initial = window.setTimeout(() => {
-      if (maxStart >= 1) setStart(1);
-    }, 700);
     const ms = testimonialsSettings.autoScrollIntervalMs ?? 3000;
     const pauseHover = testimonialsSettings.pauseOnHover !== false;
+    
     const tick = window.setInterval(() => {
       if (pauseHover && pausedRef.current) return;
-      setStart((s) => (s + 1) % (maxStart + 1));
+      
+      setIsTransitioning(true);
+      setStart((s) => s + 1);
     }, ms);
 
-    return () => {
-      window.clearTimeout(initial);
-      window.clearInterval(tick);
-    };
-  }, [maxStart, stride]);
+    return () => window.clearInterval(tick);
+  }, [stride, perView]);
+
+  // Handle the infinite loop reset
+  useEffect(() => {
+    if (start >= n) {
+      const timer = window.setTimeout(() => {
+        setIsTransitioning(false);
+        setStart(0);
+      }, 500); // match the duration-500 in CSS
+      return () => window.clearTimeout(timer);
+    }
+  }, [start, n]);
 
   const pauseHover = testimonialsSettings.pauseOnHover !== false;
   const translateX = start * stride;
-  const dotCount = maxStart + 1;
+  const dotCount = n;
 
   return (
     <section id="testimonials" className="py-20 md:py-24 bg-white" aria-labelledby="testimonials-heading">
@@ -115,14 +124,15 @@ export function TestimonialsSection() {
             aria-label="Client testimonials"
           >
             <div
-              className="flex gap-4 items-stretch transition-transform duration-500 ease-out motion-reduce:transition-none"
+              className="flex gap-4 items-stretch"
               style={{
                 transform: cardWidth > 0 ? `translateX(-${translateX}px)` : undefined,
+                transition: isTransitioning ? 'transform 500ms ease-out' : 'none',
               }}
             >
-              {testimonials.map((test, i) => (
+              {extendedTestimonials.map((test, i) => (
                 <article
-                  key={test.id ?? `${test.name}-${i}`}
+                  key={`${test.id ?? test.name}-${i}`}
                   className="shrink-0 h-full self-stretch flex"
                   style={{
                     width: cardWidth > 0 ? `${cardWidth}px` : '100%',
@@ -147,15 +157,6 @@ export function TestimonialsSection() {
                       </p>
                     </div>
                     <div className="flex items-center gap-3 mt-auto shrink-0">
-                      <img
-                        src={test.image}
-                        alt=""
-                        width={48}
-                        height={48}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-12 h-12 rounded-full object-cover shadow-sm"
-                      />
                       <div>
                         <h3 className="font-headline font-bold text-green text-[15px]">{test.name}</h3>
                         <p className="font-body text-green/60 text-[13px]">{test.role}</p>
@@ -174,11 +175,14 @@ export function TestimonialsSection() {
                   key={`dot-${i}`}
                   type="button"
                   role="tab"
-                  aria-selected={i === start}
+                  aria-selected={i === (start % dotCount)}
                   aria-label={`Show testimonials starting at ${i + 1}`}
-                  onClick={() => setStart(i)}
+                  onClick={() => {
+                    setIsTransitioning(true);
+                    setStart(i);
+                  }}
                   className={`h-2 rounded-full transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green ${
-                    i === start ? 'w-8 bg-green' : 'w-2 bg-green/25 hover:bg-green/40'
+                    i === (start % dotCount) ? 'w-8 bg-green' : 'w-2 bg-green/25 hover:bg-green/40'
                   }`}
                 />
               ))}

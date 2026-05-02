@@ -75,47 +75,51 @@ export default function ProjectDetailPage() {
               ))}
             </div>
 
-            <div className={`w-full h-[300px] md:h-[550px] rounded-2xl overflow-hidden shadow-sm relative ${galleryThumbs.length > 0 ? 'mb-8' : ''}`}>
-              <img
-                src={item.image}
-                alt={item.title}
-                width={1200}
-                height={750}
-                loading="eager"
-                decoding="async"
-                className="w-full h-full object-cover"
-              />
-              {item.stack && item.stack.length > 0 && (
-                <div className="absolute bottom-6 right-6 flex flex-wrap gap-2 justify-end max-w-[80%]">
-                  {item.stack.map(s => (
-                    <span key={s} className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg text-white font-headline text-[13px] border border-white/10 shadow-lg">
-                      {s}
-                    </span>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+              {/* Main Image */}
+              <div className="lg:col-span-9 h-[300px] md:h-[500px] rounded-lg overflow-hidden shadow-sm relative group">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  width={1200}
+                  height={750}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+                {item.stack && item.stack.length > 0 && (
+                  <div className="absolute bottom-6 right-6 flex flex-wrap gap-2 justify-end max-w-[80%]">
+                    {item.stack.map(s => (
+                      <span key={s} className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg text-white font-headline text-[11px] border border-white/10 shadow-lg">
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Gallery Thumbnails */}
+              {galleryThumbs.length > 0 && (
+                <div className="lg:col-span-3 flex lg:flex-col gap-4 h-[300px] md:h-[500px]">
+                  {galleryThumbs.map((src, i) => (
+                    <a
+                      key={src}
+                      href={src}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative flex-1 rounded-lg overflow-hidden bg-grey shadow-sm hover:shadow-md transition-all group border border-black/5"
+                    >
+                      <img
+                        src={src}
+                        alt={`${item.title} screenshot ${i + 1}`}
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </a>
                   ))}
                 </div>
               )}
             </div>
-
-            {galleryThumbs.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {galleryThumbs.map((src, i) => (
-                  <a
-                    key={src}
-                    href={src}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-grey shadow-sm hover:shadow-md transition-shadow group"
-                  >
-                    <img
-                      src={src}
-                      alt={`${item.title} screenshot ${i + 1}`}
-                      loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
-                    />
-                  </a>
-                ))}
-              </div>
-            )}
           </ScrollReveal>
         </div>
       </article>
@@ -126,7 +130,7 @@ export default function ProjectDetailPage() {
           
           <ScrollReveal>
             <h2 className="font-headline font-bold text-2xl text-green mb-6">Overview</h2>
-            <div className="font-body text-[17px] text-green/80 leading-relaxed md:leading-loose space-y-6">
+            <div className="font-body text-[16px] text-green/80 leading-relaxed space-y-4 max-w-4xl">
               {item.content.split(/\n\n+/).map((para, idx) => (
                 <p key={idx}>{para}</p>
               ))}
@@ -167,45 +171,49 @@ export default function ProjectDetailPage() {
       {/* Key Features & Project Highlights (Dark Section) */}
       {(item.features?.length || item.highlights?.length) ? (
         <section className="py-20 md:py-24 bg-green text-white">
-          <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-16 md:gap-20">
-            
-            {item.features && item.features.length > 0 && (
-              <ScrollReveal>
-                <h2 className="font-headline font-bold text-2xl text-yellow mb-8">Key Features</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {item.features.map((f, i) => (
-                    <div key={i} className="bg-white/5 p-6 rounded-2xl border border-white/10 flex items-start gap-4 hover:bg-white/10 transition-colors">
-                      <div className="w-8 h-8 rounded-full bg-yellow/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="material-symbols-outlined text-yellow text-[16px]">check</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+              {item.features && item.features.length > 0 && (
+                <ScrollReveal>
+                  <h2 className="font-headline font-bold text-2xl text-yellow mb-8 flex items-center gap-3">
+                    <span className="w-1.5 h-6 bg-yellow rounded-full" />
+                    Key Features
+                  </h2>
+                  <div className="space-y-4">
+                    {item.features.map((f, i) => (
+                      <div key={i} className="bg-white/5 p-5 rounded-2xl border border-white/10 flex items-start gap-4 hover:bg-white/10 transition-colors">
+                        <div className="w-6 h-6 rounded-full bg-yellow/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="material-symbols-outlined text-yellow text-[14px]">check</span>
+                        </div>
+                        <p className="font-body text-white/90 text-[15px] leading-relaxed">
+                          {f}
+                        </p>
                       </div>
-                      <p className="font-body text-white/90 text-[15px] leading-relaxed">
-                        {f}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </ScrollReveal>
-            )}
+                    ))}
+                  </div>
+                </ScrollReveal>
+              )}
 
-            {item.highlights && item.highlights.length > 0 && (
-              <ScrollReveal delay={0.1}>
-                <h2 className="font-headline font-bold text-2xl text-yellow mb-8">Project Highlights</h2>
-                <ul className="flex flex-col">
-                  {item.highlights.map((h, i) => (
-                    <li key={i} className="flex items-start gap-6 py-6 border-t border-white/10 first:border-0">
-                      <span className="font-headline font-black text-4xl text-yellow/50">
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
-                      <p className="font-body text-white/90 text-[17px] leading-relaxed pt-1 max-w-4xl">
-                        {h}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </ScrollReveal>
-            )}
-
-          </div>
+              {item.highlights && item.highlights.length > 0 && (
+                <ScrollReveal delay={0.1}>
+                  <h2 className="font-headline font-bold text-2xl text-yellow mb-8 flex items-center gap-3">
+                    <span className="w-1.5 h-6 bg-yellow rounded-full" />
+                    Project Highlights
+                  </h2>
+                  <ul className="flex flex-col">
+                    {item.highlights.map((h, i) => (
+                      <li key={i} className="flex items-start gap-6 py-5 border-t border-white/10 first:border-0">
+                        <span className="font-headline font-black text-3xl text-yellow/50">
+                          {String(i + 1).padStart(2, '0')}
+                        </span>
+                        <p className="font-body text-white/90 text-[16px] leading-relaxed pt-1">
+                          {h}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+            </div>
         </section>
       ) : null}
 
