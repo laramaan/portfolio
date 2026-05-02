@@ -46,7 +46,6 @@ export function TestimonialsSection() {
   const layout = useCarouselLayout(containerRef);
   const { perView, cardWidth } = layout;
 
-  const maxStart = Math.max(0, n - perView);
   const [start, setStart] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [paused, setPaused] = useState(false);
@@ -57,7 +56,6 @@ export function TestimonialsSection() {
 
   // Cloned items for infinite loop
   const extendedTestimonials = [...testimonials, ...testimonials.slice(0, perView)];
-  const nTotal = extendedTestimonials.length;
 
   useEffect(() => {
     if (stride <= 0) return;

@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { getServiceById } from '@/data/portfolio';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { PillButtonLink } from '@/components/ui/PillButton';
