@@ -28,28 +28,54 @@ export default function ProjectDetailPage() {
         <title>{item.title} | Manish Portfolio</title>
         <meta name="description" content={metaDesc} />
       </Helmet>
-      <article className="pt-28 md:pt-36 pb-16 md:pb-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6 md:px-8">
-          <ScrollReveal className="flex flex-row justify-between items-end mb-12 md:mb-16 gap-4 md:gap-8">
-            <div className="flex flex-col items-start text-left">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-4 h-0.5 bg-yellow" aria-hidden />
-                <p className="font-headline font-bold text-[15px] tracking-wide text-green">My Portfolio</p>
-              </div>
-              <h1 className="font-headline font-bold text-3xl md:text-5xl text-green leading-[1.1] tracking-tight">
+      
+      {/* Hero Section */}
+      <article className="pt-28 md:pt-36 pb-8 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <ScrollReveal>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+              <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl text-green leading-[1.1] tracking-tight">
                 {item.title}
               </h1>
+              <Link
+                to="/projects"
+                className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit focus-visible:outline focus-visible:underline rounded shrink-0"
+              >
+                <span className="material-symbols-outlined">arrow_back</span> All projects
+              </Link>
             </div>
-            <Link
-              to="/projects"
-              className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit focus-visible:outline focus-visible:underline rounded shrink-0"
-            >
-              <span className="material-symbols-outlined">arrow_back</span> All projects
-            </Link>
-          </ScrollReveal>
+            
+            {/* Summary and Live URL */}
+            <div className="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center mb-8">
+              {item.summary && (
+                <p className="font-body text-xl text-green/80 leading-relaxed max-w-4xl">
+                  {item.summary}
+                </p>
+              )}
+              {item.is_public && item.live_url && (
+                <a
+                  href={item.live_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="shrink-0 bg-green text-white font-headline font-bold px-6 py-3 rounded-full hover:bg-yellow hover:text-green transition-colors flex items-center gap-2"
+                >
+                  Visit Live Site <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+                </a>
+              )}
+            </div>
 
-          <ScrollReveal delay={0.06}>
-            <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden mb-4 bg-grey shadow-sm">
+            <div className="flex flex-wrap gap-2 mb-12">
+              {item.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="bg-yellow/20 text-green font-headline font-bold text-[13px] px-4 py-1.5 rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <div className={`w-full h-[300px] md:h-[550px] rounded-2xl overflow-hidden shadow-sm relative ${galleryThumbs.length > 0 ? 'mb-8' : ''}`}>
               <img
                 src={item.image}
                 alt={item.title}
@@ -59,100 +85,197 @@ export default function ProjectDetailPage() {
                 decoding="async"
                 className="w-full h-full object-cover"
               />
+              {item.stack && item.stack.length > 0 && (
+                <div className="absolute bottom-6 right-6 flex flex-wrap gap-2 justify-end max-w-[80%]">
+                  {item.stack.map(s => (
+                    <span key={s} className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg text-white font-headline text-[13px] border border-white/10 shadow-lg">
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             {galleryThumbs.length > 0 && (
-              <div className="mb-8">
-                <h2 className="sr-only">Project gallery</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  {galleryThumbs.map((src, i) => (
-                    <a
-                      key={src}
-                      href={src}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="relative aspect-[4/3] rounded-xl overflow-hidden bg-grey ring-1 ring-black/5 hover:ring-yellow focus-visible:outline focus-visible:ring-2 focus-visible:ring-yellow"
-                    >
-                      <img
-                        src={src}
-                        alt={`${item.title} screenshot ${i + 1}`}
-                        width={400}
-                        height={300}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </a>
-                  ))}
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {galleryThumbs.map((src, i) => (
+                  <a
+                    key={src}
+                    href={src}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-grey shadow-sm hover:shadow-md transition-shadow group"
+                  >
+                    <img
+                      src={src}
+                      alt={`${item.title} screenshot ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                    />
+                  </a>
+                ))}
               </div>
             )}
+          </ScrollReveal>
+        </div>
+      </article>
 
-            {(item.role || item.client || item.duration || (item.stack && item.stack.length > 0)) && (
-              <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 p-5 md:p-6 rounded-2xl bg-grey/80 border border-black/5 text-sm font-body">
-                {item.role && (
-                  <>
-                    <dt className="text-green/50 font-headline font-bold">Role</dt>
-                    <dd className="text-green">{item.role}</dd>
-                  </>
-                )}
-                {item.client && (
-                  <>
-                    <dt className="text-green/50 font-headline font-bold">Client</dt>
-                    <dd className="text-green">{item.client}</dd>
-                  </>
-                )}
-                {item.duration && (
-                  <>
-                    <dt className="text-green/50 font-headline font-bold">Timeline</dt>
-                    <dd className="text-green">{item.duration}</dd>
-                  </>
-                )}
-                {item.stack && item.stack.length > 0 && (
-                  <>
-                    <dt className="text-green/50 font-headline font-bold">Stack</dt>
-                    <dd className="text-green">{item.stack.join(' · ')}</dd>
-                  </>
-                )}
-              </dl>
-            )}
-
-            {item.summary && (
-              <p className="font-body text-lg text-green/85 leading-relaxed mb-6 border-l-4 border-yellow pl-4">
-                {item.summary}
-              </p>
-            )}
-
-            <div className="flex flex-wrap gap-2 mb-8">
-              {item.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-yellow text-green font-headline font-bold text-[12px] px-3 py-1 rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            {item.highlights && item.highlights.length > 0 && (
-              <div className="mb-10">
-                <h2 className="font-headline font-bold text-xl text-green mb-4">Highlights</h2>
-                <ul className="list-disc pl-5 space-y-2 font-body text-green/80 leading-relaxed">
-                  {item.highlights.map((h) => (
-                    <li key={h}>{h}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            <div className="font-body text-green/80 text-lg leading-relaxed space-y-4 border-t border-black/5 pt-8">
+      {/* Overview & The Challenge/Solution */}
+      <section className="py-20 md:py-24 bg-grey">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-16 md:gap-20">
+          
+          <ScrollReveal>
+            <h2 className="font-headline font-bold text-2xl text-green mb-6">Overview</h2>
+            <div className="font-body text-[17px] text-green/80 leading-relaxed md:leading-loose space-y-6">
               {item.content.split(/\n\n+/).map((para, idx) => (
                 <p key={idx}>{para}</p>
               ))}
             </div>
           </ScrollReveal>
+
+          {(item.problem || item.solution) && (
+            <ScrollReveal delay={0.1}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {item.problem && (
+                  <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-black/5">
+                    <h3 className="font-headline font-bold text-xl text-green mb-4 flex items-center gap-2">
+                      <span className="material-symbols-outlined text-yellow text-2xl">error</span>
+                      The Challenge
+                    </h3>
+                    <p className="font-body text-[16px] text-green/80 leading-relaxed">
+                      {item.problem}
+                    </p>
+                  </div>
+                )}
+                {item.solution && (
+                  <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-black/5">
+                    <h3 className="font-headline font-bold text-xl text-green mb-4 flex items-center gap-2">
+                      <span className="material-symbols-outlined text-yellow text-2xl">lightbulb</span>
+                      The Solution
+                    </h3>
+                    <p className="font-body text-[16px] text-green/80 leading-relaxed">
+                      {item.solution}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </ScrollReveal>
+          )}
         </div>
-      </article>
+      </section>
+
+      {/* Key Features & Project Highlights (Dark Section) */}
+      {(item.features?.length || item.highlights?.length) ? (
+        <section className="py-20 md:py-24 bg-green text-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-16 md:gap-20">
+            
+            {item.features && item.features.length > 0 && (
+              <ScrollReveal>
+                <h2 className="font-headline font-bold text-2xl text-yellow mb-8">Key Features</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {item.features.map((f, i) => (
+                    <div key={i} className="bg-white/5 p-6 rounded-2xl border border-white/10 flex items-start gap-4 hover:bg-white/10 transition-colors">
+                      <div className="w-8 h-8 rounded-full bg-yellow/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="material-symbols-outlined text-yellow text-[16px]">check</span>
+                      </div>
+                      <p className="font-body text-white/90 text-[15px] leading-relaxed">
+                        {f}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </ScrollReveal>
+            )}
+
+            {item.highlights && item.highlights.length > 0 && (
+              <ScrollReveal delay={0.1}>
+                <h2 className="font-headline font-bold text-2xl text-yellow mb-8">Project Highlights</h2>
+                <ul className="flex flex-col">
+                  {item.highlights.map((h, i) => (
+                    <li key={i} className="flex items-start gap-6 py-6 border-t border-white/10 first:border-0">
+                      <span className="font-headline font-black text-4xl text-yellow/50">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <p className="font-body text-white/90 text-[17px] leading-relaxed pt-1 max-w-4xl">
+                        {h}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </ScrollReveal>
+            )}
+
+          </div>
+        </section>
+      ) : null}
+
+      {/* Learnings, Challenges, Impact (White Background) */}
+      {(item.challenges || item.learnings || item.impact) && (
+        <section className="py-20 md:py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
+            <ScrollReveal>
+              <h2 className="font-headline font-bold text-3xl mb-12 text-center text-green">Project Results & Outcomes</h2>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
+              
+              {/* Challenges */}
+              {item.challenges && item.challenges.length > 0 && (
+                <ScrollReveal delay={0.1}>
+                  <h3 className="font-headline font-bold text-xl text-green mb-6 flex items-center gap-2">
+                    <span className="material-symbols-outlined text-yellow">trending_flat</span>
+                    Challenges Overcome
+                  </h3>
+                  <ul className="space-y-4">
+                    {item.challenges.map((c, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-yellow mt-2.5 shrink-0" />
+                        <p className="font-body text-[16px] text-green/80 leading-relaxed">{c}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+
+              {/* Learnings */}
+              {item.learnings && item.learnings.length > 0 && (
+                <ScrollReveal delay={0.2}>
+                  <h3 className="font-headline font-bold text-xl text-green mb-6 flex items-center gap-2">
+                    <span className="material-symbols-outlined text-yellow">star</span>
+                    Key Learnings
+                  </h3>
+                  <ul className="space-y-4">
+                    {item.learnings.map((l, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-yellow mt-2.5 shrink-0" />
+                        <p className="font-body text-[16px] text-green/80 leading-relaxed">{l}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+
+              {/* Impact */}
+              {item.impact && item.impact.length > 0 && (
+                <ScrollReveal delay={0.3}>
+                  <h3 className="font-headline font-bold text-xl text-green mb-6 flex items-center gap-2">
+                    <span className="material-symbols-outlined text-yellow">trending_up</span>
+                    Business Impact
+                  </h3>
+                  <ul className="space-y-4">
+                    {item.impact.map((imp, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-yellow mt-2.5 shrink-0" />
+                        <p className="font-body text-[16px] text-green/80 leading-relaxed">{imp}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Call to Action */}
       <section className="bg-green py-20 md:py-24">

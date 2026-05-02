@@ -31,18 +31,21 @@ export type Service = {
 export type Project = {
   id: string;
   image: string;
-  /** Optional extra images for detail page gallery (2–3 recommended) */
   gallery?: string[];
   tags: string[];
   title: string;
-  /** Short line on cards and detail hero */
   summary?: string;
-  role?: string;
-  duration?: string;
-  client?: string;
-  stack?: string[];
-  highlights?: string[];
+  live_url?: string;
+  is_public?: boolean;
   content: string;
+  stack?: string[];
+  problem?: string;
+  solution?: string;
+  features?: string[];
+  highlights?: string[];
+  challenges?: string[];
+  impact?: string[];
+  learnings?: string[];
 };
 
 export type Blog = {
