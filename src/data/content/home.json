@@ -175,33 +175,6 @@
       "label": "WebSocket"
     }
   ],
-  "aboutSkillPills": [
-    [
-      "PHP",
-      "Laravel",
-      "Livewire"
-    ],
-    [
-      "WordPress",
-      "WooCommerce",
-      "Bedrock"
-    ],
-    [
-      "JavaScript",
-      "React",
-      "REST APIs"
-    ],
-    [
-      "AWS Lambda",
-      "S3",
-      "WebSocket"
-    ],
-    [
-      "Agile",
-      "Client Delivery",
-      "Mentorship"
-    ]
-  ],
   "services": [
     {
       "id": "full-stack",

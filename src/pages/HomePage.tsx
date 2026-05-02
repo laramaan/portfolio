@@ -5,7 +5,6 @@ import { scrollToHash } from '@/lib/scroll';
 import { Hero } from '@/components/sections/Hero';
 import { MarqueeBanner } from '@/components/sections/MarqueeBanner';
 import { ServicesSection } from '@/components/sections/ServicesSection';
-// import { MobileAppPromoSection } from '@/components/sections/MobileAppPromoSection';
 import { PortfolioSection } from '@/components/sections/PortfolioSection';
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { AboutSection } from '@/components/sections/AboutSection';
@@ -42,7 +41,6 @@ export default function HomePage() {
       <Hero />
       <MarqueeBanner />
       <ServicesSection />
-      {/* <MobileAppPromoSection /> */}
       <PortfolioSection />
       <SkillsSection />
       <TestimonialsSection />

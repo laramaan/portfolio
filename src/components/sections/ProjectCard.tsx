@@ -44,9 +44,7 @@ export function ProjectCard({ project, index = 0 }: Props) {
               </span>
             ))}
           </div>
-          {project.duration && (
-            <p className="font-body text-green/55 text-[13px] mb-2">{project.duration}</p>
-          )}
+
           {project.summary && (
             <p className="font-body text-green/70 text-[14px] leading-relaxed mb-4">{project.summary}</p>
           )}

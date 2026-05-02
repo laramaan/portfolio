@@ -18,7 +18,6 @@ type HomeJson = {
   workItems: TimelineItem[];
   skillsRow1: { icon: string; label: string }[];
   skillsRow2: { icon: string; label: string }[];
-  aboutSkillPills: string[][];
   testimonials: Testimonial[];
   faqs: Faq[];
   testimonialsSettings?: TestimonialsCarouselConfig;
@@ -33,7 +32,6 @@ export const educationItems = homeTyped.educationItems;
 export const workItems = homeTyped.workItems;
 export const skillsRow1 = homeTyped.skillsRow1;
 export const skillsRow2 = homeTyped.skillsRow2;
-export const aboutSkillPills = homeTyped.aboutSkillPills;
 export const testimonials = homeTyped.testimonials;
 export const faqs = homeTyped.faqs;
 export const testimonialsSettings: TestimonialsCarouselConfig =
