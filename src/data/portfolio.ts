@@ -43,7 +43,9 @@ export const contactForm = homeTyped.contactForm;
 export const homeServices = homeTyped.services;
 
 export const services = (servicesData as { services: Service[] }).services;
-export const projects = (projectsData as { projects: Project[] }).projects;
+export const projects = (projectsData as { projects: Project[] }).projects.sort(
+  (a, b) => (a.order || 0) - (b.order || 0)
+);
 export const blogs = (blogData as { blogs: Blog[] }).blogs;
 export const legal = legalData as LegalContent;
 

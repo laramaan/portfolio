@@ -30,6 +30,7 @@ export type Service = {
 
 export type Project = {
   id: string;
+  order?: number;
   image: string;
   gallery?: string[];
   tags: string[];
