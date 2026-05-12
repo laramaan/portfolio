@@ -1,5 +1,6 @@
 export type HomeService = {
   id: string;
+  sequence?: number;
   icon: string;
   title: string;
   description: string;
@@ -13,6 +14,7 @@ export type ProcessStep = {
 
 export type Service = {
   id: string;
+  sequence?: number;
   icon: string;
   image: string;
   title: string;

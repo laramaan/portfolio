@@ -2,26 +2,26 @@
   "site": {
     "brandName": "Manish.",
     "logoLetter": "M",
-    "tagline": "Software Engineer",
+    "tagline": "Manish Gupta - Software Engineer",
     "heroName": "Manish Gupta",
     "heroRoles": [
-      "Full Stack Software Engineer"
+      "I help <span class=\"relative inline-block text-yellow z-10\">businesses</span> grow through modern web, mobile, and digital solutions"
     ],
-    "heroBio": "I partner with startups and businesses to build <strong>high-performance, scalable</strong> web and mobile applications. From <strong>idea to deployment</strong>, I take full ownership of the <strong>development lifecycle</strong> delivering products that are <strong>fast, reliable, and built for growth</strong>.<br /><br />With <strong>4+ years of experience</strong> in <strong>full-stack development and DevOps</strong>, I create solutions that <strong>drive measurable business results</strong>.",
+    "heroBio": "From idea to launch, I create fast, scalable, and user-friendly digital solutions that help businesses improve their online presence and grow efficiently.<br /><span class=\"block h-3\"></span>With 4+ years of experience, I’ve helped businesses grow through modern, scalable, and high-performing digital solutions.",
     "hireEmail": "mailto:manishgupta0746@gmail.com",
     "marquee": [
-      "Full Stack Development",
-      "Scalable Web Applications",
-      "SaaS Platforms",
+      "Web Platforms",
+      "Mobile Applications",
+      "SaaS Products",
       "MVP Development",
-      "React & Modern Frontends",
-      "Laravel & Backend Systems",
-      "REST & API Development",
-      "Mobile App Development",
-      "AWS & Cloud Infrastructure",
-      "Performance Optimization",
+      "AI Integrations",
       "E-commerce Solutions",
-      "Database Architecture"
+      "Scalable Digital Solutions",
+      "Cloud & DevOps",
+      "High-Performance Applications",
+      "Modern User Experiences",
+      "Startup Solutions",
+      "Business Automation"
     ],
     "heroBadgeLeft": "E-commerce",
     "heroBadgeMiddle": "Startups",
@@ -254,40 +254,46 @@
   ],
   "services": [
     {
-      "id": "full-stack",
-      "icon": "layers",
-      "title": "Full Stack Website Development",
-      "description": "End-to-end development of scalable web applications from modern frontend interfaces to robust backend systems, built for performance, security, and long-term growth."
-    },
-    {
-      "id": "mobile-app",
-      "icon": "smartphone",
-      "title": "Mobile App Development",
-      "description": "Cross-platform mobile applications with strong backend support delivering smooth, responsive user experiences across devices."
-    },
-    {
-      "id": "ecommerce",
-      "icon": "shopping_cart",
-      "title": "E-commerce Development",
-      "description": "Custom e-commerce solutions built for conversions and performance including product management systems, secure payment integration, and scalable storefront architecture."
-    },
-    {
+      "sequence": 1,
       "id": "saas-mvp",
       "icon": "rocket",
       "title": "SaaS & MVP Development",
-      "description": "Rapid development of MVPs and SaaS platforms turning ideas into production-ready products with scalable architecture and clean, maintainable code."
+      "description": "I help startups and businesses turn ideas into scalable SaaS platforms and MVPs with fast development, modern architecture, and production-ready systems."
     },
     {
-      "id": "cloud-devops",
-      "icon": "cloud",
-      "title": "Cloud & DevOps",
-      "description": "Deployment, server configuration, and cloud infrastructure on AWS ensuring your applications are secure, scalable, and highly available."
+      "sequence": 2,
+      "id": "full-stack",
+      "icon": "layers",
+      "title": "Custom Web Application Development",
+      "description": "I build modern, scalable, and high-performance web applications tailored to business needs, from intuitive frontend experiences to secure and reliable backend systems."
     },
     {
-      "id": "api-integration",
-      "icon": "code",
-      "title": "API Development & Integration",
-      "description": "Design and integration of RESTful APIs enabling seamless communication between systems, third-party services, and web or mobile applications."
+      "sequence": 3,
+      "id": "mobile-app",
+      "icon": "smartphone",
+      "title": "Mobile App Development",
+      "description": "I build modern, high-performance mobile applications for iOS and Android with scalable backend systems, seamless user experiences, and business-focused functionality."
+    },
+    {
+      "sequence": 4,
+      "id": "ecommerce",
+      "icon": "shopping_cart",
+      "title": "E-commerce Development",
+      "description": "I build modern, high-converting e-commerce platforms designed to help businesses sell online efficiently with secure payments, scalable infrastructure, and seamless shopping experiences."
+    },
+    {
+      "sequence": 5,
+      "id": "ai-development",
+      "icon": "auto_awesome",
+      "title": "AI-Powered Solutions",
+      "description": "I build AI-powered applications, automations, and intelligent business systems that reduce manual work, improve efficiency, and create smarter digital experiences."
+    },
+    {
+      "sequence": 6,
+      "id": "business-automation",
+      "icon": "automation",
+      "title": "Business Automation Solutions",
+      "description": "Custom automation systems that eliminate repetitive work, streamline operations, and connect your business tools so your team can focus on growth instead of manual processes."
     }
   ],
   "testimonialsSettings": {

@@ -40,9 +40,13 @@ export const testimonialsSettings: TestimonialsCarouselConfig =
     pauseOnHover: true,
   };
 export const contactForm = homeTyped.contactForm;
-export const homeServices = homeTyped.services;
+export const homeServices = homeTyped.services.sort(
+  (a, b) => (a.sequence || 0) - (b.sequence || 0)
+);
 
-export const services = (servicesData as { services: Service[] }).services;
+export const services = (servicesData as { services: Service[] }).services.sort(
+  (a, b) => (a.sequence || 0) - (b.sequence || 0)
+);
 export const projects = (projectsData as { projects: Project[] }).projects.sort(
   (a, b) => (a.order || 0) - (b.order || 0)
 );

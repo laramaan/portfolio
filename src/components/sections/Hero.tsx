@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { site } from '@/data/portfolio';
 import { PillButtonLink } from '@/components/ui/PillButton';
-import { DownloadResumeButton } from '@/components/ui/DownloadResumeButton';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
 export function Hero() {
@@ -16,31 +15,24 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-3 bg-[#e4e5e4] rounded-full px-5 pt-1.5 pb-2 mb-8 z-30 shadow-sm"
+            className="inline-flex items-center gap-2 bg-[#e4e5e4] rounded-full px-3.5 py-1.5 mb-8 z-30 shadow-sm"
           >
-            <span className="w-3 h-3 bg-[#0dff45] rounded-full mt-0.5" aria-hidden />
-            <span className="text-green font-headline font-bold uppercase tracking-[0.15em] text-sm leading-none mt-1">
+            <span className="w-2 h-2 bg-[#0dff45] rounded-full" aria-hidden />
+            <span className="text-green font-headline font-bold uppercase tracking-[0.15em] text-[10px] leading-none mt-[1px]">
               {site.tagline}
             </span>
           </motion.div>
 
           <motion.h1
-            className="font-headline font-bold text-[34px] sm:text-4xl md:text-5xl leading-[1.15] md:leading-[1.1] text-green mb-6 z-30 relative w-full"
+            className="font-headline font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[52px] leading-[1.15] md:leading-[1.1] text-green mb-6 z-30 relative w-full"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.05 }}
-          >
-            I&apos;m{' '}
-            <span className="text-yellow italic font-normal relative inline-block pr-2">
-              {site.heroName},
-              <span className="absolute left-0 -bottom-2 w-full h-1 bg-yellow rounded-full" aria-hidden />
-            </span>
-            <span className="block mt-2">{site.heroRoles[0]}</span>
-            <span className="block text-green mt-2">{site.heroRoles[1]}</span>
-          </motion.h1>
+            dangerouslySetInnerHTML={{ __html: site.heroRoles[0] }}
+          />
 
           <motion.p
-            className="text-lg text-green/80 max-w-xl mb-10 leading-relaxed font-body z-30 relative"
+            className="text-lg text-green/80 w-full mb-10 leading-relaxed font-body z-30 relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.12 }}
@@ -53,8 +45,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.18 }}
           >
-            <PillButtonLink to="/projects" label="View all projects" />
-            <DownloadResumeButton label="Resume" className="w-full sm:w-auto" />
+            <PillButtonLink to={{ pathname: '/', hash: 'contact' }} label="Book a Free Call" fontSizeClass="text-base" />
+            <PillButtonLink to="/projects" label="View Projects" variant="outline" />
           </motion.div>
         </div>
 

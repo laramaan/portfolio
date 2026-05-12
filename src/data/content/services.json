@@ -1,1459 +1,1751 @@
 {
   "services": [
     {
-      "id": "full-stack",
-      "icon": "layers",
-      "image": "/images/services/full-stack.jpg",
-      "title": "Full Stack Website Development",
-      "description": "End-to-end development of scalable web applications from modern frontend interfaces to robust backend systems, built for performance, security, and long-term growth.",
-      "detailed_description": "I architect and build complete web applications from the ground up handling everything from database schema design and server-side business logic to pixel-perfect frontend interfaces. Every project is engineered with clean code architecture, security best practices, and deployment-ready infrastructure in mind so your product is production-ready from day one, not after a second round of fixes.",
-      "services_included": [
-        "Custom web application development frontend and backend",
-        "Single Page Applications (SPA) with server-side rendering where needed",
-        "Multi-tenant architecture for platforms serving multiple organisations",
-        "Role-based access control and secure authentication systems",
-        "Database design, modelling, and query optimisation",
-        "Admin panel development for content and user management",
-        "Automated testing and quality assurance",
-        "CI/CD pipeline setup and version control workflows",
-        "Post-launch maintenance and feature development"
-      ],
-      "industries": [
-        "SaaS & Software Startups",
-        "Healthcare & Telemedicine",
-        "Education & E-learning",
-        "Fintech & Banking",
-        "Real Estate",
-        "Logistics & Supply Chain",
-        "Media & Publishing",
-        "Government & Public Sector"
-      ],
-      "benefits": [
-        "One engineer owning the full stack means fewer handoff gaps and faster delivery",
-        "Battle-tested, enterprise-grade technology used in production by thousands of companies worldwide",
-        "Clean, documented code that your next developer can maintain without a full rewrite",
-        "Built for growth architecture decisions made with scale in mind from day one",
-        "Agile delivery with incremental demos so you always know what has shipped"
-      ],
-      "use_cases": [
-        "A startup needing an MVP launched in 6–8 weeks with a clean API for a future mobile app",
-        "A business replacing a legacy system with a modern, maintainable web application",
-        "An agency needing a white-label platform deployable across multiple clients",
-        "A company requiring a multi-tenant application with per-client billing and isolated data"
-      ],
-      "problems_solved": [
-        "Slow, unmaintainable codebases that developers are afraid to touch",
-        "Disconnected frontend and backend teams causing integration delays",
-        "Scaling bottlenecks when traffic or data volume grows unexpectedly",
-        "Security vulnerabilities from poorly structured authentication and data handling",
-        "Missed deadlines from unclear requirements and no iterative delivery process"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Discovery & scoping",
-          "description": "Requirements gathering, technical audit of existing systems if applicable, and a written specification with acceptance criteria."
-        },
-        {
-          "step": 2,
-          "title": "Architecture & design",
-          "description": "Database schema, API contracts, component structure, and infrastructure decisions documented before a line of code is written."
-        },
-        {
-          "step": 3,
-          "title": "Agile development",
-          "description": "Two-week sprints with working demos at the end of each cycle. You see progress, not promises."
-        },
-        {
-          "step": 4,
-          "title": "Testing & QA",
-          "description": "Automated tests, manual QA, and cross-browser validation before any release."
-        },
-        {
-          "step": 5,
-          "title": "Deployment & handover",
-          "description": "Production deployment, environment configuration, documentation, and a handover session."
-        }
-      ],
-      "deliverables": [
-        "Fully functional web application with documented codebase",
-        "API documentation",
-        "Database schema and migration files",
-        "Admin panel for content and user management",
-        "Deployment scripts and environment configuration",
-        "Technical handover documentation"
-      ],
-      "outcomes": [
-        "A production-ready application shipped on time and within scope",
-        "Codebase your team can maintain, extend, and hand off to new developers",
-        "Measurable performance benchmarks met load time, uptime, and response time",
-        "Reduced operational overhead through automation and clean architecture",
-        "A clear technical foundation to build your next feature on"
-      ]
-    },
-    {
-      "id": "mobile-app",
-      "icon": "smartphone",
-      "image": "/images/services/mobile-app.jpg",
-      "title": "Mobile App Development",
-      "description": "Cross-platform mobile applications with strong backend support delivering smooth, responsive user experiences across iOS and Android from a single codebase.",
-      "detailed_description": "I build cross-platform mobile applications that run natively on both iOS and Android from a single codebase meaning faster delivery, lower maintenance cost, and a consistent experience for your users on every device. Every mobile app is connected to a robust backend, designed with offline capability, push notifications, and app store deployment in mind from day one.",
-      "services_included": [
-        "Cross-platform iOS and Android app development",
-        "Mobile UI implementation with platform-specific design conventions",
-        "Backend API integration new or existing",
-        "Push notifications and in-app messaging",
-        "Offline mode and local data synchronisation",
-        "In-app payments and subscription management",
-        "Social login and secure authentication",
-        "Location-based features and map integration",
-        "App Store and Google Play submission and deployment"
-      ],
-      "industries": [
-        "Retail & E-commerce",
-        "Healthcare & Fitness",
-        "Food & Delivery",
-        "Education & E-learning",
-        "Real Estate",
-        "Travel & Hospitality",
-        "Fintech & Payments",
-        "On-demand Services"
-      ],
-      "benefits": [
-        "One codebase for iOS and Android 30–50% faster to build and significantly cheaper to maintain",
-        "Near-native performance delivering a smooth, responsive experience users expect",
-        "Seamlessly connected to your existing web backend no duplicate business logic",
-        "Built to App Store and Play Store guidelines from day one no last-minute rejections",
-        "Consistent user experience across all devices and screen sizes"
-      ],
-      "use_cases": [
-        "A startup wanting a mobile app that shares a backend with their existing web platform",
-        "An e-commerce business needing a mobile storefront with push notifications and in-app checkout",
-        "A service provider building an on-demand booking app for customers and a separate app for field staff",
-        "An enterprise replacing paper-based or desktop-only workflows with a mobile-first tool"
-      ],
-      "problems_solved": [
-        "High cost and complexity of maintaining separate iOS and Android native codebases",
-        "Mobile app quality and performance that does not match the web product",
-        "App store rejections due to guideline violations caught too late in development",
-        "Poor offline experience causing user frustration in low-connectivity environments",
-        "Users seeing different data on mobile versus web because the systems are not in sync"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Scope & platform decision",
-          "description": "Define features, target platforms, and framework approach based on project requirements and timeline."
-        },
-        {
-          "step": 2,
-          "title": "UI implementation",
-          "description": "Build screens using platform-appropriate components iOS and Android design conventions respected throughout."
-        },
-        {
-          "step": 3,
-          "title": "Backend integration",
-          "description": "Connect to APIs, configure authentication, set up push notifications and data sync."
-        },
-        {
-          "step": 4,
-          "title": "Device testing",
-          "description": "Test on real devices across multiple OS versions and screen sizes not just simulators."
-        },
-        {
-          "step": 5,
-          "title": "Store submission",
-          "description": "Prepare app store assets, privacy policies, and submit to App Store and Google Play on your behalf."
-        }
-      ],
-      "deliverables": [
-        "Fully functional iOS and Android application",
-        "Source code repository with documentation",
-        "App Store and Google Play listings with screenshots and descriptions",
-        "Push notification setup and configuration",
-        "API integration documentation",
-        "Post-launch bug fix period"
-      ],
-      "outcomes": [
-        "Live app available to users on both major platforms simultaneously",
-        "Single codebase that reduces future update and maintenance cost by up to 50%",
-        "Higher user engagement through push notifications and offline capability",
-        "A mobile presence that matches the quality of your web product",
-        "Clear upgrade path for adding new features incrementally"
-      ]
-    },
-    {
-      "id": "ecommerce",
-      "icon": "shopping_cart",
-      "image": "/images/services/ecommerce.jpg",
-      "title": "E-commerce Development",
-      "description": "Custom e-commerce solutions built for conversions and performance including WooCommerce and Shopify stores with product management, secure payment integration, and scalable storefront architecture.",
-      "detailed_description": "I build e-commerce platforms engineered to convert visitors into customers and scale as your catalogue and traffic grow. Whether you need a feature-rich online store, a fully bespoke marketplace, or a platform migration, I handle the complete build from storefront design to payment gateway integration, inventory management, and post-launch support. Every store is optimised for speed, mobile experience, and search engine visibility from the start.",
-      "services_included": [
-        "Custom online store setup with tailored themes and functionality",
-        "Product catalogue management and bulk import tools",
-        "Payment gateway integration local and international options",
-        "Multi-currency and multi-language storefront support",
-        "Abandoned cart recovery and email automation",
-        "Inventory and order management systems",
-        "Customer account portals and loyalty programmes",
-        "Platform migration moving from one e-commerce solution to another",
-        "B2B wholesale portals with customer-specific pricing"
-      ],
-      "industries": [
-        "Fashion & Apparel",
-        "Beauty & Wellness",
-        "Food & Grocery",
-        "Electronics & Gadgets",
-        "Home & Furniture",
-        "Books & Digital Products",
-        "Religious & Cultural Products",
-        "B2B Wholesale"
-      ],
-      "benefits": [
-        "Conversion-focused architecture fast load times, streamlined checkout, and mobile-first design",
-        "Secure, compliant payment handling with multiple gateway options for your market",
-        "Flexible product management simple products, variants, bundles, subscriptions, digital downloads",
-        "Built-in SEO foundations structured data, sitemap, canonical URLs, and performance optimised",
-        "Scales cleanly from 10 products to 10,000 without a platform rebuild"
-      ],
-      "use_cases": [
-        "A retail brand launching an online store with complex product variants and booking options",
-        "A religious or cultural products business needing an online storefront with local payment methods",
-        "A B2B wholesaler needing a private, login-gated catalogue with customer-specific pricing",
-        "A creator or service provider selling digital products, courses, or bookings online"
-      ],
-      "problems_solved": [
-        "Slow storefront load times losing customers before the first product page loads",
-        "Checkout friction causing cart abandonment too many steps, limited payment options",
-        "Inventory mismatches between the website and actual stock levels",
-        "Poor mobile experience on a store where the majority of traffic comes from phones",
-        "No visibility into sales data, customer behaviour, or inventory health"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Platform selection",
-          "description": "Recommend the right platform based on your catalogue size, budget, required features, and long-term roadmap."
-        },
-        {
-          "step": 2,
-          "title": "Store setup & design",
-          "description": "Configure the platform, implement or customise the theme, and build the product catalogue structure."
-        },
-        {
-          "step": 3,
-          "title": "Integrations",
-          "description": "Connect payment gateways, shipping providers, inventory systems, and email marketing tools."
-        },
-        {
-          "step": 4,
-          "title": "Testing & optimisation",
-          "description": "Full checkout flow testing, mobile testing, page speed optimisation, and security hardening."
-        },
-        {
-          "step": 5,
-          "title": "Launch & support",
-          "description": "Go-live support, team training on store management, and a post-launch support window."
-        }
-      ],
-      "deliverables": [
-        "Fully functional e-commerce store on your chosen platform",
-        "Payment gateway integration with test transaction confirmation",
-        "Product catalogue with categories, variants, and pricing configured",
-        "Admin training documentation for managing products and orders",
-        "Speed and SEO optimisation report",
-        "Post-launch support period"
-      ],
-      "outcomes": [
-        "A store that loads fast and converts mobile visitors at a competitive rate",
-        "Secure, reliable checkout that customers trust reducing cart abandonment",
-        "Full control over your product catalogue, inventory, and orders without developer dependency",
-        "SEO-ready foundation that can rank for product and category keywords",
-        "Scalable infrastructure ready for seasonal traffic spikes and catalogue growth"
-      ]
-    },
-    {
+      "sequence": 1,
       "id": "saas-mvp",
       "icon": "rocket",
       "image": "/images/services/saas-mvp.jpg",
       "title": "SaaS & MVP Development",
-      "description": "Rapid development of MVPs and SaaS platforms turning ideas into production-ready products with scalable architecture and clean, maintainable code.",
-      "detailed_description": "I specialise in turning well-defined product ideas into working software quickly without cutting corners on architecture. I build MVPs that are genuinely production-ready: multi-tenant where needed, API-first, and designed to support your next ten features without a rewrite. Whether you are a founder validating an idea or a business building an internal platform, I deliver working software on a timeline that lets you learn from real users before over-investing.",
+      "description": "I help startups and businesses turn ideas into scalable SaaS platforms and MVPs with fast development, modern architecture, and production-ready systems.",
+      "detailed_description": "I specialise in building SaaS platforms and MVPs that are designed for real business growth, not just demos or prototypes. From idea validation to production launch, I create scalable, secure, and user-focused digital products that help businesses launch faster, validate ideas, attract customers, and scale confidently. Whether you are a startup founder building your first product or a business digitising internal operations, I deliver modern software solutions that are built to perform and grow with your business.",
       "services_included": [
-        "MVP scoping and feature prioritisation workshops",
-        "Multi-tenant architecture for platforms serving multiple clients",
-        "Subscription billing integration and plan management",
-        "User onboarding flows and account management",
-        "Role and permission systems",
-        "Usage analytics and reporting dashboards",
-        "API-first architecture for future mobile or partner integrations",
-        "Automated notification and email workflow systems",
-        "Staging and production environment setup on cloud infrastructure"
+        "MVP planning and feature prioritisation",
+        "Custom SaaS platform development",
+        "Multi-tenant architecture for scalable platforms",
+        "User authentication and account management systems",
+        "Role-based access and permissions",
+        "Subscription billing and payment integration",
+        "Admin dashboards and analytics systems",
+        "API development for mobile and third-party integrations",
+        "Automated notifications and workflow systems",
+        "Cloud deployment and production environment setup",
+        "Scalable backend architecture and database design",
+        "Post-launch maintenance and support"
       ],
       "industries": [
-        "HR & Recruitment Tech",
-        "Proptech & Real Estate",
-        "EdTech & Online Learning",
-        "Healthtech & Wellness",
-        "Legaltech & Compliance",
-        "Logistics & Fleet Management",
+        "Startups & SaaS Businesses",
+        "HR & Recruitment",
+        "Real Estate & PropTech",
+        "Education & E-Learning",
+        "Healthcare & Wellness",
+        "Logistics & Transportation",
         "Sales & Marketing Automation",
-        "Club & Community Management"
+        "Communities & Membership Platforms"
       ],
       "benefits": [
-        "Go from idea to working product in 6–12 weeks fast enough to validate before competitors move",
-        "API-first architecture means your product can power a mobile app or partner integration from day one",
-        "Subscription billing and user management built-in revenue-ready from launch",
-        "Clean codebase that a future engineering team can extend without burning it down",
-        "Agile process means you can pivot based on early user feedback without wasted build"
+        "Launch your product quickly without compromising scalability or quality",
+        "Build a production-ready platform designed for long-term business growth",
+        "Reduce development risks with a structured MVP-first approach",
+        "Create a scalable foundation that supports future features and integrations",
+        "Deliver a better user experience with modern, high-performance applications",
+        "Get cloud-ready infrastructure and deployment from day one"
       ],
       "use_cases": [
-        "A founder needing a working product to show investors within 8 weeks",
-        "A business automating an internal workflow that currently runs on spreadsheets and email",
-        "A club or association needing a members portal with activity tracking and analytics",
-        "A company building a sales-enablement or field team management platform"
+        "Startups building a SaaS product to validate their idea and attract investors",
+        "Businesses replacing manual workflows with custom digital platforms",
+        "Companies creating internal management or automation systems",
+        "Founders launching subscription-based software products",
+        "Organisations building customer portals, dashboards, or management platforms"
       ],
       "problems_solved": [
-        "Ideas stuck in planning because building feels too big and too expensive to start",
-        "Prototypes that work in demos but break under real usage or real data volumes",
-        "Platforms that cannot be extended every new feature requires rewriting existing code",
-        "Long development cycles with no visible progress or working software until the very end",
-        "MVPs with no billing or user management not actually ready to acquire paying customers"
+        "Ideas stuck in planning without a clear development roadmap",
+        "Slow product launches causing missed business opportunities",
+        "Scalability issues caused by poorly structured MVPs",
+        "Manual business operations slowing down growth and efficiency",
+        "Platforms that become difficult to maintain or extend over time",
+        "Lack of technical architecture for future scaling and integrations"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Product scoping",
-          "description": "Define the core problem, the must-have feature set for launch, and what to defer. Written spec with acceptance criteria."
+          "title": "Discovery & Planning",
+          "description": "Understand business goals, target users, and define the core MVP scope with clear priorities."
         },
         {
           "step": 2,
-          "title": "Architecture planning",
-          "description": "Database schema, multi-tenancy model, API structure, and billing flow designed before coding starts."
+          "title": "Architecture & System Design",
+          "description": "Plan scalable architecture, database structure, APIs, and cloud infrastructure before development begins."
         },
         {
           "step": 3,
-          "title": "Sprint development",
-          "description": "Two-week sprints with a working, reviewable build at the end of each cycle."
+          "title": "Agile Development",
+          "description": "Develop the product in structured sprints with regular updates, testing, and feedback cycles."
         },
         {
           "step": 4,
-          "title": "Beta & feedback",
-          "description": "Deploy to staging, onboard beta users, and iterate based on real usage data."
+          "title": "Testing & Optimisation",
+          "description": "Ensure performance, responsiveness, security, and scalability across devices and user scenarios."
         },
         {
           "step": 5,
-          "title": "Production launch",
-          "description": "Cloud deployment, monitoring setup, go-live support, and handover documentation."
+          "title": "Launch & Support",
+          "description": "Deploy the product to production, configure monitoring, and provide post-launch support and improvements."
         }
       ],
       "deliverables": [
-        "Production-ready application with documented codebase",
-        "Multi-tenant or single-tenant architecture as specified",
-        "Subscription billing integration",
+        "Production-ready SaaS or MVP application",
+        "Responsive web application with scalable backend",
         "Admin and user dashboards",
-        "API documentation",
-        "Cloud deployment and environment configuration",
-        "Post-launch support period"
+        "Authentication and user management system",
+        "Subscription billing integration",
+        "API documentation and integrations",
+        "Cloud deployment and server configuration",
+        "Technical documentation and handover",
+        "Post-launch support and maintenance"
       ],
       "outcomes": [
-        "A working product in the hands of real users not a prototype or a Figma file",
-        "Revenue-ready platform with billing from launch day",
-        "Architecture that supports significant user growth without structural rework",
-        "Codebase your next hire can onboard to in days, not weeks",
-        "Validated learning about your market before investing in a full product team"
+        "A scalable digital product ready for real users and business growth",
+        "Faster launch timelines with reduced development risks",
+        "Improved operational efficiency through automation and custom workflows",
+        "Revenue-ready platforms with secure payment and subscription systems",
+        "Modern architecture that supports future scaling and feature expansion",
+        "A reliable technical foundation for long-term product success"
       ]
     },
     {
-      "id": "cloud-devops",
-      "icon": "cloud",
-      "image": "/images/services/cloud-devops.jpg",
-      "title": "Cloud & DevOps",
-      "description": "Deployment, server configuration, and cloud infrastructure on AWS ensuring your applications are secure, scalable, and highly available.",
-      "detailed_description": "I configure and manage production cloud infrastructure that your application needs to be secure, performant, and resilient. From initial server setup and SSL configuration to asset storage pipelines and serverless functions, I handle the infrastructure layer so your team can focus on shipping features. I also implement automated deployment pipelines, monitoring, and backup strategies giving you confidence that your production environment can handle real-world demands.",
+      "sequence": 2,
+      "id": "full-stack",
+      "icon": "layers",
+      "image": "/images/services/full-stack.jpg",
+      "title": "Custom Web Application Development",
+      "description": "I build modern, scalable, and high-performance web applications tailored to business needs, from intuitive frontend experiences to secure and reliable backend systems.",
+      "detailed_description": "I develop custom web applications designed to help businesses improve operations, enhance customer experiences, and scale efficiently. From frontend interfaces to backend architecture, every solution is built with performance, security, scalability, and long-term maintainability in mind. Whether you need a business platform, internal management system, customer portal, or enterprise web application, I create reliable digital solutions that are production-ready from day one.",
       "services_included": [
-        "Cloud server provisioning and configuration",
-        "Web server setup and optimisation",
-        "SSL certificate setup and auto-renewal",
-        "Cloud storage setup for files and static asset delivery",
-        "Serverless function development and deployment",
-        "Content Delivery Network (CDN) configuration for global performance",
-        "Managed database setup and configuration",
-        "Automated deployment pipeline setup",
-        "Server monitoring, alerting, and automated backups"
+        "Custom frontend and backend web application development",
+        "Responsive and mobile-friendly user interfaces",
+        "Single Page Applications (SPA) and dynamic web platforms",
+        "Secure authentication and role-based access systems",
+        "Admin dashboards and management panels",
+        "Database architecture and optimisation",
+        "API development and third-party integrations",
+        "Cloud deployment and server configuration",
+        "Performance optimisation and scalability improvements",
+        "Automated testing and quality assurance",
+        "CI/CD setup and deployment workflows",
+        "Post-launch support and feature enhancements"
       ],
       "industries": [
-        "SaaS & Software Products",
-        "E-commerce & Retail",
-        "Media & Content Platforms",
-        "Healthcare & Data-Sensitive Applications",
-        "Fintech",
-        "EdTech",
-        "Government & Public Sector",
-        "Agencies Managing Multiple Client Applications"
+        "SaaS & Technology",
+        "Healthcare & Telemedicine",
+        "Education & E-Learning",
+        "Finance & Fintech",
+        "Real Estate & Property Management",
+        "Logistics & Transportation",
+        "Media & Publishing",
+        "Enterprise & Internal Business Systems"
       ],
       "benefits": [
-        "Enterprise-grade cloud infrastructure used by millions of businesses globally reliable and well-documented",
-        "Pay-as-you-scale pricing no over-provisioning for traffic you do not have yet",
-        "Automated deployments reduce human error and make releasing new versions a routine non-event",
-        "CDN delivers assets faster to users globally without adding load to your application server",
-        "Monitoring and alerting means you know about problems before your users do"
+        "Custom-built solutions tailored to your exact business requirements",
+        "Scalable architecture designed to support long-term business growth",
+        "Fast, secure, and responsive applications for better user experience",
+        "Streamlined business workflows and improved operational efficiency",
+        "Reliable codebase that is easy to maintain and extend in the future",
+        "End-to-end development from planning to deployment and support"
       ],
       "use_cases": [
-        "A web application that needs a production-grade server setup with zero-downtime deployments",
-        "A media platform needing scalable storage and global CDN delivery for fast image or video serving",
-        "A product that needs serverless background processing for tasks that should not block the main application",
-        "An application on shared hosting that needs migrating to a dedicated cloud environment"
+        "Businesses replacing outdated systems with modern web applications",
+        "Companies building internal management and automation platforms",
+        "Startups launching scalable digital products and customer portals",
+        "Organisations needing custom dashboards, reporting, or workflow systems",
+        "Businesses requiring secure multi-user applications with role management"
       ],
       "problems_solved": [
-        "Applications going down under traffic spikes because of under-configured or shared hosting",
-        "Security vulnerabilities from misconfigured servers, open ports, and missing SSL",
-        "Slow asset delivery because files are served directly from the application server",
-        "Manual, error-prone deployments that cause downtime every time code is released",
-        "No visibility into server health, error rates, or response times until users complain"
+        "Slow and outdated systems affecting business productivity",
+        "Manual workflows causing operational inefficiencies",
+        "Web applications that cannot scale with growing business demands",
+        "Security and performance issues from poorly structured systems",
+        "Disconnected systems and tools creating workflow bottlenecks",
+        "Difficulty maintaining or extending legacy codebases"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Infrastructure audit",
-          "description": "Review current setup or define requirements from scratch compute, storage, database, and networking."
+          "title": "Discovery & Planning",
+          "description": "Understand business goals, user requirements, and technical needs to define a clear development roadmap."
         },
         {
           "step": 2,
-          "title": "Environment setup",
-          "description": "Provision cloud servers, configure web server, set up managed database, storage, and security rules."
+          "title": "Architecture & UI Planning",
+          "description": "Design scalable system architecture, database structure, APIs, and user experience before development starts."
         },
         {
           "step": 3,
-          "title": "Application deployment",
-          "description": "Deploy the application, configure environment variables, set up domain and SSL."
+          "title": "Development & Integration",
+          "description": "Build the application in agile development cycles with continuous testing, reviews, and integrations."
         },
         {
           "step": 4,
-          "title": "Deployment pipeline",
-          "description": "Automate deployments via a CI/CD pipeline push to the main branch, deploy to production reliably."
+          "title": "Testing & Optimisation",
+          "description": "Ensure security, responsiveness, scalability, and performance across devices and user scenarios."
         },
         {
           "step": 5,
-          "title": "Monitoring & handover",
-          "description": "Set up uptime monitoring, error alerting, automated backups, and hand over access and documentation."
+          "title": "Deployment & Support",
+          "description": "Deploy the application to production, configure infrastructure, and provide ongoing maintenance and support."
         }
       ],
       "deliverables": [
-        "Configured cloud environment with all required services",
-        "Web server configuration",
-        "Automated deployment pipeline",
-        "SSL setup with auto-renewal",
-        "Monitoring and alerting configuration",
-        "Infrastructure documentation and access credentials handover"
+        "Production-ready custom web application",
+        "Responsive frontend and scalable backend system",
+        "Admin dashboard and user management system",
+        "API integrations and documentation",
+        "Database schema and backend architecture",
+        "Cloud deployment and environment setup",
+        "Technical documentation and handover",
+        "Post-launch support and maintenance"
       ],
       "outcomes": [
-        "Production environment that handles traffic spikes without downtime",
-        "Zero-downtime deployments releasing code is no longer a high-stress event",
-        "Secure infrastructure with properly configured firewalls, SSL, and access controls",
-        "Faster asset delivery to users globally through CDN",
-        "Full visibility into server health and application performance"
+        "A modern web application built to support long-term business growth",
+        "Improved operational efficiency through custom digital workflows",
+        "Better user experience with fast and responsive interfaces",
+        "Secure and scalable infrastructure ready for increasing traffic and data",
+        "Reduced maintenance challenges with clean and reliable architecture",
+        "A future-ready platform that can evolve with business needs"
       ]
     },
     {
-      "id": "seo-performance",
-      "icon": "manage_search",
-      "image": "/images/services/seo-performance.jpg",
-      "title": "SEO & Performance Optimisation",
-      "description": "On-page SEO implementation, Core Web Vitals tuning, database query optimisation, and caching strategy so your product loads faster, ranks higher, and scales cleanly.",
-      "detailed_description": "I approach SEO and performance as an engineering problem, not a checklist exercise. Fast load times, clean HTML structure, proper metadata and structured data, and a well-indexed site architecture are the foundations of sustainable organic search performance. I diagnose and fix Core Web Vitals failures, implement server-side caching, optimise slow database queries, and ensure your application performs under load because a site that loads in one second converts measurably better than one that loads in three.",
+      "sequence": 3,
+      "id": "mobile-app",
+      "icon": "smartphone",
+      "image": "/images/services/mobile-app.jpg",
+      "title": "Mobile App Development",
+      "description": "I build modern, high-performance mobile applications for iOS and Android with scalable backend systems, seamless user experiences, and business-focused functionality.",
+      "detailed_description": "I develop cross-platform mobile applications that help businesses improve customer engagement, streamline operations, and create seamless digital experiences across iOS and Android. Every mobile app is built with performance, scalability, security, and long-term maintainability in mind. From startup MVPs to enterprise mobile solutions, I create apps that are production-ready, user-friendly, and designed to support real business growth.",
       "services_included": [
-        "Core Web Vitals audit and remediation LCP, INP, and CLS",
-        "On-page SEO implementation meta tags, canonical URLs, Open Graph, structured data",
-        "XML sitemap generation and Google Search Console setup",
-        "Page speed optimisation image compression, lazy loading, code minification, asset bundling",
-        "Server-side caching implementation",
-        "Database query optimisation and indexing strategy",
-        "Technical SEO audit crawl errors, redirect chains, duplicate content, broken links",
-        "Content SEO guidelines and keyword implementation review",
-        "Performance monitoring setup and ongoing benchmarking"
+        "Cross-platform iOS and Android app development",
+        "Custom mobile UI/UX implementation",
+        "Backend API integration and development",
+        "Secure authentication and user management",
+        "Push notifications and in-app messaging",
+        "Offline functionality and local data synchronisation",
+        "In-app payments and subscription systems",
+        "Location-based services and map integration",
+        "Real-time features and live data updates",
+        "Admin dashboards and management systems",
+        "App Store and Google Play deployment",
+        "Post-launch support and feature enhancements"
       ],
       "industries": [
         "E-commerce & Retail",
-        "Real Estate",
-        "Healthcare & Clinics",
-        "Education & Coaching",
+        "Healthcare & Fitness",
+        "Education & E-Learning",
+        "Food Delivery & On-Demand Services",
+        "Real Estate & Property Management",
+        "Finance & Fintech",
         "Travel & Hospitality",
-        "Media & Blogging",
-        "Professional Services",
-        "Local Businesses & Directories"
+        "Enterprise & Internal Business Apps"
       ],
       "benefits": [
-        "Faster load times directly correlate with higher conversion rates every second of improvement matters",
-        "Google ranks fast, well-structured sites higher performance is a direct SEO advantage",
-        "Structured data and proper metadata improve click-through rates from search results",
-        "Database and caching optimisation reduce server load and hosting costs under scale",
-        "One-time technical improvements compound over time unlike paid advertising spend"
+        "Launch apps faster with a single codebase for both iOS and Android",
+        "Deliver smooth, responsive, and user-friendly mobile experiences",
+        "Reduce long-term maintenance costs with scalable architecture",
+        "Seamlessly integrate mobile apps with web platforms and backend systems",
+        "Improve customer engagement through mobile-first experiences and notifications",
+        "Build secure and scalable applications ready for future growth"
       ],
       "use_cases": [
-        "An online store with a poor performance score losing rankings to faster competitors",
-        "A content site with thousands of pages needing technical SEO cleanup and structured data",
-        "A web application with slow database queries causing timeouts under moderate traffic",
-        "A new website needing a complete SEO and performance foundation set up before launch"
+        "Businesses launching customer-facing mobile applications",
+        "Startups building mobile-first MVPs and SaaS products",
+        "Companies creating internal workforce or management apps",
+        "E-commerce businesses launching mobile shopping experiences",
+        "Service providers building booking, tracking, or delivery applications"
       ],
       "problems_solved": [
-        "Poor Core Web Vitals scores causing ranking penalties in Google Search",
-        "Slow database queries timing out under normal traffic loads",
-        "Unindexed pages, crawl errors, and duplicate content diluting search authority",
-        "Unoptimised images and assets destroying load time on mobile devices",
-        "No caching strategy means every page request hits the database and server fresh"
+        "High development and maintenance costs from separate platform development",
+        "Poor mobile user experiences causing low engagement and retention",
+        "Lack of scalability in existing mobile applications",
+        "Disconnected mobile and web systems creating inconsistent user experiences",
+        "Slow and outdated mobile applications affecting business growth",
+        "Challenges with app deployment, performance, and app store approvals"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Audit",
-          "description": "Full technical SEO and performance audit using industry-standard tools and database profiling."
+          "title": "Discovery & Planning",
+          "description": "Understand business goals, target audience, app features, and platform requirements to define a clear roadmap."
         },
         {
           "step": 2,
-          "title": "Prioritisation",
-          "description": "Rank issues by impact fix the problems that move metrics the most, first."
+          "title": "UI/UX & Architecture",
+          "description": "Design intuitive mobile experiences, scalable backend architecture, and user flows before development begins."
         },
         {
           "step": 3,
-          "title": "Technical fixes",
-          "description": "Implement caching, optimise queries, fix crawl errors, compress assets, and resolve Core Web Vitals issues."
+          "title": "App Development",
+          "description": "Build cross-platform mobile applications with backend integrations, real-time functionality, and responsive performance."
         },
         {
           "step": 4,
-          "title": "On-page SEO",
-          "description": "Implement structured data, meta tags, canonical URLs, sitemap, and Search Console configuration."
+          "title": "Testing & Optimisation",
+          "description": "Test across devices, operating systems, and user scenarios to ensure reliability, speed, and stability."
         },
         {
           "step": 5,
-          "title": "Reporting",
-          "description": "Deliver before/after performance benchmarks and a monitoring setup to track improvements over time."
+          "title": "Deployment & Support",
+          "description": "Publish applications to the App Store and Google Play, configure infrastructure, and provide ongoing support."
         }
       ],
       "deliverables": [
-        "Technical SEO and performance audit report with prioritised fix list",
-        "Core Web Vitals improvement with benchmarks documented",
-        "Caching and query optimisation implementation",
-        "Structured data and on-page SEO implementation",
-        "Search Console and sitemap setup",
-        "Before/after performance scores"
+        "Production-ready iOS and Android mobile application",
+        "Responsive and scalable mobile architecture",
+        "Backend APIs and system integrations",
+        "Push notification and authentication setup",
+        "App Store and Google Play deployment",
+        "Technical documentation and source code",
+        "Admin dashboard and management tools",
+        "Post-launch maintenance and support"
       ],
       "outcomes": [
-        "Measurable improvement in Core Web Vitals documented before and after",
-        "Higher organic search rankings driven by improved technical SEO signals",
-        "Reduced server load and infrastructure cost through caching",
-        "Faster pages with higher engagement, lower bounce rates, and better conversions",
-        "A clean technical foundation that future content and SEO efforts can build on"
+        "A high-performance mobile app ready for real users and business growth",
+        "Improved customer engagement through mobile-first experiences",
+        "Reduced development and maintenance costs with a scalable architecture",
+        "Seamless integration between mobile, web, and backend systems",
+        "Reliable and future-ready applications that support long-term scalability",
+        "A strong mobile presence that enhances your overall digital ecosystem"
       ]
     },
     {
-      "id": "api-integration",
-      "icon": "code",
-      "image": "/images/services/api-integration.jpg",
-      "title": "API Development & Integration",
-      "description": "Design and integration of RESTful APIs enabling seamless communication between systems, third-party services, and web or mobile applications.",
-      "detailed_description": "I design, build, and integrate APIs that connect your systems cleanly and reliably. Whether you need a backend API to power your mobile app, webhooks to sync data between platforms, or integration with third-party services, I architect the data contracts and write the integration code that works in production and keeps working when external services update. Every API I build is versioned, documented, and secured from the start.",
+      "sequence": 4,
+      "id": "ecommerce",
+      "icon": "shopping_cart",
+      "image": "/images/services/ecommerce.jpg",
+      "title": "E-commerce Development",
+      "description": "I build modern, high-converting e-commerce platforms designed to help businesses sell online efficiently with secure payments, scalable infrastructure, and seamless shopping experiences.",
+      "detailed_description": "I develop custom e-commerce solutions that help businesses increase sales, improve customer experience, and scale their online operations with confidence. From modern storefronts and secure payment systems to inventory management and automation, every e-commerce platform is built for performance, scalability, mobile responsiveness, and long-term business growth. Whether you need a Shopify store, WooCommerce platform, custom online marketplace, or subscription-based commerce system, I create reliable and conversion-focused digital shopping experiences tailored to your business goals.",
       "services_included": [
-        "RESTful API design and development",
-        "API versioning and backward-compatible upgrade strategy",
-        "Authentication and authorisation tokens, OAuth2, API keys",
-        "Webhook development and inbound webhook handling",
-        "Third-party API integration payment gateways, CRMs, logistics, and more",
-        "API rate limiting, throttling, and abuse prevention",
-        "API documentation collections and specification files",
-        "Automated API testing and contract testing",
-        "GraphQL API development for flexible data querying"
+        "Custom e-commerce website and storefront development",
+        "Shopify and WooCommerce development",
+        "Custom product catalogue and inventory systems",
+        "Secure payment gateway integration",
+        "Subscription and recurring payment systems",
+        "Multi-vendor and marketplace functionality",
+        "Customer accounts and order management",
+        "Mobile-responsive shopping experiences",
+        "Shipping, delivery, and logistics integrations",
+        "Email automation and abandoned cart recovery",
+        "SEO and performance optimisation",
+        "Analytics, reporting, and sales tracking systems",
+        "Third-party integrations and API development",
+        "Cloud deployment and scalability optimisation"
       ],
       "industries": [
-        "Fintech & Payments",
-        "Healthcare & Healthtech",
-        "Logistics & Fleet Tech",
-        "E-commerce & Retail",
-        "SaaS Platforms",
-        "EdTech",
-        "Sales & Marketing Tech",
-        "Government & Public Services"
+        "Fashion & Apparel",
+        "Beauty & Wellness",
+        "Electronics & Gadgets",
+        "Food & Grocery",
+        "Furniture & Home Decor",
+        "Digital Products & Online Courses",
+        "Healthcare & Supplements",
+        "B2B Wholesale & Distribution"
       ],
       "benefits": [
-        "Well-designed APIs let your web app, mobile app, and partners all share one trusted source of truth",
-        "Versioned APIs mean you can update your backend without breaking existing integrations",
-        "Documented APIs reduce onboarding time for every future developer significantly",
-        "Proper authentication means your data is only accessible to systems that should have it",
-        "Webhook-driven integrations reduce polling overhead and keep data in sync in near real-time"
+        "Increase online sales with conversion-focused storefronts and streamlined checkout experiences",
+        "Deliver fast, secure, and mobile-friendly shopping experiences across all devices",
+        "Manage products, orders, customers, and inventory efficiently from a central system",
+        "Scale your e-commerce business with reliable infrastructure and flexible architecture",
+        "Improve customer retention through automation, personalised experiences, and loyalty systems",
+        "Build a future-ready online store with strong SEO and performance foundations"
       ],
       "use_cases": [
-        "A mobile app that needs a secure, well-structured backend API to power its features",
-        "An e-commerce platform integrating with a payment gateway, shipping provider, and CRM simultaneously",
-        "A platform that needs to expose a public API so enterprise clients can build their own integrations",
-        "A business replacing manual data entry by syncing two internal systems via webhooks automatically"
+        "Businesses launching new online stores or digital commerce platforms",
+        "Retail brands expanding from offline to online sales channels",
+        "Companies building subscription-based or membership commerce systems",
+        "B2B businesses requiring wholesale portals and customer-specific pricing",
+        "Brands migrating from outdated e-commerce platforms to modern scalable solutions"
       ],
       "problems_solved": [
-        "Brittle integrations that break every time a third-party API changes its response format",
-        "Unsecured endpoints exposing sensitive data without proper authentication",
-        "No API documentation, making it impossible to onboard new developers or build a mobile client",
-        "Duplicate data across systems because there is no reliable synchronisation mechanism",
-        "Slow API responses caused by inefficient queries and missing data optimisation"
+        "Slow and outdated online stores causing poor customer experience and lost sales",
+        "Complicated checkout flows leading to high cart abandonment rates",
+        "Inventory and order management inefficiencies affecting operations",
+        "Lack of scalability during sales campaigns and high-traffic periods",
+        "Poor mobile shopping experiences reducing conversions",
+        "Difficulty managing multiple tools, integrations, and sales systems"
       ],
       "process": [
         {
           "step": 1,
-          "title": "API design",
-          "description": "Define resource structure, endpoints, request and response contracts, and authentication strategy before writing code."
+          "title": "Business & Platform Planning",
+          "description": "Understand your products, target audience, business model, and recommend the best e-commerce solution for long-term growth."
         },
         {
           "step": 2,
-          "title": "Development",
-          "description": "Build endpoints with proper error handling, validation, rate limiting, and logging."
+          "title": "Store Design & Architecture",
+          "description": "Design modern shopping experiences, product structures, user flows, and scalable backend systems."
         },
         {
           "step": 3,
-          "title": "Third-party integration",
-          "description": "Connect to external services, handle webhooks, and build retry logic for reliability."
+          "title": "Development & Integrations",
+          "description": "Build the platform, integrate payment gateways, shipping systems, automation tools, and third-party services."
         },
         {
           "step": 4,
-          "title": "Testing",
-          "description": "Automated API tests, edge case validation, and load testing for high-traffic endpoints."
+          "title": "Testing & Optimisation",
+          "description": "Optimise performance, mobile responsiveness, security, checkout flow, and overall user experience."
         },
         {
           "step": 5,
-          "title": "Documentation & handover",
-          "description": "Full API documentation delivered alongside the codebase."
+          "title": "Launch & Growth Support",
+          "description": "Deploy the platform, configure analytics, provide training, and support future scaling and feature enhancements."
         }
       ],
       "deliverables": [
-        "Fully functional API with versioning",
-        "Authentication and authorisation implementation",
-        "API documentation",
-        "Third-party integration code with error handling and logging",
-        "Automated API test suite",
-        "Rate limiting and security configuration"
+        "Production-ready e-commerce platform",
+        "Custom storefront and responsive shopping experience",
+        "Secure payment and checkout system",
+        "Product catalogue and inventory management setup",
+        "Shipping and third-party integrations",
+        "SEO and performance optimisation",
+        "Analytics and reporting configuration",
+        "Technical documentation and training",
+        "Post-launch maintenance and support"
       ],
       "outcomes": [
-        "A reliable API that your mobile app, web frontend, and partners can all depend on",
-        "Reduced manual data entry through automated system-to-system sync",
-        "Secure data access with proper authentication no more exposed endpoints",
-        "Documentation that cuts new developer onboarding time significantly",
-        "A foundation for building a partner ecosystem or public-facing API offering"
+        "A scalable online store built for long-term business growth",
+        "Improved customer experience with fast and intuitive shopping flows",
+        "Higher conversion rates through optimised checkout and mobile responsiveness",
+        "Efficient management of products, orders, and customer operations",
+        "Reliable and secure payment infrastructure customers can trust",
+        "A future-ready e-commerce platform capable of handling growing traffic and sales volume"
       ]
     },
     {
+      "sequence": 5,
       "id": "wordpress-woocommerce",
       "icon": "web",
-      "image": "/images/services/wordpress.jpg",
-      "title": "WordPress & WooCommerce",
-      "description": "Custom themes, bespoke plugins, and modern WordPress setups tailored to your workflow including WooCommerce stores with complex booking logic, dynamic data visualisations, and editorial pipelines.",
-      "detailed_description": "I build WordPress solutions that go well beyond off-the-shelf themes and plugins. Using a modern, version-controlled project structure and flexible content architecture, I deliver WordPress sites that are maintainable, secure, and built to your exact editorial and functional requirements. For WooCommerce, I handle everything from complex product configurations and custom booking rules to payment gateway integration and performance optimisation for large catalogues.",
+      "image": "/images/services/wordpress-woocommerce.jpg",
+      "title": "WordPress Development",
+      "description": "I build modern, high-performance WordPress websites tailored for business growth, content management, scalability, and seamless user experiences.",
+      "detailed_description": "I develop custom WordPress websites designed to help businesses establish a strong digital presence with flexibility, performance, and ease of management. From business websites and service platforms to advanced WordPress systems with custom functionality, every solution is built with clean architecture, responsive design, SEO optimisation, and long-term maintainability in mind. Whether you need a professional company website, a scalable content platform, or custom WordPress functionality tailored to your workflow, I create reliable and future-ready WordPress solutions built for growth.",
       "services_included": [
-        "Custom WordPress theme development built from the ground up or as a refined child theme",
-        "Modern WordPress project setup with environment management",
-        "Flexible content architecture and custom block development",
-        "Custom WordPress plugin development",
-        "WooCommerce store setup with custom product types and checkout flows",
-        "Complex booking and reservation system implementation",
-        "WordPress integration with external systems and data sources",
-        "Dynamic charts and data visualisation within the CMS",
-        "WordPress multisite setup and management"
+        "Custom WordPress website development",
+        "Responsive and mobile-friendly website implementation",
+        "Custom WordPress theme development",
+        "WordPress plugin customisation and development",
+        "Advanced content management workflows",
+        "Booking, appointment, and reservation system integration",
+        "Third-party integrations and API connectivity",
+        "SEO-friendly WordPress setup and optimisation",
+        "Performance optimisation and Core Web Vitals improvements",
+        "Security hardening and malware protection",
+        "Multisite and multi-language WordPress setup",
+        "Content migration and WordPress modernisation",
+        "Cloud deployment and hosting configuration",
+        "Post-launch maintenance and support"
       ],
       "industries": [
-        "Digital Marketing Agencies",
-        "Government & Public Sector",
-        "Non-profits & NGOs",
+        "Agencies & Creative Businesses",
         "Healthcare & Clinics",
-        "Real Estate",
         "Education & Coaching",
+        "Real Estate & Property Businesses",
+        "Restaurants & Hospitality",
         "Professional Services",
-        "Restaurants & Hospitality"
+        "Corporate & Business Websites",
+        "Government & Non-Profit Organisations"
       ],
       "benefits": [
-        "Consistent deployments across development, staging, and production environments",
-        "Custom themes built to your brand not adapted from a generic template someone else is using",
-        "Editorial teams can manage content without developer involvement for routine updates",
-        "Plugins built specifically for your workflow no bloat from generic solutions trying to do too much",
-        "One platform for content management and commerce no synchronisation overhead"
+        "Easily manage website content and pages without technical dependency",
+        "Build fast, scalable, and secure WordPress websites tailored to your business",
+        "Improve customer experience with responsive and optimised performance",
+        "Launch SEO-friendly websites designed for long-term visibility and growth",
+        "Reduce maintenance complexity with clean and maintainable architecture",
+        "Create flexible WordPress systems that support future business expansion"
       ],
       "use_cases": [
-        "A digital marketing agency needing a custom showcase site that reflects their technical credibility",
-        "A government department publishing structured data with dynamic charts and complex data feeds",
-        "A services business needing a WooCommerce site with specialised booking and product sales",
-        "A business needing a bespoke plugin to automate an editorial or approval workflow"
+        "Businesses needing professional WordPress websites with custom functionality",
+        "Companies modernising outdated websites to improve performance and scalability",
+        "Organisations requiring advanced content management and editorial workflows",
+        "Businesses needing booking, appointment, or service management systems",
+        "Agencies requiring scalable and maintainable WordPress solutions for clients"
       ],
       "problems_solved": [
-        "WordPress sites that are slow, bloated, and reliant on dozens of plugins for basic functionality",
-        "Editorial workflows that require a developer every time content needs to be updated",
-        "WooCommerce stores with product or checkout logic that standard plugins cannot handle",
-        "Inconsistent deployments caused by manual file uploads instead of version-controlled code",
-        "Security vulnerabilities from outdated themes, plugins, and core versions"
+        "Slow and bloated WordPress websites affecting performance and user experience",
+        "Difficulty managing website content and workflows efficiently",
+        "Security vulnerabilities caused by outdated plugins, themes, and configurations",
+        "Poor mobile responsiveness reducing engagement and conversions",
+        "Lack of scalability as traffic, content, and business requirements grow",
+        "Overdependence on heavy third-party plugins causing instability and maintenance issues"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Requirements & content architecture",
-          "description": "Map content types, editorial workflow, and WooCommerce product and checkout requirements."
+          "title": "Discovery & Website Planning",
+          "description": "Understand business goals, content structure, feature requirements, and define the ideal WordPress architecture."
         },
         {
           "step": 2,
-          "title": "Theme & plugin development",
-          "description": "Build the custom theme and any required plugins all version-controlled and documented."
+          "title": "UI/UX & WordPress Architecture",
+          "description": "Design responsive interfaces, content workflows, and scalable WordPress structures optimised for usability and performance."
         },
         {
           "step": 3,
-          "title": "Content entry & configuration",
-          "description": "Set up content fields, configure WooCommerce, enter initial content, and configure payment gateways."
+          "title": "Development & Integrations",
+          "description": "Build custom themes, implement functionality, configure plugins, and integrate third-party systems and APIs."
         },
         {
           "step": 4,
-          "title": "Testing",
-          "description": "Cross-browser testing, mobile testing, checkout flow testing, and performance audit."
+          "title": "Testing & Optimisation",
+          "description": "Perform security testing, SEO improvements, performance optimisation, and responsive testing across all devices."
         },
         {
           "step": 5,
-          "title": "Launch & training",
-          "description": "Deploy to production, train the editorial team on the CMS, and provide documentation."
+          "title": "Launch & Support",
+          "description": "Deploy the website, configure hosting and security, provide training, and offer ongoing maintenance and support."
         }
       ],
       "deliverables": [
-        "Custom WordPress theme version-controlled and documented",
-        "Custom plugins as specified",
-        "WooCommerce setup with payment gateway integration",
-        "Editorial team training documentation",
-        "Performance and security hardening report"
+        "Production-ready WordPress website",
+        "Custom WordPress theme and functionality",
+        "Responsive and SEO-friendly frontend",
+        "Performance and security optimisation",
+        "Plugin and third-party integration setup",
+        "Cloud hosting and deployment configuration",
+        "CMS training and technical documentation",
+        "Post-launch maintenance and support"
       ],
       "outcomes": [
-        "An editorial team that can manage content independently no developer dependency for routine updates",
-        "Consistent, reproducible deployments across all environments",
-        "WooCommerce handling your specific product and checkout requirements reliably",
-        "Performance-optimised site with fast load times and clean Core Web Vitals scores",
-        "A maintainable codebase that any experienced WordPress developer can extend"
+        "A scalable and easy-to-manage WordPress website tailored to your business",
+        "Improved website performance, responsiveness, and user experience",
+        "Secure and maintainable WordPress architecture for long-term growth",
+        "Better visibility through SEO-friendly implementation and optimisation",
+        "Reduced dependency on bloated third-party solutions and unstable plugins",
+        "A future-ready WordPress platform designed to support business expansion"
       ]
     },
     {
+      "sequence": 6,
       "id": "shopify",
       "icon": "storefront",
       "image": "/images/services/shopify.jpg",
       "title": "Shopify Development",
-      "description": "Custom Shopify storefronts and theme development tailored to your brand, optimised for conversions, and built to scale as your business grows.",
-      "detailed_description": "I build Shopify stores that perform and convert custom-themed to your brand, integrated with the apps and systems your business runs on, and optimised for the speed and experience that turns browsers into buyers. Whether you are launching a new store, migrating from another platform, or needing a fully custom theme with complete merchant control, I handle the complete build and deliver a store your team can manage confidently without developer support.",
+      "description": "I build custom Shopify stores and scalable e-commerce experiences optimised for conversions, performance, mobile shopping, and long-term business growth.",
+      "detailed_description": "I develop modern Shopify stores tailored to your brand, products, and customer experience goals. From custom storefront design and Shopify theme development to advanced integrations and conversion optimisation, every Shopify solution is built for scalability, speed, and usability. Whether you are launching a new online store, migrating from another platform, or scaling an existing Shopify business, I create high-performing e-commerce experiences that help businesses increase sales and manage operations efficiently.",
       "services_included": [
-        "Custom Shopify theme development with full merchant editorial control",
-        "Shopify theme customisation and modification of existing themes",
-        "Platform migration to Shopify products, orders, and customers",
+        "Custom Shopify store development",
+        "Shopify theme design and customisation",
+        "Responsive and mobile-first storefront implementation",
         "Shopify app integration and configuration",
-        "Custom app development for specialised functionality",
-        "Multi-currency and multi-language store setup",
-        "Checkout customisation for Shopify Plus merchants",
-        "Product page and collection page optimisation for conversions",
-        "Analytics, tracking, and Google Shopping feed setup"
+        "Custom Shopify functionality and app development",
+        "Product catalogue and collection management",
+        "Payment gateway and checkout setup",
+        "Subscription and recurring billing systems",
+        "Multi-language and multi-currency store setup",
+        "Store migration to Shopify",
+        "Performance optimisation and speed improvements",
+        "SEO-friendly Shopify architecture",
+        "Analytics, tracking, and conversion setup",
+        "Post-launch support and store maintenance"
       ],
       "industries": [
         "Fashion & Apparel",
         "Beauty & Skincare",
-        "Health & Supplements",
-        "Home Decor & Lifestyle",
-        "Sports & Outdoor",
+        "Health & Wellness",
+        "Home & Lifestyle",
+        "Electronics & Gadgets",
+        "Food & Beverage",
         "Jewellery & Accessories",
-        "Food & Beverages",
-        "Electronics & Gadgets"
+        "Sports & Outdoor Brands"
       ],
       "benefits": [
-        "Shopify handles hosting, SSL, and platform maintenance you focus on selling, not servers",
-        "Custom themes give merchants full editorial control without touching code",
-        "Built-in payment processing, shipping integrations, and tax calculations reduce setup complexity",
-        "Global content delivery ensures fast load times for customers wherever they are",
-        "The Shopify app ecosystem covers almost every business need without heavy custom development"
+        "Launch a professional and scalable Shopify store tailored to your brand",
+        "Improve customer experience with fast and mobile-optimised storefronts",
+        "Increase conversions through optimised product pages and checkout flows",
+        "Simplify store management with easy-to-use Shopify workflows",
+        "Scale your online business with reliable infrastructure and integrations",
+        "Reduce technical maintenance overhead with Shopify’s managed ecosystem"
       ],
       "use_cases": [
-        "A brand launching a premium online store that needs to reflect brand identity not a default template",
-        "A merchant on another platform overwhelmed by maintenance wanting to move to a simpler managed solution",
-        "A business selling in multiple countries needing localised pricing, currency, and language",
-        "An existing Shopify merchant whose store has performance or conversion issues that need a developer to resolve"
+        "Businesses launching new Shopify-based e-commerce stores",
+        "Brands migrating from WooCommerce or other platforms to Shopify",
+        "Companies scaling existing Shopify stores with custom functionality",
+        "Businesses needing subscription-based or recurring payment systems",
+        "Merchants looking to improve mobile shopping experience and conversions"
       ],
       "problems_solved": [
-        "Generic themes that look identical to competitors and do not reflect brand identity",
-        "Poor mobile checkout experience causing high abandonment rates",
-        "Slow product pages caused by too many unoptimised apps loading on every page view",
-        "Platform migration anxiety product data, orders, and customer records all need to move cleanly",
-        "Stores that merchants cannot update themselves without breaking the layout"
+        "Generic Shopify themes that do not reflect the brand identity",
+        "Poor mobile shopping experience causing low conversion rates",
+        "Slow-loading storefronts affecting user engagement and sales",
+        "Difficulty managing products, collections, and store workflows efficiently",
+        "Challenges integrating payment systems, shipping providers, and third-party apps",
+        "Scaling issues as traffic, products, and customer volume increase"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Store strategy",
-          "description": "Review brand guidelines, product catalogue, target market, and identify required apps and integrations."
+          "title": "Store Strategy & Planning",
+          "description": "Understand business goals, product catalogue, target audience, and define the ideal Shopify architecture and user experience."
         },
         {
           "step": 2,
-          "title": "Theme development",
-          "description": "Build the custom theme with editable sections fully controllable by your team without touching code."
+          "title": "Design & Theme Development",
+          "description": "Create responsive storefronts and custom Shopify themes optimised for branding, usability, and conversions."
         },
         {
           "step": 3,
-          "title": "Migration & setup",
-          "description": "Migrate products, collections, and customer data. Configure apps, payment methods, and shipping rules."
+          "title": "Development & Integrations",
+          "description": "Configure products, collections, payments, apps, shipping systems, and custom Shopify functionality."
         },
         {
           "step": 4,
-          "title": "Conversion optimisation",
-          "description": "Optimise product pages, checkout flow, and page speed. Set up abandoned cart recovery."
+          "title": "Testing & Optimisation",
+          "description": "Optimise performance, mobile responsiveness, SEO, checkout flow, and overall shopping experience."
         },
         {
           "step": 5,
-          "title": "Launch & training",
-          "description": "Go-live with a redirect plan from the old store, train the team on store management, and provide documentation."
+          "title": "Launch & Growth Support",
+          "description": "Deploy the store, configure analytics and tracking, provide training, and support future growth and optimisation."
         }
       ],
       "deliverables": [
-        "Custom Shopify theme fully editable by your team",
-        "Product catalogue and collection setup",
-        "Payment, shipping, and tax configuration",
-        "App integrations as specified",
-        "Merchant training documentation",
-        "Post-launch support period"
+        "Production-ready Shopify store",
+        "Custom Shopify theme and storefront",
+        "Payment gateway and checkout setup",
+        "Product catalogue and collection configuration",
+        "App integrations and store automation setup",
+        "SEO and performance optimisation",
+        "Analytics and conversion tracking setup",
+        "Technical documentation and merchant training",
+        "Post-launch maintenance and support"
       ],
       "outcomes": [
-        "A high-converting Shopify store that reflects your brand not a template",
-        "Merchant team fully capable of managing products, collections, and content independently",
-        "Fast, mobile-optimised storefront with reliable global delivery",
-        "Smooth migration from the previous platform with no data loss",
-        "A platform your business can grow on without needing constant developer support"
+        "A scalable Shopify store designed for long-term business growth",
+        "Improved customer experience with fast and responsive shopping flows",
+        "Higher conversion rates through optimised storefront and checkout experiences",
+        "Simplified store operations and product management workflows",
+        "Reliable and secure e-commerce infrastructure ready for traffic growth",
+        "A modern Shopify platform capable of supporting future business expansion"
       ]
     },
     {
-      "id": "frontend-engineering",
-      "icon": "view_quilt",
-      "image": "/images/services/frontend.jpg",
-      "title": "Frontend Engineering",
-      "description": "Responsive, accessible interfaces built with modern frameworks performant from the first load and wired cleanly to any backend or third-party API.",
-      "detailed_description": "I build frontend interfaces that are fast, accessible, and a pleasure to use and that stay maintainable as your product grows. Using component-driven architecture, utility-first styling, and modern tooling, I deliver frontends that perform on every device, integrate cleanly with any backend API, and follow accessibility standards from day one. Whether you need a full single-page application, a server-driven reactive interface, or a component library for your design system, I build it to last.",
-      "services_included": [
-        "Single Page Application (SPA) development",
-        "Server-driven reactive UI for dynamic, real-time interfaces",
-        "Responsive design across mobile, tablet, and desktop",
-        "Component library development with usage documentation",
-        "Dashboard and data visualisation UI charts, tables, filters",
-        "Form validation, error handling, and UX micro-interactions",
-        "Accessibility implementation to WCAG 2.1 AA standard",
-        "Design-to-code implementation from Figma or design specifications",
-        "Frontend performance optimisation and Lighthouse auditing"
-      ],
-      "industries": [
-        "SaaS & Software Products",
-        "Fintech & Insurance",
-        "Healthcare & Patient Portals",
-        "EdTech & Learning Platforms",
-        "Analytics & Business Intelligence",
-        "E-commerce",
-        "Media & Publishing",
-        "Internal Enterprise Tools"
-      ],
-      "benefits": [
-        "Component-driven architecture means every UI element is reusable, testable, and easy to update",
-        "Utility-first styling enforces consistent spacing, colour, and typography across the entire interface",
-        "Proper state management eliminates the most common frontend performance and reliability problems",
-        "Accessibility compliance opens your product to a wider audience and reduces legal risk",
-        "A component library speeds up every future feature addition design and code in sync"
-      ],
-      "use_cases": [
-        "A platform needing a complex dashboard with data tables, filters, and real-time updates",
-        "An application whose older frontend needs replacing with a modern, reactive interface",
-        "A design team that has detailed mockups and needs an engineer to translate them into production components",
-        "An enterprise tool with a functional but dated UI that needs a frontend overhaul without touching the backend"
-      ],
-      "problems_solved": [
-        "Slow, janky frontend caused by poor state management and unnecessary re-renders",
-        "Inconsistent UI every page looks slightly different because there is no shared component system",
-        "Inaccessible interfaces that fail on keyboard navigation, screen readers, or colour contrast requirements",
-        "Tightly coupled frontend code that makes every change slow and risky",
-        "Mobile experience that is an afterthought designed desktop-first and broken on smaller screens"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Design review",
-          "description": "Review designs or existing UI, identify component boundaries, and plan the component hierarchy."
-        },
-        {
-          "step": 2,
-          "title": "Project setup",
-          "description": "Configure tooling, styling system, and folder structure appropriate for the project scale."
-        },
-        {
-          "step": 3,
-          "title": "Component development",
-          "description": "Build components from foundational elements up design tokens, base components, composite components, page layouts."
-        },
-        {
-          "step": 4,
-          "title": "API integration",
-          "description": "Connect to backend APIs with proper loading states, error boundaries, and graceful handling of failures."
-        },
-        {
-          "step": 5,
-          "title": "QA & performance",
-          "description": "Cross-browser testing, performance audit, accessibility audit, and code review."
-        }
-      ],
-      "deliverables": [
-        "Frontend codebase with documented components",
-        "Design system and styling configuration",
-        "Component library with usage documentation",
-        "API integration layer with error handling",
-        "Performance and accessibility audit report",
-        "Responsive implementation tested across devices"
-      ],
-      "outcomes": [
-        "A fast, consistent UI that your users actually enjoy using",
-        "Component library that speeds up every future feature addition",
-        "Accessible interface that works for all users and meets compliance requirements",
-        "Frontend codebase any developer can onboard to and extend confidently",
-        "Performance benchmarks that support strong Core Web Vitals scores"
-      ]
-    },
-    {
-      "id": "websocket-realtime",
-      "icon": "electric_bolt",
-      "image": "/images/services/websocket.jpg",
-      "title": "WebSocket & Real-Time Features",
-      "description": "Live notifications, real-time data feeds, and event-driven systems keeping your users connected and your data always current without page refreshes.",
-      "detailed_description": "I implement real-time features that transform static applications into live, responsive experiences. Using event-driven architecture and WebSocket technology, I build systems that push data to connected users the moment it changes without polling, without page refreshes, and without complexity for the end user. From live notifications and chat to real-time dashboards and collaborative tools, I design and build the complete real-time feature stack.",
-      "services_included": [
-        "Real-time notification systems in-app and push",
-        "Live data dashboards with auto-updating charts and tables",
-        "Chat and messaging features",
-        "Presence channels who is currently online or viewing",
-        "Real-time collaborative editing and form synchronisation",
-        "WebSocket connection management, reconnection, and fallback handling",
-        "Event-driven background processing with queues",
-        "Real-time order and status tracking",
-        "Live inventory and availability updates"
-      ],
-      "industries": [
-        "SaaS & Collaboration Tools",
-        "Healthcare & Patient Monitoring",
-        "Logistics & Fleet Tracking",
-        "Finance & Live Data Platforms",
-        "Sports & Live Scoring",
-        "Customer Support & Helpdesks",
-        "E-commerce (live inventory and order tracking)",
-        "EdTech & Live Learning"
-      ],
-      "benefits": [
-        "Real-time updates eliminate the need for users to refresh better experience and higher engagement",
-        "WebSocket is dramatically more efficient than polling fewer server requests, lower infrastructure cost",
-        "Self-hosted real-time solutions remove third-party dependency and per-message pricing",
-        "Event-driven architecture decouples the system adding a new real-time feature does not require rewriting existing code",
-        "Presence awareness lets you build collaborative features showing who is online or viewing the same record"
-      ],
-      "use_cases": [
-        "A platform where multiple users edit shared data and need to see each other's changes in real time",
-        "A logistics dashboard showing live vehicle positions and delivery statuses without page refresh",
-        "A support tool where agents and customers exchange messages in a real-time chat interface",
-        "An e-commerce site showing live stock levels on product pages to create urgency and reduce overselling"
-      ],
-      "problems_solved": [
-        "Users working on stale data because the page was loaded minutes ago and nothing has updated",
-        "High server load from constant polling hundreds of clients requesting fresh data every few seconds",
-        "Real-time features that work in demos but fail under concurrent production users",
-        "Notification systems that deliver alerts minutes after the triggering event occurred",
-        "Collaborative tools where users overwrite each other's work because there is no live awareness"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Event architecture",
-          "description": "Define which events need to broadcast, to which channels, and to which users before writing any real-time code."
-        },
-        {
-          "step": 2,
-          "title": "Server setup",
-          "description": "Configure the WebSocket server and set up broadcast channels with proper authentication."
-        },
-        {
-          "step": 3,
-          "title": "Event implementation",
-          "description": "Implement events, listeners, and broadcast conditions on the backend."
-        },
-        {
-          "step": 4,
-          "title": "Frontend integration",
-          "description": "Connect the client-side listener and update the UI reactively when events arrive."
-        },
-        {
-          "step": 5,
-          "title": "Load testing",
-          "description": "Test with concurrent connections to validate performance under realistic usage conditions."
-        }
-      ],
-      "deliverables": [
-        "WebSocket server setup and configuration",
-        "Event and channel implementation",
-        "Client-side real-time integration",
-        "Real-time UI components notifications, live data tables, chat",
-        "Connection resilience and reconnection handling",
-        "Load test results documentation"
-      ],
-      "outcomes": [
-        "Users see data updates the moment they happen no refresh required",
-        "Reduced server load compared to polling-based approaches",
-        "Higher engagement through live notifications and collaborative features",
-        "Reliable real-time features that hold up under concurrent users",
-        "Event-driven foundation that makes future real-time features fast to add"
-      ]
-    },
-    {
+      "sequence": 7,
       "id": "ai-development",
       "icon": "auto_awesome",
       "image": "/images/services/ai-development.jpg",
-      "title": "AI-Enhanced Development",
-      "description": "From embedding intelligent features chat, summarisation, classification into your product, to automating workflows and business logic using AI. Faster delivery, smarter systems, less manual overhead.",
-      "detailed_description": "I integrate AI capabilities into web and mobile products at two levels. The first is product-level: embedding intelligent features conversational interfaces, document summarisation, content classification, automated data extraction directly into your application. The second is workflow-level: using AI to accelerate development, automate business logic, and reduce the manual overhead that slows teams down. Both compound over time better products, built faster.",
+      "title": "AI-Powered Solutions",
+      "description": "I build AI-powered applications, automations, and intelligent business systems that reduce manual work, improve efficiency, and create smarter digital experiences.",
+      "detailed_description": "I help businesses integrate AI into their products, workflows, and operations to improve efficiency, automate repetitive tasks, and create modern user experiences. From AI-powered chat systems and intelligent search to workflow automation, document processing, and business intelligence tools, every solution is built to solve practical business problems and deliver measurable value. Whether you want to streamline internal operations, improve customer support, enhance your SaaS platform, or build AI-driven features into your product, I create scalable AI solutions tailored to real business needs.",
       "services_included": [
-        "AI-powered chat and conversational interface development",
-        "Document and content summarisation features",
-        "Text classification, tagging, and content moderation",
-        "AI-assisted data extraction from unstructured content",
-        "Intelligent search semantic and natural language queries",
-        "Prompt engineering and system design for reliable AI outputs",
-        "Knowledge base integration for AI-powered Q&A features",
-        "AI workflow automation for internal business processes",
-        "AI usage monitoring and cost management"
+        "AI-powered chat and conversational systems",
+        "AI workflow and business process automation",
+        "Intelligent document processing and data extraction",
+        "AI-powered search and recommendation systems",
+        "Custom AI integrations for web and mobile applications",
+        "Knowledge base and AI assistant development",
+        "AI-driven customer support systems",
+        "Content summarisation and classification tools",
+        "Prompt engineering and AI system optimisation",
+        "AI-powered analytics and reporting systems",
+        "Natural language processing integrations",
+        "Internal AI productivity tools and automation",
+        "Scalable AI API integrations",
+        "AI monitoring, optimisation, and cost management"
       ],
       "industries": [
-        "SaaS & Software Products",
+        "SaaS & Technology Platforms",
+        "Healthcare & Medical Systems",
         "Legal & Compliance",
-        "Healthcare & Medical Records",
-        "E-commerce product recommendations and search",
-        "EdTech & Personalised Learning",
-        "Customer Support & Helpdesks",
-        "Media & Content Platforms",
-        "HR & Recruitment Tech"
+        "Finance & Fintech",
+        "E-commerce & Retail",
+        "Education & E-Learning",
+        "Customer Support & Service Platforms",
+        "HR & Recruitment Technology"
       ],
       "benefits": [
-        "AI features differentiate your product in a market where basic functionality is commoditised",
-        "Intelligent APIs abstract the complexity of machine learning you get the capability without building models",
-        "AI-assisted development accelerates delivery features that would take weeks are scoped and built faster",
-        "Automated classification and extraction reduces manual data entry and human error at scale",
-        "Knowledge base-powered features let your product answer questions using your own proprietary content"
+        "Reduce repetitive manual work through intelligent automation",
+        "Improve customer experience with AI-powered interactions and support",
+        "Increase operational efficiency and team productivity",
+        "Build modern digital products with intelligent features users expect today",
+        "Automate data processing and business workflows at scale",
+        "Create competitive advantages through AI-driven business systems"
       ],
       "use_cases": [
-        "A platform that needs an intelligent assistant to summarise history and suggest next actions",
-        "A document-heavy application that needs to automatically extract key information from uploads",
-        "A support helpdesk adding an intelligent first-response layer that resolves common queries without human involvement",
-        "A catalogue or content site adding semantic search so users find results by describing what they need"
+        "Businesses automating internal workflows and repetitive operations",
+        "SaaS platforms integrating AI-powered assistants and intelligent features",
+        "Companies needing document processing and automated data extraction",
+        "Customer support systems requiring AI-powered response automation",
+        "Platforms wanting semantic search, recommendations, or intelligent analytics"
       ],
       "problems_solved": [
-        "Repetitive manual tasks classification, tagging, data entry consuming team time that could be automated",
-        "Search that only works if the user knows the exact name or identifier to look for",
-        "Support volume that scales with user growth and cannot be handled by a fixed-size team",
-        "Development cycles slowed by boilerplate and repetitive implementation work",
-        "Proprietary knowledge locked in documents and databases that users cannot query conversationally"
+        "Manual processes consuming excessive time and operational resources",
+        "Customer support teams overwhelmed by repetitive queries",
+        "Large amounts of unstructured data difficult to process efficiently",
+        "Traditional search systems failing to understand user intent",
+        "Slow business workflows caused by repetitive human tasks",
+        "Lack of intelligent features reducing product competitiveness in modern markets"
       ],
       "process": [
         {
           "step": 1,
-          "title": "AI feature scoping",
-          "description": "Define the specific problem AI should solve and choose the right approach chat, classification, extraction, search, or automation."
+          "title": "AI Strategy & Requirement Planning",
+          "description": "Identify business problems, automation opportunities, and the best AI approach for your product or workflow."
         },
         {
           "step": 2,
-          "title": "Prompt engineering",
-          "description": "Design and test prompt structures to get reliable, accurate, and consistent outputs."
+          "title": "AI System Architecture",
+          "description": "Design scalable AI workflows, integrations, prompts, and backend infrastructure tailored to business requirements."
         },
         {
           "step": 3,
-          "title": "Integration",
-          "description": "Build the AI feature into your application with proper authentication, error handling, and cost controls."
+          "title": "Development & Integration",
+          "description": "Build AI-powered features, automate workflows, integrate APIs, and connect systems with existing applications."
         },
         {
           "step": 4,
-          "title": "Testing & evaluation",
-          "description": "Test across edge cases, measure accuracy, and tune for production reliability."
+          "title": "Testing & Optimisation",
+          "description": "Validate AI outputs, optimise reliability, improve performance, and refine workflows for production usage."
+        },
+        {
+          "step": 5,
+          "title": "Deployment & Monitoring",
+          "description": "Deploy scalable AI systems with monitoring, analytics, cost controls, and long-term optimisation strategies."
+        }
+      ],
+      "deliverables": [
+        "Production-ready AI-powered application or feature",
+        "AI workflow automation systems",
+        "Custom AI integrations and API setup",
+        "AI assistant or conversational interface implementation",
+        "Document processing and intelligent automation setup",
+        "Monitoring, analytics, and cost optimisation configuration",
+        "Technical documentation and deployment setup",
+        "Post-launch support and AI optimisation"
+      ],
+      "outcomes": [
+        "Smarter business systems powered by AI-driven automation",
+        "Improved customer engagement through intelligent user experiences",
+        "Reduced operational costs and manual workload",
+        "Faster and more efficient business processes",
+        "Scalable AI infrastructure built for future growth",
+        "A competitive advantage through modern AI-powered digital solutions"
+      ]
+    },
+    {
+      "sequence": 8,
+      "id": "business-automation",
+      "icon": "automation",
+      "image": "/images/services/business-automation.jpg",
+      "title": "Business Automation Solutions",
+      "description": "Custom automation systems that eliminate repetitive work, streamline operations, and connect your business tools so your team can focus on growth instead of manual processes.",
+      "detailed_description": "I design and build business automation systems that reduce operational overhead, eliminate repetitive manual work, and improve the speed and reliability of your internal workflows. Whether you need automated lead handling, approval workflows, reporting pipelines, CRM synchronisation, invoicing systems, or multi-platform process automation, I create solutions tailored to how your business actually operates. Every automation system is built with scalability, visibility, and maintainability in mind so your processes continue working reliably as your business grows.",
+      "services_included": [
+        "Custom workflow automation development",
+        "CRM and sales pipeline automation",
+        "Lead capture and automated follow-up systems",
+        "Invoice, billing, and payment workflow automation",
+        "Email, SMS, and notification automation",
+        "Business process automation across multiple platforms",
+        "Approval workflows and internal task routing",
+        "Automated reporting and dashboard generation",
+        "Inventory and order processing automation",
+        "Data synchronisation between business systems",
+        "Document generation and file processing automation",
+        "Webhook and event-driven automation systems",
+        "Internal admin panel and operations tooling",
+        "Automation monitoring and failure alert systems"
+      ],
+      "industries": [
+        "Agencies & Service Businesses",
+        "E-commerce & Retail",
+        "Healthcare & Clinics",
+        "Real Estate & Property Management",
+        "Finance & Accounting",
+        "Logistics & Operations",
+        "Education & Coaching",
+        "SaaS & Software Companies"
+      ],
+      "benefits": [
+        "Reduce repetitive manual tasks and operational bottlenecks",
+        "Improve business efficiency with faster and more reliable workflows",
+        "Minimise human error in data handling, reporting, and customer operations",
+        "Keep customer, sales, and operational data synchronised automatically",
+        "Free up team time so staff can focus on higher-value work instead of administration",
+        "Create scalable internal systems that grow with your business operations"
+      ],
+      "use_cases": [
+        "A sales team needing automatic lead assignment and follow-up workflows",
+        "An e-commerce business automating inventory updates, invoices, and shipping notifications",
+        "A healthcare or service business automating appointment reminders and internal approvals",
+        "A company manually transferring data between multiple disconnected systems",
+        "A growing business needing operational workflows that scale without hiring additional admin staff"
+      ],
+      "problems_solved": [
+        "Teams wasting hours on repetitive administrative work every week",
+        "Manual data entry causing inconsistencies and operational errors",
+        "Disconnected systems requiring duplicate work across multiple platforms",
+        "Slow approval and operational workflows delaying customer response times",
+        "Lack of visibility into automation failures and process bottlenecks",
+        "Operational scaling problems where growth increases workload faster than the team can handle"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Workflow analysis",
+          "description": "Review your current business operations, identify repetitive tasks, bottlenecks, and opportunities for automation."
+        },
+        {
+          "step": 2,
+          "title": "Automation architecture",
+          "description": "Design the automation workflows, integrations, triggers, and business rules required for reliable execution."
+        },
+        {
+          "step": 3,
+          "title": "System development",
+          "description": "Build automation pipelines, integrations, admin tools, and notification systems tailored to your workflow."
+        },
+        {
+          "step": 4,
+          "title": "Testing & optimisation",
+          "description": "Validate workflow reliability, edge cases, failure handling, and optimise for operational efficiency."
+        },
+        {
+          "step": 5,
+          "title": "Deployment & training",
+          "description": "Deploy the automation systems, provide documentation, team training, and ongoing support if required."
+        }
+      ],
+      "deliverables": [
+        "Custom automation workflows and systems",
+        "Third-party platform integrations",
+        "Internal admin and operations tools",
+        "Automated reporting and notification systems",
+        "Workflow monitoring and logging setup",
+        "Documentation and operational training",
+        "Automation maintenance and support guidance"
+      ],
+      "outcomes": [
+        "Significant reduction in repetitive operational work",
+        "Faster internal workflows and customer response times",
+        "Improved operational accuracy with reduced manual errors",
+        "Better visibility into business operations and workflow performance",
+        "Scalable automation systems capable of supporting business growth",
+        "A more efficient business operation with lower administrative overhead"
+      ]
+    },
+    {
+      "sequence": 9,
+      "id": "frontend-engineering",
+      "icon": "view_quilt",
+      "image": "/images/services/frontend.jpg",
+      "title": "Modern UI/UX Development",
+      "description": "I build modern, responsive, and high-converting user interfaces that improve customer experience, increase engagement, and help digital products scale confidently.",
+      "detailed_description": "I design and develop modern frontend experiences that are fast, intuitive, and built for real business growth. From SaaS dashboards and enterprise platforms to customer-facing applications and internal business tools, every interface is engineered for performance, usability, accessibility, and long-term scalability. I focus on creating clean and conversion-focused user experiences that not only look modern but also help businesses improve engagement, reduce friction, and deliver better digital experiences across every device.",
+      "services_included": [
+        "Modern frontend application development",
+        "Responsive and mobile-first UI implementation",
+        "Dashboard and admin panel development",
+        "Design-to-code implementation from Figma",
+        "Interactive user interfaces and animations",
+        "Reusable component systems and design libraries",
+        "Frontend API integration and dynamic data handling",
+        "Real-time UI implementation and live updates",
+        "Accessibility-focused UI development",
+        "Frontend performance optimisation",
+        "Cross-browser and cross-device compatibility",
+        "Conversion-focused landing page development",
+        "Modern SaaS and business platform interfaces",
+        "UI scalability and maintainability optimisation"
+      ],
+      "industries": [
+        "SaaS & Technology Platforms",
+        "Finance & Fintech",
+        "Healthcare & HealthTech",
+        "E-commerce & Retail",
+        "Education & E-Learning",
+        "Media & Content Platforms",
+        "Analytics & Business Intelligence",
+        "Enterprise & Internal Business Systems"
+      ],
+      "benefits": [
+        "Deliver seamless user experiences across desktop, tablet, and mobile devices",
+        "Improve customer engagement with modern and intuitive interfaces",
+        "Increase conversions through faster, cleaner, and user-focused UI design",
+        "Build scalable frontend systems that support future product growth",
+        "Maintain consistent branding and design across the entire platform",
+        "Reduce maintenance complexity with reusable and structured UI architecture"
+      ],
+      "use_cases": [
+        "Startups building modern SaaS dashboards and customer platforms",
+        "Businesses redesigning outdated web applications and internal systems",
+        "Companies needing responsive interfaces connected to APIs and backend systems",
+        "Teams requiring production-ready frontend implementation from Figma designs",
+        "Businesses wanting higher engagement and better usability across digital products"
+      ],
+      "problems_solved": [
+        "Outdated interfaces reducing customer trust and engagement",
+        "Poor mobile responsiveness causing usability and conversion issues",
+        "Slow frontend performance affecting user retention and experience",
+        "Inconsistent design systems making products difficult to maintain",
+        "Complex user flows creating friction and reducing conversions",
+        "Frontend architectures that become difficult to scale as products grow"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "UI/UX Planning",
+          "description": "Understand business goals, user journeys, product requirements, and define the ideal frontend experience."
+        },
+        {
+          "step": 2,
+          "title": "Frontend Architecture Setup",
+          "description": "Configure scalable frontend structure, reusable component systems, and responsive design foundations."
+        },
+        {
+          "step": 3,
+          "title": "Interface Development",
+          "description": "Build responsive interfaces, dashboards, landing pages, animations, and interactive frontend features."
+        },
+        {
+          "step": 4,
+          "title": "API Integration & Optimisation",
+          "description": "Integrate backend systems, optimise frontend performance, and ensure accessibility across devices."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Deployment",
+          "description": "Perform responsive testing, browser validation, UI refinement, and deploy production-ready frontend systems."
+        }
+      ],
+      "deliverables": [
+        "Production-ready frontend application or interface",
+        "Responsive and mobile-optimised UI implementation",
+        "Reusable component library and design system",
+        "Frontend API integration setup",
+        "Performance and accessibility optimisation",
+        "Cross-browser tested implementation",
+        "Technical documentation and deployment setup",
+        "Post-launch support and maintenance"
+      ],
+      "outcomes": [
+        "Modern and engaging digital experiences that improve customer trust",
+        "Higher user engagement and conversion through optimised interfaces",
+        "Scalable frontend systems built for long-term product growth",
+        "Consistent and maintainable UI architecture across the platform",
+        "Faster and more responsive applications across all devices",
+        "A future-ready frontend foundation that supports business expansion"
+      ]
+    },
+    {
+      "sequence": 10,
+      "id": "cloud-devops",
+      "icon": "cloud",
+      "image": "/images/services/cloud-devops.jpg",
+      "title": "Cloud & DevOps",
+      "description": "I build secure, scalable, and high-performance cloud infrastructure with automated deployments, monitoring, and reliable production environments designed for modern applications.",
+      "detailed_description": "I help businesses deploy, manage, and scale applications on modern cloud infrastructure with reliability, security, and performance in mind. From server configuration and automated deployments to monitoring and scalability optimisation, I create production-ready cloud environments that support business growth and reduce operational risks. Whether you are launching a SaaS platform, scaling an e-commerce store, or modernising legacy infrastructure, I ensure your systems are stable, secure, and built for long-term performance.",
+      "services_included": [
+        "Cloud infrastructure setup and configuration",
+        "AWS server deployment and optimisation",
+        "Application hosting and environment management",
+        "CI/CD pipeline setup and deployment automation",
+        "Secure SSL configuration and domain setup",
+        "Database deployment and cloud configuration",
+        "CDN and global asset delivery optimisation",
+        "Server monitoring and uptime management",
+        "Automated backups and disaster recovery setup",
+        "Scalable infrastructure architecture",
+        "Containerisation and deployment workflows",
+        "Performance optimisation and server tuning",
+        "Security hardening and access management",
+        "Cloud migration and infrastructure modernisation"
+      ],
+      "industries": [
+        "SaaS & Technology Platforms",
+        "E-commerce & Retail",
+        "Healthcare & Secure Applications",
+        "Finance & Fintech",
+        "Media & Content Platforms",
+        "Education & E-Learning",
+        "Enterprise & Internal Systems",
+        "Agencies & Multi-Client Platforms"
+      ],
+      "benefits": [
+        "Deploy applications on secure and scalable cloud infrastructure",
+        "Reduce downtime and deployment risks with automated DevOps workflows",
+        "Improve application speed and global performance with CDN optimisation",
+        "Scale infrastructure efficiently as your business and traffic grow",
+        "Protect business-critical systems with monitoring, backups, and security best practices",
+        "Simplify deployments and maintenance with streamlined cloud operations"
+      ],
+      "use_cases": [
+        "Businesses launching scalable SaaS or web platforms",
+        "Companies migrating from shared hosting to cloud infrastructure",
+        "E-commerce stores handling high traffic and seasonal sales spikes",
+        "Startups needing automated deployment and production workflows",
+        "Businesses requiring secure cloud environments for customer and operational data"
+      ],
+      "problems_solved": [
+        "Applications crashing or slowing down during high traffic periods",
+        "Manual deployment processes causing downtime and operational risks",
+        "Poorly configured servers affecting security and application performance",
+        "Lack of monitoring and backups leading to production issues",
+        "Difficulty scaling infrastructure as the business grows",
+        "Slow global performance caused by inefficient hosting and asset delivery"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Infrastructure Planning",
+          "description": "Understand application requirements, traffic expectations, security needs, and define the ideal cloud architecture."
+        },
+        {
+          "step": 2,
+          "title": "Environment Setup",
+          "description": "Configure servers, databases, networking, storage, SSL, and security systems for production readiness."
+        },
+        {
+          "step": 3,
+          "title": "Deployment & Automation",
+          "description": "Deploy applications, configure CI/CD pipelines, automate releases, and optimise deployment workflows."
+        },
+        {
+          "step": 4,
+          "title": "Monitoring & Optimisation",
+          "description": "Implement monitoring, backups, logging, scaling strategies, and performance optimisation systems."
+        },
+        {
+          "step": 5,
+          "title": "Support & Scaling",
+          "description": "Provide ongoing infrastructure support, scaling improvements, and cloud optimisation as business demands grow."
+        }
+      ],
+      "deliverables": [
+        "Production-ready cloud infrastructure",
+        "Secure application hosting environment",
+        "CI/CD deployment automation setup",
+        "SSL, domain, and security configuration",
+        "Monitoring, logging, and backup systems",
+        "Cloud database and storage configuration",
+        "Infrastructure documentation and handover",
+        "Performance optimisation and scalability setup",
+        "Post-deployment support and maintenance"
+      ],
+      "outcomes": [
+        "Reliable cloud infrastructure capable of handling business growth and traffic spikes",
+        "Faster and safer deployments with automated DevOps workflows",
+        "Improved application performance and global user experience",
+        "Reduced operational risks through monitoring, backups, and security systems",
+        "Scalable environments that support future product and feature expansion",
+        "A stable and production-ready foundation for long-term digital growth"
+      ]
+    },
+    {
+      "sequence": 11,
+      "id": "scalable-system-architecture",
+      "icon": "account_tree",
+      "image": "/images/services/system-architecture.jpg",
+      "title": "Scalable System Architecture",
+      "description": "Architecture planning and system design for applications that need to scale reliably handling growth in users, traffic, data, and operational complexity without constant rewrites.",
+      "detailed_description": "I design scalable architectures that ensure your product stays fast and reliable as it grows. From database strategy to infrastructure planning, I build backend systems tailored for long-term stability, avoiding the trap of overengineering while ensuring your tech remains maintainable as your traffic and team scale.",
+      "services_included": [
+        "Application architecture planning and system design",
+        "Scalable backend and service architecture",
+        "Monolith to modular or microservice transition planning",
+        "API architecture and service communication design",
+        "Database scaling and data partitioning strategies",
+        "Caching layer architecture and performance planning",
+        "Queue systems and event-driven architecture",
+        "Real-time infrastructure architecture",
+        "Cloud infrastructure and deployment architecture",
+        "Authentication and access control architecture",
+        "High-availability and fault-tolerant system planning",
+        "Scalability and load handling strategy",
+        "Technical architecture documentation",
+        "Infrastructure cost optimisation planning"
+      ],
+      "industries": [
+        "SaaS & Software Platforms",
+        "E-commerce & Marketplaces",
+        "Fintech & Banking",
+        "Healthcare & Healthtech",
+        "Logistics & Fleet Management",
+        "Media & High-Traffic Platforms",
+        "Enterprise Internal Systems",
+        "AI & Data-Driven Applications"
+      ],
+      "benefits": [
+        "Build systems that scale without constant rewrites or emergency fixes",
+        "Reduce future technical debt through strong architectural foundations",
+        "Improve system reliability and uptime under growing traffic and usage",
+        "Enable faster feature development through modular architecture",
+        "Support larger teams with maintainable and well-structured systems",
+        "Optimise infrastructure usage and operational costs as the platform grows"
+      ],
+      "use_cases": [
+        "A startup preparing to scale beyond its MVP architecture",
+        "A SaaS platform struggling with performance and maintainability as features grow",
+        "An enterprise application needing reliable high-availability architecture",
+        "A marketplace or e-commerce platform expecting large traffic spikes and catalogue growth",
+        "A development team needing a technical architecture roadmap before building a large platform"
+      ],
+      "problems_solved": [
+        "Applications slowing down as user traffic and database size increase",
+        "Codebases becoming difficult to maintain because architecture was never planned properly",
+        "Infrastructure costs increasing unnecessarily due to inefficient system design",
+        "Frequent outages caused by tightly coupled systems and single points of failure",
+        "Teams blocked because the platform cannot support parallel feature development efficiently",
+        "Scaling issues forcing businesses into expensive rewrites earlier than expected"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "System analysis & requirements",
+          "description": "Understand business goals, traffic expectations, feature requirements, operational constraints, and future growth plans."
+        },
+        {
+          "step": 2,
+          "title": "Architecture planning",
+          "description": "Design scalable system structure including services, databases, APIs, infrastructure, and communication patterns."
+        },
+        {
+          "step": 3,
+          "title": "Technology selection",
+          "description": "Choose the appropriate frameworks, infrastructure, databases, caching systems, and deployment strategies."
+        },
+        {
+          "step": 4,
+          "title": "Implementation guidance",
+          "description": "Build or guide the implementation of the architecture with scalability, security, and maintainability best practices."
+        },
+        {
+          "step": 5,
+          "title": "Monitoring & optimisation",
+          "description": "Implement monitoring, scaling strategies, and performance optimisation to support production growth."
+        }
+      ],
+      "deliverables": [
+        "Technical architecture documentation",
+        "Scalable backend and infrastructure design",
+        "Database and caching strategy",
+        "API and service communication architecture",
+        "Scalability and performance roadmap",
+        "Infrastructure and deployment planning",
+        "System monitoring and reliability recommendations"
+      ],
+      "outcomes": [
+        "A scalable platform architecture prepared for future growth",
+        "Improved application reliability, maintainability, and performance",
+        "Faster feature development through modular system design",
+        "Reduced operational and infrastructure risks as traffic increases",
+        "Lower long-term development and infrastructure costs",
+        "A technical foundation capable of supporting business expansion confidently"
+      ]
+    },
+    {
+      "sequence": 12,
+      "id": "tech-consulting",
+      "icon": "support_agent",
+      "image": "/images/services/consulting.jpg",
+      "title": "Technical Consulting & Product Strategy",
+      "description": "Technical consulting, architecture guidance, product planning, and project rescue services helping businesses make smarter technology decisions, scale efficiently, and recover struggling projects.",
+      "detailed_description": "I help businesses make confident technical and product decisions whether you are planning a new platform, scaling an existing product, modernising legacy systems, or rescuing a project that has become difficult to maintain. From technical audits and architecture reviews to product strategy, scalability planning, and delivery optimisation, I provide practical guidance backed by hands-on engineering experience. The focus is always on solving business problems, reducing technical risk, improving development efficiency, and creating a clear roadmap for sustainable growth.",
+      "services_included": [
+        "Technical architecture consulting and system planning",
+        "Product strategy and MVP planning",
+        "Codebase audits and technical debt analysis",
+        "Legacy system modernisation consulting",
+        "Scalability and infrastructure planning",
+        "Technology stack selection and evaluation",
+        "Project rescue and delivery recovery",
+        "Performance and security assessment",
+        "Development workflow and team process optimisation",
+        "API and system integration consulting",
+        "Cloud infrastructure and deployment strategy",
+        "Technical documentation and onboarding guidance",
+        "Technical feasibility analysis for new product ideas",
+        "Ongoing technical advisory and CTO-level consulting"
+      ],
+      "industries": [
+        "SaaS & Technology Startups",
+        "E-commerce & Marketplace Platforms",
+        "Healthcare & Enterprise Applications",
+        "Agencies & Product Teams",
+        "Fintech & Data-Driven Platforms",
+        "Education & Learning Platforms",
+        "Logistics & Operational Systems",
+        "Businesses Scaling Digital Products"
+      ],
+      "benefits": [
+        "Make better technology decisions before investing significant development time and budget",
+        "Identify performance, scalability, and architectural risks early before they become expensive problems",
+        "Reduce technical debt and improve long-term maintainability of your platform",
+        "Gain a clear roadmap for product development, infrastructure, and scalability",
+        "Recover delayed or struggling projects with practical technical direction and prioritisation",
+        "Improve development efficiency and reduce delivery bottlenecks"
+      ],
+      "use_cases": [
+        "A startup planning the architecture and roadmap for a scalable SaaS platform",
+        "A business struggling with a legacy application that has become difficult to maintain",
+        "A team needing technical guidance before scaling infrastructure or adding major new features",
+        "An agency inheriting a complex client project with poor documentation and technical debt",
+        "A company wanting an experienced technical advisor without hiring a full-time CTO"
+      ],
+      "problems_solved": [
+        "Projects becoming difficult to scale because of poor early architectural decisions",
+        "Slow development velocity caused by technical debt and unclear workflows",
+        "Lack of clarity around product direction, infrastructure planning, or technology choices",
+        "Applications suffering from performance, reliability, or deployment issues",
+        "Teams blocked by undocumented systems and inconsistent development processes",
+        "Delayed or over-budget projects with no clear technical recovery strategy"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & technical assessment",
+          "description": "Review business goals, existing systems, infrastructure, workflows, and technical challenges to identify priorities and risks."
+        },
+        {
+          "step": 2,
+          "title": "Architecture & strategy planning",
+          "description": "Define scalable technical architecture, product direction, infrastructure strategy, and implementation priorities."
+        },
+        {
+          "step": 3,
+          "title": "Audit & recommendations",
+          "description": "Perform technical audits, identify bottlenecks, technical debt, scalability risks, and provide actionable recommendations."
+        },
+        {
+          "step": 4,
+          "title": "Implementation guidance & optimisation",
+          "description": "Support implementation, optimise workflows, resolve critical issues, and guide the team through technical improvements."
+        },
+        {
+          "step": 5,
+          "title": "Documentation & long-term roadmap",
+          "description": "Deliver technical documentation, architecture guidance, and a strategic roadmap for future development and scalability."
+        }
+      ],
+      "deliverables": [
+        "Technical audit and architecture review reports",
+        "Scalability and infrastructure planning documentation",
+        "Product roadmap and implementation strategy",
+        "Codebase and performance analysis reports",
+        "Technical debt remediation recommendations",
+        "Workflow and deployment optimisation guidance",
+        "Security and reliability assessment reports",
+        "Technical documentation and onboarding materials",
+        "Ongoing consulting and strategic technical guidance"
+      ],
+      "outcomes": [
+        "Clear technical direction and scalable product architecture",
+        "Reduced technical debt and improved development efficiency",
+        "Better infrastructure reliability, scalability, and performance",
+        "Improved decision-making for product and engineering teams",
+        "Recovered projects with a practical path toward successful delivery",
+        "A stronger technical foundation for long-term business growth"
+      ]
+    },
+    {
+      "sequence": 13,
+      "id": "seo-performance",
+      "icon": "manage_search",
+      "image": "/images/services/seo-performance.jpg",
+      "title": "Performance & SEO Optimisation",
+      "description": "I optimise websites and applications for speed, search visibility, scalability, and user experience helping businesses improve rankings, engagement, and conversions.",
+      "detailed_description": "I help businesses improve website speed, technical SEO, and overall application performance to create faster, more scalable, and search-friendly digital experiences. From Core Web Vitals optimisation and database tuning to structured SEO implementation and caching strategies, every improvement is focused on delivering better user experience, stronger search rankings, and higher business performance. Whether you are running a content platform, SaaS product, e-commerce store, or business website, I ensure your platform is built to perform efficiently under real-world traffic and usage.",
+      "services_included": [
+        "Core Web Vitals optimisation and performance tuning",
+        "Technical SEO audits and implementation",
+        "Page speed optimisation and asset optimisation",
+        "Database query optimisation and indexing",
+        "Caching strategy implementation",
+        "Structured data and schema markup setup",
+        "Meta tags, sitemap, and search indexing optimisation",
+        "Image optimisation and lazy loading",
+        "Mobile performance and responsiveness improvements",
+        "SEO-friendly architecture and URL structure",
+        "Performance monitoring and analytics setup",
+        "Server and infrastructure optimisation",
+        "Content delivery network (CDN) configuration",
+        "Ongoing performance benchmarking and reporting"
+      ],
+      "industries": [
+        "E-commerce & Retail",
+        "Real Estate & Property Platforms",
+        "Healthcare & Clinics",
+        "Education & E-Learning",
+        "Media & Content Platforms",
+        "Professional Services",
+        "Travel & Hospitality",
+        "SaaS & Technology Products"
+      ],
+      "benefits": [
+        "Improve website speed and user experience across all devices",
+        "Increase search engine visibility with strong technical SEO foundations",
+        "Reduce bounce rates and improve customer engagement",
+        "Handle higher traffic volumes with scalable performance optimisation",
+        "Improve conversion rates with faster and more responsive applications",
+        "Lower server load and infrastructure costs through efficient optimisation"
+      ],
+      "use_cases": [
+        "Businesses struggling with slow website performance and low search visibility",
+        "E-commerce stores needing faster checkout and product page loading",
+        "Content platforms requiring technical SEO improvements for better rankings",
+        "Web applications experiencing scalability and database performance issues",
+        "Companies preparing a website or platform for high traffic growth"
+      ],
+      "problems_solved": [
+        "Slow-loading websites causing poor user experience and lost conversions",
+        "Low search rankings due to technical SEO issues and poor site structure",
+        "Performance bottlenecks affecting scalability and application stability",
+        "Large databases and inefficient queries slowing down applications",
+        "Poor mobile performance impacting engagement and SEO rankings",
+        "High server resource usage caused by inefficient optimisation strategies"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Audit & Analysis",
+          "description": "Perform a complete technical SEO and performance audit to identify bottlenecks, scalability issues, and optimisation opportunities."
+        },
+        {
+          "step": 2,
+          "title": "Strategy & Prioritisation",
+          "description": "Prioritise fixes based on business impact, user experience improvements, and performance gains."
+        },
+        {
+          "step": 3,
+          "title": "Technical Optimisation",
+          "description": "Implement caching, query optimisation, asset compression, infrastructure improvements, and Core Web Vitals fixes."
+        },
+        {
+          "step": 4,
+          "title": "SEO Implementation",
+          "description": "Configure technical SEO foundations including structured data, indexing, metadata, sitemap, and mobile optimisation."
+        },
+        {
+          "step": 5,
+          "title": "Monitoring & Reporting",
+          "description": "Track performance improvements, monitor metrics, and provide ongoing optimisation recommendations."
+        }
+      ],
+      "deliverables": [
+        "Technical SEO and performance audit report",
+        "Core Web Vitals optimisation implementation",
+        "Caching and database optimisation setup",
+        "Structured data and metadata implementation",
+        "SEO-friendly architecture and indexing setup",
+        "Performance monitoring and analytics configuration",
+        "Before-and-after benchmarking reports",
+        "Technical documentation and optimisation recommendations"
+      ],
+      "outcomes": [
+        "Faster websites and applications with improved user experience",
+        "Higher search visibility and stronger technical SEO performance",
+        "Improved conversion rates through speed and usability optimisation",
+        "Scalable systems capable of handling higher traffic and data loads",
+        "Reduced server resource usage and infrastructure costs",
+        "A strong technical foundation for long-term digital growth and SEO success"
+      ]
+    },
+    {
+      "sequence": 14,
+      "id": "api-integration",
+      "icon": "hub",
+      "image": "/images/services/integrations.jpg",
+      "title": "API Development & Third-Party Integrations",
+      "description": "Custom API development and seamless third-party integrations connecting your applications, payment systems, CRMs, marketing tools, and external services into one reliable ecosystem.",
+      "detailed_description": "I design and build APIs and integration systems that allow your applications, platforms, and third-party services to communicate reliably at scale. Whether you need a backend API for a SaaS product, payment gateway integration, CRM synchronisation, webhook processing, or complex multi-system workflows, I create maintainable integration architecture built for long-term reliability. Every API and integration layer is designed with security, versioning, logging, monitoring, and scalability in mind so your business systems remain connected even as your platform evolves.",
+      "services_included": [
+        "Scalable RESTful API Architecture",
+        "Third-party API & System Connectivity",
+        "Payment Gateway Integration (Local & International)",
+        "CRM & Sales Platform Syncing",
+        "Webhooks with Retry Logic & Event Processing",
+        "Secure Authentication (OAuth2, JWT, API Keys)",
+        "Shipping, Logistics & Delivery Integrations",
+        "Marketing Platform Automation (Email & SMS)",
+        "Google Services (Maps, Analytics, OAuth)",
+        "Social Media & Social Login Integration",
+        "API Versioning & Backward Compatibility Strategy",
+        "Security Hardening (Rate Limiting & Throttling)",
+        "Integration Monitoring & Failure Alerting"
+      ],
+      "industries": [
+        "SaaS & Software Products",
+        "E-commerce & Retail",
+        "Fintech & Payments",
+        "Healthcare & Healthtech",
+        "Logistics & Delivery",
+        "EdTech",
+        "Marketing & CRM Platforms",
+        "Enterprise & Internal Business Systems"
+      ],
+      "benefits": [
+        "Centralised API architecture keeps systems connected reliably as your business grows",
+        "Well-structured integrations reduce operational overhead and eliminate repetitive manual work",
+        "Webhook-driven synchronisation keeps data updated in near real-time without constant polling",
+        "Versioned APIs allow your platform to evolve without breaking existing integrations",
+        "Integration logging and monitoring make production issues easier to diagnose and resolve quickly",
+        "Flexible architecture makes switching providers or adding new integrations significantly easier"
+      ],
+      "use_cases": [
+        "A SaaS platform needing secure APIs for web and mobile applications",
+        "An e-commerce business integrating payment gateways, shipping providers, and CRM systems",
+        "A company automating lead management between marketing tools and sales platforms",
+        "A healthcare or fintech platform requiring secure third-party service integrations",
+        "A marketplace syncing inventory, notifications, analytics, and customer data across multiple systems"
+      ],
+      "problems_solved": [
+        "Disconnected business systems causing duplicate manual work and inconsistent data",
+        "Brittle integrations that break when external APIs change unexpectedly",
+        "Unsecured API endpoints exposing sensitive business or customer information",
+        "No monitoring or logging making integration failures difficult to diagnose",
+        "Payment or webhook failures silently causing operational and revenue issues",
+        "Tightly coupled integration code making provider changes expensive and risky"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "System & integration planning",
+          "description": "Map data flow, integration requirements, authentication methods, and external service dependencies."
+        },
+        {
+          "step": 2,
+          "title": "Architecture & API design",
+          "description": "Design scalable API structures, integration layers, request contracts, and webhook workflows."
+        },
+        {
+          "step": 3,
+          "title": "Development & integration",
+          "description": "Build APIs and third-party integrations with validation, error handling, retry logic, and security best practices."
+        },
+        {
+          "step": 4,
+          "title": "Testing & reliability validation",
+          "description": "Perform API testing, webhook validation, edge case testing, and load testing for production readiness."
         },
         {
           "step": 5,
           "title": "Deployment & monitoring",
-          "description": "Deploy with usage monitoring and cost alerts AI features need visibility on usage and spend."
+          "description": "Deploy integrations with logging, monitoring, alerting, and documentation for long-term maintainability."
         }
       ],
       "deliverables": [
-        "AI feature integration production-ready with error handling and retry logic",
-        "Prompt library and system design documentation",
-        "AI feature UI chat interface, classification output, extraction results",
-        "Cost monitoring and usage alerts setup",
-        "Accuracy evaluation report",
-        "Documentation for extending and maintaining the AI integration"
+        "Production-ready API infrastructure",
+        "Third-party integration implementation",
+        "Webhook systems with retry and validation handling",
+        "Authentication and API security implementation",
+        "Integration logging and monitoring setup",
+        "API documentation and developer handover",
+        "Automated API and integration testing suite"
       ],
       "outcomes": [
-        "Intelligent features live in your product that users can interact with immediately",
-        "Measurable reduction in manual tasks through automation",
-        "Faster development velocity through AI-assisted tooling",
-        "A competitive product differentiator that non-technical competitors cannot easily replicate",
-        "Clear understanding of AI feature costs with monitoring to prevent unexpected billing"
+        "Business systems connected and exchanging data reliably in real time",
+        "Reduced manual work through automated system-to-system workflows",
+        "Secure APIs and integrations built for long-term scalability",
+        "Faster operational processes with fewer human errors",
+        "Flexible architecture that supports future integrations and provider changes",
+        "Reliable monitoring and alerting preventing silent integration failures"
       ]
     },
     {
-      "id": "cms-development",
-      "icon": "dashboard_customize",
-      "image": "/images/services/cms.jpg",
-      "title": "Custom CMS Development",
-      "description": "Purpose-built content management systems designed around your editorial workflow not the other way around. Clean interfaces, structured data, and APIs your team will enjoy working with.",
-      "detailed_description": "Off-the-shelf CMS platforms force your editorial workflow to fit their data model. I build custom content management systems designed around exactly how your team works the content types you have, the approval workflows you need, the APIs your frontend consumes, and the permissions model that matches your organisation. Whether you need a headless CMS powering a modern frontend, a full-stack platform with its own editorial UI, or a tailored admin interface with a powerful content API, I build it to fit.",
-      "services_included": [
-        "Custom CMS with tailored content types and data schemas",
-        "Intuitive admin panel designed for editorial teams",
-        "Headless CMS with REST or GraphQL API for frontend consumption",
-        "Multi-role editorial workflow draft, review, publish, schedule",
-        "Media library and asset management",
-        "Content versioning and revision history",
-        "Multi-language and multi-region content management",
-        "Dynamic form builder and custom field types",
-        "Content performance analytics and reporting dashboards"
-      ],
-      "industries": [
-        "Digital Publishing & Media",
-        "Government & Public Sector",
-        "Corporate & Enterprise",
-        "Healthcare & Patient Information",
-        "Education & Knowledge Bases",
-        "E-commerce product content management",
-        "Tourism & Hospitality",
-        "Membership Organisations"
-      ],
-      "benefits": [
-        "Content types, fields, and workflows built exactly for your data no workarounds or forced compromises",
-        "Headless architecture means your content powers any channel web, mobile, kiosk, or all three",
-        "Fine-grained permissions give editors, reviewers, admins, and read-only users exactly the access they need",
-        "Scheduled publishing, versioning, and revision history give editorial teams confidence and control",
-        "API-first design means any future frontend or integration can consume your content without rebuilding the CMS"
-      ],
-      "use_cases": [
-        "A government department publishing structured data that standard CMS platforms cannot model cleanly",
-        "A media company needing a custom editorial workflow with multi-stage approval before content goes live",
-        "A platform that needs an embedded CMS so its own users can manage content within the product",
-        "An organisation managing events, members, and communications through one unified custom admin interface"
-      ],
-      "problems_solved": [
-        "Standard CMS platforms that cannot model your content types without heavy customisation and compromise",
-        "Editorial teams blocked by developers for every content update because the CMS is not built for their workflow",
-        "Content that needs to power multiple channels but currently has to be duplicated and managed separately",
-        "No approval workflow content goes live immediately without review, causing quality and compliance issues",
-        "Slow admin interfaces caused by unoptimised queries and bloated plugins on large content databases"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Content modelling",
-          "description": "Map all content types, fields, relationships, and workflow states before any development begins."
-        },
-        {
-          "step": 2,
-          "title": "Schema & API design",
-          "description": "Design the data schema and API contracts the editorial interface and frontend will consume."
-        },
-        {
-          "step": 3,
-          "title": "Admin panel development",
-          "description": "Build the editorial interface intuitive, fast, and role-aware for each type of user."
-        },
-        {
-          "step": 4,
-          "title": "Content delivery API",
-          "description": "Build the content API with filtering, pagination, search, and caching."
-        },
-        {
-          "step": 5,
-          "title": "Training & launch",
-          "description": "Train the editorial team, document the content model, and support the go-live."
-        }
-      ],
-      "deliverables": [
-        "Custom CMS with documented content types and schemas",
-        "Admin panel configured for your editorial team",
-        "Content delivery API with documentation",
-        "Role and permission configuration",
-        "Editorial team training documentation",
-        "Content migration from previous system if applicable"
-      ],
-      "outcomes": [
-        "Editorial team publishing and managing content independently no developer bottleneck",
-        "Structured content that can power any current or future frontend channel",
-        "Approval workflows that prevent unreviewed content from going live",
-        "A CMS that is fast, intuitive, and built around how your team actually works",
-        "An API foundation that makes future integrations and new channel additions straightforward"
-      ]
-    },
-    {
+      "sequence": 15,
       "id": "database-design",
       "icon": "storage",
       "image": "/images/services/database.jpg",
       "title": "Database Design & Optimisation",
-      "description": "Scalable relational schema design, query optimisation, and indexing strategy built to handle growth without performance degradation.",
-      "detailed_description": "A poorly designed database is the most common reason web applications become slow and expensive to change. I design relational schemas that are structured correctly, indexed appropriately, and built so your most frequent queries are fast from day one. For existing applications, I audit slow queries, identify missing indexes, fix inefficient data retrieval patterns, and implement caching layers delivering measurable performance improvements without requiring a full application rewrite.",
+      "description": "Scalable database architecture, query optimisation, and performance tuning designed to keep your applications fast, reliable, and ready for long-term growth.",
+      "detailed_description": "A well-structured database is the foundation of every scalable application. I design and optimise databases that handle growing traffic, large datasets, and complex business logic without slowing down your platform. From designing efficient relational schemas and indexing strategies to optimising slow queries and implementing caching systems, I ensure your application remains performant, maintainable, and cost-efficient as it scales. Whether you are building a new product or improving an existing system, I create database architectures engineered for reliability, speed, and long-term scalability.",
       "services_included": [
-        "Relational database schema design for new applications",
-        "Data normalisation and integrity enforcement",
-        "Indexing strategy composite, covering, and partial indexes",
-        "Query optimisation and ORM performance tuning",
-        "Inefficient data retrieval detection and resolution",
-        "Database caching for frequently accessed, rarely changing data",
-        "Migration planning and zero-downtime migration execution",
-        "Slow query analysis and execution plan interpretation",
-        "Advanced database features full-text search, partitioning, JSONB"
+        "Database architecture and schema design",
+        "Relational database modelling and normalisation",
+        "Query optimisation and execution analysis",
+        "Indexing strategy and performance tuning",
+        "Database scaling and performance optimisation",
+        "Caching layer implementation and optimisation",
+        "Database migration planning and execution",
+        "Large dataset handling and optimisation",
+        "Advanced search and filtering systems",
+        "API and ORM database performance optimisation",
+        "Data integrity and relationship management",
+        "Backup, replication, and disaster recovery setup",
+        "Analytics and reporting database optimisation",
+        "Database monitoring and performance auditing"
       ],
       "industries": [
         "SaaS & Software Platforms",
-        "E-commerce & Retail",
-        "Healthcare & Medical Records",
         "Fintech & Banking",
-        "Logistics & Supply Chain",
+        "Healthcare & Medical Systems",
+        "E-commerce & Marketplace Platforms",
+        "Logistics & Fleet Management",
         "Analytics & Reporting Platforms",
-        "Government & Public Sector",
-        "Any application with large or rapidly growing datasets"
+        "Government & Enterprise Applications",
+        "High-Traffic Consumer Applications"
       ],
       "benefits": [
-        "A well-indexed schema means queries stay fast as your data grows from thousands to millions of rows",
-        "Fixing inefficient retrieval patterns can reduce page load times by 50–90% without changing business logic",
-        "Caching eliminates repeat database reads for frequently accessed, rarely changing data",
-        "Correct normalisation prevents data inconsistencies and reduces the risk of bugs from stale or duplicated data",
-        "Zero-downtime migration strategies let you change the schema without taking your application offline"
+        "Faster application performance through optimised queries and efficient data architecture",
+        "Scalable database systems capable of handling growing users and data volume",
+        "Reduced server and infrastructure costs through performance optimisation",
+        "Improved application reliability with strong data integrity and backup strategies",
+        "Better user experience through lower response times and faster dashboards",
+        "Long-term maintainability with clean and well-structured database architecture"
       ],
       "use_cases": [
-        "A platform whose database queries are getting slower as the customer count and data volume grow",
-        "An analytics application running complex aggregation queries that time out under normal usage",
-        "A new application that needs a database schema designed correctly before the first line of business logic is written",
-        "An existing system needing performance improvements without a full application rewrite"
+        "A SaaS platform experiencing slow queries as customer data grows",
+        "An e-commerce platform needing scalable inventory and order management systems",
+        "A reporting dashboard struggling with heavy aggregation and analytics queries",
+        "A startup building a scalable database architecture before product launch",
+        "A legacy application requiring database optimisation without rewriting the entire platform"
       ],
       "problems_solved": [
-        "Application pages timing out because a single poorly optimised query is scanning the entire table",
-        "Data inconsistencies caused by schemas that store the same information in multiple places",
-        "Database becoming the bottleneck CPU and memory spiking under moderate traffic",
-        "No migration strategy means schema changes require taking the application offline",
-        "Reports and dashboards taking minutes to load because aggregation queries have no caching"
+        "Slow application performance caused by inefficient database queries",
+        "Scaling issues when traffic and data volume increase",
+        "High infrastructure costs due to unoptimised database operations",
+        "Poor data structure causing duplicate, inconsistent, or unreliable data",
+        "Long-loading dashboards and reports affecting business operations",
+        "Downtime risks during database updates and migrations"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Audit",
-          "description": "Analyse slow query logs, run execution plans on the worst-performing queries, and map the current schema structure."
+          "title": "Database audit & analysis",
+          "description": "Review the current database structure, identify bottlenecks, analyse slow queries, and evaluate scalability requirements."
         },
         {
           "step": 2,
-          "title": "Diagnosis",
-          "description": "Identify inefficient retrieval patterns, missing indexes, normalisation issues, and caching opportunities."
+          "title": "Architecture & optimisation planning",
+          "description": "Design improved schemas, indexing strategies, caching layers, and database optimisation plans tailored to your application."
         },
         {
           "step": 3,
-          "title": "Optimisation",
-          "description": "Add indexes, rewrite queries, resolve inefficient patterns, implement caching where appropriate."
+          "title": "Performance implementation",
+          "description": "Optimise queries, implement indexes, improve relationships, configure caching, and enhance database efficiency."
         },
         {
           "step": 4,
-          "title": "Schema redesign if needed",
-          "description": "Design and execute schema migrations with zero-downtime strategies for production systems."
+          "title": "Scalability & reliability setup",
+          "description": "Configure backups, replication, monitoring, and scaling strategies to support long-term growth and reliability."
         },
         {
           "step": 5,
           "title": "Benchmarking & documentation",
-          "description": "Before-and-after query execution time benchmarks, index documentation, and caching layer documentation."
+          "description": "Measure before-and-after performance improvements and provide technical documentation for future maintenance."
         }
       ],
       "deliverables": [
-        "Database audit report with prioritised improvement recommendations",
-        "Optimised queries and reusable data access patterns",
-        "Index strategy implementation and documentation",
-        "Caching layer configuration",
-        "Migration files for any schema changes",
-        "Before-and-after performance benchmarks"
+        "Optimised database schema and architecture",
+        "Query optimisation and indexing implementation",
+        "Caching and database performance configuration",
+        "Database migration and backup setup",
+        "Performance audit and benchmarking reports",
+        "Monitoring and reliability configuration",
+        "Technical documentation and maintenance guidelines",
+        "Post-optimisation support and consultation"
       ],
       "outcomes": [
-        "Measurably faster queries execution times documented before and after",
-        "Application that stays performant as data volume grows not just today",
-        "Reduced database server load less compute needed for the same traffic",
-        "Data integrity enforced at the schema level fewer bugs from inconsistent data",
-        "A development team that understands the schema and can extend it confidently"
+        "Significantly faster application and dashboard performance",
+        "Scalable database systems prepared for future business growth",
+        "Reduced infrastructure costs through efficient resource usage",
+        "Improved reliability and data consistency across the platform",
+        "Faster API responses and smoother user experience",
+        "A future-ready database architecture your development team can scale confidently"
       ]
     },
     {
-      "id": "third-party-integrations",
-      "icon": "hub",
-      "image": "/images/services/integrations.jpg",
-      "title": "Third-Party Integrations",
-      "description": "Connecting your product to the tools your business runs on payment gateways, CRMs, marketing platforms, analytics, and more. Clean, maintainable integration code that holds up when external APIs change.",
-      "detailed_description": "Modern products do not operate in isolation they need to communicate with payment processors, CRMs, shipping providers, marketing tools, analytics platforms, and more. I design and build integration layers that are resilient, well-logged, and maintainable. Every integration is structured so that when an external API updates or you decide to switch providers, you change as little of your codebase as possible not dozens of files.",
+      "sequence": 16,
+      "id": "websocket-realtime",
+      "icon": "electric_bolt",
+      "image": "/images/services/websocket.jpg",
+      "title": "Real-Time Applications & Systems",
+      "description": "I build real-time applications and live systems with instant updates, notifications, tracking, and interactive experiences that keep users connected and engaged.",
+      "detailed_description": "I develop real-time applications and event-driven systems that deliver live user experiences without delays, refreshes, or outdated data. From SaaS dashboards and collaborative tools to live tracking systems, chat applications, and real-time analytics platforms, every solution is built for speed, scalability, and reliability. Using modern WebSocket architecture and real-time communication technologies, I help businesses create faster, more interactive digital experiences that improve engagement, operational visibility, and user satisfaction across web and mobile platforms.",
       "services_included": [
-        "Payment gateway integration local and international options",
-        "CRM integration bidirectional data sync and lead management",
-        "Email and marketing platform integration",
-        "Shipping and logistics provider integration",
-        "SMS and communication platform integration",
-        "Google services integration Maps, Analytics, OAuth",
-        "Social media platform integration",
-        "Accounting software integration",
-        "Webhook development and inbound event processing"
+        "Real-time application development",
+        "Live notifications and alert systems",
+        "WebSocket and event-driven architecture implementation",
+        "Real-time dashboards and analytics platforms",
+        "Chat and messaging system development",
+        "Live order, delivery, and activity tracking",
+        "Collaborative and synchronised user experiences",
+        "Presence systems and online user tracking",
+        "Real-time API and live data streaming",
+        "Background event processing and queue systems",
+        "Push notification integrations",
+        "Concurrent connection and scalability optimisation",
+        "Frontend and mobile real-time integrations",
+        "Performance monitoring for live systems"
       ],
       "industries": [
-        "E-commerce & Retail",
-        "SaaS & Software Products",
-        "Healthcare & Telemedicine",
-        "Logistics & Delivery",
-        "Fintech & Payments",
-        "Travel & Hospitality",
-        "Marketing & Agencies",
-        "Real Estate & PropTech"
+        "SaaS & Collaboration Platforms",
+        "Logistics & Fleet Management",
+        "Finance & Live Data Platforms",
+        "Healthcare & Monitoring Systems",
+        "Customer Support & Communication Tools",
+        "E-commerce & Order Tracking",
+        "Education & Live Learning Platforms",
+        "Analytics & Business Intelligence"
       ],
       "benefits": [
-        "Architecture that isolates third-party dependencies switching providers requires minimal code change",
-        "Centralised integration logging makes debugging production issues fast and straightforward",
-        "Webhook handling with retry logic and idempotency prevents duplicate or missed event processing",
-        "Clean integration layer reduces onboarding time for developers who need to understand external dependencies",
-        "Graceful degradation means your application handles third-party outages without complete failure"
+        "Deliver instant updates and live user experiences without page refreshes",
+        "Improve customer engagement through real-time interactions and notifications",
+        "Reduce infrastructure load with efficient event-driven communication systems",
+        "Enable seamless collaboration and synchronisation between users",
+        "Provide accurate live tracking and operational visibility",
+        "Build scalable real-time systems capable of handling growing user activity"
       ],
       "use_cases": [
-        "A platform integrating a payment gateway, shipping provider, and email tool as part of a single order workflow",
-        "A CRM syncing leads and contacts with an external sales platform bidirectionally via webhooks",
-        "A healthcare application integrating SMS reminders, video consultations, and online payments",
-        "A marketplace needing map-based search, behaviour analytics, and social login all working together"
+        "Businesses building live dashboards and monitoring platforms",
+        "Applications requiring chat, messaging, or collaborative features",
+        "Logistics platforms needing real-time delivery and fleet tracking",
+        "Customer support systems with live communication and notifications",
+        "Platforms requiring live analytics, activity feeds, or synchronised data"
       ],
       "problems_solved": [
-        "Integration code scattered across the application impossible to update when the external API changes",
-        "No retry logic on webhook endpoints missed events that are silently never processed",
-        "Payment integration that works in testing but has edge cases that fail silently in production",
-        "No logging on integration calls impossible to diagnose why an order was not fulfilled or a notification not sent",
-        "Tight coupling to one provider switching requires changes across dozens of files"
+        "Users seeing outdated information due to delayed refresh cycles",
+        "Poor engagement caused by static and non-interactive applications",
+        "Inefficient polling systems increasing server load and infrastructure costs",
+        "Real-time systems failing under high concurrent user activity",
+        "Delayed notifications impacting operations and customer experience",
+        "Difficulty synchronising live data across multiple users and devices"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Integration mapping",
-          "description": "Map all required integrations, data flows, and event triggers before writing any code."
+          "title": "Real-Time System Planning",
+          "description": "Define business requirements, event flows, live interactions, and scalable real-time architecture."
         },
         {
           "step": 2,
-          "title": "Architecture design",
-          "description": "Design the integration structure to isolate each external dependency cleanly."
+          "title": "Backend Event Architecture",
+          "description": "Build WebSocket infrastructure, event broadcasting systems, authentication layers, and scalable backend services."
         },
         {
           "step": 3,
-          "title": "Implementation",
-          "description": "Build each integration with proper authentication, error handling, retry logic, and logging."
+          "title": "Frontend & Mobile Integration",
+          "description": "Implement live UI updates, notifications, synchronised interactions, and seamless user experiences across platforms."
         },
         {
           "step": 4,
-          "title": "Testing",
-          "description": "Test in sandbox or test mode, validate edge cases failed payments, webhook retries, rate limits."
+          "title": "Performance & Load Optimisation",
+          "description": "Test concurrent connections, optimise event handling, and ensure scalability under real-world usage conditions."
         },
         {
           "step": 5,
-          "title": "Documentation & monitoring",
-          "description": "Document each integration and set up alerting for integration failures in production."
+          "title": "Deployment & Monitoring",
+          "description": "Deploy production-ready real-time systems with monitoring, logging, and long-term reliability configurations."
         }
       ],
       "deliverables": [
-        "Integration layer for each third-party service",
-        "Webhook endpoint implementation with signature validation and retry handling",
-        "Integration test coverage",
-        "Logging and monitoring for each integration",
-        "Integration documentation",
-        "Error handling and graceful degradation implementation"
+        "Production-ready real-time infrastructure",
+        "WebSocket and event-driven system setup",
+        "Live notifications and messaging integration",
+        "Real-time dashboards and tracking systems",
+        "Frontend and mobile live data implementation",
+        "Scalable concurrent connection handling",
+        "Performance and load testing reports",
+        "Technical documentation and deployment setup",
+        "Post-launch monitoring and support"
       ],
       "outcomes": [
-        "All business-critical systems connected and exchanging data reliably",
-        "Integration failures surfaced immediately via alerts not discovered by users",
-        "Clean architecture that makes future provider switches a minimal-effort change",
-        "Reduced manual data entry through automated system-to-system synchronisation",
-        "Confidence that payments, notifications, and data sync all work correctly in production"
+        "Real-time applications delivering seamless and engaging live experiences",
+        "Higher customer engagement through instant updates and interactions",
+        "Reliable infrastructure capable of handling concurrent live users",
+        "Improved operational visibility with live tracking and analytics",
+        "Scalable event-driven systems designed for long-term business growth",
+        "A future-ready real-time foundation supporting advanced digital experiences"
       ]
     },
     {
-      "id": "tech-consulting",
-      "icon": "support_agent",
-      "image": "/images/services/consulting.jpg",
-      "title": "Tech Consulting & Rescue",
-      "description": "Auditing stuck or legacy projects, untangling technical debt, and unblocking delivery honest assessment, clear priorities, and hands-on fixes.",
-      "detailed_description": "I work with teams that are stuck applications that have grown too complex to change safely, projects behind schedule, codebases left without documentation, or early technical decisions now causing problems at scale. I audit the situation honestly, prioritise the highest-impact improvements, and either fix them hands-on or give your team a clear, actionable plan to execute themselves. No inflated reports, no recommendations designed to create more consulting work just an accurate diagnosis and a practical path forward.",
+      "sequence": 17,
+      "id": "cms-development",
+      "icon": "dashboard_customize",
+      "image": "/images/services/cms.jpg",
+      "title": "Custom CMS Solutions",
+      "description": "Custom CMS and admin systems designed around your unique workflows, not limited by off-the-shelf templates. We build scalable platforms that adapt to your business operations, ensuring your tech grows as fast as you do.",
+      "detailed_description": "I build custom CMS platforms tailored specifically to how your business manages content, data, workflows, and internal operations. Instead of forcing your team to adapt to restrictive off-the-shelf CMS tools, I create systems designed around your exact requirements from editorial workflows and role management to structured data architecture, APIs, and automation. Whether you need a headless CMS for modern frontend applications, a powerful internal admin panel, or a complete content and operations platform, every solution is engineered for performance, scalability, maintainability, and ease of use.",
       "services_included": [
-        "Full technical audit of existing codebase, architecture, and infrastructure",
-        "Technical debt assessment and prioritised remediation roadmap",
-        "Performance bottleneck diagnosis application, database, and server",
-        "Security vulnerability audit and remediation plan",
-        "Code and architecture review for in-progress projects",
-        "Legacy application rescue and modernisation planning",
-        "Team unblocking fixing the specific issue stopping delivery",
-        "Technology evaluation and migration planning",
-        "Developer onboarding documentation for undocumented codebases"
+        "Custom CMS architecture and development",
+        "Headless CMS with REST or GraphQL APIs",
+        "Custom admin panel and dashboard development",
+        "Role-based access control and workflow systems",
+        "Dynamic content modelling and structured data architecture",
+        "Content publishing workflows with approval systems",
+        "Media library and digital asset management",
+        "Multi-language and multi-region content management",
+        "Custom form builders and data management tools",
+        "Analytics dashboards and reporting systems",
+        "Workflow automation and business process integration",
+        "Third-party API and platform integrations",
+        "Migration from legacy CMS or spreadsheet-based systems",
+        "Scalable cloud deployment and infrastructure setup"
       ],
       "industries": [
-        "Startups Scaling Past Their MVP",
-        "Agencies Inheriting Client Codebases",
-        "Businesses with Legacy Applications",
-        "Teams with High Developer Turnover",
-        "Companies Preparing for Investment or Acquisition",
-        "Organisations Migrating to Modern Stacks",
-        "Any Team Whose Application Has Become Hard to Change",
-        "Projects That Have Gone Over Time and Budget"
+        "Media & Publishing",
+        "Government & Public Sector",
+        "Healthcare & Medical Organisations",
+        "Education & Learning Platforms",
+        "Enterprise & Corporate Operations",
+        "E-commerce & Marketplace Platforms",
+        "Real Estate & Property Management",
+        "Membership & Community Platforms"
       ],
       "benefits": [
-        "An outside perspective surfaces problems the team is too close to see or too cautious to say out loud",
-        "A prioritised roadmap means you fix the right things first, not just the most visible symptoms",
-        "Hands-on fixes deliver immediate relief not just a report that sits unread",
-        "Honest assessment with no interest in recommending a full rewrite if a targeted fix will do",
-        "Documentation deliverable means your team can maintain the codebase long after the engagement ends"
+        "CMS workflows designed specifically for your business operations instead of adapting to generic platforms",
+        "Structured content architecture that scales cleanly as your platform grows",
+        "Centralised management for content, users, operations, and reporting in one system",
+        "Headless architecture allows content delivery across web, mobile, and external platforms",
+        "Faster editorial and operational workflows through automation and role-based permissions",
+        "Reduced dependency on bloated plugins and third-party limitations"
       ],
       "use_cases": [
-        "A product that has become slow and unmaintainable as the team has grown and features have been bolted on",
-        "An agency that has inherited a client codebase with no documentation and a deadline approaching",
-        "A business whose original developer has left and the replacement team cannot understand the application",
-        "A company whose web presence has accumulated years of technical debt and security vulnerabilities"
+        "A media platform managing large-scale structured content with editorial approvals",
+        "A company needing an internal operations dashboard and content management platform",
+        "A SaaS platform requiring a fully custom admin and customer management system",
+        "A business replacing spreadsheets and manual workflows with a centralised CMS solution",
+        "An organisation needing multi-role workflows with permissions, analytics, and automation"
       ],
       "problems_solved": [
-        "No one on the team understands how the whole system works critical knowledge walked out with a departing developer",
-        "Every new feature takes far longer than it should because the existing code resists change",
-        "Application is slow but no one knows exactly why no monitoring, no profiling, no baseline to measure from",
-        "Security vulnerabilities identified but the team does not know how to prioritise or safely address them",
-        "Project is behind schedule and the team needs someone to diagnose why and help recover the timeline"
+        "Generic CMS platforms that cannot support custom business workflows efficiently",
+        "Editorial and operational bottlenecks caused by disconnected systems",
+        "Poor scalability when managing large amounts of structured content and users",
+        "Over-reliance on plugins causing security, performance, and maintenance issues",
+        "Teams wasting time on repetitive manual processes that should be automated",
+        "Lack of flexibility when integrating with external tools, APIs, or frontend applications"
       ],
       "process": [
         {
           "step": 1,
-          "title": "Rapid assessment",
-          "description": "Review the codebase, architecture, deployment environment, and any existing documentation. Identify the highest-risk areas."
+          "title": "Business workflow discovery",
+          "description": "Analyse your operational workflows, content structure, permissions, and business requirements to define the ideal CMS architecture."
         },
         {
           "step": 2,
-          "title": "Findings report",
-          "description": "Deliver a written report with a clear diagnosis, prioritised issues, and specific recommendations."
+          "title": "System architecture & data modelling",
+          "description": "Design scalable database schemas, APIs, user roles, workflow states, and content relationships before development begins."
         },
         {
           "step": 3,
-          "title": "Remediation planning",
-          "description": "Define a phased plan to address the highest-impact issues first without requiring a full rewrite."
+          "title": "CMS & admin development",
+          "description": "Build the CMS interface, admin dashboards, workflows, APIs, automation systems, and integrations tailored to your operations."
         },
         {
           "step": 4,
-          "title": "Hands-on fixes",
-          "description": "Implement agreed fixes directly performance improvements, security hardening, documentation, targeted refactoring."
+          "title": "Testing & optimisation",
+          "description": "Perform performance testing, security hardening, workflow validation, and scalability optimisation across the platform."
         },
         {
           "step": 5,
-          "title": "Handover",
-          "description": "Transfer knowledge to the internal team with documentation, walkthroughs, and a clear maintenance guide."
+          "title": "Deployment & team onboarding",
+          "description": "Deploy the system to production, migrate existing data if needed, train your team, and provide ongoing support."
         }
       ],
       "deliverables": [
-        "Technical audit report with prioritised findings and recommendations",
-        "Remediation roadmap with effort estimates",
-        "Hands-on fixes for the agreed highest-priority issues",
-        "Codebase documentation architecture overview, setup guide, key decisions",
-        "Performance benchmarks before and after remediation",
-        "Security hardening implementation and report"
+        "Production-ready custom CMS platform",
+        "Custom admin dashboards and management tools",
+        "Headless CMS APIs with documentation",
+        "Role and permission management system",
+        "Workflow automation and approval systems",
+        "Structured database and scalable architecture",
+        "Cloud deployment and infrastructure setup",
+        "Technical documentation and team training",
+        "Post-launch support and optimisation"
       ],
       "outcomes": [
-        "Team unblocked able to develop and deploy with confidence again",
-        "Clear understanding of what the application does and how no more single-point-of-knowledge risk",
-        "Measurable performance improvement on the worst-performing areas",
-        "Security vulnerabilities addressed and documented",
-        "A prioritised roadmap the team can execute independently without ongoing consultant dependency"
+        "A CMS platform fully aligned with your business workflows and operations",
+        "Faster and more efficient content and operational management",
+        "Scalable infrastructure capable of supporting future platform growth",
+        "Reduced operational overhead through automation and streamlined workflows",
+        "Improved security, maintainability, and long-term system reliability",
+        "A future-ready platform that integrates cleanly with web, mobile, and third-party systems"
       ]
     }
   ]
